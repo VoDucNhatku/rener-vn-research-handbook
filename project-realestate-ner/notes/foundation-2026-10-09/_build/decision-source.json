@@ -1,0 +1,7 @@
+{
+  "event_type": "VERIFY",
+  "decision": "Tách PDF YOLO do người dùng chỉ định khỏi ảnh Real Estate NER; dùng ReNER-VN v1.3 trong workspace để đối chiếu nội dung.",
+  "why": "Đọc trực tiếp xác nhận quick guide 13 trang nói YOLO-OBB, còn ReNER v1.3 9 trang khớp aim và ảnh; không thể áp STAL vào NER.",
+  "delta": "Phát hiện nền sai khi chỉ dựa tên proposal; giảm scope đọc tài liệu thị giác; tổng hợp nền NLP từ nguồn phù hợp và báo mismatch rõ.",
+  "evidence": "notes/foundation-2026-10-09/01-local-source-review.md"
+}

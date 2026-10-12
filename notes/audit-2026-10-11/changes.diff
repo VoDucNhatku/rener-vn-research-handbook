@@ -1,0 +1,797 @@
+--- before/BAO-CAO-TONG-HOP-CONG-VIEC.md
++++ BAO-CAO-TONG-HOP-CONG-VIEC.md
+@@ -73,3 +73,11 @@
+ Yêu cầu: mở rộng quốc tế/X/Trung Quốc; tối ưu code/UI/backend; case study/sách/blog/video; 80/20; điểm quyết định thành bại; đổi tính năng lõi và khôi phục; quản lý dự án một người dùng AI. Người dùng xác nhận khó nhất là chuyển ý tưởng ngắn thành yêu cầu/task, muốn hiểu flow và tiến tới nhận khách; tiếp tục học bài bản theo proposal/ReNER trước.
+ 
+ Đã tạo [báo cáo nghiên cứu](notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md) và [sổ tay thực hành](notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md), có brief, 10 tình huống giả lập, task S0–S5, 7 prompt, giới hạn hard rule và cơ chế thay đổi/khôi phục. Cập nhật chọn lọc khung prompt cũ v1.1 để yêu cầu mới được điều chỉnh baseline và AI tự quyết chi tiết dễ đảo. Nguồn X/Bilibili/Reels có hạn chế đã ghi rõ; không tuyên bố xem hết video/sách. Chưa user test, đo tải, sửa code app hoặc thay thiết kế v0.2. Chi tiết log I0–I5 và hồ sơ nguồn đi kèm.
++
++## 8. Tự phản biện và sửa tài liệu — 11/10/2026
++
++Yêu cầu: tự suy luận, phản biện toàn hồ sơ, tìm lỗi/khoảng trống và bổ sung tư duy. Đã kiểm kê 28 Markdown, quét claim toàn bộ và đối chiếu sâu các đoạn rủi ro với proposal, source/log và nguồn chính thức. Không coi đây là audit mọi dòng code hoặc mọi paper.
++
++Đã hiệu chỉnh 13 nhóm lỗi/lệch nghĩa: quyền nội bộ/công khai; job/review; dependency; bằng chứng giả lập; suy đơn vị giá; hard rule quá cứng; mức thực thi harness; WCAG; kiến thức Transformer/MST/MLM; metric seqeval; ngưỡng dữ liệu/ưu thế Hybrid; điều hướng các scope khác nhau. Có 10 khoảng trống còn cần kiểm chứng, ưu tiên dữ liệu và nghiệm thu hơn chọn thêm framework.
++
++Đọc [báo cáo phản biện](notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md) và [bối cảnh hiện hành](notes/HIEN-TRANG-VA-QUYET-DINH.md). Có bản trước sửa, log J0–J4, bảng mức đọc từng file và kết quả kiểm link/hash. Proposal gốc giữ nguyên; sửa sơ đồ v0.2 không có nghĩa kiến trúc đã được duyệt. Chưa code/deploy hoặc chạy lại benchmark/app.
+--- before/notes/08-fine-tuning-mlm-summary.md
++++ notes/08-fine-tuning-mlm-summary.md
+@@ -1,4 +1,6 @@
+ # TMG301 — Bài 08: Tinh chỉnh (Fine-Tuning) và Mô hình ngôn ngữ che từ (Masked Language Models)
++
++> Rà soát 11/10/2026: đối chiếu script và log lưu ở `08-assets`; các con số 0,7384/0,5003/0,6198 và 21/60 có trong log lịch sử, chưa chạy lại training trong lượt audit này. Đã sửa diễn giải trọng số, masking và mức bằng chứng. [Báo cáo](audit-2026-10-11/BAO-CAO-PHAN-BIEN.md).
+ 
+ - **Nguồn:** `For Students/TMG/TMG/08. Fine-Tuning and Masked Language Models.ppt` (27 slide)
+ - **Người soạn:** Claude (admin → tóm tắt bài giảng) · **Ngày:** 2026-09-30
+@@ -46,7 +48,7 @@
+ 
+ **Vì sao hiệu quả (slide 4):** mô hình đã biết sẵn mẫu ngôn ngữ, quan hệ ngữ nghĩa và ngữ cảnh, nên chỉ cần **ít dữ liệu của tác vụ** là tổng quát hoá tốt.
+ 
+-**Trong bối cảnh BERT/GPT (slide 5):** thường giữ nguyên kiến trúc và tham số gốc, chỉ thích nghi cho các tác vụ như phân loại văn bản, nhận dạng thực thể có tên (NER), phân tích cảm xúc, dịch máy…
++**Trong bối cảnh BERT/GPT (slide 5):** giữ trọng số pre-trained làm điểm khởi tạo, có thể thay head rồi cập nhật một phần hoặc toàn bộ trọng số cho các tác vụ như phân loại văn bản, nhận dạng thực thể có tên (NER), phân tích cảm xúc, dịch máy…
+ 
+ **Bốn bước (slide 6):**
+ 
+@@ -113,7 +115,7 @@
+ 3. **Log khi tải mô hình** (\*) cho thấy đúng bản chất của fine-tuning:
+    - `classifier.weight/bias → MISSING`: head phân loại **mới**, được khởi tạo ngẫu nhiên. Đây là phần "modify the architecture slightly" ở slide 11.
+    - `cls.predictions.* → UNEXPECTED`: head MLM của checkpoint gốc bị **bỏ đi**.
+-   - `cls.seq_relationship.* → UNEXPECTED`: head **NSP (Next Sentence Prediction)** bị bỏ đi. Đây là bằng chứng BERT gốc được pre-train bằng **hai** mục tiêu là MLM và NSP, dù slide chỉ nhắc MLM (\*).
++   - `cls.seq_relationship.* → UNEXPECTED`: head **NSP (Next Sentence Prediction)** bị bỏ đi. Checkpoint có head NSP là dấu hiệu phù hợp với kiến trúc; căn cứ cho hai mục tiêu **MLM và NSP** của BERT gốc là [bài báo BERT, §3.1](https://aclanthology.org/N19-1423/), không chỉ riêng tên key trong log (\*).
+ 4. **Loss dao động (0.74 → 0.50 → 0.62) là bình thường.** Chỉ có 2 câu, không có tập validation, nên đây là bản demo cú pháp chứ **không phải** thí nghiệm có ý nghĩa. Slide ghi "Fine-tuning completed!" nhưng không đánh giá, tức là thiếu bước 4 của chính slide 6.
+ 5. `lr=2e-5` là thang learning rate điển hình khi fine-tune BERT. Bài báo BERT gợi ý khoảng {2e-5, 3e-5, 5e-5}, 2–4 epoch (\*). LR nhỏ vì chỉ cần "nắn nhẹ" trọng số đã tốt, LR lớn dễ gây quên thảm khốc (catastrophic forgetting, mục 5).
+ 
+@@ -137,7 +139,7 @@
+ | Thế mạnh | **Hiểu** ngôn ngữ: phân loại, QA, NER | **Sinh** văn bản theo prompt |
+ | Cách dùng theo slide | Fine-tune cho từng tác vụ | "Not typically fine-tuned due to its scale" |
+ 
+-> **Lưu ý (\*):** câu "GPT-3 thường không fine-tune" đúng về **thói quen dùng**: người ta chủ yếu dùng prompting / in-context learning. Tuy vậy, không nên hiểu là "không thể fine-tune". Nếu thi, trả lời theo slide; khi phỏng vấn, nói thêm sắc thái này.
++> **Lưu ý (\*):** câu "GPT-3 thường không fine-tune" là cách trình bày trong slide; file này không có số liệu để xác nhận tần suất sử dụng thực tế, đặc biệt ở thời điểm hiện tại. Phân biệt prompting/in-context learning với cập nhật trọng số; không suy ra "không thể fine-tune".
+ 
+ ---
+ 
+@@ -208,7 +210,7 @@
+ 
+ **Chi tiết slide không nêu (\*), hay bị hỏi:**
+ - Chọn **15%** token để dự đoán. Trong số đó: **80%** thay bằng `[MASK]`, **10%** thay bằng token ngẫu nhiên, **10%** giữ nguyên. Đã đối chiếu với mã nguồn `DataCollatorForLanguageModeling` trong transformers 5.17.0: mặc định `mlm_probability=0.15`, `mask_replace_prob=0.8`, `random_replace_prob=0.1`.
+-- **Vì sao không che 100% bằng `[MASK]`?** Lúc fine-tune và suy luận, token `[MASK]` **không bao giờ xuất hiện**. Nếu pre-train chỉ gặp `[MASK]`, sẽ có độ lệch giữa pre-train và fine-tune (pretrain–finetune mismatch). Hai phần 10% buộc mô hình phải có biểu diễn tốt cho **mọi** token, vì nó không biết token nào đã bị tráo.
++- **Vì sao không che 100% bằng `[MASK]`?** Trong các tác vụ downstream thông thường không dùng masking, input không có `[MASK]`; riêng suy luận fill-mask vẫn dùng token này. Nếu pre-train chỉ gặp `[MASK]`, sẽ có độ lệch giữa pre-train và fine-tune (pretrain–finetune mismatch). Hai phần 10% buộc mô hình phải có biểu diễn tốt cho **mọi** token, vì nó không biết token nào đã bị tráo.
+ - **Loss chỉ tính trên các vị trí bị chọn** $M$, không tính trên toàn câu. Gọi $\tilde{x}$ là câu đã bị che:
+ 
+ $$
+@@ -223,7 +225,7 @@
+ 
+ (\*) Mỗi lớp con còn có residual connection và layer normalization, đã học ở bài 07.
+ 
+-**Quy trình huấn luyện MLM (slide 23):** Input encoding (tokenize + embedding) → Masking → Forward pass qua các encoder → Prediction tại các vị trí `[MASK]` → Loss calculation (so với từ gốc) → giảm loss.
++**Quy trình huấn luyện MLM (slide 23):** Tokenize → chọn vị trí mục tiêu và thay token theo 80/10/10 → embedding + encoder → dự đoán ở mọi vị trí được chọn → loss với token gốc ở các vị trí đó → cập nhật trọng số. Loss gồm cả token được giữ nguyên hoặc thay ngẫu nhiên, không chỉ những vị trí đang mang `[MASK]`.
+ 
+ > ⚠️ **Thứ tự trên slide 23** ghi "input encoding" rồi mới "masking". Thực tế (\*), masking thực hiện trên **token id** trước khi tra embedding: `[MASK]` là một token trong từ vựng và có embedding riêng. Slide sắp xếp để dễ kể, không phải thứ tự trong code.
+ 
+@@ -274,7 +276,7 @@
+ 
+ **Nhận xét để viết báo cáo:**
+ - Accuracy 35% **không** có nghĩa mô hình kém. Có nhiều đáp án hợp lý: `lets`→`:` và `computers`→`us` vẫn đúng ngữ pháp và hợp nghĩa. Exact-match là thước đo khắt khe.
+-- **Hai `[MASK]` liền nhau khó hơn hẳn** (`human [MASK] [MASK]`): BERT dự đoán các vị trí bị che **độc lập** với nhau, nên đoán `language` cho cả hai (\*).
++- **Hai `[MASK]` liền nhau khó hơn hẳn** (`human [MASK] [MASK]`): trong một lượt forward, các head dự đoán cùng dựa trên ngữ cảnh đã che và không tự điều kiện hóa trên đáp án vừa sinh ở mask khác, nên đoán `language` cho cả hai (\*).
+ - Bài thực hành che **100% bằng `[MASK]`** để đánh giá. Đây là cách đo khác với quy tắc 80/10/10 dùng khi *huấn luyện*.
+ - Để báo cáo nghiêm túc hơn: dùng **nhiều câu** thay vì 1 câu, báo cáo thêm top-5 accuracy, và cố định seed.
+ 
+--- before/notes/design-rener-vn-waterfall.md
++++ notes/design-rener-vn-waterfall.md
+@@ -1,4 +1,6 @@
+ # ReNER-VN — bản thảo yêu cầu và kiến trúc hệ thống
++
++> Đính chính sơ đồ 11/10/2026: mục 16.1 sửa mũi tên để khớp quy tắc mục 16.2 — domain thuần không truy cập DB; use case/repository điều phối I/O. Không đổi lựa chọn stack hoặc phê duyệt baseline v0.2. Xem [bối cảnh hiện hành](HIEN-TRANG-VA-QUYET-DINH.md) và [phản biện](audit-2026-10-11/BAO-CAO-PHAN-BIEN.md).
+ 
+ Phiên bản **0.2 — 10/10/2026**. Trạng thái: **bản thiết kế để người dùng xem và chỉnh; chưa phê duyệt baseline, chưa code**. Mục 16 tổng hợp kiến trúc sau lượt đối chiếu code bổ sung của 10 repo; các yêu cầu P0 và lựa chọn extension từng tin giữ nguyên.
+ 
+@@ -606,10 +608,14 @@
+     HTTP --> READ[Read queries: catalog, so sánh, dashboard]
+     UC --> DOMAIN[Luật dữ liệu và eligibility dùng chung]
+     READ --> DOMAIN
+-    DOMAIN --> DB[(PostgreSQL: dữ liệu, revision, jobs, snapshot)]
++    UC --> REPO[Repository và transaction]
++    READ --> REPO
++    REPO --> DB[(PostgreSQL: dữ liệu, revision, jobs, snapshot)]
+     DB --> WORKER[Worker: lease, retry, pipeline Python]
+     WORKER --> NLP[Regex và LLM adapter]
+-    NLP --> DB
++    NLP --> SAVE[Use case lưu kết quả: kiểm lease, revision, hủy]
++    SAVE --> DOMAIN
++    SAVE --> REPO
+ ```
+ 
+ Luồng tham khảo Medusa là HTTP → workflow → module, nhưng ReNER không cần engine workflow của Medusa. Use case Python điều phối đủ cho phạm vi này. React-admin/Refine cung cấp bài học list/resource; Tabler cung cấp bài học tokens. Đề xuất P0 dùng component React theo feature trong Next.js với một hệ CSS/tokens thống nhất, chưa tích hợp nguyên framework admin. Nếu sau này CRUD chiếm phần lớn sản phẩm mới đánh giá lợi ích đưa một framework vào.
+--- before/notes/INDEX.md
++++ notes/INDEX.md
+@@ -1,4 +1,6 @@
+ # Tài liệu trong TMG301
++
++**Bắt đầu ở đây:** [Bối cảnh và quyết định hiện hành](HIEN-TRANG-VA-QUYET-DINH.md). [Phản biện toàn hồ sơ 11/10](audit-2026-10-11/BAO-CAO-PHAN-BIEN.md): 13 nhóm lỗi/lệch nghĩa đã hiệu chỉnh, 10 khoảng trống cần kiểm chứng; có bản trước sửa và phạm vi kiểm từng file.
+ 
+ | Chủ đề | Kế hoạch | Kiến thức tổng hợp | Log |
+ |---|---|---|---|
+@@ -13,10 +15,10 @@
+ Đối chiếu code 10 repo bổ sung: sổ kiến thức mục 23 và [snapshot nguồn](kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md). Thiết kế **v0.2 mục 16** ghi kiến trúc thống nhất, ownership/dependency, cây repo, frontend state, transaction/cache và AR01–AR08; log E1–E3. Bản thảo vẫn chưa duyệt và chưa triển khai.
+ 
+ 
+-Ưu tiên hiện hành sau xác nhận của người dùng: **nghiên cứu/bản thảo để học, mục tiêu demo; chưa thiết kế thêm hoặc code**. Xem [chuyên đề harness, scale, AI tạo web và tám repo sát đề tài](kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md), sổ kiến thức v0.6 mục 24 và log F1–F5. Giữ bản thiết kế v0.2 nguyên trạng; 5.000 người chỉ là ví dụ.
++Ưu tiên hiện hành sau xác nhận của người dùng: **nghiên cứu/bản thảo để học, mục tiêu demo; chưa thiết kế thêm hoặc code**. Xem [chuyên đề harness, scale, AI tạo web và tám repo sát đề tài](kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md), sổ kiến thức v0.6 mục 24 và log F1–F5. Giữ v0.2 ở trạng thái bản thảo; mũi tên dependency được đính chính ngày 11/10, không đổi stack; 5.000 người chỉ là ví dụ.
+ 
+ 
+-[Báo cáo tổng hợp công việc 09–10/10/2026](../BAO-CAO-TONG-HOP-CONG-VIEC.md): bản ngắn gồm yêu cầu của người dùng, kết quả đã làm, bằng chứng, giới hạn và tài liệu bàn giao.
++[Báo cáo tổng hợp công việc đến 11/10/2026](../BAO-CAO-TONG-HOP-CONG-VIEC.md): bản ngắn gồm yêu cầu của người dùng, kết quả đã làm, bằng chứng, giới hạn và tài liệu bàn giao.
+ 
+ 
+ Bổ sung 11/10/2026: [Gia công web và AI workflow](kusshoes-to-rener-vn/GIA-CONG-WEB-VA-AI-WORKFLOW.md) — brief/SOW/nghiệm thu/bàn giao; năm video/creator; nguồn template/component; tinh chỉnh sản phẩm so với fine-tune model. Sổ kiến thức v0.7 mục 25, log H0–H4.
+--- before/notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md
++++ notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md
+@@ -1,6 +1,6 @@
+ # Sổ kiến thức: từ KusShoes đến web ReNER-VN
+ 
+-Phiên bản 0.8 — cập nhật 11/10/2026. **Mục 26 bổ sung solo AI, 80/20, UX và cách chia việc/thay đổi lõi; lấy ReNER làm bài thực hành để phát triển năng lực nhận khách.** **Mục 25 bổ sung yêu cầu gia công web và workflow AI/template của creator; mục 24 giữ chuyên đề harness, scale và tám repo sát đề tài.** Người dùng xác nhận chỉ nghiên cứu/bản thảo, mục tiêu demo; 5.000 người là ví dụ học tập. Đối chiếu 10 repo ở mục 23; kiến trúc v0.2 giữ nguyên trạng thái bản thảo. Mục 18–21 giữ catalog/tutorial; mục 22 giữ lịch sử thiết kế ban đầu; walkthrough sâu KusShoes vẫn theo kế hoạch.
++Phiên bản 0.9 — phản biện 11/10/2026. **Mục 27 dẫn tới báo cáo audit và bối cảnh hiện hành.** **Mục 26 bổ sung solo AI, 80/20, UX và cách chia việc/thay đổi lõi; lấy ReNER làm bài thực hành để phát triển năng lực nhận khách.** **Mục 25 bổ sung yêu cầu gia công web và workflow AI/template của creator; mục 24 giữ chuyên đề harness, scale và tám repo sát đề tài.** Người dùng xác nhận chỉ nghiên cứu/bản thảo, mục tiêu demo; 5.000 người là ví dụ học tập. Đối chiếu 10 repo ở mục 23; kiến trúc v0.2 giữ nguyên trạng thái bản thảo. Mục 18–21 giữ catalog/tutorial; mục 22 giữ lịch sử thiết kế ban đầu; walkthrough sâu KusShoes vẫn theo kế hoạch.
+ 
+ Tài liệu này là điểm tra cứu chung cho toàn bộ kiến thức của các chặng trong [kế hoạch](PLAN.md); các phân tích dài có file chuyên đề liên kết để đọc riêng. Mỗi kết luận phân biệt: **quan sát** từ code/tài liệu, **đề xuất** cho ReNER-VN, hoặc **chưa xác minh**. [Log công việc](WORK_LOG.md) ghi phần đã thực hiện.
+ 
+@@ -605,3 +605,13 @@
+ - Git revert không hoàn tác DB/side effect; đổi tính năng lõi cần impact map và kế hoạch tương thích/khôi phục dữ liệu.
+ 
+ Nguồn và mức tiếp cận trong [hồ sơ mới](sources/solo-ai-2026-10-11/README.md), log I0–I5. Chưa khảo sát người dùng, benchmark, code ứng dụng, migration hay deploy. Thiết kế v0.2 giữ nguyên; các ví dụ không tự thành scope mới.
++
++## 27. Phản biện toàn hồ sơ — 11/10/2026
++
++Người dùng yêu cầu tìm sai sót, mâu thuẫn và khoảng trống trong kiến thức đã tổng hợp. [Báo cáo phản biện](../audit-2026-10-11/BAO-CAO-PHAN-BIEN.md) ghi 13 nhóm phát hiện, phần đã sửa, 10 gap còn mở, nguồn và giới hạn kiểm tra. [Trang bối cảnh hiện hành](../HIEN-TRANG-VA-QUYET-DINH.md) phân biệt xác nhận của người dùng, proposal gốc, web draft và nghiên cứu mở rộng.
++
++Các đính chính ảnh hưởng cách dùng tài liệu: publication của pilot là nội bộ; job không phải review; domain thuần không gọi DB; ví dụ test/command không phải kết quả đã chạy; không tự suy basis giá; harness không bảo đảm mọi rule. Prompt lên v1.2 với kiểm chứng theo rủi ro. Ghi chú NLP sửa Transformer/MST/MLM và đánh giá seqeval; claim 300 gold không còn là ngưỡng chung.
++
++Tư duy bổ sung: ưu tiên kiểm giả định có thể làm mất giá trị; nối nghiệm thu sản phẩm với nghiên cứu; đếm dữ liệu còn lại sau từng gate; một luật có một nơi sở hữu; quyết định ghi điều kiện khiến đổi ý. Không thêm framework hoặc feature vào demo trong lượt này. Các vấn đề đã có trong v0.2 như self-comparison, Unicode offsets, fencing, idempotency và deletion-after-restore được ghi nhận là đã có ở thiết kế, chưa test runtime.
++
++Log J0–J4; bản trước sửa, coverage và verification nằm trong thư mục audit. Không đánh dấu các walkthrough KusShoes còn thiếu là hoàn tất.
+--- before/notes/kusshoes-to-rener-vn/PLAN.md
++++ notes/kusshoes-to-rener-vn/PLAN.md
+@@ -268,3 +268,7 @@
+ Đã làm tuần tự I1 nguồn quốc tế/X/Trung Quốc → I2 UX/case study/sách và ưu tiên → I3 luồng/backend/chia việc một người → I4 thay đổi lõi/khôi phục → I5 liên kết hồ sơ/kiểm chứng. Đầu ra: [báo cáo](TU-VIBE-CODING-DEN-GIAO-WEB.md), [sổ tay thực hành](SO-TAY-CHIA-VIEC-CHO-AI.md). Nguồn social không đọc được ghi rõ; không nhận đã xem reels/video.
+ 
+ Xác nhận hiện hành: người dùng muốn hiểu flow, cần hỗ trợ mạnh nhất ở chuyển ý tưởng ngắn thành yêu cầu/task; hướng tới nhận khách, nhưng học bằng proposal/web ReNER trước và phải bài bản. Không tự chuyển sang bài landing page hoặc triển khai. Khi bắt đầu bài thực hành, nên dùng một tình huống tin giá mơ hồ để luyện brief → ví dụ → flow → task → bằng chứng. Kiến trúc v0.2 và những walkthrough chưa xong vẫn giữ nguyên trạng thái.
++
++## 16. Phản biện và hiệu chỉnh hồ sơ — 11/10/2026
++
++J1 đối chiếu proposal/kiến thức → J2 kiểm flow/quyền/prompt → J3 nguồn/hash/link → J4 hiệu chỉnh và bàn giao. Đầu ra: [báo cáo audit](../audit-2026-10-11/BAO-CAO-PHAN-BIEN.md), [bối cảnh](../HIEN-TRANG-VA-QUYET-DINH.md), bản trước sửa và kiểm chứng. Chỉ sửa tài liệu; v0.2 được đính chính sơ đồ dependency, vẫn chưa duyệt/triển khai. Những gap cần thực nghiệm giữ trạng thái mở; kế hoạch walkthrough cũ chưa xong không được đóng bằng lượt audit này.
+--- before/notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md
++++ notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md
+@@ -1,4 +1,6 @@
+ # Sổ tay: từ một câu ý tưởng đến công việc AI có thể làm và kiểm tra
++
++> Hiệu chỉnh 11/10/2026: “publication” trong ví dụ ReNER là công bố **nội bộ cho tài khoản có quyền**, theo bản thảo v0.2. [Bối cảnh và quyết định hiện hành](../HIEN-TRANG-VA-QUYET-DINH.md).
+ 
+ **11/10/2026 — bản thực hành đề xuất.** Dùng proposal/ReNER-VN làm bài chính, để luyện cách nghĩ áp dụng được cho dự án khác. Không phải task đã được phê duyệt để triển khai; chưa tạo issue/branch hay sửa ứng dụng. Đọc nền tảng tại [báo cáo nghiên cứu](TU-VIBE-CODING-DEN-GIAO-WEB.md).
+ 
+@@ -44,7 +46,7 @@
+ | Khó ở đâu? | Tin thiếu trường, nhiều loại giá, khó đối chiếu có căn cứ |
+ | Kết quả cần? | Lọc được tin phù hợp; biết khi nào có/không đủ điều kiện so sánh |
+ | Đầu vào được phép? | Một tin do người dùng chủ động chọn gửi; fixture cho demo |
+-| Ranh giới cần giữ? | Phân tích cá nhân khác đóng góp công khai; thông tin thiếu không tự biến thành 0 |
++| Ranh giới cần giữ? | Phân tích cá nhân khác đóng góp vào catalog nội bộ; thông tin thiếu không tự biến thành 0 |
+ | Thế nào là xong đợt đầu? | Một hành trình đầu-cuối chạy được với ví dụ thành công và ví dụ bị từ chối/thiếu dữ liệu |
+ | Ngoài đợt đầu? | Thu thập hàng loạt, thanh toán, tối ưu cho hàng nghìn người; không tự thêm vào scope |
+ | Chưa xác minh? | Nhu cầu thực tế người dùng, chất lượng trích xuất và cách extension hoạt động trên Facebook thật |
+@@ -71,7 +73,7 @@
+ | EX06 | Worker đang xử lý, người dùng sửa nội dung | Kết quả revision cũ không ghi đè revision mới |
+ | EX07 | User A biết ID bản nháp riêng của B | Backend từ chối đọc/sửa đúng chính sách; UI ẩn nút chưa đủ |
+ | EX08 | Kết quả trích xuất còn mơ hồ | Cho thấy phần chưa chắc; không tự gắn nhãn “đã xác minh thực tế” |
+-| EX09 | Chưa có hành động đóng góp hợp lệ | Tin riêng không xuất hiện trong catalog hoặc thống kê công khai |
++| EX09 | Chưa có hành động đóng góp hợp lệ | Tin riêng không xuất hiện trong catalog hoặc thống kê dùng chung nội bộ |
+ | EX10 | Nhóm thị trường có dưới 10 mẫu hợp lệ | Không trình median/IQR như kết luận đủ dữ liệu theo ngưỡng proposal |
+ 
+ Sau đó mới viết yêu cầu: **ai — khi nào — làm gì — theo luật nào — thấy kết quả gì — nếu lỗi thì sao**. Một tên tính năng như “search”, “dashboard” hoặc “AI extraction” chưa phải yêu cầu đủ để nghiệm thu.
+@@ -92,7 +94,7 @@
+ | S1 — nhận và xem lại một tin riêng | Quy tắc nguồn/quyền + hạ tầng tối thiểu | Nhận fixture hoặc input hợp lệ; chủ tin xem lại nguồn và trạng thái | Trống/quá dài, gửi lặp, người khác truy cập |
+ | S2 — một loại tin rõ ràng được trích xuất | S1 + contract kết quả | Giá/diện tích/đơn vị có bằng chứng; trường thiếu rõ ràng | EX01–04; timeout/response model không hợp lệ |
+ | S3 — sửa kết quả và giữ revision | S2 | Sửa lỗi trích xuất và nhìn thấy bản hiện hành | EX06, user khác sửa, lưu đồng thời |
+-| S4 — đóng góp và duyệt để công khai | S3 + luật publication | Một tin đủ điều kiện vào tập công khai qua hành động đúng quyền | EX07–09, thu hồi, kết quả cũ không tự xuất bản |
++| S4 — đóng góp và duyệt vào catalog nội bộ | S3 + luật publication | Một tin đủ điều kiện vào catalog nội bộ qua hành động đúng quyền | EX07–09, thu hồi, kết quả cũ không tự xuất bản |
+ | S5 — tìm/lọc/so sánh đúng tập tin | S4 + luật so sánh | Một người hoàn thành tác vụ tìm tin và giải thích kết quả | Không có kết quả, thiếu giá, khác đơn vị, EX10 |
+ 
+ Đây là thứ tự để luyện phân rã, không thay kế hoạch/kiến trúc đã có. Actor chính vẫn là người tìm trọ; phần admin phục vụ chất lượng dữ liệu và vận hành flow đó. Những yêu cầu học thuật về baseline/đánh giá NLP phải có task riêng và liên kết sang S2/S5, không bị che mất bởi web chạy được.
+@@ -112,7 +114,7 @@
+ 
+ Luật:
+ - Chỉ chủ sở hữu được đọc bản nháp theo chính sách đã chốt.
+-- Tin riêng không tự trở thành tin công khai.
++- Tin riêng không tự trở thành tin dùng chung nội bộ; công bố ngoài Internet là thay đổi phạm vi riêng.
+ - Lần gửi lại cùng key và cùng payload không tạo bản ghi thứ hai.
+ - Cùng key nhưng payload khác phải xử lý xung đột rõ, không âm thầm thay nội dung.
+ 
+@@ -269,3 +271,7 @@
+ Đó là kỹ năng mang sang shop, đặt lịch hay quản trị: thay actor, dữ liệu và luật; giữ cách hỏi, lập luồng, chia phần, chứng minh và quản lý thay đổi. Mục tiêu không phải nhớ một cây thư mục rồi áp vào mọi dự án.
+ 
+ Nguồn phương pháp và giới hạn xem trong [báo cáo nghiên cứu](TU-VIBE-CODING-DEN-GIAO-WEB.md). Bộ prompt trên là tổng hợp riêng theo bối cảnh của bạn, chưa được benchmark hiệu quả và không bảo đảm AI không mắc lỗi.
++
++## Bổ sung sau phản biện: S0 cần trả lời gì trước khi chia feature?
++
++Chọn một điểm có thể làm hỏng toàn bộ giá trị, không mặc định bắt đầu bằng dựng auth hay dashboard: có nguồn được phép; lấy đủ một tin; phân biệt giá/phí/đơn vị; sau lọc còn đủ tin so sánh; người dùng hiểu kết quả. Mỗi thử nghiệm ghi giả định, ví dụ, quan sát và quyết định tiếp tục/thu hẹp. Có thể dùng fixture để kiểm kỹ thuật, nhưng không dùng fixture chứng minh nguồn thật hoặc độ chính xác ngoài đời. Đây là đề xuất thứ tự học; chưa tạo task hay chạy thử nghiệm.
+--- before/notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md
++++ notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md
+@@ -1,4 +1,6 @@
+ # Từ vibe coding đến làm web có thể bàn giao
++
++> Hiệu chỉnh 11/10/2026 sau phản biện: ví dụ ReNER áp dụng pilot có tài khoản và **catalog nội bộ**, không ngầm mở dữ liệu thật ra Internet. Job và review tách state. Xem [bối cảnh hiện hành](../HIEN-TRANG-VA-QUYET-DINH.md); các ví dụ vẫn chưa triển khai.
+ 
+ **Ngày nghiên cứu: 11/10/2026.** Tài liệu học và bản thảo; chưa triển khai các đề xuất dưới đây. Dùng ReNER-VN làm ví dụ xuyên suốt, giữ nguyên thiết kế v0.2 và mục tiêu demo. Mục tiêu học là làm bài bản để áp dụng tư duy sang nhiều dự án và tiến tới nhận khách.
+ 
+@@ -86,7 +88,7 @@
+ | Tìm được thứ phù hợp | Lọc địa điểm/giá; giữ lựa chọn khi quay lại từ chi tiết | Hoàn thành nhiệm vụ tìm tin mà không cần người hướng dẫn |
+ | Tin tưởng có căn cứ | Có nguồn, ngày thu thập, nội dung gốc phù hợp quyền và nhãn chưa xác minh | Người thử biết đây là dữ liệu trích xuất, không xác nhận phòng còn trống |
+ | Biết hệ thống đang làm gì | Đang nhận/đang xử lý/thất bại/cần sửa được phân biệt | Khi lỗi, người dùng biết bước tiếp theo; không bấm gửi lặp vì im lặng |
+-| Sửa sai và kiểm soát | Xem lại trước gửi, sửa bản nháp; đóng góp công khai là hành động riêng | Không vô tình chia sẻ dữ liệu riêng |
++| Sửa sai và kiểm soát | Xem lại trước gửi, sửa bản nháp; đóng góp vào catalog nội bộ là hành động riêng | Không vô tình chia sẻ dữ liệu riêng |
+ | Dùng được trên thiết bị của họ | Chữ, nút, filter trên mobile; thao tác bàn phím; focus rõ | Chạy nhiệm vụ thực tế ở màn hình nhỏ và bằng bàn phím |
+ | Cảm giác chỉn chu | Nhịp chữ/khoảng cách nhất quán; motion báo thay đổi | Animation không cản đọc giá, không mất vị trí cuộn |
+ 
+@@ -114,7 +116,7 @@
+ | Khả năng thay đổi và kiểm tra | Sửa một tính năng làm hỏng nhiều phần không biết | Task nhỏ, contract rõ, kiểm tra hồi quy luồng quan trọng |
+ | Bàn giao/vận hành | Chỉ chạy trên máy người làm; không ai phục hồi được | Cài theo README ở môi trường sạch và diễn tập khôi phục |
+ 
+-**Ưu tiên học ReNER:** (1) phân biệt giá và dữ liệu thiếu; (2) một flow đầu-cuối; (3) quyền riêng tư/công khai; (4) lỗi và khôi phục; (5) UI giúp tìm và hiểu. Animation trang trí, chatbot hoặc nhiều dashboard chưa có câu hỏi nghiệp vụ là phần xét sau. Không dùng thứ tự này để cắt các yêu cầu nghiên cứu/NLP trong proposal; phải giữ truy vết yêu cầu môn học riêng.
++**Ưu tiên học ReNER:** (1) phân biệt giá và dữ liệu thiếu; (2) một flow đầu-cuối; (3) quyền cá nhân/công bố nội bộ; (4) lỗi và khôi phục; (5) UI giúp tìm và hiểu. Animation trang trí, chatbot hoặc nhiều dashboard chưa có câu hỏi nghiệp vụ là phần xét sau. Không dùng thứ tự này để cắt các yêu cầu nghiên cứu/NLP trong proposal; phải giữ truy vết yêu cầu môn học riêng.
+ 
+ Waterfall vẫn có quản lý thay đổi: bản yêu cầu có mốc chốt để triển khai, nhưng khi sai phải quay lại phần bị ảnh hưởng và lập baseline mới. Chờ đến cuối mới cho người dùng thử làm tăng nguy cơ phát hiện sai muộn. Đề xuất ở đây là tài liệu theo chặng rõ ràng, kèm kiểm tra sớm bằng ví dụ và prototype; không gọi đó là Waterfall thuần hoặc chuẩn duy nhất.
+ 
+@@ -143,7 +145,7 @@
+ Học trách nhiệm từng phần thay vì thuộc tên framework:
+ 
+ - API chuyển request thành input có kiểu, xác thực và trả lỗi rõ. Frontend có thể kiểm tra để hỗ trợ UX, nhưng backend vẫn phải thực thi luật/quyền.
+-- Use case như “gửi tin”, “sửa kết quả”, “duyệt công khai” chứa chính sách; không phân tán cùng luật vào nhiều màn hình.
++- Use case như “gửi tin”, “sửa kết quả”, “duyệt công bố nội bộ” chứa chính sách; không phân tán cùng luật vào nhiều màn hình.
+ - Module chuẩn hóa giá có thể là hàm thuần: input/output rõ, dễ kiểm tra không cần mạng. Đưa gọi LLM, DB, gửi email vào ranh giới I/O.
+ - Module nào sở hữu dữ liệu thì điều khiển thay đổi dữ liệu đó; phần khác gọi interface thay vì sửa bảng tùy tiện.
+ - CRUD đơn giản có thể dùng trực tiếp cơ chế DB của framework. Thêm repository/adapter khi có ích cho thay thế provider, gom query hoặc kiểm thử; không tạo một lớp cho mỗi tên trong sách.
+@@ -156,7 +158,7 @@
+ api/modules/
+   submissions/        nhận tin và quyền sở hữu
+   extraction/         trích xuất, chuẩn hóa, revision
+-  publication/        duyệt và snapshot được phép công khai
++  publication/        duyệt và snapshot được phép công bố nội bộ
+   catalog/            tìm/lọc và so sánh đúng tập dữ liệu
+ api/platform/         DB connection, cấu hình, logging, auth plumbing
+ worker/               entry point chạy use case nền của backend
+@@ -181,19 +183,18 @@
+ 
+ ## 6. Điều phối logic phức tạp mà vẫn hiểu được
+ 
+-Phải tách **AI hỗ trợ viết phần mềm** khỏi **LLM nằm trong sản phẩm**. Agent có thể đề xuất code; điều đó không có nghĩa để LLM tự quyết ai được công khai tin hoặc tự ghi mọi bảng. Những quyết định rõ quy tắc nên được kiểm soát bởi backend.
+-
+-Ví dụ học tập cho một job trích xuất, không phải đặc tả mới đã chốt:
++Phải tách **AI hỗ trợ viết phần mềm** khỏi **LLM nằm trong sản phẩm**. Agent có thể đề xuất code; điều đó không có nghĩa để LLM tự quyết ai được công bố tin vào catalog nội bộ hoặc tự ghi mọi bảng. Những quyết định rõ quy tắc nên được kiểm soát bởi backend.
++
++Ví dụ học tập cho **một lần thực thi job**, không phải toàn bộ đặc tả retry/cancel. `Succeeded` chỉ nghĩa xử lý xong; candidate review có vòng đời riêng (`pending → approved | rejected`). Người dùng xem/xác nhận kết quả không làm job mới thành công. Chi tiết concurrency theo bản thảo v0.2 §6.4 và §16.5.
+ 
+ ```mermaid
+ stateDiagram-v2
+   [*] --> Queued
+   Queued --> Running: worker nhận việc
+-  Running --> NeedsReview: lưu kết quả hợp lệ
++  Running --> Succeeded: lưu kết quả xử lý hợp lệ
+   Running --> RetryWait: lỗi tạm thời
+   RetryWait --> Queued: còn ngân sách retry
+   Running --> Failed: lỗi cố định hoặc hết retry
+-  NeedsReview --> Done: người dùng xác nhận
+   Queued --> Cancelled: hủy hợp lệ
+   Running --> Cancelled: ghi nhận hủy và chặn ghi kết quả muộn
+ ```
+--- before/notes/kusshoes-to-rener-vn/WORK_LOG.md
++++ notes/kusshoes-to-rener-vn/WORK_LOG.md
+@@ -393,3 +393,27 @@
+ Ngày 11/10/2026. Người dùng yêu cầu tự phản biện toàn bộ tài liệu nghiên cứu, tìm sai sót/khoảng trống và bổ sung tư duy. Dùng admin và hallucination-guard, không code app. Thứ tự: J1 kiểm kê và đối chiếu proposal/nghiên cứu → J2 kiến trúc, quyền, flow và AI workflow → J3 kiểm nguồn/số liệu/tính nhất quán → J4 sửa nội dung có căn cứ, lập gaps và kiểm tra lại.
+ 
+ Kiểm kê ban đầu 28 Markdown do dự án tổng hợp (bao gồm ghi chú môn học, báo cáo local và lịch sử), tổng 594.454 ký tự; không coi source clone/vendor/build là tài liệu do mình viết. Lưu hash trước sửa và kết quả quét claim tự động tại notes/audit-2026-10-11. Quét máy không đồng nghĩa đọc sâu từng dòng; báo cáo sẽ ghi mức kiểm tra và giới hạn cho từng file. Proposal gốc và source snapshot giữ nguyên; tài liệu lịch sử được ghi chú thay vì viết lại quá khứ.
++
++
++## J1 — hoàn thành đối chiếu proposal và nền tảng
++
++11/10/2026. Kiểm lại proposal v1.3, đối chiếu RQ2 với baseline/ablation và các định nghĩa metric trong foundation. Phần lớn cảnh báo về N nhỏ, selection bias, grounding sai vai trò và leakage đã có từ 09/10, không nhận là phát hiện mới. Phát hiện ghi chú môn học diễn giải sai giới hạn Transformer/MST; note fine-tuning mô tả trọng số và MASK quá tuyệt đối; báo cáo 03/10 gán partial matching cho seqeval và điều kiện 300 bài quá cứng. Đã sửa các chỗ này, giữ log lab lịch sử và proposal gốc. Sao lưu 28 Markdown trước sửa; lưu hash bảy proposal/workbook gốc.
++
++## J2 — hoàn thành đối chiếu flow và khuôn giao việc
++
++11/10/2026. Phát hiện drift công bố nội bộ → công khai trong hai tài liệu mới; job state bị gộp review; sơ đồ v0.2 cho domain gọi DB trái bảng dependency; template chứa số test/path giả lập, ví dụ per_room thiếu chứng cứ, gate áp đồng loạt và đánh giá quá mức harness. Đã sửa hai sổ tay, sơ đồ và prompt v1.2. Đây là sửa tính nhất quán của tài liệu, không phê duyệt kiến trúc, tạo app, chạy app test hay thay skill đã cài. Tiếp theo kiểm chứng link/hash, lập gaps và thứ tự học.
++
++## J3 — hoàn thành kiểm nguồn và tính nhất quán bằng chứng
++
++11/10/2026. Mở/tra nguồn chính thức W3C, Transformer/BERT, dependency parsing, HF perplexity, seqeval, Spec Kit, Playwright MCP, Hey API/Orval. Orval /overview lỗi nên dùng trang chính, không nhận đã đọc trang lỗi. Re-scan prompt phát hiện còn gate 400 dòng/quyền trong mẫu P4 sau lượt sửa đầu; đã sửa tiếp để nhất quán với nguyên tắc kiểm theo rủi ro.
++
++Kiểm hash nguồn ghi sẵn: 92 bản ghi có path/hash khớp, 13 entry không đủ hash/path được ghi là bỏ qua; bảy proposal/workbook gốc còn nguyên. Không coi hash là bằng chứng diễn giải đúng nguồn. Reader HTML foundation được rà scope/số liệu và ghi hash, chưa render lại. Đã tạo báo cáo audit, coverage và trang bối cảnh; đang kiểm lại bộ tài liệu bàn giao sau cập nhật index/log.
++
++
++## J4 — bàn giao phản biện và kiểm tra sau sửa
++
++11/10/2026. Hoàn thành báo cáo 13 nhóm lỗi/lệch nghĩa và 10 gap còn mở; trang bối cảnh hiện hành; bảng mức kiểm từng tài liệu; sổ nguồn; bản trước sửa; diff và script kiểm tra. Hiệu chỉnh 14 Markdown có sẵn, thêm bốn Markdown điều hướng/audit. Không tự chốt enum/stack mới hoặc viết lại proposal.
++
++Kiểm chứng cuối nội dung: 32 Markdown, 182 link local có đích, fence cân bằng, không ký tự thay thế Unicode; 92 bản ghi nguồn có hash khớp, 13 entry không đủ hash/path được liệt kê bỏ qua; bảy proposal/workbook gốc và một reader HTML giữ hash. Re-scan các chuỗi sai đã sửa không còn trong các đoạn hiện hành. Command verify_documents.py trả exit 0; verification.json lưu số liệu và hash sau sửa. Bản trước sửa có thể chứa lỗi cũ có chủ đích để truy lịch sử.
++
++Giới hạn: quét cả 28 tài liệu gốc và đọc sâu các đoạn rủi ro, không chứng nhận mọi câu/mọi repo đúng. Không rerun app/lab, legal audit, user test, benchmark hoặc render toàn Mermaid. Vấn đề đã được design v0.2 nhận diện không bị tính thành phát hiện mới. Các gap về nguồn, gold/evaluator, ontology và khả năng so sánh giữ trạng thái chưa thực nghiệm.
+--- before/notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md
++++ notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md
+@@ -1,6 +1,6 @@
+ # Quy chuẩn prompt kiến trúc để giao việc cho AI
+ 
+-**Phiên bản 1.1 — cập nhật 11/10/2026.** Áp dụng được cho nhiều dự án web/full-stack có AI tham gia code. Ví dụ điền sẵn lấy từ ReNER-VN (TMG301), nhưng khung không phụ thuộc đề tài.
++**Phiên bản 1.2 — phản biện 11/10/2026.** Áp dụng được cho nhiều dự án web/full-stack có AI tham gia code. Ví dụ điền sẵn lấy từ ReNER-VN (TMG301), nhưng khung không phụ thuộc đề tài.
+ 
+ **File này dùng để làm gì:** cho bạn một bộ khuôn có thể copy để giao việc cho AI (Claude Code, Codex, Antigravity, Copilot…) sao cho AI làm đúng phạm vi, không bịa, có bằng chứng, mà vẫn còn chỗ sáng tạo và đi được tới bản demo/deploy.
+ 
+@@ -8,17 +8,17 @@
+ 
+ ---
+ 
+-> Cập nhật theo xác nhận mới của người dùng: ưu tiên hiểu luồng và chuyển ý tưởng thành task; dùng ReNER/proposal làm bài thực hành bài bản. Xem [sổ tay mới](../kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md), đặc biệt mục 7 về giới hạn của hard rule. Các template phạm vi file/STOP ở bản này là lựa chọn kiểm soát cho task rủi ro cao, không bắt buộc cho mọi chỉnh sửa. Chỉ dẫn hiện hành của chủ dự án có thể thay baseline cũ; AI cần ghi tác động, không lấy tài liệu cũ để bác yêu cầu mới. Lượt cập nhật này sửa nguyên tắc ưu tiên và ba dòng khuôn chính; chưa audit lại toàn bộ template hoặc sửa skill cài đặt.
++> Cập nhật theo xác nhận mới của người dùng: ưu tiên hiểu luồng và chuyển ý tưởng thành task; dùng ReNER/proposal làm bài thực hành bài bản. Xem [sổ tay mới](../kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md), đặc biệt mục 7 về giới hạn của hard rule. Các template phạm vi file/STOP ở bản này là lựa chọn kiểm soát cho task rủi ro cao, không bắt buộc cho mọi chỉnh sửa. Chỉ dẫn hiện hành của chủ dự án có thể thay baseline cũ; AI cần ghi tác động, không lấy tài liệu cũ để bác yêu cầu mới. Bản 1.2 đã rà toàn bộ khuôn: phân biệt ví dụ với bằng chứng thật, giảm gate máy móc và sửa dependency/state/contrast. Không sửa skill đã cài. Mọi cây file, API, lệnh, R/B/AT trong template dưới đây là minh họa; phải kiểm tra hoặc tạo khi triển khai, không phải hiện trạng ReNER. [Bối cảnh hiện hành](../HIEN-TRANG-VA-QUYET-DINH.md).
+ 
+ ## 1. Vì sao cần một quy chuẩn, không chỉ một prompt dài
+ 
+-Ba nguồn chính thức và ba repo thực tế cùng chỉ ra một điều: **chất lượng việc AI làm phụ thuộc vào việc nó có đúng ngữ cảnh, đúng phạm vi và một phép kiểm tra tự chạy được hay không**, không phụ thuộc vào độ dài prompt.
++Các nguồn dưới gợi ý chú ý ngữ cảnh, phạm vi và cách kiểm chứng. Đây là tổng hợp thực hành, chưa là thử nghiệm chứng minh một mẫu prompt tối ưu. Độ dài và mức liên quan đều ảnh hưởng khả năng sử dụng context; nhiều chữ không tự tạo yêu cầu rõ ràng.
+ 
+ | Bằng chứng | Nội dung đã đọc | Hệ quả cho quy chuẩn |
+ |---|---|---|
+-| [Claude Code best practices](https://code.claude.com/docs/en/best-practices) | "Give Claude a check it can run: tests, a build, a screenshot to compare." Không có phép kiểm tra thì "looks done" là tín hiệu duy nhất | Mỗi task phải có lệnh kiểm chứng trả về pass/fail |
+-| Cùng nguồn | Spec tốt "name the files and interfaces involved, state what is out of scope, and end with an end-to-end verification step" | Task card bắt buộc có file, interface, ngoài phạm vi, bước kiểm chứng đầu-cuối |
+-| Cùng nguồn | CLAUDE.md quá dài khiến quy tắc quan trọng bị bỏ qua; hỏi "Would removing this cause Claude to make mistakes?" | Tầng hiến chương phải ngắn; kiến thức dài để ở file đọc khi cần |
++| [Claude Code best practices](https://code.claude.com/docs/en/best-practices) | Khuyến khích cung cấp cách kiểm kết quả bằng test, build hoặc đối chiếu ảnh | Task code có kiểm chứng thực thi phù hợp; task nghiên cứu có nguồn và điều kiện kết luận |
++| Cùng nguồn | Làm rõ phạm vi, interface và cách kiểm hành vi cuối | Nêu ranh giới và cách quan sát kết quả; không ép E2E cho mọi thay đổi |
++| Cùng nguồn | Giữ nội dung hướng dẫn có ích; loại phần thừa và đọc tài liệu chi tiết khi cần | Tầng hiến chương phải ngắn; kiến thức dài để ở file đọc khi cần |
+ | [Anthropic — context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) (29/09/2025) | Ngữ cảnh là "a finite resource with diminishing marginal returns"; nên giữ "lightweight identifiers" rồi nạp đúng lúc | Prompt chỉ trỏ đường dẫn, không dán cả tài liệu |
+ | [DORA 2025](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report) (24/09/2025) | AI khuếch đại cái đang có; tương quan tích cực với throughput nhưng **tiêu cực với độ ổn định** delivery | Phải có cổng chất lượng và lô nhỏ; tốc độ không bù được thiếu kiểm chứng |
+ | [DORA AI Capabilities Model](https://dora.dev/ai/capabilities-model/questions/) | 7 năng lực, trong đó có "Strong version control practices", "Working in small batches", "User-centric focus", "AI-accessible internal data" | Task nhỏ, có version control, có tài liệu nội bộ AI đọc được, bám người dùng |
+@@ -57,7 +57,7 @@
+ 
+ **Quy tắc quản lý yêu cầu:** chỉ dẫn hiện hành của chủ dự án có thể cập nhật brief/domain/contract đã duyệt; khi xung đột, AI chỉ ra tác động và cập nhật các tài liệu liên quan trong phạm vi được giao. Nếu chưa có thay đổi mới, dùng brief → domain → contract → task để tra cứu tính nhất quán. Hỏi khi thiếu quyết định nghiệp vụ, quyền, dữ liệu hoặc thay đổi khó đảo ngược; chi tiết triển khai dễ đảo ngược có thể tự chọn và ghi giả định. Mọi hành động vẫn chịu quyền công cụ và chính sách hệ thống, không bị một file Markdown tự cấp quyền.
+ 
+-**Quy tắc ngắn gọn:** L0 dưới khoảng 150 dòng. Các tầng khác dài bao nhiêu cũng được, vì AI chỉ đọc phần task card trỏ tới.
++**Quy tắc ngắn gọn:** ưu tiên thông tin liên quan và nạp dần. 150 dòng không phải ngưỡng khoa học; tài liệu tầng dưới cũng cần mục lục và phạm vi đọc. Không nhân bản cùng một luật vào bảy nơi; có thể gộp tầng thành một brief/task ngắn cho dự án một người.
+ 
+ ---
+ 
+@@ -93,7 +93,7 @@
+ 3. Verify existing packages, endpoints and symbols before relying on them. Propose new helpers or interfaces when needed within scope; label them as new, and assess contract, dependency, permission and migration impacts.
+ 4. No drive-by refactors or reformatting outside the ticket diff.
+ 5. Never bypass gates: no --no-verify, no disabling tests/lint, no force push, no direct push to main.
+-6. Self-correction budget: max 3 attempts on the same failing check, then stop and report the failing evidence.
++6. Self-correction: investigate each failure; change hypotheses using evidence. Escalate when progress stalls, required information is missing, or an agreed cost/time budget is exhausted. Do not repeat the same failing action blindly.
+ 7. Secrets never enter code, logs, prompts or commits.
+ 
+ ## Architecture rules that are easy to break
+@@ -108,7 +108,7 @@
+ Changed / Verified (command + result) / Not verified / Deviations from ticket / Next.
+ ```
+ 
+-**Vì sao các quy tắc này:** quy tắc 1–6 lấy gần nguyên từ `AGENTS.md` của ChoThueGiupViec, nơi chúng được script ép (scope-check, guard-command, hook). Nếu dự án của bạn **chưa có script ép**, ghi rõ đó là quy ước tự giác; một file cấu hình không chứng minh AI đã tuân thủ (nghiên cứu harness, phần 2.2).
++**Nguồn và mức thực thi:** khuôn tham khảo ChoThueGiupViec rồi điều chỉnh cho dự án này. `scope-check` kiểm vùng file; guard-command/hook chặn một số mẫu lệnh; verify chạy các kiểm tra được cấu hình. Chúng không chứng minh mọi luật 1–6 đều được ép, nghiệp vụ đúng hoặc mọi đường thực thi đều an toàn. Rule Markdown, kiểm tra CI và quyền công cụ là ba cơ chế khác nhau. Xem [nghiên cứu harness §2](../kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md).
+ 
+ ---
+ 
+@@ -172,10 +172,12 @@
+ 
+ ```markdown
+ ## Job
+-queued -> running -> succeeded | failed
+-running -> retry_wait -> queued   (transient errors only)
+-Any other transition -> 409.
+-Who may trigger: worker (system), owner (retry within quota), admin.
++Example only: queued -> running -> succeeded | failed.
++Transient retry, cancellation and owner retry need their own transition table:
++actor + current state + allowed error + quota + revision/lease -> next state.
++Choose explicitly whether retry requeues the job or creates a linked new attempt; do not infer from this sketch.
++Reject unsupported user transitions; stale worker updates are fenced at persistence.
++Review states are separate from execution states.
+ Invariant: "succeeded" means processing finished, NOT that the result is approved.
+ ```
+ 
+@@ -183,7 +185,7 @@
+ 
+ ### 5.4 Configurable values — số nghiệp vụ nằm một chỗ
+ 
+-Mọi ngưỡng (N tối thiểu, cửa sổ ngày, timeout, quota) nằm trong một file cấu hình có ghi `DEFAULT — to be confirmed at G2`. Học từ `decisions.md` §G-4 của ChoThueGiupViec: "Do not scatter numbers in handlers". AI không được tự đặt số.
++Mọi ngưỡng (N tối thiểu, cửa sổ ngày, timeout, quota) nằm trong một file cấu hình có ghi `DEFAULT — to be confirmed at G2`. Học từ `decisions.md` §G-4 của ChoThueGiupViec: "Do not scatter numbers in handlers". Ngưỡng có ý nghĩa nghiệp vụ cần quyết định rõ; mặc định kỹ thuật dễ đảo có thể đề xuất kèm lý do và phép đo, không ngầm biến thành yêu cầu đã duyệt.
+ 
+ ---
+ 
+@@ -200,12 +202,14 @@
+ | catalog | listing, published_pointer | publish(), hide(), query() | decide approval |
+ ```
+ 
+-Quy tắc: một bảng có đúng một module chủ. Use case xuyên module gọi interface công khai trong cùng transaction, không viết SQL vào bảng module khác. Bài học từ thiết kế ReNER v0.2 mục 16.2 (đối chiếu Medusa, Saleor, Outline); ChoThueGiupViec ép điều này bằng "module không gọi trực tiếp module khác, chỉ qua port hoặc event".
++Quy tắc đề xuất: một bảng có một module chịu trách nhiệm ghi. Use case xuyên module gọi interface công khai trong cùng transaction, không viết SQL vào bảng module khác. Bài học từ thiết kế ReNER v0.2 mục 16.2 (đối chiếu Medusa, Saleor, Outline). ChoThueGiupViec có quy ước port/event và kiểm dependency theo một số mẫu import; không suy rằng CI chứng minh mọi ranh giới module đã đúng.
+ 
+ ### 6.2 Quy tắc phụ thuộc giữa các lớp
+ 
+ ```markdown
+-page/component -> feature hook -> generated API client -> HTTP -> use case -> domain rules -> repository -> DB
++page/component -> feature hook -> generated API client -> HTTP -> use case
++use case -> pure domain rules (no I/O)
++use case -> repository/provider adapter -> DB/external service
+ Forbidden: component imports SQL/LLM key; domain rule calls network; worker re-implements extraction logic.
+ ```
+ 
+@@ -220,7 +224,7 @@
+ 
+ ### 6.4 Dữ liệu
+ 
+-ERD khái niệm + bảng ràng buộc: tiền là số nguyên, thời gian UTC, khóa idempotency, unique constraint, soft-delete hay hard-delete, retention. Chỉ schema steward sửa migration.
++ERD khái niệm + bảng ràng buộc: tiền là số nguyên, thời gian UTC, khóa idempotency, unique constraint, soft-delete hay hard-delete, retention. Nhóm nhiều người chỉ định người chịu trách nhiệm schema; làm một mình thì cùng người đảm nhiệm nhưng vẫn cần migration review/backup phù hợp rủi ro.
+ 
+ ### 6.5 Ba loại state ở frontend
+ 
+@@ -236,17 +240,17 @@
+ 
+ ## 7. L4 — Khuôn task card (phần dùng nhiều nhất)
+ 
+-Task card là đơn vị giao việc. **Một card = một lát dọc nhỏ có test riêng = một branch = một agent.**
++Task card là đơn vị giao việc. **Một card nên tạo một kết quả kiểm chứng được.** Feature thường chia lát dọc; nghiên cứu, scaffold hoặc pure normalizer có đơn vị khác. Branch theo thay đổi cần review; không bắt buộc một agent hay một PR cho từng card.
+ 
+ ```markdown
+ ## [R03-T2] Reviewer approves a candidate with an edited rent
+ Type: feature | bugfix | refactor | spike | docs
+ Trace: R03 · B05, B08, B13 · AT09, AT12
+-Owner: <member> · Agent: <tool> · Size: S (<= ~400 changed lines)
++Owner: <member> · Tool/agent: <if used> · Review scope: <bounded outcome and risks>
+ Blocked by: R03-T1 (candidate API) — must be merged
+ 
+ ### Today (current behaviour, with evidence)
+-Approve button exists in mock UI only; POST /admin/reviews/{id}/decision returns 501 (apps/api/app/api/review.py:41).
++<Inspect current files/runtime and attach actual evidence. This example does not assert that a review UI, API, or source file exists.>
+ 
+ ### Goal (user-visible outcome)
+ A reviewer edits the rent field with a reason and approves; the listing appears in search with the new rent; audit shows who/what/why.
+@@ -280,9 +284,9 @@
+ - `npm --prefix apps/web run typecheck && npm --prefix apps/web test -- reviews`
+ - E2E: `npx playwright test e2e/review-approve.spec.ts` + screenshot of success and 409 states
+ ### Stop conditions
+-- A rule is ambiguous or missing -> ask in the issue.
++- Unresolved business/permission decision changes acceptance -> ask; reversible implementation detail -> choose and record.
+ - Need a file outside allowed paths -> Scope exception.
+-- Same check fails 3 times -> stop with evidence.
++- No progress after evidence-based investigation or agreed budget exhausted -> report evidence and the missing input.
+ ### Definition of Done
+ Acceptance 1–5 pass with evidence · no file outside allowed paths · client regenerated if schema changed · PR links this issue and lists what was NOT verified.
+ ```
+@@ -300,9 +304,9 @@
+ | Verification có lệnh cụ thể | "Looks done" | Claude Code best practices |
+ | Stop conditions | Vòng lặp vô hạn, đoán luật | ChoThueGiupViec rule 8 |
+ 
+-**Definition of Ready** (trước khi giao): card có Goal, Allowed paths, ít nhất 3 acceptance gồm 1 lỗi và 1 quyền, lệnh verify chạy được trên máy người giao, blocker đã merge. Thiếu một điều thì chưa giao.
+-
+-**Kích thước:** ~400 dòng thay đổi là ngưỡng kinh nghiệm để review còn ý nghĩa (`scaffold-project/references/team-workflow.md` §3); đây là quy tắc vận hành, không phải số đo.
++**Definition of Ready:** biết kết quả, phạm vi, ví dụ đúng/sai và cách kiểm phù hợp. Task quyền cần kiểm quyền; pure normalizer cần ca dữ liệu; docs cần đối chiếu nguồn/link. Khi scaffold chưa có command, task phải tạo và chứng minh command thay vì giả có sẵn. Blocker là dữ liệu/interface cần thiết, không mặc định mọi task trước phải merge.
++
++**Kích thước:** giới hạn theo một hành vi và khả năng review; dòng generated, migration và logic phức tạp có chi phí đọc khác nhau. Không dùng 400 dòng như chuẩn phổ quát.
+ 
+ ---
+ 
+@@ -312,18 +316,18 @@
+ 
+ | Mức | Chạy khi nào | Kiểm gì | Không chứng minh được |
+ |---|---|---|---|
+-| V1 nhanh | Sau mỗi lần sửa | format, lint, type-check | Logic đúng |
+-| V2 đơn vị | Trước commit | unit test, contract test | Tích hợp DB thật |
+-| V3 tích hợp | Trước PR | integration với DB thật, policy thật, build | Trải nghiệm người dùng |
+-| V4 hành trình | Trước merge phase/demo | E2E Playwright + screenshot các trạng thái + a11y | Tải lớn, dữ liệu thật ngoài fixture |
++| V1 nhanh | Thay đổi code/cấu hình có kiểm tra tương ứng | format, lint, type-check | Logic đúng |
++| V2 đơn vị | Thay đổi logic/contract | unit test, contract test | Tích hợp DB thật |
++| V3 tích hợp | Thay đổi DB/quyền/tích hợp | integration với DB thật, policy thật, build | Trải nghiệm người dùng |
++| V4 hành trình | Thay đổi flow quan trọng hoặc bàn giao demo | E2E Playwright + screenshot các trạng thái + a11y | Tải lớn, dữ liệu thật ngoài fixture |
+ 
+ Bài học từ ChoThueGiupViec: verify L3 của họ không gọi frontend test, và một PR ghi "migration chưa áp dụng, chưa test với DB thật" dù CI xanh. Vì vậy **báo cáo phải ghi rõ mức nào đã chạy**, không gói thành "CI xanh".
+ 
+ ### 8.2 Kiểm chứng giao diện là kiểm chứng bằng mắt + đo
+ 
+-- Agent tự kiểm khi code: Playwright (hoặc Playwright MCP) mở trang, chụp các trạng thái rồi **đọc ảnh**. Playwright MCP đọc trang qua cấu trúc accessibility, chụp màn khi cần ([nguồn tổng hợp](https://argos-ci.com/blog/playwright-mcp-visual-testing), blog vendor).
+-- Review: so screenshot trong CI trên mỗi PR.
+-- Đo tương phản bằng script (`design-web/scripts/contrast.py`), không nhìn bằng mắt. Chữ thường ≥ 4.5:1; chữ lớn và viền control ≥ 3:1.
++- Khi sửa UI, mở trang thật, kiểm hành vi và đọc ảnh các trạng thái liên quan. [Playwright MCP](https://github.com/microsoft/playwright-mcp) có công cụ thao tác trình duyệt; việc có tool không tự chứng minh UI đã được kiểm.
++- Review: dùng screenshot/visual regression khi thay đổi giao diện hoặc có rủi ro hồi quy; PR tài liệu/logic thuần không cần dựng ảnh vô ích.
++- Đo màu thực tế: chữ thường 4,5:1; chữ lớn đủ định nghĩa WCAG 3:1. Thông tin thị giác cần để nhận biết control/trạng thái cần 3:1 với màu kề, có ngoại lệ; không phải mọi viền trang trí đều phải đạt. Kiểm bàn phím, focus, tên truy cập và lỗi form riêng; script contrast không xác nhận toàn bộ WCAG. [W3C: text](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), [non-text](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html).
+ 
+ ### 8.3 Khuôn bằng chứng (dán vào PR)
+ 
+@@ -331,8 +335,8 @@
+ ### Evidence
+ | Check | Command | Result | Log/artifact |
+ |---|---|---|---|
+-| Unit | pytest apps/api/tests/review -q | 14 passed | .harness/evidence/2026-10-12-review.log |
+-| E2E | npx playwright test e2e/review-approve.spec.ts | 2 passed | screenshots/review-409.png |
++| Unit | <actual command> | NOT RUN — replace only after execution | <actual log path> |
++| E2E | <actual command if applicable> | NOT RUN | <actual screenshot/log path> |
+ ### Not verified
+ - Load with >2 concurrent reviewers (no load test in this task).
+ ```
+@@ -341,7 +345,7 @@
+ 
+ ### 8.4 Reviewer độc lập
+ 
+-Trước khi coi là xong, cho một phiên mới hoặc subagent chỉ đọc diff + task card để tìm lỗ hổng. Docs Claude Code cảnh báo reviewer được yêu cầu tìm lỗi sẽ luôn tìm ra vài thứ; chỉ sửa lỗ hổng ảnh hưởng tính đúng hoặc yêu cầu đã nêu, tránh over-engineering.
++Với thay đổi rủi ro cao, review ở lượt đọc độc lập: bắt đầu từ diff + task card, rồi đọc caller, policy, schema và test liên quan để kiểm nhận định. Reviewer không sửa trong lúc đánh giá; việc dùng subagent tùy công cụ và ủy quyền, không bắt buộc. Docs Claude Code cảnh báo reviewer được yêu cầu tìm lỗi sẽ luôn tìm ra vài thứ; chỉ sửa lỗ hổng ảnh hưởng tính đúng hoặc yêu cầu đã nêu, tránh over-engineering.
+ 
+ ---
+ 
+@@ -349,12 +353,12 @@
+ 
+ ```markdown
+ ## Report — [R03-T2]
+-Changed: 6 files (list) · Lines: +312/-40
+-Verified: V1 ✅ V2 ✅ (14 tests) V3 ✅ (Postgres 17 local) V4 ✅ (2 E2E, screenshots attached)
+-Not verified: concurrent reviewers > 2; mobile Safari
+-Deviations: ticket assumed catalog.publish(rev) signature; actual is publish(listing_id, rev) — adapted, noted in PR
+-Decisions taken in "open" area: before/after shown inline with strike-through; reason: fits evidence panel
+-Next: R03-T3 (merge/split duplicates)
++Changed: <actual files and behavior>
++Verified: NOT RUN until commands/results/exit codes are attached
++Not verified: <remaining claims and why>
++Deviations: <actual difference from plan, or none>
++Decisions taken in open area: <choice and reason, if material>
++Next: <remaining work, not an invented completed task>
+ ```
+ 
+ Cột **Deviations** bắt nguồn từ `executing-plans` (STOP-and-REGAIN): kế hoạch là dự đoán, code là sự thật; lệch nhỏ thì sửa và ghi, lệch cấu trúc thì dừng và hỏi.
+@@ -391,8 +395,8 @@
+ ### P3 — Kiến trúc có phương án (chỗ cho sáng tạo)
+ 
+ ```text
+-Read brief + domain docs. Propose 3 architecture options that could satisfy P0, including the
+-simplest one that could work. For each: components, data ownership, how a P0 journey flows,
++Read brief + domain docs. If there is a material unresolved tradeoff, compare 2–3 plausible options,
++including the simplest one; otherwise justify one choice. For each: components, ownership, how a P0 journey flows,
+ operational cost, what breaks first, team-skill fit. Recommend one and say what evidence would
+ make you switch. Then, for the chosen option, write docs/architecture/contract.md with: module
+ ownership table, dependency rules, API conventions, data constraints, frontend state rules,
+@@ -405,10 +409,10 @@
+ Read the approved brief, domain and contract. Break P0 into vertical slices. Order: walking
+ skeleton (one request through every layer with fixture data) first, then one slice per journey
+ step. For each slice write a task card using the template in <path>: Today, Goal, Context pack,
+-Allowed paths, Locked/Open decisions, Acceptance (at least one error case and one permission
+-case), Verification commands, Stop conditions. Max ~400 changed lines per card; split larger
+-ones. Output a dependency graph and mark which cards can run in parallel without touching the
+-same files.
++Allowed paths, Locked/Open decisions, Acceptance (main path and relevant failure cases;
++permission/UI cases when affected), Verification commands or planned bootstrap checks, Stop conditions.
++Bound each card by a reviewable outcome rather than a fixed line count. Output dependencies;
++identify parallel work only if requested and independent in both files and contracts.
+ ```
+ 
+ ### P5 — Thực thi một task card
+@@ -417,8 +421,8 @@
+ Implement issue #<n> exactly as written. Before editing, list the assumptions the card makes
+ (files, signatures, commands) and check each against the repo with evidence. If one is false and
+ the fix is small, adapt and record it as a deviation; if structural, stop and report.
+-Work only in the allowed paths. Write the failing tests from the acceptance list first, then the
+-code. Run every verification command and paste outputs. For UI, take screenshots of each state
++Work within the authorized scope. Use meaningful regression tests for logic, security or data changes;
++use proportionate checks for docs or low-impact reversible changes. Run applicable verification commands and paste outputs. For UI, take screenshots of each state
+ listed and look at them. Finish with the report template. Do not mark done while any check fails.
+ ```
+ 
+@@ -438,8 +442,8 @@
+ ### P7 — Review đối kháng
+ 
+ ```text
+-You are reviewing PR #<n> against issue #<m> in a fresh context. Read only the diff, the issue and
+-the files in its context pack. Report, with file:line: (1) acceptance items not implemented or
++You are reviewing PR #<n> against issue #<m> in a fresh context. Start from the diff, the issue and
++its context pack; inspect related callers, policies, schemas and tests to verify suspected failures. Report, with file:line: (1) acceptance items not implemented or
+ not tested, (2) changes outside allowed paths, (3) authorization or data-ownership violations,
+ (4) states missing in UI, (5) claims in the PR without evidence. Only report gaps that affect
+ correctness or stated requirements. No style preferences.
+@@ -479,7 +483,7 @@
+ 
+ Ba cơ chế cụ thể:
+ 
+-1. **Ít nhất ba phương án ở các quyết định lớn** (P3): bắt buộc có phương án đơn giản nhất; nêu bằng chứng nào sẽ làm đổi lựa chọn. Cách này giữ được tư duy so sánh mà không mở vô hạn.
++1. **So sánh khi có lựa chọn thực sự** (P3): quyết định lớn có thể cần 2–3 phương án, gồm phương án đơn giản; chi tiết dễ đảo không cần bịa thêm lựa chọn. Nêu bằng chứng nào sẽ làm đổi lựa chọn. Cách này giữ được tư duy so sánh mà không mở vô hạn.
+ 2. **Hai lượt cho thiết kế giao diện** (theo `frontend-aesthetics.md` §9): lượt một đề xuất hệ token gọn, lượt hai tự phê bình "phần nào trông như mặc định chung chung?", sửa rồi mới dựng. Mặc định một hướng quyết đoán; nhiều hướng chỉ khi chủ động khám phá.
+ 3. **Spike có hạn giờ**: ví dụ 2 giờ, đầu ra là bảng so sánh + demo nhỏ, không phải code production.
+ 
+@@ -489,7 +493,7 @@
+ 
+ | Lỗi | Quan sát ở đâu | Chặn bằng |
+ |---|---|---|
+-| Service phân quyền trả `true` cố định, test thay bằng mock | Cal.diy `BookingAccessService` tại commit đã ghim (sổ kiến thức 23.1) | Acceptance có case 403 chạy qua policy thật |
++| PermissionCheckService cục bộ có phương thức trả `true`, test thay field này bằng mock | Cal.diy: file BookingAccessService tại commit đã ghim (sổ kiến thức §23.2); đây là phát hiện trong file, chưa chứng minh toàn app bị vượt quyền | Acceptance có case 403 chạy qua policy thật |
+ | Đổi kiểu hiển thị làm mất bộ lọc | Refine Finefoods `keepQuery=false` | Acceptance: đổi card/table giữ filter |
+ | Badge "Live" không có cơ chế realtime | KusShoes AdminSidebar | Luật L0: không hiện Live/% khi backend không chứng minh |
+ | "Tiến độ %" thực ra là tỉ lệ job đang chạy | KusShoes `bakePct` | Định nghĩa metric trong contract |
+@@ -511,7 +515,7 @@
+ Project: helps students renting near campus read rent/fees correctly and compare asking rent with
+ similar posts. Demo for TMG301 on <date>, local + fixture data labelled DEMO.
+ Source of truth: docs/product/brief.md > docs/domain/rules.md (B01–B15) > docs/architecture/contract.md + openapi.json > issue.
+-Commands: make dev | make verify-fast | make verify | make gen-client
++Commands: <discover from actual manifests; create and test scripts in scaffold task if absent>
+ Hard rules: (AGENTS.md template §3, unchanged)
+ Easy-to-break rules:
+ - LLM returns span + label only; deterministic code converts numbers (B05).
+@@ -525,7 +529,7 @@
+ ```markdown
+ ## [R02-T1] Regex extractor v0 for rent and fees
+ Trace: R02 · B02 B03 B04 B05 · AT03 AT04 AT05
+-Today: no extractor; fixtures/posts/*.txt has 20 synthetic posts with gold JSON.
++Today: NOT VERIFIED — inspect extractor and fixtures first; this template does not assert 20 fixtures already exist.
+ Goal: extract(text) returns candidates with fields rent, area, room, fees[], each with value, unit,
+ basis, form (exact|range|starting_from|none), state, span(start,end,raw), rule_id.
+ Context pack: docs/domain/rules.md#B02-B05, docs/domain/glossary.md, fixtures/posts/README.md
+@@ -533,21 +537,22 @@
+ Locked: offsets are Unicode code points on the locked text version; money is int VND.
+ Open: rule organisation, abbreviation dictionary format.
+ Acceptance:
+-1. "5tr5/th, điện 3k5/số, cọc 1 tháng" -> rent 5500000 exact per_room monthly; electricity 3500 per kWh; deposit 1 month; no fee counted as rent.
++1. "Thuê 5tr5/tháng/phòng, điện 3k5/số, cọc 1 tháng" -> rent 5500000 exact per_room monthly; electricity 3500 per kWh; deposit 1 month; no fee counted as rent.
+ 2. "inbox giá" -> rent null, state=hidden_explicit.
+ 3. "từ 3tr" -> form=starting_from, not eligible for median.
+ 4. "1tr5/người" -> basis=per_person.
+-5. Every non-null field has a span whose raw text equals text[start:end].
++5. Every non-null field has a span whose raw text equals text[start:end]; semantic role must also match.
++6. "5tr5/th" alone does not establish per_room; keep basis unknown unless an approved, evidenced context rule resolves it.
+ Verification: pytest apps/api/tests/extraction -q ; python scripts/eval_dev.py --split dev (prints P/R/F1 per field; dev only, never the locked test split)
+ Stop: any post that needs a rule not in B01–B15 -> list it in the PR as a question, do not invent.
+ ```
+ 
+-### 13.3 Một task card cho phần dễ nhất (extension chọn một tin)
++### 13.3 Một task card cho extension chọn một tin — cần thử khả thi
+ 
+ ```markdown
+ ## [R01-T1] Extension: send the selected text for analysis
+ Trace: R01 · B01 B07 · AT01 AT21
+-Goal: user selects a post's text on an allowed page, clicks the extension, previews the text (phone numbers masked), presses "Phân tích tin này"; receives a job id; closing/reopening the popup resumes the same job.
++Goal: user selects a post's text on an allowed page, clicks the extension, previews the minimized text (PII policy applied; masking phone alone is not anonymization), presses "Phân tích tin này"; receives a job id; closing/reopening the popup resumes the same job.
+ Allowed: apps/extension/**, e2e/extension/**
+ Locked: MV3; permissions activeTab, scripting, storage; host permission only for the configured API origin; token in chrome.storage.session; idempotency key per submission.
+ Open: popup layout within design tokens.
+@@ -559,7 +564,7 @@
+ 
+ ```text
+ Surface: /tim-tro. Primary user: a student renting near campus. Single job: find posts within budget
+-and understand the real monthly rent quickly. Read docs/design/tokens.json and docs/domain/glossary.md.
++and understand the stated asking rent, period, basis and known/missing fees quickly. Read docs/design/tokens.json and docs/domain/glossary.md.
+ Each card must show rent (or "Chưa có giá"), area (or "Chưa rõ"), fees known/missing, observed date,
+ and a DEMO label for fixture data. Filters live in the URL; switching card/table keeps filters.
+ States: loading, empty store, no match (with one-click remove of each filter), API error, missing price.
+@@ -570,15 +575,15 @@
+ 
+ ## 14. Checklist một trang trước khi bấm gửi cho AI
+ 
+-- [ ] L0 có lệnh chạy được và ≤ ~150 dòng.
++- [ ] L0 ngắn và liên quan; lệnh đã xác minh hoặc được giao tạo trong task scaffold.
+ - [ ] Task trỏ được về một R-id và các B-id liên quan.
+ - [ ] Có "Today" với bằng chứng hiện trạng.
+-- [ ] Context pack ≤ 5 đường dẫn, có một file mẫu để bắt chước.
++- [ ] Context pack đủ cho task, có đường mở sang caller/policy/schema khi cần; không giới hạn 5 file máy móc.
+ - [ ] Allowed paths cụ thể; protected paths nêu rõ.
+ - [ ] Tách Locked / Open decisions.
+-- [ ] Acceptance có ít nhất: một đường chính, một lỗi, một quyền, một trạng thái UI.
+-- [ ] Lệnh verify chạy được trên máy bạn trước khi giao.
+-- [ ] Stop conditions và ngân sách 3 lần tự sửa.
++- [ ] Acceptance có đường chính và ca biên liên quan; quyền/UI chỉ bắt buộc khi thay đổi chạm chúng.
++- [ ] Biết cách chứng minh kết quả; phân biệt command đã có với command cần tạo.
++- [ ] Có điều kiện báo vướng dựa trên thiếu thông tin, không tiến triển hoặc ngân sách đã thống nhất.
+ - [ ] Biết kết quả sẽ được review bởi ai (phiên mới/subagent/người).
+ - [ ] Biết dữ liệu dùng là fixture hay thật, và màn demo có nhãn.
+ 
+@@ -593,9 +598,9 @@
+ - [Google Cloud — Announcing the 2025 DORA report](https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report), 24/09/2025
+ - [DORA AI Capabilities Model — questions](https://dora.dev/ai/capabilities-model/questions/)
+ - [OpenAI — Agentic AI Foundation](https://openai.com/index/agentic-ai-foundation/) (AGENTS.md vào AAIF; số liệu mức phổ biến lấy từ blog thứ cấp nên không dùng)
+-- [GitHub Spec Kit — tổng quan workflow](https://docs.plannotator.ai/frameworks/github-spec-kit) (nguồn thứ cấp mô tả constitution → specify → plan → tasks → implement)
+-- [@hey-api/openapi-ts](https://npmjs.com/package/@hey-api/openapi-ts), [so sánh Orval/Kubb](https://www.pkgpulse.com/guides/orval-vs-openapi-typescript-vs-kubb-openapi-client-2026) (nguồn thứ cấp)
+-- [Argos — Playwright MCP and visual testing](https://argos-ci.com/blog/playwright-mcp-visual-testing) (blog vendor)
++- [GitHub Spec Kit](https://github.com/github/spec-kit) — nguồn dự án; cần ghim phiên bản khi áp dụng, không coi mọi workflow là bắt buộc
++- [Hey API](https://heyapi.dev/docs/openapi/typescript/get-started), [Orval](https://orval.dev/) — tài liệu chính thức; chưa chọn hoặc cài công cụ cho ReNER
++- [Playwright MCP](https://github.com/microsoft/playwright-mcp) — repo Microsoft; chưa chạy trong lượt audit tài liệu
+ 
+ Nguồn nội bộ đã đọc trong workspace:
+ 
+--- before/project-realestate-ner/notes/01-research-report.md
++++ project-realestate-ner/notes/01-research-report.md
+@@ -1,4 +1,6 @@
+ # Đề tài 8 — Trích xuất thông tin bất động sản từ bài đăng mạng xã hội (Real Estate NER)
++
++> Tài liệu nghiên cứu lịch sử 03/10/2026. Đính chính 11/10: bỏ khẳng định Hybrid chắc tốt nhất/ngưỡng 300 bài chung; sửa cách gọi metric seqeval. Các số liệu prior work và pháp lý trong phần cũ chưa được thẩm định lại toàn bộ ở lượt này; dùng sổ nguồn foundation ngày 09/10 cho đối chiếu mới hơn. [Phạm vi hiện hành](../../notes/HIEN-TRANG-VA-QUYET-DINH.md).
+ 
+ - **Môn:** TMG301 (NLP / Text Mining) — đề bài nhóm random được (ảnh chụp đề)
+ - **Loại artifact:** Báo cáo nghiên cứu vòng 1 (research report) — đầu vào cho proposal + file Excel
+@@ -175,7 +177,7 @@
+ |---|---|---|---|---|
+ | Ý tưởng | Pattern + từ điển viết tắt + bộ chuẩn hoá | LLM trả JSON theo schema, few-shot | Regex bắt trường "số" (giá, DT, phòng). LLM lo vị trí + ca mơ hồ. Validator đối chiếu → độ tin cậy | Thêm model sequence labeling train trên nhãn LLM gán trước rồi người sửa |
+ | Bám môn | Rất sát (chương Regex) | Yếu nếu không giải thích được | Sát (Regex + IE + slot filling) | Rất sát (Fine-tuning, NER) |
+-| Độ chính xác dự kiến | Cao cho giá/DT/phòng, thấp cho vị trí `[suy luận]` | Cao nhưng có rủi ro **bịa giá trị** khi bài không nêu | Cao nhất trong thời gian ngắn `[suy luận]` | Cao, nhưng cần ≥300 bài gán nhãn `[suy luận]` |
++| Độ chính xác dự kiến | Cao cho giá/DT/phòng, thấp cho vị trí `[suy luận]` | Cao nhưng có rủi ro **bịa giá trị** khi bài không nêu | Giả thuyết có lợi trong phạm vi hẹp; chưa có benchmark nội bộ | Chất lượng và nhu cầu nhãn phải đo qua pilot/learning curve; chưa có ngưỡng đủ chung |
+ | Chi phí | 0 | API hoặc GPU local | Thấp (LLM chỉ gọi khi cần) | Cao (gán nhãn + train) |
+ | Tiềm năng UI | Hiện được rule nào bắt | Khó giải thích | **Tốt nhất**: badge nguồn, độ tin cậy, so sánh | Tốt + hiện nhãn BIO thật từ model |
+ | Rủi ro | Vỡ khi gặp văn phong lạ | Hallucination, chi phí, không ổn định | Phức tạp hơn A, B | Thiếu thời gian |
+@@ -215,7 +217,7 @@
+ - **Gold set:** 10 bài showcase (đề yêu cầu) làm **test giữ riêng**, cộng 30–90 bài dev để tinh chỉnh regex/prompt. Nếu tinh chỉnh trên đúng 10 bài test rồi báo 100% thì đó là **rò rỉ dữ liệu (data leakage)** và dễ bị hỏi vặn.
+ - **Gán nhãn:** Label Studio hoặc doccano (span-level), viết **annotation guideline** 1–2 trang (quy ước studio, nở hậu, giá/m²…). Hai người gán chéo 20 bài, tính độ đồng thuận (Cohen's kappa) nếu kịp.
+ - **Metrics:**
+-  - Span-level: P/R/F1 strict & partial (thư viện `seqeval`).
++  - Span-level: strict P/R/F1 với quy ước BIO và ranh giới thống nhất. `seqeval` có default/strict, không đồng nghĩa hai chế độ strict/partial overlap. Nếu báo partial, phải định nghĩa matching/credit riêng và kiểm bằng ca tay; không dùng nó thay strict. [README seqeval](https://github.com/chakki-works/seqeval).
+   - Field-level: exact match trên **giá trị đã chuẩn hoá** (ví dụ giá lệch 0 VND).
+   - Null accuracy: trả `null` đúng khi bài không có thông tin, để đo hallucination.
+   - Chi phí & độ trễ trên mỗi bài (LLM vs regex).
+@@ -264,7 +266,7 @@
+ 
+ - Proposal: ReNER-VN — bot lai Regex + LLM trích xuất thông tin BĐS từ bài đăng Facebook Groups tiếng Việt (đồ án TMG301).
+ - Novelty tier: **T1 — recipe**: kết hợp kỹ thuật đã có (regex, prompting LLM, neo nguồn, đối chiếu); không có thay đổi kiến trúc mô hình.
+-- Venue band: **không nhắm venue — mức đồ án môn học.** Nếu sau này muốn nộp hội nghị sinh viên/workshop trong nước, cần: tập chuẩn ≥300 bài, công bố bộ dữ liệu đã ẩn danh, thêm baseline học có giám sát (CRF/PhoBERT), kiểm tra tính mới bằng tổng quan có hệ thống.
++- Venue band: **không nhắm venue — mức đồ án môn học.** Nếu sau này muốn nộp hội nghị sinh viên/workshop trong nước, cần kiểm yêu cầu cụ thể của venue, quyền dữ liệu, chất lượng thực nghiệm, baseline phù hợp và tính mới. Không có điều kiện chung “≥300 bài là đủ”; không bắt buộc công bố raw corpus khi không có quyền. CRF/PhoBERT là ứng viên so sánh khi phù hợp RQ và tài nguyên, không phải nghĩa vụ mới của demo.
+ - Downgrade triggers: tìm thấy công trình đã công bố so sánh regex/LLM trên bài đăng MXH BĐS tiếng Việt.
+ - Confidence: medium — mới tìm kiếm nhanh, chưa tổng quan hệ thống.
+ - Ledger: C-1 (`claims-ledger.md`).
+--- before/project-realestate-ner/notes/claims-ledger.md
++++ project-realestate-ner/notes/claims-ledger.md
+@@ -4,3 +4,7 @@
+ |---|---|---|---|---|---|---|
+ | C-1 | 2026-10-03 | ReNER-VN: hybrid Regex + LLM bot for Vietnamese real-estate Facebook posts (TMG301 course project) | T1 | No venue targeted (course project). Student conference/workshop only if: ≥300-post gold set, released anonymized dataset, supervised baseline (CRF/PhoBERT), systematic novelty scan | active | notes/01-research-report.md; proposal-ReNER-VN.docx |
+ | C-2 | 2026-10-09 | ReNER-VN expansion: evidence-grounded rental IE, price-visibility states, comparable asking-price observations, web and contribution extension | T1 provisional, inference under rubric; integration/evaluation, no verified new module | No venue selected. Consider student/workshop or suitable applied venue only after lawful usable gold, reproducible baselines, related-work novelty scan and executed results; no acceptance or journal-rank promise | active; separate expansion, C-1 unchanged | notes/foundation-2026-10-09/KIEN-THUC-NEN-TANG-RENER-VN.md §15 |
++
++## Đính chính 11/10/2026
++
++C-1 được giữ để truy lịch sử, nhưng điều kiện “≥300 bài + bắt buộc công bố dataset + CRF/PhoBERT” ở cột venue **không còn là khuyến nghị hiện hành**. Không có ngưỡng phổ quát bảo đảm công bố; yêu cầu venue, RQ, sai số ước lượng và quyền dữ liệu quyết định thiết kế thực nghiệm. C-2 là hướng nghiên cứu mở rộng, không tự thay scope demo. [Bối cảnh hiện hành](../../notes/HIEN-TRANG-VA-QUYET-DINH.md).
+--- before/project-realestate-ner/notes/INDEX.md
++++ project-realestate-ner/notes/INDEX.md
+@@ -17,3 +17,5 @@
+ | source-audit | research reviewer | foundation-2026-10-09/05-source-audit.md | Scan sources/claims cuối; giới hạn chưa chạy thực nghiệm |
+ | ledger | admin | claims-ledger.md | C-1 đồ án cũ, C-2 hướng mở rộng T1 provisional |
+ | verification | admin | foundation-2026-10-09/KIEM-TRA-BAN-GIAO.md | Nguồn/claim re-scan; reader buttons/search/layout/contrast/print verified, không là NLP runs |
++
++Bổ sung 11/10/2026: [bối cảnh hiện hành toàn TMG301](../../notes/HIEN-TRANG-VA-QUYET-DINH.md) và [phản biện hồ sơ](../../notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md). Hướng nghiên cứu mở rộng không tự thay scope demo; báo cáo 03/10 và C-1 có đính chính về metric/ngưỡng gold. Proposal và reader HTML nền tảng giữ nguyên; reader là snapshot 09/10, không tự đồng bộ với mọi sửa đổi sau này.
+--- before/TMG301_TongHopKienThuc.md
++++ TMG301_TongHopKienThuc.md
+@@ -1,6 +1,8 @@
+ # Tổng Hợp Chi Tiết Kiến Thức Môn TMG301 (Xử Lý Ngôn Ngữ Tự Nhiên / Text Mining)
+ 
+-Dựa trên cấu trúc thư mục học liệu, môn học TMG301 bám sát giáo trình chuẩn về Xử lý ngôn ngữ tự nhiên (Natural Language Processing - NLP), tương tự nội dung của cuốn *Speech and Language Processing* (Jurafsky & Martin). Dưới đây là hệ thống hóa chi tiết toàn bộ các mảng kiến thức của môn học:
++> Rà soát 11/10/2026: sửa các diễn giải về Transformer, dependency parsing và điều kiện so sánh perplexity. Đây là ghi chú học tập, chưa được chứng nhận là tài liệu đầy đủ của môn. [Chi tiết phản biện](notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md).
++
++Dựa trên cấu trúc thư mục học liệu, môn học TMG301 bám sát giáo trình chuẩn về Xử lý ngôn ngữ tự nhiên (Natural Language Processing - NLP), tương tự nội dung của cuốn *Speech and Language Processing* (Jurafsky & Martin). Dưới đây là bản đồ khái quát theo cấu trúc học liệu, không phải bản xác nhận đã kiểm tra đầy đủ từng slide hay toàn bộ nội dung thi.
+ 
+ ---
+ 
+@@ -19,13 +21,13 @@
+   - *Bigram (2-gram):* Phụ thuộc vào 1 từ trước đó.
+   - *Trigram (3-gram):* Phụ thuộc vào 2 từ trước đó.
+ - **Ước lượng xác suất (MLE):** Đếm tần suất xuất hiện (Count) của N-gram chia cho tần suất của ngữ cảnh.
+-- **Đánh giá mô hình (Perplexity):** Chỉ số đo độ "mơ hồ" của mô hình. Perplexity càng thấp, mô hình dự đoán càng tốt.
++- **Đánh giá mô hình (Perplexity):** Chỉ số đo độ "mơ hồ" của mô hình. Perplexity thấp hơn biểu thị xác suất tốt hơn trên cùng dữ liệu đánh giá và cách tính tương thích. Tokenizer, đơn vị token, xử lý ngữ cảnh và corpus ảnh hưởng chỉ số; không so trực tiếp hai số từ các điều kiện khác nhau, cũng không dùng nó thay chất lượng tác vụ. [Hugging Face](https://huggingface.co/docs/transformers/perplexity).
+ - **Smoothing (Làm trơn):** Giải quyết vấn đề từ chưa từng xuất hiện (Zero probability). Các kỹ thuật: Laplace (Add-1), Add-k, Interpolation, Kneser-Ney.
+ 
+ ## 3. Phân loại Naive Bayes & Phân tích cảm xúc (Naive Bayes & Sentiment)
+ - **Bài toán:** Phân loại văn bản (Text Classification), ví dụ: Phân tích cảm xúc tích cực/tiêu cực (Sentiment Analysis).
+ - **Mô hình Naive Bayes:** Là mô hình sinh (Generative Model) dựa trên Định lý Bayes.
+-- **Giả định Naive (Ngây thơ):** Căn bản giả định các đặc trưng (các từ) xuất hiện trong văn bản là **hoàn toàn độc lập** với nhau (trong cùng một nhãn phân loại).
++- **Giả định Naive (Ngây thơ):** Căn bản giả định các đặc trưng (các từ) xuất hiện trong văn bản là **độc lập có điều kiện khi đã biết nhãn**; đây là giả định của mô hình, không phải sự thật về ngôn ngữ.
+ - **Bag of Words (BoW):** Biểu diễn văn bản dưới dạng một tập hợp các từ và tần suất của chúng, bỏ qua thứ tự từ.
+ - **Tính toán:** Áp dụng Log-Probabilities để tránh hiện tượng underflow (số quá nhỏ khi nhân nhiều xác suất). Có sử dụng Laplace Smoothing.
+ 
+@@ -38,7 +40,7 @@
+ ## 5. Ngữ nghĩa Vector và Word Embeddings
+ - **Ngữ nghĩa học từ vựng (Lexical Semantics):** Tính đồng nghĩa, trái nghĩa, độ tương đồng ngữ nghĩa.
+ - **TF-IDF:** Kỹ thuật gán trọng số cho từ trong văn bản. TF (Term Frequency) đo tần suất trong tài liệu, IDF (Inverse Document Frequency) đánh trọng số thấp cho các từ quá phổ biến (như "the", "a").
+-- **Word Embeddings (Nhúng từ):** Biểu diễn từ dưới dạng vector số thực trù mật (dense vectors) trong không gian n-chiều. Từ có ý nghĩa giống nhau sẽ có vector gần nhau.
++- **Word Embeddings (Nhúng từ):** Biểu diễn từ dưới dạng vector số thực trù mật (dense vectors) trong không gian n-chiều. Các từ có ngữ cảnh phân bố tương tự thường có vector gần nhau; gần nhau không bảo đảm đồng nghĩa, vì từ trái nghĩa cũng có thể xuất hiện trong ngữ cảnh tương tự.
+ - **Word2Vec:** Mô hình học embeddings nổi tiếng với 2 kiến trúc:
+   - *Skip-gram:* Dự đoán ngữ cảnh (các từ xung quanh) từ từ trung tâm.
+   - *CBOW (Continuous Bag of Words):* Dự đoán từ trung tâm từ ngữ cảnh xung quanh.
+@@ -51,7 +53,7 @@
+ - **Đánh giá:** Sử dụng các metric như Purity (Độ thuần khiết), Silhouette Coefficient.
+ 
+ ## 7 & 8. Transformer & Mô hình ngôn ngữ tiền huấn luyện (Pre-Trained LMs / Fine-tuning)
+-- **Kiến trúc Transformer:** Thay thế hoàn toàn RNN/LSTM, xử lý câu song song, không bị hạn chế bởi độ dài chuỗi dài.
++- **Kiến trúc Transformer:** Transformer gốc dùng attention thay recurrence trong kiến trúc của nó; điều này không có nghĩa mọi bài toán đã thay RNN/LSTM. Có thể tính nhiều vị trí song song khi huấn luyện, nhưng giải mã tự hồi quy vẫn sinh lần lượt. Full self-attention có chi phí bậc hai theo chiều dài chuỗi (với chiều biểu diễn cố định); context và bộ nhớ vẫn hữu hạn. [Vaswani et al., §3–4](https://arxiv.org/html/1706.03762v7).
+ - **Cơ chế Attention (Self-Attention):** Giúp mô hình tập trung vào các từ quan trọng trong câu khi mã hóa một từ cụ thể (tính trọng số phụ thuộc giữa các từ). Multi-head Attention giúp học nhiều góc độ ngữ nghĩa khác nhau.
+ - **Positional Encoding:** Thêm thông tin về vị trí của từ vào vector do Transformer xử lý song song.
+ - **Pre-trained LMs (BERT, GPT):** Mô hình được huấn luyện trước (Pre-train) trên lượng dữ liệu khổng lồ để hiểu ngôn ngữ, sau đó **Fine-tune** (tinh chỉnh) lại trên bộ dữ liệu nhỏ gọn cho task cụ thể (như phân loại, hỏi đáp).
+@@ -76,7 +78,7 @@
+ - **Constituency Parsing (Phân tích thành phần):** Dựa trên Văn phạm phi ngữ cảnh (CFG). Phân tích câu thành các cụm từ (Danh ngữ NP, Động ngữ VP). Sử dụng thuật toán CKY (Quy hoạch động) để dựng cây cú pháp.
+ - **Dependency Parsing (Phân tích phụ thuộc):** Xác định mối quan hệ trực tiếp giữa các từ (đâu là chủ ngữ, tân ngữ của động từ chính).
+   - *Transition-based Parsing:* Thuật toán tuần tự dạng Shift-Reduce.
+-  - *Graph-based Parsing:* Dùng thuật toán tìm cây bao trùm nhỏ nhất (Minimum Spanning Tree).
++  - *Graph-based Parsing:* Với mô hình cộng điểm trên cạnh, tìm cây phụ thuộc có tổng điểm lớn nhất: maximum spanning arborescence trên đồ thị có hướng. Có thể chuyển thành bài toán cực tiểu nếu đổi dấu điểm thành chi phí; không mặc định là cây bao trùm nhỏ nhất vô hướng. [Shimizu, CoNLL 2006](https://aclanthology.org/W06-2936/).
+ 
+ ## 13, 14 & 15. Khai phá thông tin, Sự kiện & Thời gian (Information & Event Extraction)
+ - **Logical Representations:** Chuyển câu sang biểu diễn logic (First-Order Logic - FOL), sử dụng vị từ, lượng từ để máy tính hiểu ý nghĩa suy luận.

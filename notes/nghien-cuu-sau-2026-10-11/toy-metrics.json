@@ -1,0 +1,52 @@
+{
+  "computed_at_utc": "2026-10-11T17:22:50.387762+00:00",
+  "status": "EDUCATIONAL_ARITHMETIC_ONLY_NOT_A_MODEL_OR_APP_TEST",
+  "assumption": "10 synthetic cases; one gold numeric value each. Wrong value is both FP and a missed gold FN.",
+  "A": {
+    "gold": 10,
+    "correct": 4,
+    "wrong": 0,
+    "abstain": 6,
+    "tp": 4,
+    "fp": 0,
+    "fn": 6,
+    "precision": 1.0,
+    "recall": 0.4,
+    "f1": 0.5714285714285714,
+    "coverage": 0.4,
+    "observed_error_among_answers": 0.0
+  },
+  "B": {
+    "gold": 10,
+    "correct": 6,
+    "wrong": 2,
+    "abstain": 2,
+    "tp": 6,
+    "fp": 2,
+    "fn": 4,
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1": 0.6666666666666666,
+    "coverage": 0.8,
+    "observed_error_among_answers": 0.25
+  },
+  "C10_duplicate_record_example": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1": 0.8
+  },
+  "C07_prefix": {
+    "text": "🏠 ",
+    "unicode_code_points": 2,
+    "utf16_code_units": 3
+  },
+  "C17_nested_attempt_upper_bound": 9,
+  "limitations": [
+    "All counts are invented teaching examples.",
+    "No extractor, API, extension or dataset was executed.",
+    "26 proposed cases remain NOT RUN."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "scope": "Synthetic validation checks only; no real credential used",
+  "clean_copy_pass": true,
+  "broken_link_detected": true,
+  "dummy_token_pattern_detected": true
+}

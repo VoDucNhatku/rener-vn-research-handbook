@@ -1,0 +1,419 @@
+[PDF PAGE 1]
+1 
+RESEARCH PROPOSAL / 
+THUYẾT MINH ĐỀ CƯƠNG NGHIÊN CỨU 
+Research title 
+ReNER-VN: Trích xuất thông tin và nhận định giá thuê nhà 
+từ bài đăng Facebook Groups bằng phương pháp lai Regex – 
+LLM có neo nguồn 
+ReNER-VN: Grounded Hybrid Regex–LLM Extraction and Rental Price 
+Assessment from Vietnamese Facebook Group Posts 
+Mentor [Họ tên giảng viên hướng dẫn] 
+Members 
+(up to 4 students) 
+[Họ tên thành viên 1] ([MSSV])  —  TV1: NLP Lead – regex, chuẩn 
+hoá, đánh giá 
+[Họ tên thành viên 2] ([MSSV])  —  TV2: LLM & Backend Lead 
+[Họ tên thành viên 3] ([MSSV])  —  TV3: Frontend / UI Lead 
+[Họ tên thành viên 4] ([MSSV])  —  TV4: Extension & Data Lead 
+Môn học: TMG301 – Xử lý ngôn ngữ tự nhiên · Đề tài số 8: Trích xuất thông tin bất động sản từ bài đăng 
+mạng xã hội (Real Estate NER) 
+Abstract / Tóm tắt 
+Bài đăng cho thuê nhà trên các nhóm Facebook là nguồn thông tin lớn nhưng viết tự do, 
+nhiều viết tắt và nhiều con số gây nhiễu như tiền cọc, giá điện, nước, phí dịch vụ. Người đi 
+thuê vì vậy khó biết thông tin cốt lõi của một tin và mức giá đó cao hay thấp so với khu vực. 
+Đề tài xây dựng ReNER-VN, gồm một extension trình duyệt và một web app. Ở chế độ thu 
+thập, extension tự đọc bài khi người dùng lướt nhóm để xây dựng kho dữ liệu thị trường; ở 
+chế độ nhận định, người dùng chọn một bài, hệ thống trích xuất bốn trường Giá, Diện tích, 
+Vị trí, Số phòng rồi so giá với trung vị của các bài tương tự trong kho. Bài toán trích xuất 
+được hình thức hoá thành gán nhãn chuỗi theo lược đồ BIO và giải bằng kiến trúc lai: biểu 
+thức chính quy, mô hình ngôn ngữ lớn có neo ngu ồn, và bộ đối chiếu gán độ tin cậy. Bốn 
+câu hỏi nghiên cứu: so sánh regex, LLM và phương pháp lai; hiệu quả chống bịa của neo 
+nguồn; các hiện tượng gây lỗi; và mức lệch của thống kê thị trường do lỗi trích xuất. Hệ 
+thống được đánh giá trên tập chuẩn khoảng 100 bài, trong đó 10 bài phức tạp giữ riêng làm 
+kiểm thử. 
+Key words: Real Estate NER; gán nhãn chuỗi; biểu thức chính quy; mô hình ngôn ngữ 
+lớn; trích xuất thông tin; giá thuê nhà; extension trình duyệt; tiếng Việt. 
+1. Introduction / Giới thiệu 
+Các nhóm Facebook là kênh quen thuộc để đăng tin cho thuê phòng trọ, chung cư 
+mini (CCMN), căn hộ dịch vụ, đặc biệt quanh các trường đại học. Bài đăng là văn bản tự 
+do; ví dụ sau do nhóm tự tạo để minh hoạ: 
+“Cho thuê CCMN 1PN 30m2 ngay gần ĐH FPT, full nội thất. Giá 5tr5/th, điện 3k5/số, 
+nước 100k/người, cọc 1 tháng. LH 09xx xxx xxx” 
+Để hiểu đúng bài này, hệ thống phải biết “5tr5/th” là giá thuê 5.500.000 đồng/tháng, 
+còn “3k5/số”, “100k/người”, “cọc 1 tháng” là các khoản phí, không phải giá. Ngoài ra, 
+nhiều bài vẫn dùng địa danh cấp quận/huyện, trong khi cấp này đã bị bỏ từ 01/07/2025 [1]. 
+
+[PDF PAGE 2]
+2 
+Đề tài số 8 của môn TMG301 yêu cầu xây dựng bot đọc các bài như vậy và điền vào bảng 
+chuẩn gồm Giá, Diện tích, Vị trí, Số phòng, trên nền tảng gán nhãn chuỗi (sequence 
+labeling) và biểu thức chính quy (regex). Nhóm mở rộng thêm một bước: dùng dữ liệu đã 
+chuẩn hoá để cho người đi thuê biết giá của tin đang xem cao hay thấp so với các tin tương 
+tự. 
+1.1. Literature review / Tình hình nghiên cứu trong và ngoài nước 
+Trong nước. Pham và Pham [2] xây dựng hệ trích xuất dựa trên luật cho tin rao bất 
+động sản (BĐS), đạt F -measure 91. Huynh và cộng sự [3] công bố bộ dữ liệu nhận dạng 
+thực thể có tên (NER) BĐS tiếng Việt đầu tiên với 3.152 tin từ ba website rao vặt. Nguyen 
+và cộng sự [4] phát triển nền tảng đầu-cuối từ thu thập, NER đến kho dữ liệu phục vụ phân 
+tích (micro-F1 90,72%). Tran và cộng sự [5] cho thấy khoảng 18% bài trên website BĐS là 
+nhiễu, và lọc nhiễu trước giúp NER tốt hơn. Ở tầng nền tảng, PhoBERT [6] là mô hình tiền 
+huấn luyện cho tiếng Việt, còn ViLexNorm [7] cho thấy chuẩn hoá teencode, viết tắt giúp 
+ích các tác vụ hạ nguồn trên văn bản mạng xã hội. 
+Nước ngoài. NER thường được mô hình hoá là gán nhãn chuỗi theo lược đồ BIO [8], 
+với các mô hình kinh điển như HMM và CRF [9], được hệ thống hoá trong giáo trình mà 
+môn TMG301 bám theo [10]. Trích xuất dựa trên luật vẫn được dùng rộng rãi trong công 
+nghiệp nhờ dễ kiểm tra và không cần dữ liệu huấn luyện [11], nhưng khó phân biệt các con 
+số cùng định dạng như giá thuê, tiền cọc và phí. BiLSTM-CRF [12] học được biến thể ngôn 
+ngữ nhưng cần dữ liệu gán nhãn đúng miền. Gần đây, mô hình ngôn ngữ lớn (LLM) được 
+dùng rộng rãi cho trích xuất thông tin [13]; GoLLIE [14] cho thấy đưa hướng dẫn gán nhãn 
+vào LLM giúp trích xuất tốt hơn trên tác vụ chưa gặp. Tuy vậy, chưa thể giả định LLM tốt 
+hơn trên miền này, và còn hai vấn đề: LLM có thể bịa giá trị, và đầu ra dễ vi phạm định 
+dạng khi lược đồ JSON phức tạp [15]. Kỹ thuật neo nguồn (source grounding), tức gắn mỗi 
+giá trị với vị trí chính xác trong văn bản gốc, giúp kiểm chứng kết quả [16]. Trong miền 
+BĐS, dữ liệu trích xuất đã được dùng để xây dựng đài quan sát thị trường [17] và là m đặc 
+trưng cho mô hình định giá tự động [18]. 
+Ứng dụng thực tế. Các nghiên cứu trên phục vụ phân tích giá theo khu vực, định giá 
+tự động và lọc tin rao kém chất lượng; tuy nhiên đều hướng tới nhà phân tích hoặc nền tảng 
+rao vặt, chưa hướng tới người đi thuê đang đọc một tin cụ thể. 
+1.2. The limitation of current works / Những hạn chế của các nghiên cứu hiện tại 
+• Khác miền dữ liệu:  các bộ dữ liệu tiếng Việt [3], [4], [5] lấy từ website rao vặt có 
+biểu mẫu; bài đăng Facebook nhiễu hơn và không có trường nhập liệu. 
+• Thiếu so sánh có hệ thống: trong phạm vi tìm kiếm của nhóm, chưa có công trình so 
+sánh regex, LLM và phương pháp lai trên cùng một tập chuẩn cho bài đăng cho thuê 
+tiếng Việt. 
+• Dừng ở mức span:  các công trình báo cáo F1 mức thực thể, ít đánh giá giá trị đã 
+chuẩn hoá (ví dụ “5tr5/th” → 5.500.000 đồng/tháng) và chưa tách được giá thuê khỏi 
+các khoản phí. 
+• Chưa có nhận định cho từng tin:  dữ liệu trích xuất mới được dùng cho thống kê 
+tổng hợp; ảnh hưởng của lỗi trích xuất lên thống kê hạ nguồn hầu như chưa được đo. 
+
+[PDF PAGE 3]
+3 
+• Bối cảnh mới chưa được tính đến: Meta gỡ Groups API (22/04/2024) [19]; hệ thống 
+hành chính còn 34 tỉnh, hai cấp (01/07/2025) [1]; Luật Bảo vệ dữ liệu cá nhân có hiệu 
+lực từ 01/01/2026 [20]. 
+1.3. The necessity of the research / Sự cần thiết tiến hành nghiên cứu 
+Vấn đề: với một bài đăng cho thuê, hệ thống cần (1) xác định loại bài; (2) trích xuất 
+và chuẩn hoá Giá, Diện tích, Vị trí, Số phòng, mỗi giá trị có đoạn văn nguồn và độ tin cậy, 
+trường không có thì trả về rỗng; (3) so giá với các bài tương tự trong kho dữ liệu và chỉ đưa 
+ra nhận định khi đủ dữ liệu. 
+Câu hỏi nghiên cứu: 
+• RQ1: Regex, LLM và phương pháp lai khác nhau thế nào về độ chính xác trên từng 
+trường? 
+• RQ2: Neo nguồn và đối chiếu có giảm giá trị bịa của LLM không? 
+• RQ3: Hiện tượng ngôn ngữ nào gây lỗi nhiều nhất (dự kiến: các khoản phí bị nhầm 
+thành giá)? 
+• RQ4: Lỗi trích xuất làm lệch thống kê giá thị trường bao nhiêu? 
+Tính mới (ở mức đồ án môn học):  đề tài không đề xuất mô hình học máy mới mà 
+kết hợp và đánh giá có hệ thống các kỹ thuật đã có trên một miền dữ liệu chưa được khai 
+thác: bài đăng cho thuê trên mạng xã hội, có tách giá thuê khỏi các khoản phí, chuẩn hoá 
+địa chỉ theo hệ hành chính mới, và  nhận định giá cho từng tin kèm mức độ chắc chắn (số 
+bài so sánh N, khoảng tứ phân vị). 
+Ý nghĩa: về khoa học, cung cấp bằng chứng về sự đánh đổi giữa luật tất định và LLM 
+trên văn bản tiếng Việt nhiễu; về thực tiễn, giúp người đi thuê, nhất là sinh viên, đánh giá 
+nhanh một tin trước khi liên hệ. 
+2. Research objectives / Mục tiêu của đề tài 
+Mục tiêu tổng quát:  xây dựng và đánh giá ReNER -VN, hệ thống tự động đọc bài 
+đăng cho thuê nhà trên Facebook Groups, điền bảng thông tin chuẩn hoá và đưa ra nhận 
+định giá dựa trên dữ liệu đã thu thập. 
+• O1. Đặc tả bài toán: lược đồ đầu ra, bộ nhãn BIO và hướng dẫn gán nhãn. 
+• O2. Xây dựng extension Chrome với hai chế độ Thu thập và Nhận định. 
+• O3. Xây dựng ba hệ trích xuất (Regex, LLM có neo nguồn, Lai) và bộ chuẩn hoá giá 
+trị. 
+• O4. Xây dựng kho thị trường và module nhận định giá theo nhóm bài tương tự. 
+• O5. Xây dựng tập chuẩn và đánh giá để trả lời RQ1–RQ4. 
+• O6. Xây dựng web app trực quan hoá quá trình trích xuất, bảng dữ liệu và thống kê 
+thị trường. 
+
+[PDF PAGE 4]
+4 
+3. Research scope / Phạm vi nghiên cứu 
+Bảng 1. Phạm vi đề tài 
+Khía cạnh Trong phạm vi Ngoài phạm vi 
+Loại tin Cho thuê để ở: phòng trọ, CCMN, căn hộ dịch 
+vụ, nhà nguyên căn Mua bán nhà đất 
+Khu vực 3–5 phường quanh cơ sở trường của nhóm 
+(chốt trong tuần 1) Toàn thành phố, toàn quốc 
+Thông tin 
+Giá thuê, Diện tích, Vị trí, Số phòng (kèm loại 
+hình) và các khoản phí (cọc, điện, nước, dịch 
+vụ) 
+Pháp lý, tiện ích, nội dung ảnh 
+Dữ liệu Tập chuẩn ~100 bài gán tay; kho thị trường 
+300–500 bài tự trích xuất Thu thập quy mô lớn 
+Phương pháp Regex, LLM (Gemini), phương pháp lai Huấn luyện mô hình mới (để làm 
+hướng phát triển) 
+Nhận định So sánh giá và giá/m² với các tin tương tự; xu 
+hướng theo tuần nếu đủ dữ liệu 
+Định giá, giá giao dịch, lời 
+khuyên tài chính 
+ 
+4. Feasibility of research / Tính khả thi của đề tài 
+• Dữ liệu: nhóm tự thu bằng extension khi lướt các nhóm cho thuê quanh trường; tập 
+chuẩn khoảng 100 bài cần 5–8 giờ công gán nhãn (ước lượng của nhóm). 
+• Kỹ thuật: toàn bộ dùng công cụ mã nguồn mở hoặc bậc miễn phí: Chrome Extension, 
+FastAPI, SQLite, Next.js, Gemini API, thư viện ánh xạ đơn vị hành chính 63 → 34 
+tỉnh [21]. Regex, chuẩn hoá văn bản, phân loại văn bản, TF -IDF đã được học trong 
+môn TMG301. Không cần GPU vì không huấn luyện mô hình. 
+• Nhân lực và thời gian:  4 thành viên chia 4 vai trò (bảng thông tin đầu đề cương), 
+thực hiện trong 4 tuần; tuần cuối dành cho đánh giá và hoàn thiện. 
+• Chi phí: gần như bằng 0 (bậc miễn phí của Gemini, phần mềm mã nguồn mở, máy 
+cá nhân). 
+• Pháp lý và đạo đức:  điều khoản của Meta hạn chế thu thập tự động, nên extension 
+chỉ đọc bài trong nhóm mà người dùng là thành viên, ở quy mô nhỏ, và dừng khi 
+Facebook yêu cầu xác minh. Chỉ những tin người dùng đồng ý đóng góp mới vào kho; 
+số điện thoại được ẩn ngay khi nhập (không trích xuất thông tin liên hệ), không lưu 
+tên người đăng, dữ liệu chỉ dùng nội bộ để thống kê và không đăng lại công khai, phù 
+hợp Luật Bảo vệ dữ liệu cá nhân [20]. 
+Bảng 2. Rủi ro chính và cách xử lý 
+Rủi ro Cách xử lý 
+Facebook đổi giao diện làm 
+extension đọc sai 
+Bộ chọn phần tử đặt trong một tệp cấu hình; lưu HTML để kiểm 
+thử lại và phát lại khi demo 
+Gemini hết hạn mức hoặc trả sai 
+định dạng 
+Chỉ gọi LLM khi regex không chắc; kiểm tra đầu ra và lưu đệm 
+kết quả 
+Không đủ bài tương tự để so sánh Thu hẹp khu vực; khi N < 10 hệ thống báo “chưa đủ dữ liệu” thay 
+vì đưa ra con số 
+Môi giới đăng lại một tin nhiều lần 
+làm lệch thống kê Gộp trùng hai mức (cùng bài, cùng phòng); chỉ gộp khi đủ căn cứ 
+
+[PDF PAGE 5]
+5 
+Rủi ro Cách xử lý 
+Nhầm thay đổi thành phần dữ liệu 
+với thay đổi giá 
+Luôn hiện cỡ mẫu theo từng nhóm và từng giai đoạn; so sánh 
+cùng tiêu chí phân nhóm 
+Rò rỉ dữ liệu kiểm thử Tách riêng 10 bài kiểm thử từ đầu, chỉ đánh giá một lần sau khi 
+đóng băng hệ thống 
+ 
+5. Approach and Method / Cách tiếp cận và phương pháp nghiên cứu 
+5.1. Kiến trúc hệ thống 
+Hệ thống gồm ba lớp (Hình 1): extension thu bài từ Facebook; pipeline trích xuất viết 
+bằng Python/FastAPI; và lớp kho dữ liệu với module nhận định. Ở chế độ Thu thập, bài sau 
+khi trích xuất đi qua bước gộp trùng rồi vào kho thị trường. Ở chế độ Nhận định, bài người 
+dùng chọn được trích xuất rồi so với kho. 
+ 
+Hình 1. Kiến trúc hệ thống ReNER-VN. 
+5.2. Thu thập dữ liệu bằng extension 
+Extension Chrome đọc bài ngay trong phiên duyệt của người dùng, không cần xử lý 
+đăng nhập. Khi lướt nhóm, extension tự bấm “Xem thêm”, lấy nội dung và đường dẫn bài, 
+rồi gửi HTML thô về backend. Phần tách bài viết bằng Python, nên HTML đã lưu có thể 
+phát lại (Replay) để kiểm thử và demo khi mất mạng. Số điện thoại được ẩn ngay khi nhận 
+bài. Mỗi bản ghi lưu liên kết nguồn, thời điểm đăng (nếu có), thời điểm thu thập và phiên 
+bản bộ trích xuất, để kết quả có thể tái lập. 
+
+
+[PDF PAGE 6]
+6 
+5.3. Trích xuất thông tin 
+• Hình thức hoá: mỗi bài được tách thành token và gán nhãn theo lược đồ BIO [8] cho 
+4 trường chính (PRICE, AREA, LOC, ROOM) và nhãn phụ FEE cho các khoản phí. 
+Nhãn FEE giúp đo được khả năng tách giá thuê khỏi phí, điểm khó nhất của bài cho 
+thuê. HMM và CRF [9], [10] được trình bày làm nền lý thuyết; regex chính là cách 
+mã hoá thủ công các đặc trưng mà CRF học được. 
+• Tiền xử lý: chuẩn hoá Unicode, từ điển viết tắt (PN, WC, CCMN, tr, k…), phân loại 
+bài (cho thuê, cần thuê, ở ghép, spam) và giữ ánh xạ vị trí ký tự để hiển thị đúng đoạn 
+văn nguồn. 
+• Bộ regex (baseline): các luật có mã định danh cho giá thuê (“5tr5/th”, “1tr2/người”), 
+các khoản phí (“3k5/số”, “100k/người”, “cọc 1 tháng”), diện tích (“30m2”) và số 
+phòng (“1PN”, “gác lửng”); luật loại trừ dựa trên ngữ cảnh để không nhầm phí thành 
+giá. 
+• Bộ LLM: Gemini với vài ví dụ mẫu và lược đồ JSON phẳng [15]. LLM phải trả về 
+đoạn trích nguyên văn cho mỗi giá trị; giá trị không tìm thấy trong bài gốc bị loại [16]. 
+LLM chỉ xác định đoạn văn và loại của nó; việc quy đổi số do mã tất định đảm nhận 
+để tránh lỗi tính toán. 
+• Chuẩn hoá: giá về đồng/tháng (có cờ “bao điện nước”, giá theo người); diện tích về 
+m²; số phòng kèm loại hình; vị trí gồm mốc (“gần ĐH FPT”), phường mới theo hệ 34 
+tỉnh [1], [21], và tên cũ được giữ lại. 
+• Đối chiếu (phương pháp lai): hai nguồn khớp nhau thì độ tin cậy cao; chỉ một nguồn 
+thì trung bình; lệch nhau thì thấp và gắn cờ “cần xem”. Đây là quy tắc thiết kế, sẽ 
+được điều chỉnh trên tập phát triển. 
+5.4. Kho thị trường và nhận định giá 
+• Vào kho: chỉ các tin người dùng đồng ý đóng góp, có độ tin cậy cao và đủ giá thuê, 
+vị trí. 
+• Gộp trùng hai mức: cùng bài (mã bài, liên kết); cùng phòng (vị trí, diện tích, giá và 
+độ giống nội dung theo TF-IDF + cosine [10]). Chỉ gộp khi đủ căn cứ; giữ lịch sử thay 
+đổi giá của phòng. 
+• Chỉ số giá:  trung vị giá thuê, khoảng P25 –P75 và giá/m²/tháng (tin thiếu diện tích 
+không tham gia chỉ số này), theo khu vực, loại phòng, khoảng diện tích và cửa sổ thời 
+gian; luôn kèm số phòng sau gộp trùng và độ mới của dữ liệu. 
+• Xu hướng (nếu đủ dữ liệu): trung vị theo tuần với cùng tiêu chí phân nhóm, kèm cỡ 
+mẫu, để không nhầm thay đổi thành phần dữ liệu với thay đổi giá. 
+• Nhóm bài tương tự: cùng khu vực, loại hình, khoảng diện tích, nội thất và độ mới. 
+• Nhận định: so giá của tin với trung vị của nhóm (dùng trung vị vì giá rao có ngoại 
+lai), kèm khoảng tứ phân vị, số bài N và ba bài giống nhất. Khi N < 10, hệ thống 
+không đưa ra kết luận. 
+• Cách diễn đạt: luôn ghi rõ chỉ số phản ánh giá chào thuê của mẫu dữ liệu Facebook 
+đã thu, không đại diện toàn thị trường hay giá giao dịch. 
+
+[PDF PAGE 7]
+7 
+ 
+Hình 2. Bài đăng được gán nhãn (trái) và panel nhận định trong extension (phải); số liệu chỉ để minh 
+hoạ. 
+Web app gồm các màn hình: Trích xuất (bôi màu đoạn văn theo nhãn, hiển thị nguồn 
+và độ tin cậy), So sánh (Regex, LLM và nhãn chuẩn), Bảng dữ liệu, Thị trường (phân bố 
+giá theo khu vực, loại hình) và Đánh giá. Thông tin không truyền đạt chỉ bằng màu và đáp 
+ứng mức tương phản WCAG AA. 
+5.5. Thiết kế thực nghiệm và đánh giá 
+• Hai tập dữ liệu:  tập chuẩn khoảng 100 bài gán nhãn tay (10 bài kiểm thử phức tạp 
+giữ riêng, còn lại để phát triển) và kho thị trường 300–500 bài không gán nhãn. 
+• Gán nhãn: hai người gán chéo 20 bài và đo độ đồng thuận bằng hệ số kappa [22]. 
+• Tách tập theo phòng: các bài đăng lại của cùng một phòng phải nằm cùng một tập, 
+tránh rò rỉ giữa tập phát triển và tập kiểm thử. 
+• Quy trình: mọi điều chỉnh chỉ làm trên tập phát triển; hệ thống được đóng băng rồi 
+chạy đúng một lần trên 10 bài kiểm thử. 
+• Chỉ số: Precision, Recall, F1 mức thực thể [23]; tỉ lệ giá trị chuẩn hoá đúng; tỉ lệ trả 
+rỗng đúng khi bài không có thông tin (đo mức bịa); độ chính xác gộp trùng; chi phí 
+và thời gian xử lý. 
+• RQ4: trên tập chuẩn, so trung vị giá theo nhóm tính từ nhãn tay với trung vị tính từ 
+kết quả hệ thống; kiểm tra thủ công một mẫu thống kê trong kho. 
+6. Research plan / Kế hoạch thực hiện nghiên cứu 
+Bảng 3. Kế hoạch thực hiện 
+No. Date Task Output Person in 
+charge 
+1 05/10/2026 – 
+11/10/2026 
+Chốt khu vực, lược đồ, bộ nhãn BIO 
+và hướng dẫn gán nhãn Đặc tả, hướng dẫn v1 Cả nhóm 
+2 05/10/2026 – 
+11/10/2026 
+Extension v0 (đọc bài, gửi về API); 
+khung backend; chạy thử Gemini 
+Extension v0, khung 
+API TV4, TV2 
+
+
+[PDF PAGE 8]
+8 
+No. Date Task Output Person in 
+charge 
+3 05/10/2026 – 
+11/10/2026 
+Regex v0; hướng thiết kế và khung 
+web app Regex v0, wireframe TV1, TV3 
+4 05/10/2026 – 
+25/10/2026 Thu kho thị trường qua extension 300–500 bài Cả nhóm (TV4 
+điều phối) 
+5 12/10/2026 – 
+18/10/2026 
+Xây tập chuẩn: gán nhãn ~100 bài, gán 
+chéo 20 bài 
+Tập chuẩn, hệ số 
+kappa TV1, TV4 
+6 12/10/2026 – 
+18/10/2026 Regex v1, bộ chuẩn hoá, phân loại bài Module trích xuất 
+regex TV1 
+7 12/10/2026 – 
+25/10/2026 
+Bộ LLM có neo nguồn; chuẩn hoá địa 
+chỉ Module LLM TV2 
+8 12/10/2026 – 
+25/10/2026 
+Màn Trích xuất, Bảng; panel nhận định 
+trong extension Giao diện chính TV3 
+9 19/10/2026 – 
+25/10/2026 
+Bộ đối chiếu; gộp trùng hai mức; chỉ 
+số giá, giá/m² và nhận định 
+Hệ lai, module nhận 
+định TV1, TV2 
+10 19/10/2026 – 
+25/10/2026 
+Script đánh giá; tinh chỉnh trên tập 
+phát triển; phân tích lỗi 
+Kết quả trên tập phát 
+triển TV1, TV4 
+11 26/10/2026 – 
+01/11/2026 
+Đóng băng hệ thống; đánh giá trên tập 
+kiểm thử (RQ1–RQ4); màn So sánh, 
+Thị trường, Đánh giá 
+Bảng kết quả, giao 
+diện hoàn chỉnh TV4, TV3 
+12 26/10/2026 – 
+01/11/2026 
+Báo cáo, slide, diễn tập demo và vấn 
+đáp 
+Báo cáo cuối kỳ, 
+video demo Cả nhóm 
+ 
+Computational Resource Requirements 
+Không cần GPU. Nhóm dùng 4 máy cá nhân (RAM ≥ 8 GB), trình duyệt Chrome và 
+một tài khoản Facebook của thành viên tự nguyện. Gemini API dùng bậc miễn phí, ước 
+lượng 1.000–1.500 lượt gọi cho cả dự án, được giãn theo ngày và lưu đệm. Dung lượng lưu 
+trữ dưới 1 GB. 
+7. Expected results / Dự kiến kết quả đề tài 
+• Lý thuyết: mô hình hoá bài toán trích xuất thông tin cho thuê nhà từ mạng xã hội 
+thành gán nhãn chuỗi kết hợp chuẩn hoá giá trị; bộ nhãn và hướng dẫn gán nhãn cho 
+miền này. 
+• Phương pháp: pipeline lai Regex + LLM có neo nguồn và đối chiếu; quy trình đánh 
+giá đến mức giá trị chuẩn hoá; kết quả trả lời RQ1 –RQ4. Đề cương không đặt trước 
+con số kết quả. 
+• Sản phẩm: extension ReNER-VN (thu thập và nhận định), web app, tập chuẩn đã ẩn 
+danh kèm hướng dẫn gán nhãn, mã nguồn và báo cáo. 
+• Ứng dụng và hướng phát triển:  công cụ hỗ trợ sinh viên tìm nhà thuê; có thể mở 
+rộng sang khu vực khác hoặc tin tuyển dụng; dùng dữ liệu đã gán nhãn để tinh chỉnh 
+PhoBERT [6] hoặc CRF trong giai đoạn sau. 
+References 
+[1] Quốc hội nước CHXHCN Việt Nam, Nghị quyết số 202/2025/QH15 về việc sắp xếp đơn vị hành 
+chính cấp tỉnh, ngày 12/06/2025. 
+
+[PDF PAGE 9]
+9 
+[2] L. V. Pham and S. B. Pham, “Information extraction for Vietnamese real estate advertisements,” in 
+Proc. 4th Int. Conf. Knowledge and Systems Engineering (KSE), 2012, pp. 181–186, doi: 
+10.1109/KSE.2012.27. 
+[3] S. Huynh et al., “Named entity recognition for Vietnamese real estate advertisements,” in Proc. 8th 
+NAFOSTED Conf. Information and Computer Science (NICS), 2021, pp. 23–28, doi: 
+10.1109/NICS54270.2021.9701519. 
+[4] B. T. Nguyen et al., “An end-to-end named entity recognition platform for Vietnamese real estate 
+advertisement posts and analytical applications,” IEEE Access, vol. 10, pp. 87681–87697, 2022, doi: 
+10.1109/ACCESS.2022.3195496. 
+[5] K. Q. Tran et al., “SEND: A simple and efficient noise detection algorithm for Vietnamese real 
+estate posts,” in Proc. 36th Pacific Asia Conf. Language, Information and Computation (PACLIC 
+36), 2022, pp. 647–656. 
+[6] D. Q. Nguyen and A. T. Nguyen, “PhoBERT: Pre-trained language models for Vietnamese,” in 
+Findings of EMNLP 2020, pp. 1037–1042, doi: 10.18653/v1/2020.findings-emnlp.92. 
+[7] T.-N. Nguyen, T.-P. Le, and K. Nguyen, “ViLexNorm: A lexical normalization corpus for 
+Vietnamese social media text,” in Proc. EACL, vol. 1, 2024, pp. 1421–1437. 
+[8] L. A. Ramshaw and M. P. Marcus, “Text chunking using transformation-based learning,” in Proc. 
+3rd Workshop on Very Large Corpora, 1995. 
+[9] J. Lafferty, A. McCallum, and F. Pereira, “Conditional random fields: Probabilistic models for 
+segmenting and labeling sequence data,” in Proc. 18th Int. Conf. Machine Learning (ICML), 2001, 
+pp. 282–289. 
+[10] D. Jurafsky and J. H. Martin, Speech and Language Processing, 3rd ed. (draft). Stanford University, 
+online edition. 
+[11] L. Chiticariu, Y. Li, and F. R. Reiss, “Rule-based information extraction is dead! Long live rule-
+based information extraction systems!,” in Proc. EMNLP, 2013, pp. 827–832. 
+[12] G. Lample, M. Ballesteros, S. Subramanian, K. Kawakami, and C. Dyer, “Neural architectures for 
+named entity recognition,” in Proc. NAACL-HLT, 2016, pp. 260–270, doi: 10.18653/v1/N16-1030. 
+[13] D. Xu et al., “Large language models for generative information extraction: A survey,” Frontiers of 
+Computer Science, vol. 18, no. 6, 2024, doi: 10.1007/s11704-024-40555-y. 
+[14] O. Sainz, I. García-Ferrero, R. Agerri, O. Lopez de Lacalle, G. Rigau, and E. Agirre, “GoLLIE: 
+Annotation guidelines improve zero-shot information-extraction,” in Proc. ICLR, 2024. 
+[15] S. Geng et al., “Generating structured outputs from language models: Benchmark and studies” 
+(JSONSchemaBench), in Proc. ICML, 2025, arXiv:2501.10868. 
+[16] Google, “LangExtract” (Python library, version 1.6.0, Apache License 2.0), GitHub repository 
+google/langextract, 2026. 
+[17] L. Tanevitch, A. Fernández, J. P. Del Río, and D. Torres, “Attribute-value extraction: The case of a 
+real estate observatory,” in Proc. JAIIO – ASAID, vol. 10, no. 1, 2024, pp. 181–194. 
+[18] H. Faxvaag, U. J. F. Aarsnes, and A. Oust, “Incorporating large language models in automated real 
+estate valuation,” Journal of Real Estate Research, vol. 48, no. 3, pp. 454–479, 2025, doi: 
+10.1080/08965803.2025.2587313. 
+[19] Meta for Developers, “Graph API v19.0 changelog — deprecation of the Groups API,” 2024 
+(Groups API permissions removed on 22 April 2024). 
+[20] Quốc hội nước CHXHCN Việt Nam, Luật Bảo vệ dữ liệu cá nhân, số 91/2025/QH15, có hiệu lực từ 
+ngày 01/01/2026. 
+[21] T. N. M. Hieu, “vietnamadminunits: Python library and open dataset for Vietnam's administrative 
+units (63-province, 34-province and 63→34 mapping),” GitHub repository 
+tranngocminhhieu/vietnamadminunits, 2025. 
+[22] J. Cohen, “A coefficient of agreement for nominal scales,” Educational and Psychological 
+Measurement, vol. 20, no. 1, pp. 37–46, 1960, doi: 10.1177/001316446002000104. 
+[23] E. F. Tjong Kim Sang and F. De Meulder, “Introduction to the CoNLL-2003 shared task: Language-
+independent named entity recognition,” in Proc. CoNLL at HLT-NAACL 2003, pp. 142–147. 

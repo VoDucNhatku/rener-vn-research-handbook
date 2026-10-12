@@ -1,0 +1,107 @@
+[
+  {
+    "id": "S01",
+    "title": "User needs",
+    "url": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs"
+  },
+  {
+    "id": "S02",
+    "title": "Example Mapping",
+    "url": "https://cucumber.io/docs/bdd/example-mapping/"
+  },
+  {
+    "id": "S03",
+    "title": "Datasheets for Datasets",
+    "url": "https://arxiv.org/pdf/1803.09010"
+  },
+  {
+    "id": "S04",
+    "title": "Measurement and Fairness",
+    "url": "https://arxiv.org/pdf/1912.05511"
+  },
+  {
+    "id": "S05",
+    "title": "CheckList",
+    "url": "https://aclanthology.org/2020.acl-main.442.pdf"
+  },
+  {
+    "id": "S06",
+    "title": "Statistical significance in NLP",
+    "url": "https://aclanthology.org/P18-1128.pdf"
+  },
+  {
+    "id": "S07",
+    "title": "SEND Vietnamese real estate",
+    "url": "https://aclanthology.org/2022.paclic-1.71.pdf"
+  },
+  {
+    "id": "S08",
+    "title": "Data Statements for NLP",
+    "url": "https://aclanthology.org/Q18-1041.pdf"
+  },
+  {
+    "id": "S09",
+    "title": "Idempotent APIs",
+    "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/"
+  },
+  {
+    "id": "S10",
+    "title": "Timeouts retries backoff jitter",
+    "url": "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/"
+  },
+  {
+    "id": "S11",
+    "title": "PostgreSQL isolation",
+    "url": "https://www.postgresql.org/docs/18/transaction-iso.html"
+  },
+  {
+    "id": "S12",
+    "title": "PostgreSQL SELECT locking",
+    "url": "https://www.postgresql.org/docs/18/sql-select.html"
+  },
+  {
+    "id": "S13",
+    "title": "Extension service worker lifecycle",
+    "url": "https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle"
+  },
+  {
+    "id": "S14",
+    "title": "Extension message passing",
+    "url": "https://developer.chrome.com/docs/extensions/develop/concepts/messaging"
+  },
+  {
+    "id": "S15",
+    "title": "Extension storage",
+    "url": "https://developer.chrome.com/docs/extensions/reference/api/storage"
+  },
+  {
+    "id": "S16",
+    "title": "LLM prompt injection prevention",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
+  },
+  {
+    "id": "S17",
+    "title": "Authorization",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+  },
+  {
+    "id": "S18",
+    "title": "Implementing SLOs",
+    "url": "https://sre.google/workbook/implementing-slos/"
+  },
+  {
+    "id": "S19",
+    "title": "WCAG status messages",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html"
+  },
+  {
+    "id": "S20",
+    "title": "Evals for AI agents",
+    "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"
+  },
+  {
+    "id": "S21",
+    "title": "Harness long-running apps",
+    "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps"
+  }
+]

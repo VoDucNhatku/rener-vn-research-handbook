@@ -1,0 +1,199 @@
+{
+  "commit": "1b45c1f4cce8a5b40bdae9d24ac262437b857b0d",
+  "created_at_utc": "2026-10-10T09:14:26.353032+00:00",
+  "repo_files": [
+    {
+      "path": "README.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\README.md",
+      "sha256": "e0b418a51f1215eb5a5866e77aebd3c014da4e4738017f75c76a10eb718902fb",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/README.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "AGENTS.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\AGENTS.md",
+      "sha256": "c8195fc9baf5bda9760b16ba6ad9b184876f8cd6cd46533637af1eeacc3f491e",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/AGENTS.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "HARNESS.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\HARNESS.md",
+      "sha256": "d1674ca3ab9e4ef0c733994cd7d7a327dc4ebc9ecca2d76afd41d5372372058e",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/HARNESS.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "package.json",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\package.json",
+      "sha256": "b0fba838907889378488b6cfe47080e3720c0f9ed4add89f1a8a4ea7f5a24414",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/package.json",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": ".spec/spec.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\.spec\\spec.md",
+      "sha256": "b3d5b1c6ccb0ffb3329a5c18e74ebef71e120b01e4cc50731c15f7553e504aa4",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.spec/spec.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": ".spec/team.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\.spec\\team.md",
+      "sha256": "267466824f0de947b3153a4ce5d97e1500e35c93e3734a804263a5f1c5ff4aa6",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.spec/team.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": ".spec/plan/00-overview.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\.spec\\plan\\00-overview.md",
+      "sha256": "bfd6ade5353b21f5fac9b3ab6c52bf11f03105c7f147a885cfabe80d3333c33a",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.spec/plan/00-overview.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": ".spec/plan/M2-booking-payments.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\.spec\\plan\\M2-booking-payments.md",
+      "sha256": "8df99f6f4ecadffebebd565dd14a6c842f22d2a7d528d112b72b9e8ee51eb6d4",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.spec/plan/M2-booking-payments.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "harness/run.ps1",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\harness\\run.ps1",
+      "sha256": "c6760b27bdb5d13e6ae6e5bbaa38c71c0c9604662a3e5e2008d3169bb6733d56",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/run.ps1",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "harness/start-ticket.mjs",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\harness\\start-ticket.mjs",
+      "sha256": "d5098cb635d87f91cf15a0d833146cb340f593b0660002308b5ebe8a8218eafb",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/start-ticket.mjs",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "harness/sync-issues.mjs",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\harness\\sync-issues.mjs",
+      "sha256": "07d026f5eec7330a8831a1affb9a17d383d2b0406b57d91c47000b03ac2c689d",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/sync-issues.mjs",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "harness/verify.sh",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\harness\\verify.sh",
+      "sha256": "a08388696bd1f21075d735de5c9684fc7fd9e94ffb2a9f7c6787165397548818",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/verify.sh",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "harness/scope-check.sh",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\harness\\scope-check.sh",
+      "sha256": "6b537448edc4f3f5d0b710d8a6d8358a51e8b9f54f546b242b0e43c5fdaf4806",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/scope-check.sh",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "harness/guard-command.sh",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\harness\\guard-command.sh",
+      "sha256": "33652180956c368a9db98b725e48d8d8ab8c9bae6ef3998c7dfc4ace2dda153a",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/guard-command.sh",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "harness/check-agent-config.sh",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\harness\\check-agent-config.sh",
+      "sha256": "e1a331a2ba758718f227e52ec18de6f76e08f134e5f7d03fec034680d52599d6",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/check-agent-config.sh",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": ".github/workflows/dotnet.yml",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\.github\\workflows\\dotnet.yml",
+      "sha256": "1bc2dca0d99d444edde7455619d1de241b89f804a4fe2da7253779c5e6459186",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.github/workflows/dotnet.yml",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": ".husky/pre-commit",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\.husky\\pre-commit",
+      "sha256": "e9c5b1d853a5bea7eae0dd9243efab18e130d7da5f3330b4f42f6f2071da4e08",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.husky/pre-commit",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": ".husky/pre-push",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\.husky\\pre-push",
+      "sha256": "0b21fda28e18cf0e4d74749bad8f5965e4016a76b0690db807435d84799a5de1",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.husky/pre-push",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "Backend/ARCHITECTURE.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\Backend\\ARCHITECTURE.md",
+      "sha256": "375f0eb1fe5efa1fa82f5d49838867476951b64b1184635335363700799143d3",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/ARCHITECTURE.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "Frontend/ARCHITECTURE.md",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\Frontend\\ARCHITECTURE.md",
+      "sha256": "9e1dabef306a736db14cc174b1f15ed7ba13f04ce52b35dd7436335cccb8d7a0",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Frontend/ARCHITECTURE.md",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "Frontend/package.json",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\Frontend\\package.json",
+      "sha256": "492d2e85f143a2017a5a89d06da5ded4f11c9f5ab05cb26fbe030f05f90c434a",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Frontend/package.json",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "Backend/Infrastructure/DependencyInjection.cs",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\Backend\\Infrastructure\\DependencyInjection.cs",
+      "sha256": "a8b3e6f24b171d8586c7df32cebffcd1660e206cf245d7f060b1b4406d2b191a",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/Infrastructure/DependencyInjection.cs",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "Backend/Infrastructure/Modules/Payments/PaymentsModule.cs",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\Backend\\Infrastructure\\Modules\\Payments\\PaymentsModule.cs",
+      "sha256": "595d19a9e2deac1f60bea9ed368a1a6dfd20bedbe974663e312f73c0950fc743",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/Infrastructure/Modules/Payments/PaymentsModule.cs",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "Backend/Application/Features/Dispatch/OrderPaidDispatchHandler.cs",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\Backend\\Application\\Features\\Dispatch\\OrderPaidDispatchHandler.cs",
+      "sha256": "72978b75c260d09acd4568c643d9121ecd67da251464dd24138c7510c679260b",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/Application/Features/Dispatch/OrderPaidDispatchHandler.cs",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    },
+    {
+      "path": "Backend/Domain/StateMachines/JobOrderStateMachine.cs",
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\ChoThueGiupViec\\Backend\\Domain\\StateMachines\\JobOrderStateMachine.cs",
+      "sha256": "de2bbf48345a878854ac783ec40ad6453703ea8d4394a1bf6a6889b41acab04c",
+      "source_url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/Domain/StateMachines/JobOrderStateMachine.cs",
+      "coverage": "selected passages/code walkthrough, not full audit"
+    }
+  ],
+  "api_files": [
+    {
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\scale-ai-harness-2026-10-10\\check_runs.json",
+      "sha256": "233faeee34559497748460e2a6bd9cb58defe5ce119c8eb1eb6d50fdc91f2b52"
+    },
+    {
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\scale-ai-harness-2026-10-10\\issue259.json",
+      "sha256": "12b718de8a773db46585bf1c8e34217be6cfce1779bec81d773173e8a22513cb"
+    },
+    {
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\scale-ai-harness-2026-10-10\\pr260.json",
+      "sha256": "9bd05a9dd22df840c7794a99f79dc1d49326d49f4ccc6d730d2ea044609ff6c9"
+    },
+    {
+      "file": "notes\\kusshoes-to-rener-vn\\sources\\scale-ai-harness-2026-10-10\\repo.json",
+      "sha256": "cb1e7940aec7416cee9f6d3444c4491444c2ae6e7909964a9d7330cce8701888"
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+[
+  {
+    "path": "BAO-CAO-TONG-HOP-CONG-VIEC.md",
+    "title": "Báo cáo tổng hợp công việc — nghiên cứu web ReNER-VN",
+    "sections": [
+      "1. Yêu cầu của người dùng",
+      "2. Công việc đã thực hiện",
+      "3. Kết quả kiểm chứng và phát hiện chính",
+      "4. Những phần chưa thực hiện",
+      "5. Tài liệu bàn giao",
+      "6. Bổ sung ngày 11/10/2026",
+      "7. Solo AI và học cách chia việc — 11/10/2026",
+      "8. Tự phản biện và sửa tài liệu — 11/10/2026",
+      "9. Đọc sâu và chuyển kiến thức thành phản chứng — 12/10/2026"
+    ]
+  },
+  {
+    "path": "KusShoes/notes/INDEX.md",
+    "title": "Artifacts",
+    "sections": []
+  },
+  {
+    "path": "KusShoes/notes/kusshoes-local-review.md",
+    "title": "KusShoes — khảo sát repo và bản chạy local",
+    "sections": [
+      "Kết quả",
+      "Repo thực sự gồm những gì?",
+      "Môi trường local đã dựng",
+      "Đã kiểm tra",
+      "Điều chưa hoạt động / chưa xác minh",
+      "Chạy lại / dừng"
+    ]
+  },
+  {
+    "path": "notes/08-fine-tuning-mlm-summary.md",
+    "title": "TMG301 — Bài 08: Tinh chỉnh (Fine-Tuning) và Mô hình ngôn ngữ che từ (Masked Language Models)",
+    "sections": [
+      "0. Bức tranh một trang",
+      "1. Fine-tuning là gì (slide 3–6)",
+      "2. Ví dụ code: fine-tune BERT phân loại nhị phân (slide 7), đã chạy và sửa lỗi",
+      "3. Mô hình tiền huấn luyện làm điểm khởi đầu (slide 8–10)",
+      "4. Quy trình fine-tuning chi tiết (slide 11–12)",
+      "5. Lợi ích và hạn chế (slide 13–17)",
+      "6. Masked Language Model: ý tưởng (slide 18–20)",
+      "7. Mục tiêu MLM và kiến trúc (slide 21–23)",
+      "8. Tác vụ hạ nguồn (downstream tasks) với MLM (slide 24–25)",
+      "9. Bài thực hành (slide 26), đã làm và chạy thật",
+      "10. Bẫy hay gặp",
+      "11. Câu hỏi ôn thi / phỏng vấn",
+      "Thuật ngữ (Glossary)"
+    ]
+  },
+  {
+    "path": "notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md",
+    "title": "Phản biện tài liệu toàn TMG301 — 11/10/2026",
+    "sections": [
+      "1. Đã kiểm đến đâu?",
+      "2. Những lỗi và lệch nghĩa đã sửa",
+      "3. Những điểm đã có từ trước và vẫn đúng hướng",
+      "4. Khoảng trống còn mở — quan trọng hơn tìm thêm framework",
+      "5. Tư duy bổ sung để tránh hồ sơ lớn nhưng dự án vẫn yếu",
+      "6. Kiểm chứng và giới hạn bàn giao"
+    ]
+  },
+  {
+    "path": "notes/audit-2026-10-11/NGUON-DOI-CHIEU.md",
+    "title": "Nguồn đối chiếu lượt phản biện",
+    "sections": []
+  },
+  {
+    "path": "notes/audit-2026-10-11/PHAM-VI-KIEM-TRA.md",
+    "title": "Phạm vi kiểm tra từng tài liệu",
+    "sections": []
+  },
+  {
+    "path": "notes/design-rener-vn-waterfall.md",
+    "title": "ReNER-VN — bản thảo yêu cầu và kiến trúc hệ thống",
+    "sections": [
+      "1. Điều đã xác nhận và giả định thiết kế",
+      "2. Waterfall áp dụng vào dự án này",
+      "3. Ai dùng, ai hưởng lợi, ai vận hành?",
+      "4. Cây tính năng: P0 → P1 → P2",
+      "5. Luật nghiệp vụ của P0",
+      "6. Luồng xử lý và trạng thái",
+      "7. Kiến trúc đề xuất và lý do chọn",
+      "8. Mô hình dữ liệu logic",
+      "9. Hợp đồng API ở mức bản thảo",
+      "10. Màn hình người tìm trọ và admin",
+      "11. Ràng buộc kỹ thuật và vận hành",
+      "12. Tình huống nghiệm thu và trace yêu cầu",
+      "13. Phân vùng công việc và quản lý GitHub sau khi chốt thiết kế",
+      "14. Quyết định đề xuất, thay đổi so với tài liệu cũ và câu hỏi còn lại",
+      "15. Nguồn và phạm vi kiểm chứng",
+      "16. Kiến trúc thống nhất sau khi đối chiếu 10 repo"
+    ]
+  },
+  {
+    "path": "notes/github-publication-2026-10-12/PLAN.md",
+    "title": "Kế hoạch đóng gói và tạo GitHub — 12/10/2026",
+    "sections": []
+  },
+  {
+    "path": "notes/github-publication-2026-10-12/WORK_LOG.md",
+    "title": "Log xuất bản GitHub",
+    "sections": [
+      "L0 — nhận yêu cầu và chọn cách tổ chức",
+      "L1 — kiểm kê và xác định phạm vi",
+      "L2 — tổ chức lớp đọc và giữ nội dung nghiên cứu",
+      "L3 — quy trình GitHub và kiểm bản xuất"
+    ]
+  },
+  {
+    "path": "notes/HIEN-TRANG-VA-QUYET-DINH.md",
+    "title": "ReNER-VN — bối cảnh và quyết định hiện hành",
+    "sections": [
+      "1. Điều người dùng đã xác nhận",
+      "2. Ba phạm vi phải đọc riêng",
+      "3. Đọc file nào cho câu hỏi nào?",
+      "4. Năm nhãn dùng cho kết luận sau này",
+      "5. Cách dùng với một yêu cầu ngắn"
+    ]
+  },
+  {
+    "path": "notes/INDEX.md",
+    "title": "Tài liệu trong TMG301",
+    "sections": []
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/GIA-CONG-WEB-VA-AI-WORKFLOW.md",
+    "title": "Gia công website và cách làm web nhanh bằng AI",
+    "sections": [
+      "1. “Gia công web” có những loại việc nào?",
+      "2. Bộ yêu cầu và thỏa thuận cần chốt trước khi nhận việc",
+      "3. Biến yêu cầu mơ hồ thành tiêu chí nghiệm thu",
+      "4. Nghiên cứu creator/YouTube: họ làm nhanh bằng cách nào?",
+      "5. Lấy mẫu ở đâu và đưa cho AI cái gì?",
+      "6. “Fine-tune” website ở đây nghĩa là gì?",
+      "7. Áp dụng bài học vào ReNER ở mức bản thảo",
+      "8. Nên đọc/xem theo thứ tự nào?"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "title": "Sổ kiến thức: từ KusShoes đến web ReNER-VN",
+    "sections": [
+      "1. Nguồn và độ chắc chắn",
+      "2. Hiểu đề trước khi chọn thư viện",
+      "3. ReNER-VN: người dùng, giá trị và chi phí",
+      "4. Proposal biến thành sản phẩm thế nào?",
+      "5. Kiến trúc KusShoes đã nhận diện",
+      "6. Sidebar trong ảnh được làm như thế nào?",
+      "7. Animation: chọn công cụ theo việc cần diễn đạt",
+      "8. Design system và trạng thái UI",
+      "9. GitHub của KusShoes: bằng chứng ban đầu",
+      "10. Workflow GitHub đề xuất cho ReNER",
+      "11. Thiết kế nguồn và quyền truy cập",
+      "12. Những gì bản local chứng minh và chưa chứng minh",
+      "13. Các phần sẽ bổ sung theo chặng",
+      "14. Kiểm tra gợi ý “GSAP framework / Interactive motion”",
+      "15. Repo nhiều star: kiến trúc đã kiểm tra sơ bộ",
+      "16. Chuyển bài học kiến trúc thành quyết định cho ReNER",
+      "17. GitHub và tái sử dụng: thêm nguồn để kiểm tra",
+      "18. Mười repo web đáng học cho shop, quản trị và sản phẩm full-stack",
+      "19. Nguồn hướng dẫn chi tiết và thứ tự học đề xuất",
+      "20. Cách nghiên cứu một repo để học được cách làm",
+      "21. Bài học giao việc GitHub và ưu tiên áp dụng",
+      "22. Thiết kế logic ReNER-VN theo Waterfall",
+      "23. Từ 10 repo đến một kiến trúc thống nhất — khảo sát code bổ sung",
+      "24. Học sâu hơn: harness, scale, AI làm web và nguồn sát đề tài",
+      "25. Gia công web và cách creator dùng AI/template",
+      "26. Từ vibe coding đến quản lý dự án một người",
+      "27. Phản biện toàn hồ sơ — 11/10/2026",
+      "28. Đọc sâu sau phản biện — 12/10/2026"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+    "title": "ReNER-VN — học từ harness, khả năng chịu tải và luồng AI làm web",
+    "sections": [
+      "1. ChoThueGiupViec: sản phẩm chạy như thế nào?",
+      "2. Harness: cơ chế thật và giới hạn",
+      "3. Học về scale: vì sao CPU và RAM chưa đủ?",
+      "4. Người ta “dùng AI làm web thẳng” bằng luồng thông tin nào?",
+      "5. Local, tunnel và deploy: chọn theo cách trình bày demo",
+      "6. Tám repo bổ sung sát từng phần đề tài",
+      "7. Kiến thức mới so với bản tổng hợp 10 repo trước",
+      "8. Từ điển ngắn để đọc tài liệu không bị mắc ở thuật ngữ"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/PLAN.md",
+    "title": "Kế hoạch học KusShoes để thiết kế web ReNER-VN",
+    "sections": [
+      "1. Đích đến và điều đã chốt",
+      "2. Những gì đã có để tái sử dụng",
+      "3. Cách chia chặng: tuần tự, có log sau từng phần",
+      "4. MVP dự kiến để thảo luận ở C1",
+      "5. Ba phương án kiến trúc để so sánh",
+      "6. Nguồn dữ liệu và phạm vi pilot",
+      "7. Quy tắc log và quản lý kiến thức",
+      "8. Các quyết định chưa cần chặn việc nghiên cứu",
+      "9. Bổ sung ngày 09/10: nguồn motion và repo web quốc tế",
+      "10. Bổ sung 10/10: catalog 10 repo và nguồn học từng bước",
+      "11. Bản thảo logic Waterfall — cập nhật theo yêu cầu mới 10/10",
+      "12. Đối chiếu 10 repo thành kiến trúc thống nhất",
+      "13. Ưu tiên hiện hành: nghiên cứu để học, demo — cập nhật 10/10",
+      "14. Bổ sung nghiên cứu gia công web và creator — 11/10/2026",
+      "15. Solo AI development, 80/20 và quản lý thay đổi — 11/10/2026",
+      "16. Phản biện và hiệu chỉnh hồ sơ — 11/10/2026",
+      "17. Đọc sâu sau phản biện — 12/10/2026"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md",
+    "title": "Sổ tay: từ một câu ý tưởng đến công việc AI có thể làm và kiểm tra",
+    "sections": [
+      "1. Bạn làm gì, AI làm gì?",
+      "2. Luồng biến ý tưởng thành yêu cầu",
+      "3. Viết ví dụ trước khi chia file",
+      "4. Chia việc theo kết quả nhìn thấy được",
+      "5. Một task card hoàn chỉnh — chỉ là ví dụ",
+      "6. Bộ prompt ngắn dùng được nhiều lần",
+      "7. Cách giữ repo dễ hiểu mà không cấm AI sáng tạo",
+      "8. Bài thực hành phù hợp ngay lúc này",
+      "Bổ sung sau phản biện: S0 cần trả lời gì trước khi chia feature?"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md",
+    "title": "Snapshot khảo sát kiến trúc 10 repo — 10/10/2026",
+    "sections": []
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "title": "Hồ sơ nghiên cứu gia công web và AI workflow",
+    "sections": [
+      "Mức bằng chứng",
+      "Snapshot tải được"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md",
+    "title": "Tám repo liên quan — snapshot 10/10/2026",
+    "sections": []
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md",
+    "title": "Hồ sơ nguồn ChoThueGiupViec và API GitHub",
+    "sections": [
+      "File nguồn được đối chiếu chọn lọc",
+      "Snapshot API"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md",
+    "title": "Nguồn: solo AI development, UX, 80/20 và thay đổi lõi",
+    "sections": [
+      "Mức bằng chứng",
+      "Nguồn và cách sử dụng",
+      "Nguồn video/social có giới hạn"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md",
+    "title": "Nguồn cho 10 repo web — 10/10/2026",
+    "sections": []
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md",
+    "title": "Snapshot nguồn web quốc tế — 09/10/2026",
+    "sections": []
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+    "title": "Từ vibe coding đến làm web có thể bàn giao",
+    "sections": [
+      "1. Điều cần thay đổi trong cách dùng AI",
+      "2. Các hướng phát triển quốc tế và Trung Quốc đáng học",
+      "3. Người dùng thích gì ở một website?",
+      "4. Áp dụng 80/20 và xác định khâu quyết định thành bại",
+      "5. Backend “gọn nhất” nên hiểu thế nào?",
+      "6. Điều phối logic phức tạp mà vẫn hiểu được",
+      "7. Khách đổi tính năng cốt lõi: quay lại đâu?",
+      "8. Một người quản lý toàn bộ dự án với AI",
+      "9. Lộ trình đọc sách và câu hỏi tiếp theo"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/WORK_LOG.md",
+    "title": "Log công việc — học KusShoes, thiết kế ReNER-VN",
+    "sections": [
+      "C0.1 — xác nhận đầu vào và ưu tiên",
+      "C0.2 — khảo sát sơ bộ để kế hoạch có căn cứ",
+      "C0.3 — xuất kế hoạch và sổ kiến thức bản đầu",
+      "C0.4 — kiểm tra tài liệu trước khi giao",
+      "B1.1 — bổ sung nguồn motion từ ảnh tin nhắn",
+      "B1.2 — mẫu kiến trúc quốc tế và cập nhật kế hoạch",
+      "B1.3 — kiểm chứng phần bổ sung",
+      "B2.1 — tuyển chọn 10 repo đa lĩnh vực",
+      "B2.2 — đọc hướng dẫn, kiến trúc và quy trình đóng góp",
+      "B2.3 — tổng hợp vào kế hoạch và sổ kiến thức",
+      "B2.4 — kiểm chứng và bàn giao danh sách 10 repo",
+      "D1 — yêu cầu, phạm vi và logic cốt lõi theo Waterfall",
+      "D2 — luồng, kiến trúc, dữ liệu và API",
+      "D3 — màn hình, dashboard và kế hoạch nghiệm thu",
+      "D4 — tự kiểm tra và bàn giao bản thảo kiến trúc",
+      "E1 — khảo sát code bổ sung của 10 repo",
+      "E2 — tổng hợp thành kiến trúc ReNER v0.2",
+      "E3 — kiểm chứng và bàn giao bản tổng hợp 10 repo",
+      "F0 — kế hoạch nghiên cứu scale, AI workflow và harness",
+      "F1 — hoàn thành khảo sát chọn lọc ChoThueGiupViec và harness",
+      "F2 — hoàn thành phần kiến thức chịu tải giả định",
+      "F3 — hoàn thành kiến thức AI tạo web, nguồn mẫu và môi trường demo",
+      "F4 — hoàn thành khảo sát tám repo sát đề tài",
+      "F5 — hoàn thành hồ sơ và kiểm chứng tài liệu",
+      "G1 — báo cáo tổng hợp ngắn theo yêu cầu người dùng",
+      "H0 — quy chuẩn giao việc AI, kiểm tra nghiên cứu, cập nhật skill (TẠM DỪNG theo yêu cầu người dùng)",
+      "H0 — kế hoạch nghiên cứu yêu cầu gia công web và workflow AI của creator",
+      "H1 — hoàn thành khung yêu cầu cho gia công web",
+      "H2 — hoàn thành khảo sát creator/video và đối chiếu docs",
+      "H3 — hoàn thành tổng hợp workflow và hướng học cho demo",
+      "H4 — kiểm chứng và bàn giao chuyên đề gia công web/AI workflow",
+      "I0 — kế hoạch nghiên cứu solo AI, 80/20 và quản lý thay đổi",
+      "I1 — nguồn quốc tế, X và Trung Quốc",
+      "I2 — hoàn thành đối chiếu UX, case study và 80/20",
+      "I3 — hoàn thành phần backend gọn và chia việc cho một người",
+      "I4 — hoàn thành cơ chế đổi tính năng lõi và quay lại",
+      "I5 — hoàn thành hồ sơ và kiểm chứng lượt nghiên cứu solo AI",
+      "J0 — kế hoạch phản biện hồ sơ toàn TMG301",
+      "J1 — hoàn thành đối chiếu proposal và nền tảng",
+      "J2 — hoàn thành đối chiếu flow và khuôn giao việc",
+      "J3 — hoàn thành kiểm nguồn và tính nhất quán bằng chứng",
+      "J4 — bàn giao phản biện và kiểm tra sau sửa",
+      "K0 — kế hoạch đọc sâu sau phản biện",
+      "K1 — đọc nhu cầu và ví dụ nghiệm thu",
+      "K2 — đọc sâu dữ liệu, đo lường và đánh giá NLP",
+      "K3 — đọc cơ chế vận hành, extension và đánh giá AI",
+      "K4 — tổng hợp delta và bộ phản chứng",
+      "K5 — kiểm chứng hồ sơ đọc sâu"
+    ]
+  },
+  {
+    "path": "notes/nghien-cuu-sau-2026-10-11/BO-CA-PHAN-CHUNG-RENER.md",
+    "title": "26 ca phản chứng ReNER — bản nháp nghiệm thu",
+    "sections": [
+      "A. Hiểu đúng giá và chứng cứ — C01–C08",
+      "B. Bộ chấm và phép so sánh — C09–C14",
+      "C. Request, worker và quyền — C15–C20",
+      "D. Extension, AI và trải nghiệm — C21–C26",
+      "E. Cách dùng bộ này mà không tạo thêm gánh nặng"
+    ]
+  },
+  {
+    "path": "notes/nghien-cuu-sau-2026-10-11/NGHIEN-CUU-SAU-VA-THAY-DOI-TU-DUY.md",
+    "title": "Đọc sâu sau phản biện: điều gì làm ReNER giải đúng bài toán?",
+    "sections": [
+      "1. Từ hồ sơ cũ đến hiểu biết cụ thể hơn",
+      "2. Một câu ngắn được chuyển thành yêu cầu như thế nào?",
+      "3. Làm rõ “mình đang biết gì” trước khi nói “mình lưu trường gì”",
+      "4. Từ “F1 bao nhiêu” đến một protocol khó tự đánh lừa",
+      "5. Backend gọn vẫn cần hiểu những cơ chế này",
+      "6. Extension là một chuỗi biên tin cậy và vòng đời",
+      "7. Phân quyền và AI: chặn đúng hành động thay vì chỉ kiểm lời nói",
+      "8. Harness, giao việc AI và khái niệm “xong”",
+      "9. UX và vận hành phải đo được từ phía người làm việc",
+      "10. Khoảng trống nào đã tiến bộ, khoảng nào vẫn nguyên?"
+    ]
+  },
+  {
+    "path": "notes/nghien-cuu-sau-2026-10-11/PLAN.md",
+    "title": "Đọc sâu bổ sung — 11/10/2026",
+    "sections": [
+      "Tiến độ ngày 12/10/2026"
+    ]
+  },
+  {
+    "path": "notes/nghien-cuu-sau-2026-10-11/SO-NGUON-DA-DOC.md",
+    "title": "Sổ nguồn đọc sâu — 12/10/2026",
+    "sections": [
+      "Bằng chứng lưu ở đâu?",
+      "Hàng rào suy luận"
+    ]
+  },
+  {
+    "path": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+    "title": "Quy chuẩn prompt kiến trúc để giao việc cho AI",
+    "sections": [
+      "1. Vì sao cần một quy chuẩn, không chỉ một prompt dài",
+      "2. Kiến trúc 7 tầng của một lần giao việc",
+      "3. L0 — Khuôn hiến chương (`AGENTS.md`)",
+      "4. L1 — Khuôn product brief",
+      "5. L2 — Khuôn domain: thuật ngữ, luật, trạng thái",
+      "6. L3 — Khuôn architecture contract",
+      "7. L4 — Khuôn task card (phần dùng nhiều nhất)",
+      "8. L5 — Kiểm chứng và bằng chứng",
+      "9. L6 — Khuôn báo cáo sau task",
+      "10. Bộ prompt theo giai đoạn (copy và điền)",
+      "11. Giữ sáng tạo mà không mất kỷ luật",
+      "12. Danh mục lỗi đã quan sát được (đưa vào acceptance để chặn)",
+      "13. Ví dụ điền đủ: ReNER-VN",
+      "14. Checklist một trang trước khi bấm gửi cho AI",
+      "Nguồn"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/01-research-report.md",
+    "title": "Đề tài 8 — Trích xuất thông tin bất động sản từ bài đăng mạng xã hội (Real Estate NER)",
+    "sections": [
+      "0. TL;DR",
+      "1. Đọc đúng đề — giải phẫu từng câu chữ",
+      "2. Bản chất kỹ thuật: bài toán có 4 tầng",
+      "3. Bản đồ độ khó dữ liệu (taxonomy) — cơ sở để chọn \"10 bài phức tạp\"",
+      "4. Tổng quan nghiên cứu (literature landscape)",
+      "5. Kiến trúc ứng viên",
+      "6. Giao diện — hướng \"UI làm lộ NLP\"",
+      "7. Kế hoạch đánh giá (evaluation)",
+      "8. Rủi ro chính",
+      "9. Quyết định đã chốt (hỏi đáp 2026-10-03)",
+      "10. Nguồn (đã kiểm chứng trong phiên này)",
+      "Thuật ngữ (Glossary)"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/02-proposal-v1.2-change-audit.md",
+    "title": "Rà soát proposal v1.1 theo case study mới → danh sách sửa cho v1.2",
+    "sections": [
+      "0. Case study mới (đã thống nhất trong hội thoại 2026-10-03)",
+      "1. Kết luận nhanh",
+      "2. Rà soát từng mục của proposal (docx)",
+      "3. Thay đổi trong Excel (v1.1 → v1.2)",
+      "4. Hình cần vẽ lại",
+      "5. Quyết định nhóm cần chốt trước khi sửa",
+      "6. Rủi ro tiến độ"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/audit-log.md",
+    "title": "AI Audit Log — Decision Moments",
+    "sections": []
+  },
+  {
+    "path": "project-realestate-ner/notes/claims-ledger.md",
+    "title": "Claims ledger",
+    "sections": [
+      "Đính chính 11/10/2026"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/01-local-source-review.md",
+    "title": "Đọc nguồn địa phương và phản biện đề cương ReNER-VN",
+    "sections": [
+      "1. Nguồn được gửi có sự lệch đề tài",
+      "2. Tôi hiểu chính xác hệ thống dự kiến làm gì",
+      "3. Bản đồ proposal v1.3 và các quyết định đã có",
+      "4. Lõi khoa học: đây là extraction có ngữ nghĩa",
+      "5. Giá sàn, giá chào và dữ liệu thiếu giá",
+      "6. Những điểm tốt nên giữ",
+      "7. Các lỗi trọng yếu cần sửa trước khi triển khai hoặc viết paper",
+      "8. Paper cần một câu hỏi chính",
+      "9. Trình tự thực dụng sau khi đọc",
+      "10. Các câu nhóm phải trả lời được khi bảo vệ"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/02-research-evidence.md",
+    "title": "Nền tảng học thuật và thiết kế thực nghiệm — Real Estate NER tiếng Việt",
+    "sections": [
+      "1. Định vị đúng bài toán và bằng chứng gần nhất",
+      "2. NER chỉ là một bộ phận của Information Extraction",
+      "3. Giá thiếu là một đối tượng nghiên cứu",
+      "4. “Mức giá sàn” cần đổi thành một đại lượng đo được",
+      "5. Dữ liệu cộng đồng: từ đóng góp đến nhãn đáng dùng",
+      "6. Một paper có phạm vi đủ rõ",
+      "7. Dataset và splits chống kết quả đẹp giả",
+      "8. Đo từ span đến record, không dừng ở một F1",
+      "9. Lộ trình đọc và quyết định thực dụng",
+      "10. Sổ nguồn đã kiểm chứng"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/03-system-architecture.md",
+    "title": "ReNER-VN: kiến trúc có thể xây, kiểm chứng và phát triển",
+    "sections": [
+      "1. Quyết định kiến trúc quan trọng nhất",
+      "2. Quyền trình duyệt, quyền nguồn và pháp lý",
+      "3. Một backend chia module là đủ",
+      "4. Extension: mỗi lần chọn là một giao dịch",
+      "5. Hợp đồng dữ liệu: bài đăng khác tin cho thuê",
+      "6. Giá thiếu là trạng thái nghiệp vụ",
+      "7. NLP có neo nguồn và khả năng từ chối",
+      "8. Ba kho khác nhau: operational, market, research",
+      "9. Gộp trùng và phiên bản phải giữ lịch sử",
+      "10. Đưa góc nhìn giá đúng mức bằng chứng",
+      "11. Website cần năm màn hình hữu ích",
+      "12. API MVP: gửi ngắn, xử lý nền",
+      "13. Các mối đe dọa cụ thể",
+      "14. Ba luồng minh họa tổng hợp",
+      "15. Lộ trình theo cổng phụ thuộc",
+      "16. Chi phí và tiêu chí hoàn thành"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/04-adversarial-review.md",
+    "title": "Phản biện độc lập bản nền tảng ReNER-VN",
+    "sections": [
+      "1. [P1] Trạng thái nguồn và quyết định của extractor chưa tách rõ; ba schema chưa thống nhất",
+      "2. [P1] Đơn vị coverage và hai tỷ lệ “unsupported” chưa đủ cụ thể để so sánh công bằng",
+      "3. [P1] RQ-C hiện đo lỗi giá trị có điều kiện, chưa đo sai lệch toàn bộ chức năng so sánh",
+      "4. [P2] Ablation bỏ visibility states có thể tự tạo kết quả “thắng” vì thu hẹp không gian nhãn",
+      "5. [P2] Cluster tài sản và cluster template nên là hai chiều split riêng",
+      "6. Những ranh giới đã được xử lý đúng, không nên flag lại",
+      "7. Điều kiện thông qua",
+      "8. Re-scan các đoạn đã sửa theo hallucination-guard"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/05-source-audit.md",
+    "title": "Audit nguồn và claims — snapshot 09/10/2026",
+    "sections": [
+      "Claims đối chiếu được",
+      "Hai điểm đã được xử lý và kiểm tra lại",
+      "Nguồn chưa đọc đủ hoặc bị chặn"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/BAO-CAO-HIEU-DE-TAI.md",
+    "title": "Báo cáo hiểu đề tài ReNER-VN và hướng phát triển",
+    "sections": [
+      "1. Điều tôi đã hiểu từ mục tiêu của bạn",
+      "2. Chỗ lệch giữa tài liệu và đề tài",
+      "3. Nhận xét của giáo sư",
+      "4. Nhận xét của kiến trúc sư",
+      "5. Nhận xét của người làm web",
+      "6. “Giá sàn” nên được thay bằng khái niệm nào?",
+      "7. Hướng đi tôi đề xuất",
+      "8. Những file đã tạo để dùng tiếp"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/KIEM-TRA-BAN-GIAO.md",
+    "title": "Kiểm tra bản giao — 09/10/2026",
+    "sections": []
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/KIEN-THUC-NEN-TANG-RENER-VN.md",
+    "title": "ReNER-VN: nền tảng nghiên cứu và thiết kế hệ thống",
+    "sections": [
+      "1. Cách đọc và mức độ chắc chắn",
+      "2. Xác định đúng tài liệu và đúng đề tài",
+      "3. Phát biểu bài toán bằng một câu rõ ràng",
+      "4. Từ bài đăng đến quyết định: năm bài toán liên quan",
+      "5. “Giá sàn” đang có thể mang bốn nghĩa",
+      "6. Biến quan sát giấu giá thành giả thuyết kiểm chứng được",
+      "7. Nền tảng 1: span, token, sequence labeling và BIO",
+      "8. Nền tảng 2: regex và vai trò thực tế của luật",
+      "9. Nền tảng 3: CRF, PhoBERT và LLM",
+      "10. Nền tảng 4: evidence, abstention và confidence",
+      "11. Schema: đừng gom mọi thứ vào bốn ô",
+      "12. Một post không nhất thiết là một listing",
+      "13. Chuẩn hóa: giá, diện tích, vị trí, phòng",
+      "14. Dữ liệu: bốn kho có vai trò khác nhau",
+      "15. Thiết kế paper: câu hỏi nào đáng trả lời?",
+      "16. Chia tập: chặn leakage trước khi tối ưu mô hình",
+      "17. Đo đúng: từ span đến tác động lên thống kê",
+      "18. Ablation và kiểm soát chi phí",
+      "19. Thống kê tham khảo và dự đoán giá: học nền tảng đúng",
+      "20. Kiến trúc MVP: làm nhỏ nhưng giữ đường phát triển",
+      "21. Extension: cơ chế kỹ thuật và ranh giới nguồn",
+      "22. Backend và dữ liệu: contract thực dụng",
+      "23. UX: trả giá trị cho người dùng ngay trong một tin",
+      "24. An toàn dữ liệu, chất lượng và quyền sử dụng",
+      "25. Vòng học: crowdsourcing, weak supervision và active learning",
+      "26. Lộ trình 12 tuần theo gate",
+      "27. Việc nên làm trong 72 giờ đầu",
+      "28. Proposal v1.3: giữ gì và sửa gì?",
+      "29. Khung paper và gói tái lập",
+      "30. Tự kiểm tra hiểu nền tảng",
+      "31. Nghiên cứu đã có và danh mục nguồn nên đọc",
+      "32. Bộ ca gán nhãn và kiểm tra trước khi xây"
+    ]
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/PLAN.md",
+    "title": "Kế hoạch nghiên cứu nền tảng — 2026-10-09",
+    "sections": []
+  },
+  {
+    "path": "project-realestate-ner/notes/INDEX.md",
+    "title": "ReNER-VN artifact index",
+    "sections": []
+  },
+  {
+    "path": "TMG301_TongHopKienThuc.md",
+    "title": "Tổng Hợp Chi Tiết Kiến Thức Môn TMG301 (Xử Lý Ngôn Ngữ Tự Nhiên / Text Mining)",
+    "sections": [
+      "1. Xử lý văn bản cơ bản & Khoảng cách Edit (Text Normalization & Edit Distance)",
+      "2. Mô hình ngôn ngữ N-Gram (N-Gram Language Models)",
+      "3. Phân loại Naive Bayes & Phân tích cảm xúc (Naive Bayes & Sentiment)",
+      "4. Hồi quy Logistic (Logistic Regression)",
+      "5. Ngữ nghĩa Vector và Word Embeddings",
+      "6. Phân cụm văn bản (Clustering for Text Similarity)",
+      "7 & 8. Transformer & Mô hình ngôn ngữ tiền huấn luyện (Pre-Trained LMs / Fine-tuning)",
+      "9. Dịch máy (Machine Translation)",
+      "10. Hệ thống Chatbot & Đối thoại (Dialogue Systems)",
+      "11 & 12. Phân tích cú pháp (Constituency & Dependency Parsing)",
+      "13, 14 & 15. Khai phá thông tin, Sự kiện & Thời gian (Information & Event Extraction)",
+      "16 & 17. Ngữ nghĩa từ & Từ điển Cảm xúc (Word Senses & Lexicons)"
+    ]
+  }
+]

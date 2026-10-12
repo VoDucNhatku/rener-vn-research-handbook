@@ -1,0 +1,1163 @@
+{
+  "scope": "Selected authored research and user proposal originals; source URLs preserved separately",
+  "files": [
+    {
+      "path": "notes/08-fine-tuning-mlm-summary.md",
+      "original_sha256": "9c146acf3223abc0d9943af323a261cfe66c2e3fddad8e71c4d97adeaa3fa319",
+      "export_sha256": "9c146acf3223abc0d9943af323a261cfe66c2e3fddad8e71c4d97adeaa3fa319",
+      "bytes": 25097,
+      "unchanged": true,
+      "export_lf_sha256": "3986172e92324b87d09d48b7fa9362e61fee88fd5c4b0904516c3bc54fff0319"
+    },
+    {
+      "path": "notes/design-rener-vn-waterfall.md",
+      "original_sha256": "a0d787a88675b1c170739d7b9a21cc4635bfac19d3bf84e2bd626080395f95fc",
+      "export_sha256": "a0d787a88675b1c170739d7b9a21cc4635bfac19d3bf84e2bd626080395f95fc",
+      "bytes": 79704,
+      "unchanged": true,
+      "export_lf_sha256": "d0abb7219b11b35f321d9ade5bea0790e2530859a3c577a91a7f56f8aa431059"
+    },
+    {
+      "path": "notes/HIEN-TRANG-VA-QUYET-DINH.md",
+      "original_sha256": "bfe9fdd4892eafddcc89ea95ba0b12b11fef1aa288b64e3cea0b0e810a5f716d",
+      "export_sha256": "bfe9fdd4892eafddcc89ea95ba0b12b11fef1aa288b64e3cea0b0e810a5f716d",
+      "bytes": 7665,
+      "unchanged": true,
+      "export_lf_sha256": "bfe9fdd4892eafddcc89ea95ba0b12b11fef1aa288b64e3cea0b0e810a5f716d"
+    },
+    {
+      "path": "notes/INDEX.md",
+      "original_sha256": "03ba11bb015965aa8e613dc94aec176483ba7c31ed47932c086d47e61bc703f9",
+      "export_sha256": "03ba11bb015965aa8e613dc94aec176483ba7c31ed47932c086d47e61bc703f9",
+      "bytes": 3929,
+      "unchanged": true,
+      "export_lf_sha256": "96a88f52c125cfbaf5d96eb1e4f3f5378e8d551707c413e35deab95c4c409706"
+    },
+    {
+      "path": "notes/08-assets/lab_output.txt",
+      "original_sha256": "4017e538031c91bed2466b15dfd36b9aef7f02b1543262c76395cbb1e573d1fb",
+      "export_sha256": "4017e538031c91bed2466b15dfd36b9aef7f02b1543262c76395cbb1e573d1fb",
+      "bytes": 1221,
+      "unchanged": true,
+      "export_lf_sha256": "4017e538031c91bed2466b15dfd36b9aef7f02b1543262c76395cbb1e573d1fb"
+    },
+    {
+      "path": "notes/08-assets/mlm_practice.py",
+      "original_sha256": "bc79500910532f271617db912c691a6b53754f0e174d4867fdc8f1ab8c80696f",
+      "export_sha256": "bc79500910532f271617db912c691a6b53754f0e174d4867fdc8f1ab8c80696f",
+      "bytes": 1881,
+      "unchanged": true,
+      "export_lf_sha256": "bc79500910532f271617db912c691a6b53754f0e174d4867fdc8f1ab8c80696f"
+    },
+    {
+      "path": "notes/08-assets/slide7_fixed.py",
+      "original_sha256": "6faa8024198347c76834c9f66ab4784185acf61307b05cade4ae9f6399399c8b",
+      "export_sha256": "6faa8024198347c76834c9f66ab4784185acf61307b05cade4ae9f6399399c8b",
+      "bytes": 1366,
+      "unchanged": true,
+      "export_lf_sha256": "6faa8024198347c76834c9f66ab4784185acf61307b05cade4ae9f6399399c8b"
+    },
+    {
+      "path": "notes/audit-2026-10-11/additional-artifacts.json",
+      "original_sha256": "3268fe0df05c2d5e32307b9c4b95cb80ffa80fda4d923d25bfecbd6dcbf81204",
+      "export_sha256": "3268fe0df05c2d5e32307b9c4b95cb80ffa80fda4d923d25bfecbd6dcbf81204",
+      "bytes": 368,
+      "unchanged": true,
+      "export_lf_sha256": "a5e906986d118491408c9b249b70166f8601f46c568f6c91b68cf0bbbd5262ee"
+    },
+    {
+      "path": "notes/audit-2026-10-11/apply_corrections.py",
+      "original_sha256": "c0c309e6ed12c612c9435efabb0533415b0f0727c4bf633713e054bf618ac84a",
+      "export_sha256": "c0c309e6ed12c612c9435efabb0533415b0f0727c4bf633713e054bf618ac84a",
+      "bytes": 12379,
+      "unchanged": true,
+      "export_lf_sha256": "c0c309e6ed12c612c9435efabb0533415b0f0727c4bf633713e054bf618ac84a"
+    },
+    {
+      "path": "notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md",
+      "original_sha256": "0fd71a8dda546cb401696d516fa7627f5bec09ae97359af3a103bde0da566a15",
+      "export_sha256": "54f4ad9a5a6e288660fcb59ca490195ef60e459bca2a36687e969fd189f8fcb5",
+      "bytes": 19092,
+      "unchanged": false,
+      "export_lf_sha256": "1e0465642350d8767184c51e9b7a9246673cba7c8814334ccc65104f49e58472"
+    },
+    {
+      "path": "notes/audit-2026-10-11/changes.diff",
+      "original_sha256": "bfd0a6baf5215423822ef9615796859f3c0fb0c4a5623cb7296591ad8a628233",
+      "export_sha256": "bfd0a6baf5215423822ef9615796859f3c0fb0c4a5623cb7296591ad8a628233",
+      "bytes": 90628,
+      "unchanged": true,
+      "export_lf_sha256": "eb6a95d63cd44fe4249680a32c837d92d9ad2d56123ef19c90cf4a0ceb320020"
+    },
+    {
+      "path": "notes/audit-2026-10-11/claim-candidates.json",
+      "original_sha256": "385ba6949418dbfb750187c725bdc8c223dc59672f0db70e456f0708d8eb3836",
+      "export_sha256": "ed9d3f939ac7e234d2ef01cc97648790a82e515dbabc3ab00cc8196958bc1b90",
+      "bytes": 239363,
+      "unchanged": false,
+      "export_lf_sha256": "22b290d4977c9c5eea6bfb4307ca564dfc224d9aa4c4b68f710a9346ea2cf19f"
+    },
+    {
+      "path": "notes/audit-2026-10-11/correct_prompt.py",
+      "original_sha256": "1eb2c402b776a8015043a655dd023009301631b9afb4a21a597245feb923cc2e",
+      "export_sha256": "1eb2c402b776a8015043a655dd023009301631b9afb4a21a597245feb923cc2e",
+      "bytes": 16658,
+      "unchanged": true,
+      "export_lf_sha256": "1eb2c402b776a8015043a655dd023009301631b9afb4a21a597245feb923cc2e"
+    },
+    {
+      "path": "notes/audit-2026-10-11/inventory.json",
+      "original_sha256": "6b350b025967eeeba399891bac6a169f5900b388f182124420353c830c3ae9f2",
+      "export_sha256": "6b350b025967eeeba399891bac6a169f5900b388f182124420353c830c3ae9f2",
+      "bytes": 26977,
+      "unchanged": true,
+      "export_lf_sha256": "583b281ddf9022fe2e56535fa65e1893160cf42f864a4b4c6c5ad0a452658dba"
+    },
+    {
+      "path": "notes/audit-2026-10-11/NGUON-DOI-CHIEU.md",
+      "original_sha256": "a376f0ec4a8bf07a1dc2647ad04e56e6e3ce59af32a7398885a23ac44e5557ed",
+      "export_sha256": "a376f0ec4a8bf07a1dc2647ad04e56e6e3ce59af32a7398885a23ac44e5557ed",
+      "bytes": 3554,
+      "unchanged": true,
+      "export_lf_sha256": "a376f0ec4a8bf07a1dc2647ad04e56e6e3ce59af32a7398885a23ac44e5557ed"
+    },
+    {
+      "path": "notes/audit-2026-10-11/originals.json",
+      "original_sha256": "8ac0f67b8eb16458a59a3aec11251638d8ff3655925107a3ec999e3b27856a10",
+      "export_sha256": "8ac0f67b8eb16458a59a3aec11251638d8ff3655925107a3ec999e3b27856a10",
+      "bytes": 1123,
+      "unchanged": true,
+      "export_lf_sha256": "85f54e0b38d2c975f9fedfba9fab5a8adb238415c4d31af4b0a721d5f9ea4ddf"
+    },
+    {
+      "path": "notes/audit-2026-10-11/PHAM-VI-KIEM-TRA.md",
+      "original_sha256": "83ca1a4a5f5ee37d59e483a2cd97c0b11ad25e9bd0f8e01ac3bbf03ee231d1ed",
+      "export_sha256": "92d8a07ded6a6dd287842c313e296d9fc968747d8a4506343e9409e14a8cad6b",
+      "bytes": 8476,
+      "unchanged": false,
+      "export_lf_sha256": "70c0ab134e873ba491be19f8832a8bc4ab9e9a327d6b52448f6c530c39955d83"
+    },
+    {
+      "path": "notes/audit-2026-10-11/verification.json",
+      "original_sha256": "6cd48bc167cf708a326978b9832de52d4b51abc20a66b5b952013c6a82a97a9b",
+      "export_sha256": "6cd48bc167cf708a326978b9832de52d4b51abc20a66b5b952013c6a82a97a9b",
+      "bytes": 32795,
+      "unchanged": true,
+      "export_lf_sha256": "6e6d53d3e7a8a22c00b1672c96e99138dc478dfdbefe6d08a3faf627265025c4"
+    },
+    {
+      "path": "notes/audit-2026-10-11/verify_documents.py",
+      "original_sha256": "2c7ce3399fafed7fcc618a0337ad76873fcfd33e38e7d614f9251816f1100c28",
+      "export_sha256": "2c7ce3399fafed7fcc618a0337ad76873fcfd33e38e7d614f9251816f1100c28",
+      "bytes": 5639,
+      "unchanged": true,
+      "export_lf_sha256": "2c7ce3399fafed7fcc618a0337ad76873fcfd33e38e7d614f9251816f1100c28"
+    },
+    {
+      "path": "notes/github-publication-2026-10-12/PLAN.md",
+      "original_sha256": "a7cd93079f3c358a0faf53f2358f0b2ecfed6220194a940e1b3737edf4fe1f46",
+      "export_sha256": "a7cd93079f3c358a0faf53f2358f0b2ecfed6220194a940e1b3737edf4fe1f46",
+      "bytes": 1625,
+      "unchanged": true,
+      "export_lf_sha256": "a7cd93079f3c358a0faf53f2358f0b2ecfed6220194a940e1b3737edf4fe1f46"
+    },
+    {
+      "path": "notes/github-publication-2026-10-12/WORK_LOG.md",
+      "original_sha256": "d6628cf23f40e3fb92d2daba6134e403a2986fd0a849c8fa8fed517155268bc5",
+      "export_sha256": "67f2ef9ace72ba929cbf8cce0d56b3f935cfbc443959202e485a36775939bae5",
+      "bytes": 2457,
+      "unchanged": false,
+      "export_lf_sha256": "090c77ede20967484af8f2601b5b6d3c56ebddbc11cc03eca9824924439b41fd"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/GIA-CONG-WEB-VA-AI-WORKFLOW.md",
+      "original_sha256": "20b4e1a2f8bb3061ad95ea407a5ab8edb7100b6d743cf4a0d6ba6c47c0a5a8ac",
+      "export_sha256": "20b4e1a2f8bb3061ad95ea407a5ab8edb7100b6d743cf4a0d6ba6c47c0a5a8ac",
+      "bytes": 27153,
+      "unchanged": true,
+      "export_lf_sha256": "20b4e1a2f8bb3061ad95ea407a5ab8edb7100b6d743cf4a0d6ba6c47c0a5a8ac"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+      "original_sha256": "75d8ae8dd17c69b419ef210a0e6b3f83e19d7b5f7784c3435e881e8aa01f43d8",
+      "export_sha256": "f1a18b5f20a78d9e3772a9a776d4f4270bb10c1afed642a16424e5bd55c6df90",
+      "bytes": 83014,
+      "unchanged": false,
+      "export_lf_sha256": "62bfccd78929199c7a2b58b149087750385a4aaf960a7367496fbecc1b462d45"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+      "original_sha256": "2c2e8dfd18dc2ed215680702a77b39b3e18fc8fa7115fe6a03483fa89f700aab",
+      "export_sha256": "5147d85c01ef05ca860098691ca2fbd167412b1a56cbef1efc69d2e7e8cdcbae",
+      "bytes": 48531,
+      "unchanged": false,
+      "export_lf_sha256": "e8ff60ed4bc2e0ef771a634adc64bf4124163334496163006e4a943e1c3d5b95"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/PLAN.md",
+      "original_sha256": "125d7634649709213db42932b4b02ea269a1388e44b88c99ee55d36c754f4af5",
+      "export_sha256": "125d7634649709213db42932b4b02ea269a1388e44b88c99ee55d36c754f4af5",
+      "bytes": 31020,
+      "unchanged": true,
+      "export_lf_sha256": "dc03f02b7784d596c3c4599984e6db4d6fb87fd16f1a0c501d870ba4d56bfb2d"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md",
+      "original_sha256": "624aeb09bdeabd62bb7cffaa31c8fd7718f8a8b3d7d32ae3fea3f9d602b8305c",
+      "export_sha256": "624aeb09bdeabd62bb7cffaa31c8fd7718f8a8b3d7d32ae3fea3f9d602b8305c",
+      "bytes": 23153,
+      "unchanged": true,
+      "export_lf_sha256": "15d4f465047f696cde6c448fc261c2c6abab949dba912f3223e1b338f7bbe0f0"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+      "original_sha256": "bcba1497f92bb1da5a0a96e9f26b041ff9952e2f5561d54f5d48210d569cc8ae",
+      "export_sha256": "bcba1497f92bb1da5a0a96e9f26b041ff9952e2f5561d54f5d48210d569cc8ae",
+      "bytes": 39660,
+      "unchanged": true,
+      "export_lf_sha256": "2e5ae9c4d70e6398bca7a5091591e78394b9545e24642a7b0c06587fe9ea5e7f"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/WORK_LOG.md",
+      "original_sha256": "4ec7a7b23a5fe4901a23fe123cec079f017ba4927ebe02efa59b818f6d0ca84c",
+      "export_sha256": "4ec7a7b23a5fe4901a23fe123cec079f017ba4927ebe02efa59b818f6d0ca84c",
+      "bytes": 54813,
+      "unchanged": true,
+      "export_lf_sha256": "4b7e7e857b39d4f1d2a7116047d9eb804633c67d566a5b0c58c1d1752ee4571a"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/BO-CA-PHAN-CHUNG-RENER.md",
+      "original_sha256": "43cdba00e78ab7630fa19043dbd18f0630306a98df92db7b0fdc292f6b0514da",
+      "export_sha256": "43cdba00e78ab7630fa19043dbd18f0630306a98df92db7b0fdc292f6b0514da",
+      "bytes": 14718,
+      "unchanged": true,
+      "export_lf_sha256": "43cdba00e78ab7630fa19043dbd18f0630306a98df92db7b0fdc292f6b0514da"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/fetch_sources.py",
+      "original_sha256": "2e33fa4d0312943252d25ad6425a224d1ad47f99bbeda93d8188caa6ce982a13",
+      "export_sha256": "2e33fa4d0312943252d25ad6425a224d1ad47f99bbeda93d8188caa6ce982a13",
+      "bytes": 2604,
+      "unchanged": true,
+      "export_lf_sha256": "2e33fa4d0312943252d25ad6425a224d1ad47f99bbeda93d8188caa6ce982a13"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/NGHIEN-CUU-SAU-VA-THAY-DOI-TU-DUY.md",
+      "original_sha256": "b2e1182a2777f6805e62e881141cfb70ab0682a58ce36f21fb69e9a4910be18f",
+      "export_sha256": "b2e1182a2777f6805e62e881141cfb70ab0682a58ce36f21fb69e9a4910be18f",
+      "bytes": 33462,
+      "unchanged": true,
+      "export_lf_sha256": "b2e1182a2777f6805e62e881141cfb70ab0682a58ce36f21fb69e9a4910be18f"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/PLAN.md",
+      "original_sha256": "4d1265cfc140ce4d023995c618acfbb29b87a1a128744ac622613564a6e06327",
+      "export_sha256": "4d1265cfc140ce4d023995c618acfbb29b87a1a128744ac622613564a6e06327",
+      "bytes": 1780,
+      "unchanged": true,
+      "export_lf_sha256": "1f638a9e7f79f394d0b21e1cb2a220ef9512cf2319ca75413af5e8197d48eeea"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/record_reading.py",
+      "original_sha256": "e3d6fc94cff8426848d5dbc22ab4dc6839031da382222298e148ddf87ee7f3a9",
+      "export_sha256": "e3d6fc94cff8426848d5dbc22ab4dc6839031da382222298e148ddf87ee7f3a9",
+      "bytes": 4649,
+      "unchanged": true,
+      "export_lf_sha256": "e3d6fc94cff8426848d5dbc22ab4dc6839031da382222298e148ddf87ee7f3a9"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/SO-NGUON-DA-DOC.md",
+      "original_sha256": "06b81c60dc28c8cb4124aab47861026b6a3b1ed51219141bf640f4e236d3d83a",
+      "export_sha256": "06b81c60dc28c8cb4124aab47861026b6a3b1ed51219141bf640f4e236d3d83a",
+      "bytes": 9092,
+      "unchanged": true,
+      "export_lf_sha256": "06b81c60dc28c8cb4124aab47861026b6a3b1ed51219141bf640f4e236d3d83a"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/source-list.json",
+      "original_sha256": "d00030c1a2a665d1e509c32b5bfaa98e21e428d7fae8e8cb0992dc05a8218bd9",
+      "export_sha256": "d00030c1a2a665d1e509c32b5bfaa98e21e428d7fae8e8cb0992dc05a8218bd9",
+      "bytes": 2917,
+      "unchanged": true,
+      "export_lf_sha256": "d00030c1a2a665d1e509c32b5bfaa98e21e428d7fae8e8cb0992dc05a8218bd9"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/toy-metrics.json",
+      "original_sha256": "261767687d9e7bd780c3314518983ae87d189f45681dbccd07a9d8d751704fbc",
+      "export_sha256": "261767687d9e7bd780c3314518983ae87d189f45681dbccd07a9d8d751704fbc",
+      "bytes": 1262,
+      "unchanged": true,
+      "export_lf_sha256": "38f776ff221f5efde3daabb48f18c4c3c42da7e53a96567dd285da55e9a7279a"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/verification-initial.json",
+      "original_sha256": "f01e785f581a2044bd8b7ace8ff5eb82a4db7a246e91384209f473b67881bc98",
+      "export_sha256": "f01e785f581a2044bd8b7ace8ff5eb82a4db7a246e91384209f473b67881bc98",
+      "bytes": 15360,
+      "unchanged": true,
+      "export_lf_sha256": "84639cf0a0e8d209255959d8ef4435e820b093b65b155942c9b97eed9fac7412"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/verification.json",
+      "original_sha256": "7be7a145fce792dac91fb2c1d8fab23e62716187f3957c1bac6e4d3fed8bd6cf",
+      "export_sha256": "7be7a145fce792dac91fb2c1d8fab23e62716187f3957c1bac6e4d3fed8bd6cf",
+      "bytes": 15124,
+      "unchanged": true,
+      "export_lf_sha256": "ea1bd5a5058d0cfbeee92fc931eff2b6e44c1179dc33991cbb01a69bd1e0315c"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/verify_research.py",
+      "original_sha256": "40aaab113ae423ae3bc8ebe26e420116c29371461c718c8f84e525ca01ff051f",
+      "export_sha256": "40aaab113ae423ae3bc8ebe26e420116c29371461c718c8f84e525ca01ff051f",
+      "bytes": 5016,
+      "unchanged": true,
+      "export_lf_sha256": "40aaab113ae423ae3bc8ebe26e420116c29371461c718c8f84e525ca01ff051f"
+    },
+    {
+      "path": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "original_sha256": "3d0df1b83a3b3f93d49346db7f8d1585572cfbae26345ce61c72553d6d7c1189",
+      "export_sha256": "3d0df1b83a3b3f93d49346db7f8d1585572cfbae26345ce61c72553d6d7c1189",
+      "bytes": 45481,
+      "unchanged": true,
+      "export_lf_sha256": "21c8c55b6bd309ad133b15e59715023e8d25bfaed3f895e2fb25b7458fe7b423"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/BAO-CAO-TONG-HOP-CONG-VIEC.md",
+      "original_sha256": "6b9ab293b6fabc79ff3b1d4323166cfe168036773ef6709ac7e62cfc870315ec",
+      "export_sha256": "6b9ab293b6fabc79ff3b1d4323166cfe168036773ef6709ac7e62cfc870315ec",
+      "bytes": 9957,
+      "unchanged": true,
+      "export_lf_sha256": "744e2f37c28b532fcdd53437c60499b499ffef19b9760c5d480e683f093ffdf1"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/TMG301_TongHopKienThuc.md",
+      "original_sha256": "ef2c067e75a5cdefe92300e11c1edc89cde4e4d6ad2352f3e767ecd3922ce3fd",
+      "export_sha256": "ef2c067e75a5cdefe92300e11c1edc89cde4e4d6ad2352f3e767ecd3922ce3fd",
+      "bytes": 11269,
+      "unchanged": true,
+      "export_lf_sha256": "ef2c067e75a5cdefe92300e11c1edc89cde4e4d6ad2352f3e767ecd3922ce3fd"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/08-fine-tuning-mlm-summary.md",
+      "original_sha256": "3763107ac8aefd272a6264d961e9107877e5381f91f28e4892b4333861eb8459",
+      "export_sha256": "3763107ac8aefd272a6264d961e9107877e5381f91f28e4892b4333861eb8459",
+      "bytes": 23876,
+      "unchanged": true,
+      "export_lf_sha256": "3763107ac8aefd272a6264d961e9107877e5381f91f28e4892b4333861eb8459"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/design-rener-vn-waterfall.md",
+      "original_sha256": "344551e3ae03790cd29ea80afea7a2e48d5ff1462aa22af570a4729fdd5b6d36",
+      "export_sha256": "344551e3ae03790cd29ea80afea7a2e48d5ff1462aa22af570a4729fdd5b6d36",
+      "bytes": 78441,
+      "unchanged": true,
+      "export_lf_sha256": "344551e3ae03790cd29ea80afea7a2e48d5ff1462aa22af570a4729fdd5b6d36"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/INDEX.md",
+      "original_sha256": "ee00947036654763256d6ff5f3a594bf09bed6b21afceaf0c853bc86b6be8211",
+      "export_sha256": "ee00947036654763256d6ff5f3a594bf09bed6b21afceaf0c853bc86b6be8211",
+      "bytes": 3032,
+      "unchanged": true,
+      "export_lf_sha256": "055a4b1c087c51380d8f6e6a224de4a85e77c91ccc41246a27bb7bea957584a6"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/KusShoes/notes/kusshoes-local-review.md",
+      "original_sha256": "36ea7cb421bf9d6bb39baef37e8735168a65c4cbd44a8790a5c16209a0fa9c67",
+      "export_sha256": "cceb6c2dc9c22d95e892aa9133d8d3aaacf7a534cb9d4c498c2f079528b8e770",
+      "bytes": 8388,
+      "unchanged": false,
+      "export_lf_sha256": "8b72948edf31a224124cbe0bf2403995bfaf5f47a0d24821f49a447d63736cdd"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/kusshoes-to-rener-vn/GIA-CONG-WEB-VA-AI-WORKFLOW.md",
+      "original_sha256": "20b4e1a2f8bb3061ad95ea407a5ab8edb7100b6d743cf4a0d6ba6c47c0a5a8ac",
+      "export_sha256": "20b4e1a2f8bb3061ad95ea407a5ab8edb7100b6d743cf4a0d6ba6c47c0a5a8ac",
+      "bytes": 27153,
+      "unchanged": true,
+      "export_lf_sha256": "20b4e1a2f8bb3061ad95ea407a5ab8edb7100b6d743cf4a0d6ba6c47c0a5a8ac"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+      "original_sha256": "46bac7e6889acef9a1dcf7b97d24f80c24f7319170ce7ce8aa5c75d4b44e63c1",
+      "export_sha256": "46bac7e6889acef9a1dcf7b97d24f80c24f7319170ce7ce8aa5c75d4b44e63c1",
+      "bytes": 78274,
+      "unchanged": true,
+      "export_lf_sha256": "9422292cb26fe80648117951bc904173ce8a31ffa26f2fd7a38ba3cafa691314"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+      "original_sha256": "2c2e8dfd18dc2ed215680702a77b39b3e18fc8fa7115fe6a03483fa89f700aab",
+      "export_sha256": "2c2e8dfd18dc2ed215680702a77b39b3e18fc8fa7115fe6a03483fa89f700aab",
+      "bytes": 47953,
+      "unchanged": true,
+      "export_lf_sha256": "2c2e8dfd18dc2ed215680702a77b39b3e18fc8fa7115fe6a03483fa89f700aab"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/kusshoes-to-rener-vn/PLAN.md",
+      "original_sha256": "2fc5ae7f0178070e47b9d9cbafba6cca2bf469ac2894595a26b16883d1ba6f34",
+      "export_sha256": "2fc5ae7f0178070e47b9d9cbafba6cca2bf469ac2894595a26b16883d1ba6f34",
+      "bytes": 29444,
+      "unchanged": true,
+      "export_lf_sha256": "ca2431fe862e269a3f1fc97bf131581d0347e642eccfa23155c4973121ce5388"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md",
+      "original_sha256": "865baa665dd98446690f59d13152ef324a762fe88106e87512d242cc8e2b8748",
+      "export_sha256": "865baa665dd98446690f59d13152ef324a762fe88106e87512d242cc8e2b8748",
+      "bytes": 21823,
+      "unchanged": true,
+      "export_lf_sha256": "865baa665dd98446690f59d13152ef324a762fe88106e87512d242cc8e2b8748"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+      "original_sha256": "9538db50c9d9c2fdb9a43232cddc533080b1ed4f90f0e97264025e46508a4172",
+      "export_sha256": "9538db50c9d9c2fdb9a43232cddc533080b1ed4f90f0e97264025e46508a4172",
+      "bytes": 38750,
+      "unchanged": true,
+      "export_lf_sha256": "9538db50c9d9c2fdb9a43232cddc533080b1ed4f90f0e97264025e46508a4172"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/kusshoes-to-rener-vn/WORK_LOG.md",
+      "original_sha256": "74e8daff195852699f48650761057f0d8d231ac4df478140d733a1b85f2871e6",
+      "export_sha256": "74e8daff195852699f48650761057f0d8d231ac4df478140d733a1b85f2871e6",
+      "bytes": 45624,
+      "unchanged": true,
+      "export_lf_sha256": "ba39f669d66d34ef5bbe54e15aafb82ae1e64f27566c65200af7ccd11cbe6993"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "original_sha256": "1f156a9d4f79da7ec83a3923db397b12ba31546cda5a633b2710b2e934f13c31",
+      "export_sha256": "1f156a9d4f79da7ec83a3923db397b12ba31546cda5a633b2710b2e934f13c31",
+      "bytes": 41987,
+      "unchanged": true,
+      "export_lf_sha256": "a57aca296cc1649223ba8575aa4fc32fdfaec01f9977ca467f74e04783b02c08"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/01-research-report.md",
+      "original_sha256": "4ad45df01395dc47e2983080dade84c3130e26a351494755bd5371840c09b1a0",
+      "export_sha256": "4ad45df01395dc47e2983080dade84c3130e26a351494755bd5371840c09b1a0",
+      "bytes": 30824,
+      "unchanged": true,
+      "export_lf_sha256": "4ad45df01395dc47e2983080dade84c3130e26a351494755bd5371840c09b1a0"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/02-proposal-v1.2-change-audit.md",
+      "original_sha256": "9190bb842306a286cb5db78350cc392c1ee898ee712ddec54887b2a928a41bdf",
+      "export_sha256": "9190bb842306a286cb5db78350cc392c1ee898ee712ddec54887b2a928a41bdf",
+      "bytes": 13751,
+      "unchanged": true,
+      "export_lf_sha256": "9190bb842306a286cb5db78350cc392c1ee898ee712ddec54887b2a928a41bdf"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/audit-log.md",
+      "original_sha256": "223e413380be5ca99f2c59dbeda5836b084596311d7a53da8919c4b45512585f",
+      "export_sha256": "223e413380be5ca99f2c59dbeda5836b084596311d7a53da8919c4b45512585f",
+      "bytes": 1412,
+      "unchanged": true,
+      "export_lf_sha256": "3a32dbb99464e36aebadabbaabf8fd8dbc30385426b04b3031bf2e2a80733935"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/claims-ledger.md",
+      "original_sha256": "cd7b65e4017d9a5d265ed9e60475d430b4a9d83c88f52dfe92b0646b892abc43",
+      "export_sha256": "cd7b65e4017d9a5d265ed9e60475d430b4a9d83c88f52dfe92b0646b892abc43",
+      "bytes": 1079,
+      "unchanged": true,
+      "export_lf_sha256": "cd7b65e4017d9a5d265ed9e60475d430b4a9d83c88f52dfe92b0646b892abc43"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/INDEX.md",
+      "original_sha256": "7c2d0d7b3e5511cc1402a7aacd0465dda6df803a5ec29b541949882537f6347f",
+      "export_sha256": "7c2d0d7b3e5511cc1402a7aacd0465dda6df803a5ec29b541949882537f6347f",
+      "bytes": 1998,
+      "unchanged": true,
+      "export_lf_sha256": "7c2d0d7b3e5511cc1402a7aacd0465dda6df803a5ec29b541949882537f6347f"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/01-local-source-review.md",
+      "original_sha256": "ff098a4a03325ad4b1104331edfebf9f42df5a1d524a9d1140ac4f4239e7ed4c",
+      "export_sha256": "ff098a4a03325ad4b1104331edfebf9f42df5a1d524a9d1140ac4f4239e7ed4c",
+      "bytes": 26193,
+      "unchanged": true,
+      "export_lf_sha256": "ff098a4a03325ad4b1104331edfebf9f42df5a1d524a9d1140ac4f4239e7ed4c"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/02-research-evidence.md",
+      "original_sha256": "4e9f939db6bd1a04b4756215d509c5667ddbc0177695cb75bab765a2d7458858",
+      "export_sha256": "4e9f939db6bd1a04b4756215d509c5667ddbc0177695cb75bab765a2d7458858",
+      "bytes": 30882,
+      "unchanged": true,
+      "export_lf_sha256": "4e9f939db6bd1a04b4756215d509c5667ddbc0177695cb75bab765a2d7458858"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/03-system-architecture.md",
+      "original_sha256": "f5be29c283c2bd814fc31dad233aef9222d1c6d3a5958313ff2af656c4b566e8",
+      "export_sha256": "f5be29c283c2bd814fc31dad233aef9222d1c6d3a5958313ff2af656c4b566e8",
+      "bytes": 28708,
+      "unchanged": true,
+      "export_lf_sha256": "f5be29c283c2bd814fc31dad233aef9222d1c6d3a5958313ff2af656c4b566e8"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/04-adversarial-review.md",
+      "original_sha256": "cd67ea103cd1dbdf52249c747b61568a7fa6417ac437ea231d557fed87489e7c",
+      "export_sha256": "cd67ea103cd1dbdf52249c747b61568a7fa6417ac437ea231d557fed87489e7c",
+      "bytes": 21755,
+      "unchanged": true,
+      "export_lf_sha256": "cd67ea103cd1dbdf52249c747b61568a7fa6417ac437ea231d557fed87489e7c"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/05-source-audit.md",
+      "original_sha256": "4bec5e1a5c716b3d5b0e137db0891f951d1e186d7f13171a9d05681f10bcf75e",
+      "export_sha256": "4bec5e1a5c716b3d5b0e137db0891f951d1e186d7f13171a9d05681f10bcf75e",
+      "bytes": 5851,
+      "unchanged": true,
+      "export_lf_sha256": "4bec5e1a5c716b3d5b0e137db0891f951d1e186d7f13171a9d05681f10bcf75e"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/BAO-CAO-HIEU-DE-TAI.md",
+      "original_sha256": "0708c0c0014eacda5aa7c71a84a7151d6452462330a62733d43431b6ecc55b10",
+      "export_sha256": "0708c0c0014eacda5aa7c71a84a7151d6452462330a62733d43431b6ecc55b10",
+      "bytes": 9141,
+      "unchanged": true,
+      "export_lf_sha256": "0708c0c0014eacda5aa7c71a84a7151d6452462330a62733d43431b6ecc55b10"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/KIEM-TRA-BAN-GIAO.md",
+      "original_sha256": "e31b0991991071d5089837b620b3469b68144c7ee372432d5a914fe5f5214f46",
+      "export_sha256": "e31b0991991071d5089837b620b3469b68144c7ee372432d5a914fe5f5214f46",
+      "bytes": 2537,
+      "unchanged": true,
+      "export_lf_sha256": "e31b0991991071d5089837b620b3469b68144c7ee372432d5a914fe5f5214f46"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/KIEN-THUC-NEN-TANG-RENER-VN.md",
+      "original_sha256": "dfbfb5a51daace5b3045711c3a55d5f8e236bedf1fc8565c771f51d9bd1e7ff0",
+      "export_sha256": "dfbfb5a51daace5b3045711c3a55d5f8e236bedf1fc8565c771f51d9bd1e7ff0",
+      "bytes": 77290,
+      "unchanged": true,
+      "export_lf_sha256": "dfbfb5a51daace5b3045711c3a55d5f8e236bedf1fc8565c771f51d9bd1e7ff0"
+    },
+    {
+      "path": "notes/audit-2026-10-11/before/project-realestate-ner/notes/foundation-2026-10-09/PLAN.md",
+      "original_sha256": "20df8e868ef667b10b42571864c40fefd26b4c61a755e6edfc309e1305cc6212",
+      "export_sha256": "20df8e868ef667b10b42571864c40fefd26b4c61a755e6edfc309e1305cc6212",
+      "bytes": 1097,
+      "unchanged": true,
+      "export_lf_sha256": "068f65107feeaef781defb3e7ea09423607f1fa9510a8d6ce7e696fbffd0ef45"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/motion-suggestion-reference.png",
+      "original_sha256": "1b4f12548365cf40e56586a1a8d3b671fd3c35f422a4cd320c451be1f9f3b541",
+      "export_sha256": "1b4f12548365cf40e56586a1a8d3b671fd3c35f422a4cd320c451be1f9f3b541",
+      "bytes": 10947,
+      "unchanged": true
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/proposal-page-5.png",
+      "original_sha256": "e56c47864b049ee1f8e08f175dc7e92036f1ebcaf4dc1825c04c1c1f7ce96ee6",
+      "export_sha256": "e56c47864b049ee1f8e08f175dc7e92036f1ebcaf4dc1825c04c1c1f7ce96ee6",
+      "bytes": 43610,
+      "unchanged": true
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/proposal-page-7.png",
+      "original_sha256": "36f5f7dc174a1da8a1fbe4f381811de09babbab9c627175df33e93ce6628f0b0",
+      "export_sha256": "36f5f7dc174a1da8a1fbe4f381811de09babbab9c627175df33e93ce6628f0b0",
+      "bytes": 41256,
+      "unchanged": true
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/proposal-v1.3-verified-text.txt",
+      "original_sha256": "22470bde075cb4b8ece0b1400f02bcfa781a9db12e380a6a6fb0eef39333581e",
+      "export_sha256": "22470bde075cb4b8ece0b1400f02bcfa781a9db12e380a6a6fb0eef39333581e",
+      "bytes": 28491,
+      "unchanged": true,
+      "export_lf_sha256": "93c74af78ff15b1ee7610da0ba3950de739a2939e8cd11e2cf46a3094b203840"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/sidebar-reference.png",
+      "original_sha256": "6d0b5b53e696133b45ad9934efc8fa5f832ef0223896e81518fa480dfe192223",
+      "export_sha256": "6d0b5b53e696133b45ad9934efc8fa5f832ef0223896e81518fa480dfe192223",
+      "bytes": 106956,
+      "unchanged": true
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md",
+      "original_sha256": "140ad9719bc355210433262547f1dee0bbf7edb41114cce5a019bcfd25a5c7d7",
+      "export_sha256": "140ad9719bc355210433262547f1dee0bbf7edb41114cce5a019bcfd25a5c7d7",
+      "bytes": 2206,
+      "unchanged": true,
+      "export_lf_sha256": "140ad9719bc355210433262547f1dee0bbf7edb41114cce5a019bcfd25a5c7d7"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "original_sha256": "1ede634ed0924b527a8dde281b735825f2551a35b8845ff462942935c1f1767b",
+      "export_sha256": "1ede634ed0924b527a8dde281b735825f2551a35b8845ff462942935c1f1767b",
+      "bytes": 8714,
+      "unchanged": true,
+      "export_lf_sha256": "31b893f4b76518c9105e44c518c26a4b734ca591dc9a20d363955f27574cea19"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "original_sha256": "c89cc1d4aae2b5d046729412de0e69cc7e6a7ea39c26199ed224d85e6a39ee8d",
+      "export_sha256": "c89cc1d4aae2b5d046729412de0e69cc7e6a7ea39c26199ed224d85e6a39ee8d",
+      "bytes": 3999,
+      "unchanged": true,
+      "export_lf_sha256": "7ba0bf3a5d2611dff3252783f245e195336e5084d3de5dae852442bc3401a794"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+      "original_sha256": "c60d9ac83547070e60c2299dce6bd2fcac206905a542855c09eaa9c916feb4cd",
+      "export_sha256": "ba2cabde1ad1a4e9bb1cce3f57c1a20bf16fcb39d1a4e1ffc97271639b38a739",
+      "bytes": 3300,
+      "unchanged": false,
+      "export_lf_sha256": "0982b75ad8a4d5f9063849fde6572cca1c98d5cdd1075cc85cc2777daf6ebbda"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/verification.json",
+      "original_sha256": "a5cb053d43ded8ebacfe92868ceef1c07f9c0b719ac29d3c20bf6e87c0913901",
+      "export_sha256": "a5cb053d43ded8ebacfe92868ceef1c07f9c0b719ac29d3c20bf6e87c0913901",
+      "bytes": 437,
+      "unchanged": true,
+      "export_lf_sha256": "f0b1b901def26d697f3b9d0ae435a7eb3abbfda6508f9b461b5db7ebc77f406c"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/code-manifest.json",
+      "original_sha256": "5fe811409a8c6d7ea7e6e4285967c11329669e0e73a73125fcdb852790c3d926",
+      "export_sha256": "5fe811409a8c6d7ea7e6e4285967c11329669e0e73a73125fcdb852790c3d926",
+      "bytes": 1605,
+      "unchanged": true,
+      "export_lf_sha256": "662068ce4bf2561db56804d5189a901a4cff568c68985544668c58964d69961b"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "original_sha256": "834510453bfb4e562b1cbdc68abd7cd1ca96bed0219c055bf3ff86dcc416ac93",
+      "export_sha256": "834510453bfb4e562b1cbdc68abd7cd1ca96bed0219c055bf3ff86dcc416ac93",
+      "bytes": 5694,
+      "unchanged": true,
+      "export_lf_sha256": "47f34bbbc16c358f0bbf00b5c133ef783538cc9468a7f0fe004644d5f5e896c7"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md",
+      "original_sha256": "cf24b825ed1d4b160952938729c619293f611afbe051036e02f07fb7531f1e53",
+      "export_sha256": "cf24b825ed1d4b160952938729c619293f611afbe051036e02f07fb7531f1e53",
+      "bytes": 1981,
+      "unchanged": true,
+      "export_lf_sha256": "0e990102319e018b3807e1bffd351512b5af68ed6559302f801f4766794ba8bd"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/check_runs.json",
+      "original_sha256": "233faeee34559497748460e2a6bd9cb58defe5ce119c8eb1eb6d50fdc91f2b52",
+      "export_sha256": "233faeee34559497748460e2a6bd9cb58defe5ce119c8eb1eb6d50fdc91f2b52",
+      "bytes": 9514,
+      "unchanged": true,
+      "export_lf_sha256": "5d19d9fb6fead2140b51d3b310acd3cfa54e0d365bf3d976279274cd7cfe1fec"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+      "original_sha256": "12b718de8a773db46585bf1c8e34217be6cfce1779bec81d773173e8a22513cb",
+      "export_sha256": "12b718de8a773db46585bf1c8e34217be6cfce1779bec81d773173e8a22513cb",
+      "bytes": 11869,
+      "unchanged": true,
+      "export_lf_sha256": "6c3c79abad6de62d973bb49a7cf4d22403efb483e106e54a4f9aabf38a6c3bd0"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+      "original_sha256": "d414755db82b44679322c1288b6a99bc1e9a0c526891c6cdd61ea8410d031169",
+      "export_sha256": "d414755db82b44679322c1288b6a99bc1e9a0c526891c6cdd61ea8410d031169",
+      "bytes": 12334,
+      "unchanged": true,
+      "export_lf_sha256": "f1cbef4c2dffe98cb364596cca1643183c8213eafe55da95c171039ed2ed38fc"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+      "original_sha256": "9bd05a9dd22df840c7794a99f79dc1d49326d49f4ccc6d730d2ea044609ff6c9",
+      "export_sha256": "9bd05a9dd22df840c7794a99f79dc1d49326d49f4ccc6d730d2ea044609ff6c9",
+      "bytes": 24749,
+      "unchanged": true,
+      "export_lf_sha256": "ca27c30dcfd287db1a51e8a2785b14eaa7327c4c5612a53d02aa85715e555b45"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md",
+      "original_sha256": "5aada69edf7c0e86933f27ae235ddf45bce027924b61bb75707e26113d0745ab",
+      "export_sha256": "5aada69edf7c0e86933f27ae235ddf45bce027924b61bb75707e26113d0745ab",
+      "bytes": 4484,
+      "unchanged": true,
+      "export_lf_sha256": "b8f3e0efa952472fa78b4d3d8d73b61842dfeef570bc1341d29b30ebf63cf9c5"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/repo.json",
+      "original_sha256": "cb1e7940aec7416cee9f6d3444c4491444c2ae6e7909964a9d7330cce8701888",
+      "export_sha256": "cb1e7940aec7416cee9f6d3444c4491444c2ae6e7909964a9d7330cce8701888",
+      "bytes": 6140,
+      "unchanged": true,
+      "export_lf_sha256": "786dffdcd5a485a7f267fa0b560ca938bc873d58125bcd8cc3d289d7c29a23da"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/verification.json",
+      "original_sha256": "6c0252dd8d46913bf01b3aae8a41ebecafa2fd92d5a107bbfe3e784f43c887d0",
+      "export_sha256": "6c0252dd8d46913bf01b3aae8a41ebecafa2fd92d5a107bbfe3e784f43c887d0",
+      "bytes": 475,
+      "unchanged": true,
+      "export_lf_sha256": "977fb9b5b5af494ddb390431b9416220d1ceb0bba41d3089b679a891e036d06c"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "original_sha256": "59b76848209c473a055d8f8122356b8be7dce1f342ae7cd5c176103775696ef3",
+      "export_sha256": "59b76848209c473a055d8f8122356b8be7dce1f342ae7cd5c176103775696ef3",
+      "bytes": 6888,
+      "unchanged": true,
+      "export_lf_sha256": "fa2847ffcdfa6d053d77a7c6109e74b5289fc9d5be5fe197032fcb3696842e8a"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/prompt-update.json",
+      "original_sha256": "20743b813730610f37aaea1c4c978895fa251daeb0ea486fb675e610bb7ba32f",
+      "export_sha256": "20743b813730610f37aaea1c4c978895fa251daeb0ea486fb675e610bb7ba32f",
+      "bytes": 352,
+      "unchanged": true,
+      "export_lf_sha256": "55fbdc4761e33497b5a6321730aa99793af4c2279acea4db4ff8cfb2fbceba98"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md",
+      "original_sha256": "f83622db00e517b1472929a8ccf193d8fe1db32dc188c8d5476835189017b98f",
+      "export_sha256": "f83622db00e517b1472929a8ccf193d8fe1db32dc188c8d5476835189017b98f",
+      "bytes": 5972,
+      "unchanged": true,
+      "export_lf_sha256": "f83622db00e517b1472929a8ccf193d8fe1db32dc188c8d5476835189017b98f"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/verification.json",
+      "original_sha256": "06909be780454c70a16ea4888e3ef1b821f8f511b4d22278ae759ac277349731",
+      "export_sha256": "06909be780454c70a16ea4888e3ef1b821f8f511b4d22278ae759ac277349731",
+      "bytes": 2577,
+      "unchanged": true,
+      "export_lf_sha256": "098efae95f4709949e5871a0ce6987385db782551213260a77374fd1dcaedd44"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/github-metadata.json",
+      "original_sha256": "43a4f7f74e901ed68ef8d594b22dcc5cedd69c0d92fe6882e53d299384b478ba",
+      "export_sha256": "43a4f7f74e901ed68ef8d594b22dcc5cedd69c0d92fe6882e53d299384b478ba",
+      "bytes": 10189,
+      "unchanged": true,
+      "export_lf_sha256": "c167ec05bc6437358ebb2bff2ee39a1784137ce6aad70db5bbfbc1efbc386265"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md",
+      "original_sha256": "4c87d8dc34d5f62039e92cf204a60a1e97431ab5d19829c6d4793d9ff6a81ab0",
+      "export_sha256": "4c87d8dc34d5f62039e92cf204a60a1e97431ab5d19829c6d4793d9ff6a81ab0",
+      "bytes": 2556,
+      "unchanged": true,
+      "export_lf_sha256": "4c87d8dc34d5f62039e92cf204a60a1e97431ab5d19829c6d4793d9ff6a81ab0"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "original_sha256": "d3033149a13d30d83052f7e2cdc422a7115e8e2eb189c7bb5011eaf9882ef387",
+      "export_sha256": "d3033149a13d30d83052f7e2cdc422a7115e8e2eb189c7bb5011eaf9882ef387",
+      "bytes": 13995,
+      "unchanged": true,
+      "export_lf_sha256": "ec3a70bf21979f923a9e0e44601aac633df181b32c56145cf88cc6b618d6b253"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/github-metadata.json",
+      "original_sha256": "60774002cfa1a20cf1dc6954be11e97bf34b5a740b23adb494ba75be2102d0c9",
+      "export_sha256": "60774002cfa1a20cf1dc6954be11e97bf34b5a740b23adb494ba75be2102d0c9",
+      "bytes": 7941,
+      "unchanged": true,
+      "export_lf_sha256": "067fe0d2e1627812167ce01a0711d88b163dfc7637eb6e8b8cb539334d1771df"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md",
+      "original_sha256": "0326cdc53854988bd0273d2adafd7bf3ce59003cbc58bdcdfe743b6d98ef6e24",
+      "export_sha256": "0326cdc53854988bd0273d2adafd7bf3ce59003cbc58bdcdfe743b6d98ef6e24",
+      "bytes": 1758,
+      "unchanged": true,
+      "export_lf_sha256": "0326cdc53854988bd0273d2adafd7bf3ce59003cbc58bdcdfe743b6d98ef6e24"
+    },
+    {
+      "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "original_sha256": "ed01363ea456ff132071f64d1ad7473095a16e9acefbcffac06a2de74bf09372",
+      "export_sha256": "ed01363ea456ff132071f64d1ad7473095a16e9acefbcffac06a2de74bf09372",
+      "bytes": 9060,
+      "unchanged": true,
+      "export_lf_sha256": "02948e9535b553afd2344899212c25ad59c1e8838fe0b94d8662d8c8f92b1f78"
+    },
+    {
+      "path": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+      "original_sha256": "7bca1567d689b7f235bd71f9033b68b0484318e49c00d4bd3f1f2b41b2c8e678",
+      "export_sha256": "7bca1567d689b7f235bd71f9033b68b0484318e49c00d4bd3f1f2b41b2c8e678",
+      "bytes": 17174,
+      "unchanged": true,
+      "export_lf_sha256": "7552c123fffb09531691ee7759fa89e800741ed93489fdbe8c3be81739618b36"
+    },
+    {
+      "path": "project-realestate-ner/proposal-realestate-ner-v1.1.xlsx",
+      "original_sha256": "116482b5fb6eeb31130181c652513b96d9a3ce31341a89a41a25c193a0cd840c",
+      "export_sha256": "116482b5fb6eeb31130181c652513b96d9a3ce31341a89a41a25c193a0cd840c",
+      "bytes": 64840,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/proposal-realestate-ner.xlsx",
+      "original_sha256": "22da59aea72487541fd1a67767dc3ede74ce67f938f2d2834f55c73d168a68f8",
+      "export_sha256": "22da59aea72487541fd1a67767dc3ede74ce67f938f2d2834f55c73d168a68f8",
+      "bytes": 61249,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/proposal-ReNER-VN-v1.2.docx",
+      "original_sha256": "985b98a8961993cd50e351f3d2895a73389c5b84fca81621d8d2e410e961a17b",
+      "export_sha256": "985b98a8961993cd50e351f3d2895a73389c5b84fca81621d8d2e410e961a17b",
+      "bytes": 455510,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/proposal-ReNER-VN-v1.2.pdf",
+      "original_sha256": "858162939f199c8255f215ebd4b3e37eba4904ea545db9788e5472d03df00d60",
+      "export_sha256": "858162939f199c8255f215ebd4b3e37eba4904ea545db9788e5472d03df00d60",
+      "bytes": 563019,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/proposal-ReNER-VN-v1.3.docx",
+      "original_sha256": "d4e7a994c86b414fefd3b5448a95c919aedeadd4c287cf5b6e0ab29ad8bc1e7d",
+      "export_sha256": "d4e7a994c86b414fefd3b5448a95c919aedeadd4c287cf5b6e0ab29ad8bc1e7d",
+      "bytes": 456688,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/proposal-ReNER-VN-v1.3.pdf",
+      "original_sha256": "39104a3310ba12766fa556c6b6c0d5c7b1190f8f476d15072a849234d46d8471",
+      "export_sha256": "39104a3310ba12766fa556c6b6c0d5c7b1190f8f476d15072a849234d46d8471",
+      "bytes": 568924,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/proposal-ReNER-VN.docx",
+      "original_sha256": "af1e8f642c291b4b5f6948992436ee6412a15af284a740e0169502a80b52e3c9",
+      "export_sha256": "af1e8f642c291b4b5f6948992436ee6412a15af284a740e0169502a80b52e3c9",
+      "bytes": 724824,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/notes/01-research-report.md",
+      "original_sha256": "3b23a12e479c151e7ee4e3206dc9053ffc7f17b88a0d630fd40b19daf4686934",
+      "export_sha256": "3b23a12e479c151e7ee4e3206dc9053ffc7f17b88a0d630fd40b19daf4686934",
+      "bytes": 32159,
+      "unchanged": true,
+      "export_lf_sha256": "37dc77686ab7345ccba37cb7531cffaf3cd2b75955a6ed6bb2b65f06e206c57a"
+    },
+    {
+      "path": "project-realestate-ner/notes/02-proposal-v1.2-change-audit.md",
+      "original_sha256": "9190bb842306a286cb5db78350cc392c1ee898ee712ddec54887b2a928a41bdf",
+      "export_sha256": "9190bb842306a286cb5db78350cc392c1ee898ee712ddec54887b2a928a41bdf",
+      "bytes": 13751,
+      "unchanged": true,
+      "export_lf_sha256": "9190bb842306a286cb5db78350cc392c1ee898ee712ddec54887b2a928a41bdf"
+    },
+    {
+      "path": "project-realestate-ner/notes/audit-log.md",
+      "original_sha256": "223e413380be5ca99f2c59dbeda5836b084596311d7a53da8919c4b45512585f",
+      "export_sha256": "223e413380be5ca99f2c59dbeda5836b084596311d7a53da8919c4b45512585f",
+      "bytes": 1412,
+      "unchanged": true,
+      "export_lf_sha256": "3a32dbb99464e36aebadabbaabf8fd8dbc30385426b04b3031bf2e2a80733935"
+    },
+    {
+      "path": "project-realestate-ner/notes/claims-ledger.md",
+      "original_sha256": "1e17f100f41f7e884f330c0721f267ce989990779ed668a388a7fa2dc812253e",
+      "export_sha256": "1e17f100f41f7e884f330c0721f267ce989990779ed668a388a7fa2dc812253e",
+      "bytes": 1634,
+      "unchanged": true,
+      "export_lf_sha256": "feac1e33dead956862cce7e41ac7d497145d74bfe9fd4dcb45ee97b918f5b1a3"
+    },
+    {
+      "path": "project-realestate-ner/notes/INDEX.md",
+      "original_sha256": "3540ca6217b953c4bde06e1a765bfa8edf33318a1f1edb6ec04eba99be9f39e5",
+      "export_sha256": "3540ca6217b953c4bde06e1a765bfa8edf33318a1f1edb6ec04eba99be9f39e5",
+      "bytes": 2926,
+      "unchanged": true,
+      "export_lf_sha256": "41690383f241708774882651e3ba5a975e4d695dcc60a7474b270ed421aa73c9"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/01-local-source-review.md",
+      "original_sha256": "ff098a4a03325ad4b1104331edfebf9f42df5a1d524a9d1140ac4f4239e7ed4c",
+      "export_sha256": "ef8abf60e549a16cef71b5420d7c2f0ef68fc3a4727b2a892632573ccd03f685",
+      "bytes": 26184,
+      "unchanged": false,
+      "export_lf_sha256": "a76bd4a0e5716492d5c65dd4e8027328eeab9d0c74dc3ab244cc3efa15df990b"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/02-research-evidence.md",
+      "original_sha256": "4e9f939db6bd1a04b4756215d509c5667ddbc0177695cb75bab765a2d7458858",
+      "export_sha256": "4e9f939db6bd1a04b4756215d509c5667ddbc0177695cb75bab765a2d7458858",
+      "bytes": 30882,
+      "unchanged": true,
+      "export_lf_sha256": "4e9f939db6bd1a04b4756215d509c5667ddbc0177695cb75bab765a2d7458858"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/03-system-architecture.md",
+      "original_sha256": "f5be29c283c2bd814fc31dad233aef9222d1c6d3a5958313ff2af656c4b566e8",
+      "export_sha256": "f5be29c283c2bd814fc31dad233aef9222d1c6d3a5958313ff2af656c4b566e8",
+      "bytes": 28708,
+      "unchanged": true,
+      "export_lf_sha256": "f5be29c283c2bd814fc31dad233aef9222d1c6d3a5958313ff2af656c4b566e8"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/04-adversarial-review.md",
+      "original_sha256": "cd67ea103cd1dbdf52249c747b61568a7fa6417ac437ea231d557fed87489e7c",
+      "export_sha256": "f4e34b00029684917b7a383338d17ac5063c6b462ad57219a7b43d09570588f9",
+      "bytes": 21889,
+      "unchanged": false,
+      "export_lf_sha256": "0724ae72759023b495241df221fed124a62e2be7bc2e55fc37c6e4bee386a614"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/05-source-audit.md",
+      "original_sha256": "4bec5e1a5c716b3d5b0e137db0891f951d1e186d7f13171a9d05681f10bcf75e",
+      "export_sha256": "4bec5e1a5c716b3d5b0e137db0891f951d1e186d7f13171a9d05681f10bcf75e",
+      "bytes": 5851,
+      "unchanged": true,
+      "export_lf_sha256": "4bec5e1a5c716b3d5b0e137db0891f951d1e186d7f13171a9d05681f10bcf75e"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/BAO-CAO-HIEU-DE-TAI.md",
+      "original_sha256": "0708c0c0014eacda5aa7c71a84a7151d6452462330a62733d43431b6ecc55b10",
+      "export_sha256": "0708c0c0014eacda5aa7c71a84a7151d6452462330a62733d43431b6ecc55b10",
+      "bytes": 9141,
+      "unchanged": true,
+      "export_lf_sha256": "0708c0c0014eacda5aa7c71a84a7151d6452462330a62733d43431b6ecc55b10"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/KIEM-TRA-BAN-GIAO.md",
+      "original_sha256": "e31b0991991071d5089837b620b3469b68144c7ee372432d5a914fe5f5214f46",
+      "export_sha256": "e31b0991991071d5089837b620b3469b68144c7ee372432d5a914fe5f5214f46",
+      "bytes": 2537,
+      "unchanged": true,
+      "export_lf_sha256": "e31b0991991071d5089837b620b3469b68144c7ee372432d5a914fe5f5214f46"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/KIEN-THUC-NEN-TANG-RENER-VN.md",
+      "original_sha256": "dfbfb5a51daace5b3045711c3a55d5f8e236bedf1fc8565c771f51d9bd1e7ff0",
+      "export_sha256": "dfbfb5a51daace5b3045711c3a55d5f8e236bedf1fc8565c771f51d9bd1e7ff0",
+      "bytes": 77290,
+      "unchanged": true,
+      "export_lf_sha256": "dfbfb5a51daace5b3045711c3a55d5f8e236bedf1fc8565c771f51d9bd1e7ff0"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/LO-TRINH-TRUC-QUAN.html",
+      "original_sha256": "552da470eaed4d0278f4ca7c32e76b099a2d351651bb84bc5d7d8f2b287e6952",
+      "export_sha256": "552da470eaed4d0278f4ca7c32e76b099a2d351651bb84bc5d7d8f2b287e6952",
+      "bytes": 113405,
+      "unchanged": true,
+      "export_lf_sha256": "18d0836b6e0b88b2f667d5062adbf1ffcdc0923496039957f4ac2b2ff94bfb98"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/local-proposal-p5-figure-0.png",
+      "original_sha256": "937da1717a48db977cc1828b83feed42743db5addf0e5aa0d239ba376ddacdc4",
+      "export_sha256": "937da1717a48db977cc1828b83feed42743db5addf0e5aa0d239ba376ddacdc4",
+      "bytes": 201284,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/local-proposal-p7-figure-0.png",
+      "original_sha256": "b593db2c43b015379463c59f807496d355c7bb15c08f8175ff72b429701114f2",
+      "export_sha256": "b593db2c43b015379463c59f807496d355c7bb15c08f8175ff72b429701114f2",
+      "bytes": 138099,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/PLAN.md",
+      "original_sha256": "20df8e868ef667b10b42571864c40fefd26b4c61a755e6edfc309e1305cc6212",
+      "export_sha256": "20df8e868ef667b10b42571864c40fefd26b4c61a755e6edfc309e1305cc6212",
+      "bytes": 1097,
+      "unchanged": true,
+      "export_lf_sha256": "068f65107feeaef781defb3e7ea09423607f1fa9510a8d6ce7e696fbffd0ef45"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/proposal-ReNER-VN-v1.3.extracted.txt",
+      "original_sha256": "3efef00afb630a480f261523e3ef3719013a1499a91e073217e384c5cbb68ee9",
+      "export_sha256": "3efef00afb630a480f261523e3ef3719013a1499a91e073217e384c5cbb68ee9",
+      "bytes": 28475,
+      "unchanged": true,
+      "export_lf_sha256": "378d91877ba5dddc36d4ea505185c72bea36b0e271cfde04656857c346e92031"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/build_reader.py",
+      "original_sha256": "21058a5dc18d93d5667dd2c2f031de63e53d291992776971f65a048384642157",
+      "export_sha256": "21058a5dc18d93d5667dd2c2f031de63e53d291992776971f65a048384642157",
+      "bytes": 1940,
+      "unchanged": true,
+      "export_lf_sha256": "21058a5dc18d93d5667dd2c2f031de63e53d291992776971f65a048384642157"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/decision-design.json",
+      "original_sha256": "fa54695e48a3e6d36fef780411d86d1cba8cc92c08c485e5a38e7c6e79a32aaf",
+      "export_sha256": "fa54695e48a3e6d36fef780411d86d1cba8cc92c08c485e5a38e7c6e79a32aaf",
+      "bytes": 734,
+      "unchanged": true,
+      "export_lf_sha256": "fa54695e48a3e6d36fef780411d86d1cba8cc92c08c485e5a38e7c6e79a32aaf"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/decision-source.json",
+      "original_sha256": "42d9a6a3325fe6b98449d3f2bcf7d1d663293937e9e39aba7334a105e73d1138",
+      "export_sha256": "42d9a6a3325fe6b98449d3f2bcf7d1d663293937e9e39aba7334a105e73d1138",
+      "bytes": 605,
+      "unchanged": true,
+      "export_lf_sha256": "42d9a6a3325fe6b98449d3f2bcf7d1d663293937e9e39aba7334a105e73d1138"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/reader-template.html",
+      "original_sha256": "06beb9b17fa92a3ecb16193c13b6381523aa733d3adb968a57c77d28f0626524",
+      "export_sha256": "06beb9b17fa92a3ecb16193c13b6381523aa733d3adb968a57c77d28f0626524",
+      "bytes": 20332,
+      "unchanged": true,
+      "export_lf_sha256": "06beb9b17fa92a3ecb16193c13b6381523aa733d3adb968a57c77d28f0626524"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/verify_reader.cjs",
+      "original_sha256": "59162b8c109f26d1198f983f1c0f6a9c5616e55c3ec65b79bf27e2119178b86e",
+      "export_sha256": "59162b8c109f26d1198f983f1c0f6a9c5616e55c3ec65b79bf27e2119178b86e",
+      "bytes": 4578,
+      "unchanged": true,
+      "export_lf_sha256": "59162b8c109f26d1198f983f1c0f6a9c5616e55c3ec65b79bf27e2119178b86e"
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/qa/desktop-knowledge.png",
+      "original_sha256": "34278ee49b8f7f327ef12188138e476a3357f07f2228882321c2c8ee13faae22",
+      "export_sha256": "34278ee49b8f7f327ef12188138e476a3357f07f2228882321c2c8ee13faae22",
+      "bytes": 116736,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/qa/desktop-roadmap.png",
+      "original_sha256": "a900a6233eca7a1bb271782f087db6803d5f92cce776ef7c41ec40256ef50d4c",
+      "export_sha256": "a900a6233eca7a1bb271782f087db6803d5f92cce776ef7c41ec40256ef50d4c",
+      "bytes": 83198,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/qa/desktop-top.png",
+      "original_sha256": "3ee7b92636fe4345cfb60809a1d50ebfd044c837560f987f99c73ebf7d3e34e3",
+      "export_sha256": "3ee7b92636fe4345cfb60809a1d50ebfd044c837560f987f99c73ebf7d3e34e3",
+      "bytes": 85810,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/qa/mobile-320.png",
+      "original_sha256": "889121180ae8670bbf95a88b3780809f6a0f9722a2fa77b89525f8baa9e28383",
+      "export_sha256": "889121180ae8670bbf95a88b3780809f6a0f9722a2fa77b89525f8baa9e28383",
+      "bytes": 30185,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/qa/mobile-375.png",
+      "original_sha256": "f851d7f56c782dc2bf067d776ab63f3977d801a0e488405794db4f1a22345e5e",
+      "export_sha256": "f851d7f56c782dc2bf067d776ab63f3977d801a0e488405794db4f1a22345e5e",
+      "bytes": 32622,
+      "unchanged": true
+    },
+    {
+      "path": "project-realestate-ner/notes/foundation-2026-10-09/_build/qa/verification.json",
+      "original_sha256": "7d486614fe18f7058835acd1a5bb77701590eb15d1956d89982a04b84ab36cfb",
+      "export_sha256": "7d486614fe18f7058835acd1a5bb77701590eb15d1956d89982a04b84ab36cfb",
+      "bytes": 734,
+      "unchanged": true,
+      "export_lf_sha256": "7d486614fe18f7058835acd1a5bb77701590eb15d1956d89982a04b84ab36cfb"
+    },
+    {
+      "path": "KusShoes/notes/INDEX.md",
+      "original_sha256": "6842b352458808201927dfc491d2fa930fd7063dca2f24f0d83512247e9ee71b",
+      "export_sha256": "6842b352458808201927dfc491d2fa930fd7063dca2f24f0d83512247e9ee71b",
+      "bytes": 232,
+      "unchanged": true,
+      "export_lf_sha256": "6842b352458808201927dfc491d2fa930fd7063dca2f24f0d83512247e9ee71b"
+    },
+    {
+      "path": "KusShoes/notes/kusshoes-local-review.md",
+      "original_sha256": "36ea7cb421bf9d6bb39baef37e8735168a65c4cbd44a8790a5c16209a0fa9c67",
+      "export_sha256": "cceb6c2dc9c22d95e892aa9133d8d3aaacf7a534cb9d4c498c2f079528b8e770",
+      "bytes": 8388,
+      "unchanged": false,
+      "export_lf_sha256": "8b72948edf31a224124cbe0bf2403995bfaf5f47a0d24821f49a447d63736cdd"
+    },
+    {
+      "path": "BAO-CAO-TONG-HOP-CONG-VIEC.md",
+      "original_sha256": "d2056860d7de6aeb013015319378ed8c58333d7c94e8a88beae4e301202a944f",
+      "export_sha256": "d2056860d7de6aeb013015319378ed8c58333d7c94e8a88beae4e301202a944f",
+      "bytes": 12513,
+      "unchanged": true,
+      "export_lf_sha256": "c38464c529cd91be190f9aa23578d9d9ae2ec05e4125a5d7e32e2276dfd9d8e9"
+    },
+    {
+      "path": "TMG301_TongHopKienThuc.md",
+      "original_sha256": "c14c0fb1a5281d52dac0fbc6b9f6fdcd96b79070c4cb3335b76f45c2cede1cc4",
+      "export_sha256": "c14c0fb1a5281d52dac0fbc6b9f6fdcd96b79070c4cb3335b76f45c2cede1cc4",
+      "bytes": 12997,
+      "unchanged": true,
+      "export_lf_sha256": "b3fc98f8c7644e340142649fc4a5f9d591c75e581931b242f39b8f545f8c0130"
+    },
+    {
+      "path": "build_all_17_handbooks.py",
+      "original_sha256": "ee334d2140b7b59ac30d352a6e568405af85bcae58bb9661903317df76c0087f",
+      "export_sha256": "ee334d2140b7b59ac30d352a6e568405af85bcae58bb9661903317df76c0087f",
+      "bytes": 25602,
+      "unchanged": true,
+      "export_lf_sha256": "ee334d2140b7b59ac30d352a6e568405af85bcae58bb9661903317df76c0087f"
+    },
+    {
+      "path": "generate_all_17.py",
+      "original_sha256": "e2edb8fbf40595bbdcb3cffdff587a90b535c30779cb35686caf74f04e7e6148",
+      "export_sha256": "e2edb8fbf40595bbdcb3cffdff587a90b535c30779cb35686caf74f04e7e6148",
+      "bytes": 20798,
+      "unchanged": true,
+      "export_lf_sha256": "e2edb8fbf40595bbdcb3cffdff587a90b535c30779cb35686caf74f04e7e6148"
+    },
+    {
+      "path": "generate_handbooks.py",
+      "original_sha256": "31ec107ba95de42dcb67765498b247320adf2839760b0e90dbc7e20061cce680",
+      "export_sha256": "31ec107ba95de42dcb67765498b247320adf2839760b0e90dbc7e20061cce680",
+      "bytes": 13129,
+      "unchanged": true,
+      "export_lf_sha256": "31ec107ba95de42dcb67765498b247320adf2839760b0e90dbc7e20061cce680"
+    },
+    {
+      "path": "KusShoes/.local/start.ps1",
+      "original_sha256": "f02aaff08a2730d67c318fb8bddf11dde9e48d454a2f7113f307159c4f38450f",
+      "export_sha256": "f02aaff08a2730d67c318fb8bddf11dde9e48d454a2f7113f307159c4f38450f",
+      "bytes": 2934,
+      "unchanged": true,
+      "export_lf_sha256": "f02aaff08a2730d67c318fb8bddf11dde9e48d454a2f7113f307159c4f38450f"
+    },
+    {
+      "path": "KusShoes/.local/stop.ps1",
+      "original_sha256": "a52d99aa22d33e26854fe4b957d74d583d86d50e3da0004cb764f239e82e1a63",
+      "export_sha256": "a52d99aa22d33e26854fe4b957d74d583d86d50e3da0004cb764f239e82e1a63",
+      "bytes": 2076,
+      "unchanged": true,
+      "export_lf_sha256": "a52d99aa22d33e26854fe4b957d74d583d86d50e3da0004cb764f239e82e1a63"
+    },
+    {
+      "path": "KusShoes/.local/check-local.py",
+      "original_sha256": "0d125ed58223e941fa35adf5b811d5a534a673f32d461b7a21f4509bba078b60",
+      "export_sha256": "9c2ca5c1b38a290a232e8671cbfcc92f5a92b845153ff447f5529131567e537c",
+      "bytes": 2518,
+      "unchanged": false,
+      "export_lf_sha256": "e49a6c164d5497d8567d96519c3aba4c106e4c029ce41f4683f0211bca641129"
+    },
+    {
+      "path": "KusShoes/.local/init-storage.py",
+      "original_sha256": "4d6f0030ae0447434ed6f915bfd68ba5b2d70fbf49af272ccb40f696ed8a9042",
+      "export_sha256": "4d6f0030ae0447434ed6f915bfd68ba5b2d70fbf49af272ccb40f696ed8a9042",
+      "bytes": 548,
+      "unchanged": true,
+      "export_lf_sha256": "4d6f0030ae0447434ed6f915bfd68ba5b2d70fbf49af272ccb40f696ed8a9042"
+    },
+    {
+      "path": "KusShoes/.local/vite-demo.config.ts",
+      "original_sha256": "7ebabe0b210cbacb60573a79d63b26ddf48f3166b4874b6799f45130c06ee708",
+      "export_sha256": "7ebabe0b210cbacb60573a79d63b26ddf48f3166b4874b6799f45130c06ee708",
+      "bytes": 549,
+      "unchanged": true,
+      "export_lf_sha256": "7ebabe0b210cbacb60573a79d63b26ddf48f3166b4874b6799f45130c06ee708"
+    }
+  ]
+}

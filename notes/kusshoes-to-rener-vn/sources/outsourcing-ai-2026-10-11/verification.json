@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-10-11T11:00:30.941136+00:00",
+  "documents": 7,
+  "local_links": 92,
+  "source_hashes": 10,
+  "historical_fetch_errors": 1,
+  "design_unchanged": true,
+  "guide_lines": 237,
+  "issues": [],
+  "limitations": [
+    "No full video playback or private/paywalled transcript access",
+    "No app implementation/integration test",
+    "Mermaid syntax fences checked, rendered output not verified"
+  ]
+}

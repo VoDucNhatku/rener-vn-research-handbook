@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-09",
+  "chapters": 32,
+  "stage_buttons": 6,
+  "example_cases": 3,
+  "checks": [
+    "buttons and selected state",
+    "hidden price / multi-listing expected examples",
+    "search filter/no-result/reset",
+    "internal anchors",
+    "desktop and 375/320px overflow",
+    "print shows full chapters",
+    "console errors",
+    "text contrast"
+  ],
+  "contrasts": [
+    {
+      "name": "ink/paper",
+      "ratio": 12.96
+    },
+    {
+      "name": "muted/paper",
+      "ratio": 5.6
+    },
+    {
+      "name": "teal/white",
+      "ratio": 6.13
+    },
+    {
+      "name": "selected white/teal",
+      "ratio": 6.13
+    }
+  ],
+  "errors": [],
+  "scope": "Verifies reader artifact; not NLP/model/product experiments."
+}

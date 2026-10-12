@@ -1,0 +1,23 @@
+[
+  {
+    "repo": "GoogleChrome/chrome-extensions-samples",
+    "path": "functional-samples/tutorial.focus-mode/manifest.json",
+    "source_url": "https://raw.githubusercontent.com/GoogleChrome/chrome-extensions-samples/f29c6f8682397ad737142669770a2b90544d186b/functional-samples/tutorial.focus-mode/manifest.json",
+    "file": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\GoogleChrome--chrome-extensions-samples\\functional-samples\\tutorial.focus-mode\\manifest.json",
+    "sha256": "d3bd822a346df01cf9b6a55a589d17cab9e583186c2477a508b05ab1980ea6c6"
+  },
+  {
+    "repo": "GoogleChrome/chrome-extensions-samples",
+    "path": "functional-samples/tutorial.focus-mode/background.js",
+    "source_url": "https://raw.githubusercontent.com/GoogleChrome/chrome-extensions-samples/f29c6f8682397ad737142669770a2b90544d186b/functional-samples/tutorial.focus-mode/background.js",
+    "file": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\GoogleChrome--chrome-extensions-samples\\functional-samples\\tutorial.focus-mode\\background.js",
+    "sha256": "7f69fca221e2af04d9959475fcc477f316bb3f189df75460a824e132f70103e3"
+  },
+  {
+    "repo": "google/langextract",
+    "path": "langextract/core/data.py",
+    "source_url": "https://raw.githubusercontent.com/google/langextract/74df59f5d20f3ae854204caf59bc21e28d2157ff/langextract/core/data.py",
+    "file": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\google--langextract\\langextract\\core\\data.py",
+    "sha256": "1bdd05d75387858d38b0bb6975a7b7753e957b855ce4e694dabe2985cf0fc8a3"
+  }
+]

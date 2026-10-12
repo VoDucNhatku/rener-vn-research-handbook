@@ -1,0 +1,170 @@
+[
+  {
+    "repo": "DavidHDev/react-bits",
+    "path": "LICENSE",
+    "source_url": "https://raw.githubusercontent.com/DavidHDev/react-bits/d86fccbd477786f94ca7eb891fbe0ec039d3cd3b/LICENSE",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "fastapi/full-stack-fastapi-template",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "path": "frontend/package.json",
+    "source_url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/frontend/package.json",
+    "local_path": "fastapi--full-stack-fastapi-template\\frontend\\package.json",
+    "sha256": "f6ca10df45c26bab9bec167873aff9fb307b18f623e484fe330bef252d57915d",
+    "retrieved_at_utc": "2026-10-09T16:42:31.594785+00:00"
+  },
+  {
+    "repo": "fastapi/full-stack-fastapi-template",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "path": "backend/pyproject.toml",
+    "source_url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/backend/pyproject.toml",
+    "local_path": "fastapi--full-stack-fastapi-template\\backend\\pyproject.toml",
+    "sha256": "a12c0fdd65a800761b020e2b66fd2260b306bf3258d166c89dde4a0ec6734029",
+    "retrieved_at_utc": "2026-10-09T16:42:32.015985+00:00"
+  },
+  {
+    "repo": "fastapi/full-stack-fastapi-template",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "path": "backend/app/main.py",
+    "source_url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/backend/app/main.py",
+    "local_path": "fastapi--full-stack-fastapi-template\\backend\\app\\main.py",
+    "sha256": "e8b28b639d86c76dcf60348185c91125a789951ff085a5289d9f5add0854dfda",
+    "retrieved_at_utc": "2026-10-09T16:42:32.487258+00:00"
+  },
+  {
+    "repo": "fastapi/full-stack-fastapi-template",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "path": "compose.yml",
+    "source_url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/compose.yml",
+    "local_path": "fastapi--full-stack-fastapi-template\\compose.yml",
+    "sha256": "1fd1f559a68a462fa5f72295b7dec6982279bb121cb75514a7933b4534dfefd1",
+    "retrieved_at_utc": "2026-10-09T16:42:32.842676+00:00"
+  },
+  {
+    "repo": "fastapi/full-stack-fastapi-template",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "path": "development.md",
+    "source_url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/development.md",
+    "local_path": "fastapi--full-stack-fastapi-template\\development.md",
+    "sha256": "0393492560c43bc3ef9e9fd884c173b711211865a2fd6b5a7881705f75ea5083",
+    "retrieved_at_utc": "2026-10-09T16:42:33.293261+00:00"
+  },
+  {
+    "repo": "calcom/cal.diy",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "path": "package.json",
+    "source_url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/package.json",
+    "local_path": "calcom--cal.diy\\package.json",
+    "sha256": "489360a75ae861401a110b8155cbae3d82b08980ccf0645024e92d87549ec35c",
+    "retrieved_at_utc": "2026-10-09T16:42:33.665721+00:00"
+  },
+  {
+    "repo": "calcom/cal.diy",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "path": "turbo.json",
+    "source_url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/turbo.json",
+    "local_path": "calcom--cal.diy\\turbo.json",
+    "sha256": "88a9ac166f18b7cd34146f4ae3d675d6ab68c43d6c4fe2c6b0f9f16e538780de",
+    "retrieved_at_utc": "2026-10-09T16:42:34.143371+00:00"
+  },
+  {
+    "repo": "calcom/cal.diy",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "path": "apps/web/package.json",
+    "source_url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/apps/web/package.json",
+    "local_path": "calcom--cal.diy\\apps\\web\\package.json",
+    "sha256": "90d376d560066fa620bd962d8c7ae9dca3239c09121785992456c1beba100894",
+    "retrieved_at_utc": "2026-10-09T16:42:34.542610+00:00"
+  },
+  {
+    "repo": "calcom/cal.diy",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "path": "packages/prisma/package.json",
+    "source_url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/packages/prisma/package.json",
+    "local_path": "calcom--cal.diy\\packages\\prisma\\package.json",
+    "sha256": "f8be2cc52f9e3b3081523a3be51dd3f7b806a7e6c7b327d3425ddb00da551a4b",
+    "retrieved_at_utc": "2026-10-09T16:42:34.922229+00:00"
+  },
+  {
+    "repo": "calcom/cal.diy",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "path": "packages/trpc/package.json",
+    "source_url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/packages/trpc/package.json",
+    "local_path": "calcom--cal.diy\\packages\\trpc\\package.json",
+    "sha256": "84e6ea834fca9b71ddbe95b7c25d7cf3549fca0983fe27c2f722eab9ad8165af",
+    "retrieved_at_utc": "2026-10-09T16:42:35.320235+00:00"
+  },
+  {
+    "repo": "immich-app/immich",
+    "commit": "b4f35cb43d74969af0cfa146676eb26df9fcfd8c",
+    "path": "web/package.json",
+    "source_url": "https://raw.githubusercontent.com/immich-app/immich/b4f35cb43d74969af0cfa146676eb26df9fcfd8c/web/package.json",
+    "local_path": "immich-app--immich\\web\\package.json",
+    "sha256": "5cab3ed55769ba8be14b211b3aebd018482281ff249776c614b33cf690f8acd0",
+    "retrieved_at_utc": "2026-10-09T16:42:35.747674+00:00"
+  },
+  {
+    "repo": "immich-app/immich",
+    "commit": "b4f35cb43d74969af0cfa146676eb26df9fcfd8c",
+    "path": "server/package.json",
+    "source_url": "https://raw.githubusercontent.com/immich-app/immich/b4f35cb43d74969af0cfa146676eb26df9fcfd8c/server/package.json",
+    "local_path": "immich-app--immich\\server\\package.json",
+    "sha256": "5ae66b6f821c337d769ec77d164506a7b400cbf9a3acee90803022493c17c966",
+    "retrieved_at_utc": "2026-10-09T16:42:36.190372+00:00"
+  },
+  {
+    "repo": "immich-app/immich",
+    "commit": "b4f35cb43d74969af0cfa146676eb26df9fcfd8c",
+    "path": "machine-learning/pyproject.toml",
+    "source_url": "https://raw.githubusercontent.com/immich-app/immich/b4f35cb43d74969af0cfa146676eb26df9fcfd8c/machine-learning/pyproject.toml",
+    "local_path": "immich-app--immich\\machine-learning\\pyproject.toml",
+    "sha256": "e49e441e0c8f0f33bf4deb8349c904fc75d25c671a9ad12f23d3ce8b3d633a75",
+    "retrieved_at_utc": "2026-10-09T16:42:36.567094+00:00"
+  },
+  {
+    "repo": "immich-app/immich",
+    "commit": "b4f35cb43d74969af0cfa146676eb26df9fcfd8c",
+    "path": "docker/docker-compose.yml",
+    "source_url": "https://raw.githubusercontent.com/immich-app/immich/b4f35cb43d74969af0cfa146676eb26df9fcfd8c/docker/docker-compose.yml",
+    "local_path": "immich-app--immich\\docker\\docker-compose.yml",
+    "sha256": "2bb7b672a510cb215888447c4ee149e08ed1286169c6407284dd32ebad7dc566",
+    "retrieved_at_utc": "2026-10-09T16:42:36.949692+00:00"
+  },
+  {
+    "repo": "outline/outline",
+    "commit": "f6f27d51296978b3f5d7305c556c2bd4f81a666f",
+    "path": "package.json",
+    "source_url": "https://raw.githubusercontent.com/outline/outline/f6f27d51296978b3f5d7305c556c2bd4f81a666f/package.json",
+    "local_path": "outline--outline\\package.json",
+    "sha256": "a8ae1e51d7b1ae49d16206129f0b6b62e0f01a81946f606285224742d441239e",
+    "retrieved_at_utc": "2026-10-09T16:42:37.331627+00:00"
+  },
+  {
+    "repo": "outline/outline",
+    "commit": "f6f27d51296978b3f5d7305c556c2bd4f81a666f",
+    "path": "docs/ARCHITECTURE.md",
+    "source_url": "https://raw.githubusercontent.com/outline/outline/f6f27d51296978b3f5d7305c556c2bd4f81a666f/docs/ARCHITECTURE.md",
+    "local_path": "outline--outline\\docs\\ARCHITECTURE.md",
+    "sha256": "f365206cae6fa735d7c2a1887aeba093fff6576b4ad4cafc6a1c5fec4f1b7dd6",
+    "retrieved_at_utc": "2026-10-09T16:42:37.810618+00:00"
+  },
+  {
+    "repo": "outline/outline",
+    "commit": "f6f27d51296978b3f5d7305c556c2bd4f81a666f",
+    "path": "LICENSE",
+    "source_url": "https://raw.githubusercontent.com/outline/outline/f6f27d51296978b3f5d7305c556c2bd4f81a666f/LICENSE",
+    "local_path": "outline--outline\\LICENSE",
+    "sha256": "d18e062d61d26c92e4e7f594a019074f5c585437199ab2b424a591a8ea953b01",
+    "retrieved_at_utc": "2026-10-09T16:42:38.220187+00:00"
+  },
+  {
+    "repo": "DavidHDev/react-bits",
+    "commit": "d86fccbd477786f94ca7eb891fbe0ec039d3cd3b",
+    "path": "LICENSE.md",
+    "source_url": "https://raw.githubusercontent.com/DavidHDev/react-bits/d86fccbd477786f94ca7eb891fbe0ec039d3cd3b/LICENSE.md",
+    "local_path": "DavidHDev--react-bits\\LICENSE.md",
+    "sha256": "f4c33af6739191537738662d223b68d77bc226f4b57ea883e16481d8cc5c73c9",
+    "retrieved_at_utc": "2026-10-09T16:43:56.667611+00:00"
+  }
+]

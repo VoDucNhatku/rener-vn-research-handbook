@@ -1,0 +1,236 @@
+[
+  {
+    "path": "notes/audit-2026-10-11/claim-candidates.json",
+    "change": "Removed known local demo password; historical hashes refer to originals"
+  },
+  {
+    "path": "notes/audit-2026-10-11/before/KusShoes/notes/kusshoes-local-review.md",
+    "change": "Removed known local demo password; historical hashes refer to originals"
+  },
+  {
+    "path": "KusShoes/notes/kusshoes-local-review.md",
+    "change": "Removed known local demo password; historical hashes refer to originals"
+  },
+  {
+    "path": "KusShoes/.local/check-local.py",
+    "change": "Removed known local demo password; historical hashes refer to originals"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/FE/src/pages/Admin/AdminLayout/AdminSidebar.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/FE/src/pages/Admin/AdminLayout/AdminSidebar.module.css"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/FE/src/pages/Admin/AdminApp.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/FE/src/components/ShoeHeroExperience/ShoeHeroExperience.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/FE/src/pages/Projects/Projects.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/FE/src/pages/Settings/Settings.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/FE/src/pages/Billing/Billing.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/FE/src/index.css"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/docs/DESIGN.md"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/docs/ADMIN_DESIGN_SYSTEM.md"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/.spec/tasks.md"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/.github/workflows/frontend-ci.yml"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "KusShoes/.github/workflows/backend-ci.yml"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\medusajs--medusa\\packages\\medusa\\src\\api\\admin\\products\\route.ts"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\medusajs--medusa\\packages\\core\\core-flows\\src\\product\\workflows\\create-products.ts"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\saleor--saleor\\saleor\\graphql\\product\\mutations\\product\\product_create.py"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\vercel--commerce\\app\\search\\page.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\marmelab--react-admin\\examples\\demo\\src\\products\\ProductList.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\refinedev--refine\\examples\\finefoods-antd\\src\\pages\\products\\list.tsx"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\tabler--tabler\\core\\scss\\_variables.scss"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\fastapi--full-stack-fastapi-template\\backend\\app\\api\\routes\\items.py"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\calcom--cal.diy\\packages\\features\\bookings\\services\\BookingAccessService.ts"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\calcom--cal.diy\\packages\\features\\bookings\\services\\BookingAccessService.test.ts"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\outline--outline\\server\\policies\\document.ts"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\immich-app--immich\\server\\src\\controllers\\asset.controller.ts"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\architecture-top10-2026-10-10\\immich-app--immich\\server\\src\\services\\asset.service.ts"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "notes/kusshoes-to-rener-vn/sources/ChoThueGiupViec"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\GoogleChrome--chrome-extensions-samples\\functional-samples\\tutorial.focus-mode\\manifest.json"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\GoogleChrome--chrome-extensions-samples\\functional-samples\\tutorial.focus-mode\\background.js"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\google--langextract\\langextract\\core\\data.py"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\brock-figma.html"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\lukas-dashboard.html"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\flux-webflow.html"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\lenny-lazar.html"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\uk-msc-buyers-guide.pdf"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\lovable-figma.html"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\lovable-preview.html"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\lovable-21st.html"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\21st-terms.html"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Local upstream snapshot link points to original URL",
+    "source": "notes\\kusshoes-to-rener-vn\\sources\\outsourcing-ai-2026-10-11\\webflow-license.html"
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/01-local-source-review.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "D:/DEMO kế hoạch kì 5-20260915T034926Z-1-001/DEMO kế hoạch kì 5/DPL302m/NCKH/notes/t07-proposal-quick-guide-VI.pdf"
+  },
+  {
+    "path": "project-realestate-ner/notes/foundation-2026-10-09/04-adversarial-review.md",
+    "change": "Unavailable local reference documented explicitly",
+    "source": "C:/Users/Asus/.codex/skills/hallucination-guard/SKILL.md"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "change": "Resolved historical code references to verified upstream commit URLs"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+    "change": "Resolved historical code references to verified upstream commit URLs"
+  }
+]

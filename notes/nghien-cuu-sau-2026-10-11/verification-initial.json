@@ -1,0 +1,579 @@
+{
+  "verified_at_utc": "2026-10-11T17:26:19.126705+00:00",
+  "scope": "Authored-document local file links, fences, UTF8 replacement characters; current 21 raw/text snapshots; protected originals and design compared with prior audit; synthetic arithmetic.",
+  "documents": [
+    {
+      "file": "BAO-CAO-TONG-HOP-CONG-VIEC.md",
+      "sha256": "d2056860d7de6aeb013015319378ed8c58333d7c94e8a88beae4e301202a944f",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 91
+    },
+    {
+      "file": "KusShoes/notes/kusshoes-local-review.md",
+      "sha256": "36ea7cb421bf9d6bb39baef37e8735168a65c4cbd44a8790a5c16209a0fa9c67",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 74
+    },
+    {
+      "file": "notes/08-fine-tuning-mlm-summary.md",
+      "sha256": "9c146acf3223abc0d9943af323a261cfe66c2e3fddad8e71c4d97adeaa3fa319",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 336
+    },
+    {
+      "file": "notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md",
+      "sha256": "0fd71a8dda546cb401696d516fa7627f5bec09ae97359af3a103bde0da566a15",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 109
+    },
+    {
+      "file": "notes/audit-2026-10-11/NGUON-DOI-CHIEU.md",
+      "sha256": "a376f0ec4a8bf07a1dc2647ad04e56e6e3ce59af32a7398885a23ac44e5557ed",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 26
+    },
+    {
+      "file": "notes/audit-2026-10-11/PHAM-VI-KIEM-TRA.md",
+      "sha256": "83ca1a4a5f5ee37d59e483a2cd97c0b11ad25e9bd0f8e01ac3bbf03ee231d1ed",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 40
+    },
+    {
+      "file": "notes/design-rener-vn-waterfall.md",
+      "sha256": "a0d787a88675b1c170739d7b9a21cc4635bfac19d3bf84e2bd626080395f95fc",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 735
+    },
+    {
+      "file": "notes/HIEN-TRANG-VA-QUYET-DINH.md",
+      "sha256": "bfe9fdd4892eafddcc89ea95ba0b12b11fef1aa288b64e3cea0b0e810a5f716d",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 64
+    },
+    {
+      "file": "notes/INDEX.md",
+      "sha256": "03ba11bb015965aa8e613dc94aec176483ba7c31ed47932c086d47e61bc703f9",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 29
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/GIA-CONG-WEB-VA-AI-WORKFLOW.md",
+      "sha256": "20b4e1a2f8bb3061ad95ea407a5ab8edb7100b6d743cf4a0d6ba6c47c0a5a8ac",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 237
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+      "sha256": "75d8ae8dd17c69b419ef210a0e6b3f83e19d7b5f7784c3435e881e8aa01f43d8",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 626
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+      "sha256": "2c2e8dfd18dc2ed215680702a77b39b3e18fc8fa7115fe6a03483fa89f700aab",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 390
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/PLAN.md",
+      "sha256": "125d7634649709213db42932b4b02ea269a1388e44b88c99ee55d36c754f4af5",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 279
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md",
+      "sha256": "624aeb09bdeabd62bb7cffaa31c8fd7718f8a8b3d7d32ae3fea3f9d602b8305c",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 277
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+      "sha256": "bcba1497f92bb1da5a0a96e9f26b041ff9952e2f5561d54f5d48210d569cc8ae",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 302
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/WORK_LOG.md",
+      "sha256": "b846e085849d1b52ebf9f57aa61a5329afa720957b6911f1e3ac7933dbd2a2e0",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 442
+    },
+    {
+      "file": "notes/nghien-cuu-sau-2026-10-11/BO-CA-PHAN-CHUNG-RENER.md",
+      "sha256": "c07be8a0b05b27d6203748b0070626438b0b54607b9c82255e7243b361f1f99f",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 69
+    },
+    {
+      "file": "notes/nghien-cuu-sau-2026-10-11/NGHIEN-CUU-SAU-VA-THAY-DOI-TU-DUY.md",
+      "sha256": "b2e1182a2777f6805e62e881141cfb70ab0682a58ce36f21fb69e9a4910be18f",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 231
+    },
+    {
+      "file": "notes/nghien-cuu-sau-2026-10-11/PLAN.md",
+      "sha256": "4d1265cfc140ce4d023995c618acfbb29b87a1a128744ac622613564a6e06327",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 15
+    },
+    {
+      "file": "notes/nghien-cuu-sau-2026-10-11/SO-NGUON-DA-DOC.md",
+      "sha256": "06b81c60dc28c8cb4124aab47861026b6a3b1ed51219141bf640f4e236d3d83a",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 44
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "sha256": "3d0df1b83a3b3f93d49346db7f8d1585572cfbae26345ce61c72553d6d7c1189",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 611
+    },
+    {
+      "file": "project-realestate-ner/notes/01-research-report.md",
+      "sha256": "3b23a12e479c151e7ee4e3206dc9053ffc7f17b88a0d630fd40b19daf4686934",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 328
+    },
+    {
+      "file": "project-realestate-ner/notes/02-proposal-v1.2-change-audit.md",
+      "sha256": "9190bb842306a286cb5db78350cc392c1ee898ee712ddec54887b2a928a41bdf",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 97
+    },
+    {
+      "file": "project-realestate-ner/notes/audit-log.md",
+      "sha256": "223e413380be5ca99f2c59dbeda5836b084596311d7a53da8919c4b45512585f",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 14
+    },
+    {
+      "file": "project-realestate-ner/notes/claims-ledger.md",
+      "sha256": "1e17f100f41f7e884f330c0721f267ce989990779ed668a388a7fa2dc812253e",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 10
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/01-local-source-review.md",
+      "sha256": "ff098a4a03325ad4b1104331edfebf9f42df5a1d524a9d1140ac4f4239e7ed4c",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 148
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/02-research-evidence.md",
+      "sha256": "4e9f939db6bd1a04b4756215d509c5667ddbc0177695cb75bab765a2d7458858",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 192
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/03-system-architecture.md",
+      "sha256": "f5be29c283c2bd814fc31dad233aef9222d1c6d3a5958313ff2af656c4b566e8",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 218
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/04-adversarial-review.md",
+      "sha256": "cd67ea103cd1dbdf52249c747b61568a7fa6417ac437ea231d557fed87489e7c",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 121
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/05-source-audit.md",
+      "sha256": "4bec5e1a5c716b3d5b0e137db0891f951d1e186d7f13171a9d05681f10bcf75e",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 32
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/BAO-CAO-HIEU-DE-TAI.md",
+      "sha256": "0708c0c0014eacda5aa7c71a84a7151d6452462330a62733d43431b6ecc55b10",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 69
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/KIEM-TRA-BAN-GIAO.md",
+      "sha256": "e31b0991991071d5089837b620b3469b68144c7ee372432d5a914fe5f5214f46",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 20
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/KIEN-THUC-NEN-TANG-RENER-VN.md",
+      "sha256": "dfbfb5a51daace5b3045711c3a55d5f8e236bedf1fc8565c771f51d9bd1e7ff0",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 613
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/PLAN.md",
+      "sha256": "20df8e868ef667b10b42571864c40fefd26b4c61a755e6edfc309e1305cc6212",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 7
+    },
+    {
+      "file": "project-realestate-ner/notes/INDEX.md",
+      "sha256": "3540ca6217b953c4bde06e1a765bfa8edf33318a1f1edb6ec04eba99be9f39e5",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 23
+    },
+    {
+      "file": "TMG301_TongHopKienThuc.md",
+      "sha256": "c14c0fb1a5281d52dac0fbc6b9f6fdcd96b79070c4cb3335b76f45c2cede1cc4",
+      "fences_balanced": true,
+      "replacement_characters": 0,
+      "lines": 96
+    }
+  ],
+  "local_links_checked": 210,
+  "broken_local_links": [
+    {
+      "file": "notes/nghien-cuu-sau-2026-10-11/NGHIEN-CUU-SAU-VA-THAY-DOI-TU-DUY.md",
+      "target": "verification.json"
+    },
+    {
+      "file": "notes/nghien-cuu-sau-2026-10-11/SO-NGUON-DA-DOC.md",
+      "target": "verification.json"
+    }
+  ],
+  "sources_count": 21,
+  "source_hash_checks": [
+    {
+      "id": "S01",
+      "file": "S01.html",
+      "ok": true
+    },
+    {
+      "id": "S01",
+      "file": "S01.txt",
+      "ok": true
+    },
+    {
+      "id": "S02",
+      "file": "S02.html",
+      "ok": true
+    },
+    {
+      "id": "S02",
+      "file": "S02.txt",
+      "ok": true
+    },
+    {
+      "id": "S03",
+      "file": "S03.pdf",
+      "ok": true
+    },
+    {
+      "id": "S03",
+      "file": "S03.txt",
+      "ok": true
+    },
+    {
+      "id": "S04",
+      "file": "S04.pdf",
+      "ok": true
+    },
+    {
+      "id": "S04",
+      "file": "S04.txt",
+      "ok": true
+    },
+    {
+      "id": "S05",
+      "file": "S05.pdf",
+      "ok": true
+    },
+    {
+      "id": "S05",
+      "file": "S05.txt",
+      "ok": true
+    },
+    {
+      "id": "S06",
+      "file": "S06.pdf",
+      "ok": true
+    },
+    {
+      "id": "S06",
+      "file": "S06.txt",
+      "ok": true
+    },
+    {
+      "id": "S07",
+      "file": "S07.pdf",
+      "ok": true
+    },
+    {
+      "id": "S07",
+      "file": "S07.txt",
+      "ok": true
+    },
+    {
+      "id": "S08",
+      "file": "S08.pdf",
+      "ok": true
+    },
+    {
+      "id": "S08",
+      "file": "S08.txt",
+      "ok": true
+    },
+    {
+      "id": "S09",
+      "file": "S09.html",
+      "ok": true
+    },
+    {
+      "id": "S09",
+      "file": "S09.txt",
+      "ok": true
+    },
+    {
+      "id": "S10",
+      "file": "S10.html",
+      "ok": true
+    },
+    {
+      "id": "S10",
+      "file": "S10.txt",
+      "ok": true
+    },
+    {
+      "id": "S11",
+      "file": "S11.html",
+      "ok": true
+    },
+    {
+      "id": "S11",
+      "file": "S11.txt",
+      "ok": true
+    },
+    {
+      "id": "S12",
+      "file": "S12.html",
+      "ok": true
+    },
+    {
+      "id": "S12",
+      "file": "S12.txt",
+      "ok": true
+    },
+    {
+      "id": "S13",
+      "file": "S13.html",
+      "ok": true
+    },
+    {
+      "id": "S13",
+      "file": "S13.txt",
+      "ok": true
+    },
+    {
+      "id": "S14",
+      "file": "S14.html",
+      "ok": true
+    },
+    {
+      "id": "S14",
+      "file": "S14.txt",
+      "ok": true
+    },
+    {
+      "id": "S15",
+      "file": "S15.html",
+      "ok": true
+    },
+    {
+      "id": "S15",
+      "file": "S15.txt",
+      "ok": true
+    },
+    {
+      "id": "S16",
+      "file": "S16.html",
+      "ok": true
+    },
+    {
+      "id": "S16",
+      "file": "S16.txt",
+      "ok": true
+    },
+    {
+      "id": "S17",
+      "file": "S17.html",
+      "ok": true
+    },
+    {
+      "id": "S17",
+      "file": "S17.txt",
+      "ok": true
+    },
+    {
+      "id": "S18",
+      "file": "S18.html",
+      "ok": true
+    },
+    {
+      "id": "S18",
+      "file": "S18.txt",
+      "ok": true
+    },
+    {
+      "id": "S19",
+      "file": "S19.html",
+      "ok": true
+    },
+    {
+      "id": "S19",
+      "file": "S19.txt",
+      "ok": true
+    },
+    {
+      "id": "S20",
+      "file": "S20.html",
+      "ok": true
+    },
+    {
+      "id": "S20",
+      "file": "S20.txt",
+      "ok": true
+    },
+    {
+      "id": "S21",
+      "file": "S21.html",
+      "ok": true
+    },
+    {
+      "id": "S21",
+      "file": "S21.txt",
+      "ok": true
+    }
+  ],
+  "source_read_scopes_recorded": 21,
+  "source_urls_in_report": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S21"
+  ],
+  "protected_originals": [
+    {
+      "file": "project-realestate-ner/proposal-realestate-ner-v1.1.xlsx",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-realestate-ner.xlsx",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN-v1.2.docx",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN-v1.2.pdf",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN-v1.3.docx",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN-v1.3.pdf",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN.docx",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/LO-TRINH-TRUC-QUAN.html",
+      "unchanged": true
+    }
+  ],
+  "design_v02_unchanged_since_prior_audit": true,
+  "case_ids": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26"
+  ],
+  "application_case_status": "ALL_26_NOT_RUN",
+  "synthetic_arithmetic_checked": true,
+  "limitations": [
+    "No app tests, NLP evaluation, user research or legal review.",
+    "No external URL recheck for the whole historical corpus.",
+    "No full reread of all old documents or every source section.",
+    "No render verification of historical Mermaid/PDF figures.",
+    "Hashes verify snapshot integrity, not source truth or interpretation."
+  ],
+  "status": "FAIL"
+}

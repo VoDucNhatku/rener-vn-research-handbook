@@ -1,0 +1,19 @@
+# transformers 5.17.0, torch 2.12.0+cpu, run 2026-09-30
+## slide7_fixed.py
+params: 109483778
+layers: 12 hidden: 768 heads: 12 vocab: 30522
+tokens[0]: ['[CLS]', 'this', 'movie', 'was', 'great', '!', '[SEP]', '[PAD]', '[PAD]', '[PAD]']
+epoch 0 loss 0.7384
+epoch 1 loss 0.5003
+epoch 2 loss 0.6198
+Fine-tuning completed!
+## mlm_practice.py
+The capital of France is [MASK]. -> [('paris', 0.417), ('lille', 0.071), ('lyon', 0.063)]
+I went to the [MASK] to deposit my money. -> [('bank', 0.893), ('store', 0.015), ('door', 0.005)]
+I sat on the [MASK] of the river and watched the water. -> [('bank', 0.703), ('edge', 0.182), ('banks', 0.077)]
+masked : [CLS] [MASK] language processing [MASK] computers understand human language, and masked language models learn by predicting hidden words from their [MASK]. [SEP]
+orig vs pred: [('natural', 'natural'), ('lets', ':'), ('context', 'context')]
+masked : [CLS] natural language processing lets [MASK] understand human [MASK] [MASK] and masked language models learn by predicting hidden words from their context. [SEP]
+orig vs pred: [('computers', 'us'), ('language', 'language'), (',', 'language')]
+non-special tokens: 22, masked per trial: 3
+accuracy over 20 trials: 21/60 = 0.350

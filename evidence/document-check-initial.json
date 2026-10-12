@@ -1,0 +1,16 @@
+{
+  "status": "PASS_DOCUMENT_CHECKS",
+  "markdown_documents": 110,
+  "local_links_checked": 845,
+  "historical_before_docs_skipped_for_links": 28,
+  "imported_files_checked": 147,
+  "protected_proposal_files": 7,
+  "errors": [],
+  "warnings": [],
+  "limits": [
+    "No external URL, anchor, Markdown render or diagram check.",
+    "Secret regex checks are not a complete security audit; binary content is not scanned.",
+    "No ReNER app/NLP/extension/load/user test.",
+    "Historical source snapshot hashes are not reverified because raw sources are not redistributed."
+  ]
+}

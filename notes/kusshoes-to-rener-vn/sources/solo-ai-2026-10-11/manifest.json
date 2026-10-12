@@ -1,0 +1,178 @@
+[
+  {
+    "id": "qwen-readme",
+    "url": "https://raw.githubusercontent.com/QwenLM/qwen-code/main/README.md",
+    "retrieved_at_utc": "2026-10-11T11:29:19.227663+00:00",
+    "final_url": "https://raw.githubusercontent.com/QwenLM/qwen-code/main/README.md",
+    "status": 200,
+    "file": "qwen-readme.md",
+    "bytes": 13274,
+    "sha256": "0370888b25018bef847a5edb740947bd02e06cf785e1923797a8f901b7c835f7"
+  },
+  {
+    "id": "trae-solo",
+    "url": "https://www.trae.ai/blog/new_solo_beta_0331",
+    "retrieved_at_utc": "2026-10-11T11:29:19.227663+00:00",
+    "final_url": "https://www.trae.ai/blog/new_solo_beta_0331",
+    "status": 200,
+    "file": "trae-solo.html",
+    "bytes": 31683,
+    "sha256": "01aec1b34e53d74465d7e004d4a30bface62bd551e8db63f80969fc4b8938b09"
+  },
+  {
+    "id": "ant-values",
+    "url": "https://ant.design/docs/spec/values-cn/",
+    "retrieved_at_utc": "2026-10-11T11:29:19.227663+00:00",
+    "final_url": "https://ant.design/docs/spec/values-cn/",
+    "status": 200,
+    "file": "ant-values.html",
+    "bytes": 234026,
+    "sha256": "ba8c30312104c797bebdd7a890d5194a6abc474681543639cbe9aa7508fb5fe5"
+  },
+  {
+    "id": "anthropic-agents",
+    "url": "https://www.anthropic.com/engineering/building-effective-agents",
+    "retrieved_at_utc": "2026-10-11T11:29:19.227663+00:00",
+    "final_url": "https://www.anthropic.com/engineering/building-effective-agents",
+    "status": 200,
+    "file": "anthropic-agents.html",
+    "bytes": 175161,
+    "sha256": "32eb3833cb6f3e35d5c7b2ce75b6fc4d2a0200ffc7ce5bde0102144e8025d4d5"
+  },
+  {
+    "id": "claude-best-practices",
+    "url": "https://code.claude.com/docs/en/best-practices",
+    "retrieved_at_utc": "2026-10-11T11:29:19.703454+00:00",
+    "final_url": "https://code.claude.com/docs/en/best-practices",
+    "status": 200,
+    "file": "claude-best-practices.html",
+    "bytes": 760097,
+    "sha256": "0ea2218c9e2d1091e723bbdf62500f3937720356a4bd00c74da104845f0e78ca"
+  },
+  {
+    "id": "dora-2025",
+    "url": "https://dora.dev/research/2025/dora-report/",
+    "retrieved_at_utc": "2026-10-11T11:29:19.873432+00:00",
+    "final_url": "https://dora.dev/research/2025/dora-report/",
+    "status": 200,
+    "file": "dora-2025.html",
+    "bytes": 13392,
+    "sha256": "6bb53c243fc615849727e65b6a9aa33dbd6b0d5c4e63af5ce68137db0924b4d9"
+  },
+  {
+    "id": "metr-2025",
+    "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+    "retrieved_at_utc": "2026-10-11T11:29:19.882225+00:00",
+    "final_url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+    "status": 200,
+    "file": "metr-2025.html",
+    "bytes": 81918,
+    "sha256": "63b5b1d1d37a0314f331b971f073402bceff97c03ae220887d90931411b31a5a"
+  },
+  {
+    "id": "metr-2026",
+    "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+    "retrieved_at_utc": "2026-10-11T11:29:19.942387+00:00",
+    "final_url": "https://metr.org/blog/2026-02-24-uplift-update/",
+    "status": 200,
+    "file": "metr-2026.html",
+    "bytes": 61349,
+    "sha256": "dc7166eccaed813e22d7206faea490040086be40e0b9d00463e0fc31e76c47f2"
+  },
+  {
+    "id": "vodafone",
+    "url": "https://web.dev/case-studies/vodafone",
+    "retrieved_at_utc": "2026-10-11T11:29:20.223224+00:00",
+    "final_url": "https://web.dev/case-studies/vodafone",
+    "status": 200,
+    "file": "vodafone.html",
+    "bytes": 87474,
+    "sha256": "84fc64a8c41a28c01ef18716244abbb1d1032d8943153eafc57d73366ab54889"
+  },
+  {
+    "id": "baymard-checkout",
+    "url": "https://baymard.com/research-articles/current-state-of-checkout-ux",
+    "retrieved_at_utc": "2026-10-11T11:29:20.895960+00:00",
+    "final_url": "https://baymard.com/research-articles/current-state-of-checkout-ux",
+    "status": 200,
+    "file": "baymard-checkout.html",
+    "bytes": 693269,
+    "sha256": "bc00c22c6a984c3071ece9d774dee3fd87d558c96c0cf5563dd68a0f54ea5673"
+  },
+  {
+    "id": "shapeup-pitch",
+    "url": "https://basecamp.com/shapeup/1.5-chapter-06",
+    "retrieved_at_utc": "2026-10-11T11:29:20.921324+00:00",
+    "final_url": "https://basecamp.com/shapeup/1.5-chapter-06",
+    "status": 200,
+    "file": "shapeup-pitch.html",
+    "bytes": 57426,
+    "sha256": "e1f84f390bb01cf76c63e25f3e4a9e94bed35b48ffda03bf18d2b1ef5df6024b"
+  },
+  {
+    "id": "parallel-change",
+    "url": "https://martinfowler.com/bliki/ParallelChange.html",
+    "retrieved_at_utc": "2026-10-11T11:29:20.977008+00:00",
+    "final_url": "https://martinfowler.com/bliki/ParallelChange.html",
+    "status": 200,
+    "file": "parallel-change.html",
+    "bytes": 22616,
+    "sha256": "4d958f564dc7e44e12b4233202d20cdadd1e0ba30a9ccfc0517d1a568f6d8bcc"
+  },
+  {
+    "id": "feature-flags",
+    "url": "https://martinfowler.com/articles/feature-toggles.html",
+    "retrieved_at_utc": "2026-10-11T11:29:21.713528+00:00",
+    "final_url": "https://martinfowler.com/articles/feature-toggles.html",
+    "status": 200,
+    "file": "feature-flags.html",
+    "bytes": 79854,
+    "sha256": "d4e1a56d2d8c96cdcb278ec7fa16caf9805397e6a91fb862bf8642292a270e8d"
+  },
+  {
+    "id": "monolith-first",
+    "url": "https://martinfowler.com/bliki/MonolithFirst.html",
+    "retrieved_at_utc": "2026-10-11T11:29:21.952949+00:00",
+    "final_url": "https://martinfowler.com/bliki/MonolithFirst.html",
+    "status": 200,
+    "file": "monolith-first.html",
+    "bytes": 22342,
+    "sha256": "722d8d78beddd9e0f6ff3e856eec94dfa2b9fa3bebcaaf4c9e80ccdd3c0e1446"
+  },
+  {
+    "id": "krug-book",
+    "url": "https://sensible.com/dont-make-me-think/",
+    "retrieved_at_utc": "2026-10-11T11:29:22.530620+00:00",
+    "error": "HTTP Error 406: Not Acceptable"
+  },
+  {
+    "id": "momtest-teachers",
+    "url": "https://www.momtestbook.com/teachers",
+    "retrieved_at_utc": "2026-10-11T11:29:22.931870+00:00",
+    "final_url": "https://www.momtestbook.com/teachers",
+    "status": 200,
+    "file": "momtest-teachers.html",
+    "bytes": 19903,
+    "sha256": "b5f3a98c6fef2c1524c5c86044f7b8fca32b4d460bc6b75719f05328db812975"
+  },
+  {
+    "id": "ousterhout-book",
+    "url": "https://web.stanford.edu/~ouster/cgi-bin/book.php",
+    "retrieved_at_utc": "2026-10-11T11:29:22.933878+00:00",
+    "final_url": "https://web.stanford.edu/~ouster/cgi-bin/book.php",
+    "status": 200,
+    "file": "ousterhout-book.html",
+    "bytes": 3205,
+    "sha256": "0801b5ac7b278dc1660c99fb1ef3cb457fd70afe37d42e84cd53b351d68e2e19"
+  },
+  {
+    "id": "web-vitals",
+    "url": "https://web.dev/articles/vitals",
+    "retrieved_at_utc": "2026-10-11T11:29:23.390569+00:00",
+    "final_url": "https://web.dev/articles/vitals",
+    "status": 200,
+    "file": "web-vitals.html",
+    "bytes": 143705,
+    "sha256": "c8520502084150c611316779a96d1f248d8b80a0a4f68c9be11725c9c44c7036"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "file": "project-realestate-ner/proposal-realestate-ner-v1.1.xlsx",
+    "sha256": "116482b5fb6eeb31130181c652513b96d9a3ce31341a89a41a25c193a0cd840c"
+  },
+  {
+    "file": "project-realestate-ner/proposal-realestate-ner.xlsx",
+    "sha256": "22da59aea72487541fd1a67767dc3ede74ce67f938f2d2834f55c73d168a68f8"
+  },
+  {
+    "file": "project-realestate-ner/proposal-ReNER-VN-v1.2.docx",
+    "sha256": "985b98a8961993cd50e351f3d2895a73389c5b84fca81621d8d2e410e961a17b"
+  },
+  {
+    "file": "project-realestate-ner/proposal-ReNER-VN-v1.2.pdf",
+    "sha256": "858162939f199c8255f215ebd4b3e37eba4904ea545db9788e5472d03df00d60"
+  },
+  {
+    "file": "project-realestate-ner/proposal-ReNER-VN-v1.3.docx",
+    "sha256": "d4e7a994c86b414fefd3b5448a95c919aedeadd4c287cf5b6e0ab29ad8bc1e7d"
+  },
+  {
+    "file": "project-realestate-ner/proposal-ReNER-VN-v1.3.pdf",
+    "sha256": "39104a3310ba12766fa556c6b6c0d5c7b1190f8f476d15072a849234d46d8471"
+  },
+  {
+    "file": "project-realestate-ner/proposal-ReNER-VN.docx",
+    "sha256": "af1e8f642c291b4b5f6948992436ee6412a15af284a740e0169502a80b52e3c9"
+  }
+]

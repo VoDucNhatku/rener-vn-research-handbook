@@ -1,0 +1,99 @@
+[
+  {
+    "file": "aiga-2022.pdf",
+    "url": "https://www.aiga.org/sites/default/files/2023-11/Standardformofagreement_2022update.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "brock-figma.html",
+    "url": "https://lovable.dev/video/brand-new-lovable-x-figma-integration-build-amazing-ui",
+    "retrieved_at_utc": "2026-10-11T10:52:34.600659+00:00",
+    "sha256": "ba56a1eedbc6dd085532544cdd0c71df151db7d49dcef5c9780ddcb7d86955c4",
+    "youtube_links": [],
+    "video_metadata": [
+      {
+        "name": "Brand NEW Lovable x Figma Integration (Build Amazing UI)",
+        "uploadDate": "2025-01-23T00:00:00.000Z",
+        "contentUrl": "https://www.youtube.com/watch?v=c_qnRGzQUxA",
+        "embedUrl": "https://www.youtube.com/embed/c_qnRGzQUxA"
+      }
+    ]
+  },
+  {
+    "file": "lukas-dashboard.html",
+    "url": "https://lovable.dev/video/building-a-dashboard-in-lovable-claude-ai-mockups-figma-to-lovable-framer-landing-page",
+    "retrieved_at_utc": "2026-10-11T10:52:35.069918+00:00",
+    "sha256": "d332027abb1489ce47ded3385b3e3a919fccf7ed741c9bd6f103ab038adc67fb",
+    "youtube_links": [],
+    "video_metadata": [
+      {
+        "name": "Building a Dashboard in Lovable: Claude AI Mockups, Figma to Lovable & Framer Landing Page",
+        "uploadDate": "2025-02-24T00:00:00.000Z",
+        "contentUrl": "https://www.youtube.com/watch?v=SL0GDHkQX9A",
+        "embedUrl": "https://www.youtube.com/embed/SL0GDHkQX9A"
+      }
+    ]
+  },
+  {
+    "file": "flux-webflow.html",
+    "url": "https://lovable.dev/video/did-lovable-kill-webflow",
+    "retrieved_at_utc": "2026-10-11T10:52:35.388792+00:00",
+    "sha256": "fa2f559358d960ddbf3a6446958a916ad5c2d6a1d02fc557c1ecce3538bbbc24",
+    "youtube_links": [],
+    "video_metadata": [
+      {
+        "name": "Did Lovable Kill Webflow?",
+        "uploadDate": "2025-03-11T00:00:00.000Z",
+        "contentUrl": "https://www.youtube.com/watch?v=qe2M17aVito",
+        "embedUrl": "https://www.youtube.com/embed/qe2M17aVito"
+      }
+    ]
+  },
+  {
+    "file": "lenny-lazar.html",
+    "url": "https://www.lennysnewsletter.com/p/getting-paid-to-vibe-code",
+    "retrieved_at_utc": "2026-10-11T10:52:37.169876+00:00",
+    "sha256": "c9f4e2aa0d766d45899ca6412747eb444ddc05539d589199aeb1ce1c5b8d5411",
+    "youtube_links": [
+      "https://youtu.be/0XNkUdzxiZI"
+    ],
+    "video_metadata": []
+  },
+  {
+    "file": "uk-msc-buyers-guide.pdf",
+    "url": "https://assets.publishing.service.gov.uk/media/68af2474960e2d135b4c8eb2/Buyer_Guidance_-_MSC_v2.2A_2025.pdf",
+    "sha256": "75f142ecd62a0f390df3343b19f907f8db04c0af00957e8ecb32dabde2e9096d",
+    "retrieved_at_utc": "2026-10-11T10:54:09.863705+00:00",
+    "pages": 132
+  },
+  {
+    "file": "lovable-figma.html",
+    "url": "https://docs.lovable.dev/integrations/figma",
+    "sha256": "360b5c9fc178b991094969e8f749d5898734a59d649c4d861745a6c93d245896",
+    "retrieved_at_utc": "2026-10-11T10:59:20.891515+00:00"
+  },
+  {
+    "file": "lovable-preview.html",
+    "url": "https://docs.lovable.dev/features/preview-toolbar",
+    "sha256": "1d19f02ec1f26221807d4496e75d5e30ea705a3733ce28cf543cef9d22e9167c",
+    "retrieved_at_utc": "2026-10-11T10:59:20.900513+00:00"
+  },
+  {
+    "file": "lovable-21st.html",
+    "url": "https://docs.lovable.dev/tips-tricks/21stdev",
+    "sha256": "40c6f6bdd314f8f248354b83ae8400338e182c32506c2a29234c615ff630ea3f",
+    "retrieved_at_utc": "2026-10-11T10:59:20.899514+00:00"
+  },
+  {
+    "file": "21st-terms.html",
+    "url": "https://docs.21st.dev/terms",
+    "sha256": "2e7bd6478979dc54dfa52b90a25f2e243aa38e41ce40871c59f15973dea78e98",
+    "retrieved_at_utc": "2026-10-11T10:59:21.589220+00:00"
+  },
+  {
+    "file": "webflow-license.html",
+    "url": "https://webflow.com/templates/template-licenses",
+    "sha256": "3b634174abf8993027b62a197b72f9fa63407a97af3eaed03110eb289bef1976",
+    "retrieved_at_utc": "2026-10-11T10:59:22.429202+00:00"
+  }
+]

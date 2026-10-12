@@ -1,0 +1,1613 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/packages/medusa/src/api/admin/products/route.ts",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "3bdcdb633df304edb7d6f9a46fe69f73a84e88162fca8101721a249473cb28a7",
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:22.382311+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/saleor/saleor/782a751f622c4a047798ce7084b7c66c0877ec6f/saleor/graphql/product/mutations/product/product_create.py",
+    "title": "saleor/saleor",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "1a3911c5522ed3f8e2d7385570ba1e5d8654835c83542d4a393c60832ade78ba",
+    "commit": "782a751f622c4a047798ce7084b7c66c0877ec6f",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:23.072964+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/vercel/commerce/3761e52e60df9c6a316e067dbfd7032e494d3634/app/search/page.tsx",
+    "title": "vercel/commerce",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "0cb921097630effcd6197d84599b1a505485769451be8c2b8c42b7e43ebfe0c2",
+    "commit": "3761e52e60df9c6a316e067dbfd7032e494d3634",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:23.579627+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/marmelab/react-admin/f1213e048d60d83df74900b2fc8415fd3287610c/examples/demo/src/products/ProductList.tsx",
+    "title": "marmelab/react-admin",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "76d1bc2f0e575b26cb8fc37ab2b5ef001c67fb8e01eb0d2e075954e2eb041220",
+    "commit": "f1213e048d60d83df74900b2fc8415fd3287610c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:24.067233+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/refinedev/refine/2352eb5b6539e2f39ad9aef652279ad1dcf2c467/examples/finefoods-antd/src/pages/products/list.tsx",
+    "title": "refinedev/refine",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "d6f1e0546ee03acbcc2c100387df50f9125981bb08c87587596e09306f95427a",
+    "commit": "2352eb5b6539e2f39ad9aef652279ad1dcf2c467",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:24.616769+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tabler/tabler/c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e/core/scss/_variables.scss",
+    "title": "tabler/tabler",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "109810fee8f8f16f63d320da70d44afa8e08754b13e397ab612efbe716e36f77",
+    "commit": "c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:25.201124+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/backend/app/api/routes/items.py",
+    "title": "fastapi/full-stack-fastapi-template",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "7f0fa55d1f7b02188c4abd4f88aa6db92fe03de38258b765ed050ec72032b410",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:26.077312+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/packages/features/bookings/BookingsList.tsx",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": null,
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:26.515972+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/outline/outline/f00ff8e4a1aaf7193a4fb6cde68a41cea6e5a8d8/server/policies/document.ts",
+    "title": "outline/outline",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "6cb1aa6ecfac4e2db3f3d7fa2fca7aedd8e618af81ba56e4964c4a12869da6d2",
+    "commit": "f00ff8e4a1aaf7193a4fb6cde68a41cea6e5a8d8",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:26.963432+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/immich-app/immich/2685234ed390746413203a2cf0b18bc36dba53d1/server/src/controllers/asset.controller.ts",
+    "title": "immich-app/immich",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "ae03258cdce41e3e2baa54ea1f3415354e7ec8f4cb6a21e73ec70ce551804e64",
+    "commit": "2685234ed390746413203a2cf0b18bc36dba53d1",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:31:27.414414+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/packages/features/bookings/README.md",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "872720810b0cba4a1cbc37e41e777c4cb2738971763dbf4230d2f4672580a5b7",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:32:11.950504+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/packages/features/bookings/services/BookingAccessService.ts",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "3a111a85a168f28c1e1dbafbb82b1c5f726cc335fc1aea9c5a3ab26cfa190f53",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:32:51.729301+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/packages/features/bookings/services/BookingAccessService.test.ts",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "7549b04d31194ac9f9601a53089e3be7ab6243da1e91c4cfa507619aac3bc416",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:32:52.340254+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/packages/core-flows/src/product/workflows/create-products.ts",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": null,
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:32:52.880339+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/immich-app/immich/2685234ed390746413203a2cf0b18bc36dba53d1/server/src/services/asset.service.ts",
+    "title": "immich-app/immich",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "b05f035ee2da4188c66002008da0952d5d0b529b31794870fbabe259661608b5",
+    "commit": "2685234ed390746413203a2cf0b18bc36dba53d1",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:32:53.375039+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/packages/core/core-flows/src/product/workflows/create-products.ts",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+    "sha256": "3cca7090aa4de01bc6dc81195ac0458b7c2a5dc65a83a80fc369b4c2ae262a76",
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T06:33:15.123350+00:00"
+  },
+  {
+    "url": "https://www.aiga.org/sites/default/files/2023-11/Standardformofagreement_2022update.pdf",
+    "title": "https://www.aiga.org/sites/default/files/2023-11/Standardformofagreement_2022update.pdf",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://lovable.dev/video/brand-new-lovable-x-figma-integration-build-amazing-ui",
+    "title": "https://lovable.dev/video/brand-new-lovable-x-figma-integration-build-amazing-ui",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "ba56a1eedbc6dd085532544cdd0c71df151db7d49dcef5c9780ddcb7d86955c4",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:52:34.600659+00:00"
+  },
+  {
+    "url": "https://lovable.dev/video/building-a-dashboard-in-lovable-claude-ai-mockups-figma-to-lovable-framer-landing-page",
+    "title": "https://lovable.dev/video/building-a-dashboard-in-lovable-claude-ai-mockups-figma-to-lovable-framer-landing-page",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "d332027abb1489ce47ded3385b3e3a919fccf7ed741c9bd6f103ab038adc67fb",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:52:35.069918+00:00"
+  },
+  {
+    "url": "https://lovable.dev/video/did-lovable-kill-webflow",
+    "title": "https://lovable.dev/video/did-lovable-kill-webflow",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "fa2f559358d960ddbf3a6446958a916ad5c2d6a1d02fc557c1ecce3538bbbc24",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:52:35.388792+00:00"
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/getting-paid-to-vibe-code",
+    "title": "https://www.lennysnewsletter.com/p/getting-paid-to-vibe-code",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "c9f4e2aa0d766d45899ca6412747eb444ddc05539d589199aeb1ce1c5b8d5411",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:52:37.169876+00:00"
+  },
+  {
+    "url": "https://assets.publishing.service.gov.uk/media/68af2474960e2d135b4c8eb2/Buyer_Guidance_-_MSC_v2.2A_2025.pdf",
+    "title": "https://assets.publishing.service.gov.uk/media/68af2474960e2d135b4c8eb2/Buyer_Guidance_-_MSC_v2.2A_2025.pdf",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "75f142ecd62a0f390df3343b19f907f8db04c0af00957e8ecb32dabde2e9096d",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:54:09.863705+00:00"
+  },
+  {
+    "url": "https://docs.lovable.dev/integrations/figma",
+    "title": "https://docs.lovable.dev/integrations/figma",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "360b5c9fc178b991094969e8f749d5898734a59d649c4d861745a6c93d245896",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:59:20.891515+00:00"
+  },
+  {
+    "url": "https://docs.lovable.dev/features/preview-toolbar",
+    "title": "https://docs.lovable.dev/features/preview-toolbar",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "1d19f02ec1f26221807d4496e75d5e30ea705a3733ce28cf543cef9d22e9167c",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:59:20.900513+00:00"
+  },
+  {
+    "url": "https://docs.lovable.dev/tips-tricks/21stdev",
+    "title": "https://docs.lovable.dev/tips-tricks/21stdev",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "40c6f6bdd314f8f248354b83ae8400338e182c32506c2a29234c615ff630ea3f",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:59:20.899514+00:00"
+  },
+  {
+    "url": "https://docs.21st.dev/terms",
+    "title": "https://docs.21st.dev/terms",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "2e7bd6478979dc54dfa52b90a25f2e243aa38e41ce40871c59f15973dea78e98",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:59:21.589220+00:00"
+  },
+  {
+    "url": "https://webflow.com/templates/template-licenses",
+    "title": "https://webflow.com/templates/template-licenses",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+    "sha256": "3b634174abf8993027b62a197b72f9fa63407a97af3eaed03110eb289bef1976",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T10:59:22.429202+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/GoogleChrome/chrome-extensions-samples/f29c6f8682397ad737142669770a2b90544d186b/functional-samples/tutorial.focus-mode/manifest.json",
+    "title": "GoogleChrome/chrome-extensions-samples",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/code-manifest.json",
+    "sha256": "d3bd822a346df01cf9b6a55a589d17cab9e583186c2477a508b05ab1980ea6c6",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://raw.githubusercontent.com/GoogleChrome/chrome-extensions-samples/f29c6f8682397ad737142669770a2b90544d186b/functional-samples/tutorial.focus-mode/background.js",
+    "title": "GoogleChrome/chrome-extensions-samples",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/code-manifest.json",
+    "sha256": "7f69fca221e2af04d9959475fcc477f316bb3f189df75460a824e132f70103e3",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google/langextract/74df59f5d20f3ae854204caf59bc21e28d2157ff/langextract/core/data.py",
+    "title": "google/langextract",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/code-manifest.json",
+    "sha256": "1bdd05d75387858d38b0bb6975a7b7753e957b855ce4e694dabe2985cf0fc8a3",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/wxt-dev/wxt",
+    "title": "wxt-dev/wxt",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+    "sha256": "0af1b911ba78f8656bd686d1cffdedd21276d539584beb8d4a9cc1773ddb8d3c",
+    "commit": "29baa0e99257c94b758fddd680d5109ab766d384",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:09:34.698935+00:00"
+  },
+  {
+    "url": "https://github.com/PlasmoHQ/plasmo",
+    "title": "PlasmoHQ/plasmo",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+    "sha256": "06a969382aa0b10a44223c341eb17320b911424feab3deb3e81b9fb6d1a13106",
+    "commit": "9369e2835de237caa60620b74b12ea3e2d4f3600",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:09:36.423371+00:00"
+  },
+  {
+    "url": "https://github.com/GoogleChrome/chrome-extensions-samples",
+    "title": "GoogleChrome/chrome-extensions-samples",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+    "sha256": "6bc6d86cd772d49665e072a4f9da0ef45095aab433a6f8bb59bd2b17bf106e7f",
+    "commit": "f29c6f8682397ad737142669770a2b90544d186b",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:09:37.982104+00:00"
+  },
+  {
+    "url": "https://github.com/doccano/doccano",
+    "title": "doccano/doccano",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+    "sha256": "fadafd43ee201ba414477763b0aab1518beaf584b6c61dbca5c36cc64f87bcc9",
+    "commit": "ab6b765ea326d07b2b806a4280cd097565e62321",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:09:39.689355+00:00"
+  },
+  {
+    "url": "https://github.com/HumanSignal/label-studio",
+    "title": "HumanSignal/label-studio",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+    "sha256": "40700321776602f0ee8e84bb1bc54eaa3a526dba95aa44658e2a1ee48bbcbd16",
+    "commit": "b03f43c6a634d8a54646c82785533e05a408b428",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:09:41.281815+00:00"
+  },
+  {
+    "url": "https://github.com/scrapy/scrapy",
+    "title": "scrapy/scrapy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+    "sha256": "fe4a631dfdfa11d6643373f22d25e48ac7c0d43d96187e998597e725ba65c36e",
+    "commit": "be7bdc4cd16644018fa56ef3503dce86744fa6d5",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:09:42.921482+00:00"
+  },
+  {
+    "url": "https://github.com/etewiah/property_web_builder",
+    "title": "etewiah/property_web_builder",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+    "sha256": "0b22f6db9d22eef1531740333f26cbd123e9a225393874eef76c528b640f1e7d",
+    "commit": "34ed1756762bf3d4ba55b4eabda93e798e9ca6aa",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:09:44.956065+00:00"
+  },
+  {
+    "url": "https://github.com/google/langextract",
+    "title": "google/langextract",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+    "sha256": "2843b5f84b153f4b0885b69d2a43431ad7a380737a61016d2b3f13dbafecedcb",
+    "commit": "74df59f5d20f3ae854204caf59bc21e28d2157ff",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:10:20.416692+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/commits/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/check-runs",
+    "title": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/commits/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/check-runs",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/check_runs.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:00:50.013939+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/check-runs/114111826274",
+    "title": 114111826274,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/check_runs.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/github",
+    "title": 9919,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/check_runs.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/check-runs/114111825369",
+    "title": 114111825369,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/check_runs.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/github",
+    "title": 9919,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/check_runs.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/issues/259",
+    "title": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/issues/259",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:00:48.979531+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/issues/259",
+    "title": "[ticket] BE-M2-07 Real IRefundService and AssignmentFailed refund (M2 - Viên)",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/TDVien05",
+    "title": 167501700,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/labels/ticket",
+    "title": 12535910433,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/labels/in-progress",
+    "title": 12535910774,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/TDVien05",
+    "title": 167501700,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/TDVien05",
+    "title": 167501700,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/TDVien05",
+    "title": 167501700,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/issues/259/reactions",
+    "title": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/issues/259/reactions",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/issue259.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/README.md",
+    "title": "README.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "e0b418a51f1215eb5a5866e77aebd3c014da4e4738017f75c76a10eb718902fb",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/AGENTS.md",
+    "title": "AGENTS.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "c8195fc9baf5bda9760b16ba6ad9b184876f8cd6cd46533637af1eeacc3f491e",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/HARNESS.md",
+    "title": "HARNESS.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "d1674ca3ab9e4ef0c733994cd7d7a327dc4ebc9ecca2d76afd41d5372372058e",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/package.json",
+    "title": "package.json",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "b0fba838907889378488b6cfe47080e3720c0f9ed4add89f1a8a4ea7f5a24414",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.spec/spec.md",
+    "title": ".spec/spec.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "b3d5b1c6ccb0ffb3329a5c18e74ebef71e120b01e4cc50731c15f7553e504aa4",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.spec/team.md",
+    "title": ".spec/team.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "267466824f0de947b3153a4ce5d97e1500e35c93e3734a804263a5f1c5ff4aa6",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.spec/plan/00-overview.md",
+    "title": ".spec/plan/00-overview.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "bfd6ade5353b21f5fac9b3ab6c52bf11f03105c7f147a885cfabe80d3333c33a",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.spec/plan/M2-booking-payments.md",
+    "title": ".spec/plan/M2-booking-payments.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "8df99f6f4ecadffebebd565dd14a6c842f22d2a7d528d112b72b9e8ee51eb6d4",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/run.ps1",
+    "title": "harness/run.ps1",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "c6760b27bdb5d13e6ae6e5bbaa38c71c0c9604662a3e5e2008d3169bb6733d56",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/start-ticket.mjs",
+    "title": "harness/start-ticket.mjs",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "d5098cb635d87f91cf15a0d833146cb340f593b0660002308b5ebe8a8218eafb",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/sync-issues.mjs",
+    "title": "harness/sync-issues.mjs",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "07d026f5eec7330a8831a1affb9a17d383d2b0406b57d91c47000b03ac2c689d",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/verify.sh",
+    "title": "harness/verify.sh",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "a08388696bd1f21075d735de5c9684fc7fd9e94ffb2a9f7c6787165397548818",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/scope-check.sh",
+    "title": "harness/scope-check.sh",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "6b537448edc4f3f5d0b710d8a6d8358a51e8b9f54f546b242b0e43c5fdaf4806",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/guard-command.sh",
+    "title": "harness/guard-command.sh",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "33652180956c368a9db98b725e48d8d8ab8c9bae6ef3998c7dfc4ace2dda153a",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/harness/check-agent-config.sh",
+    "title": "harness/check-agent-config.sh",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "e1a331a2ba758718f227e52ec18de6f76e08f134e5f7d03fec034680d52599d6",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.github/workflows/dotnet.yml",
+    "title": ".github/workflows/dotnet.yml",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "1bc2dca0d99d444edde7455619d1de241b89f804a4fe2da7253779c5e6459186",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.husky/pre-commit",
+    "title": ".husky/pre-commit",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "e9c5b1d853a5bea7eae0dd9243efab18e130d7da5f3330b4f42f6f2071da4e08",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/.husky/pre-push",
+    "title": ".husky/pre-push",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "0b21fda28e18cf0e4d74749bad8f5965e4016a76b0690db807435d84799a5de1",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/ARCHITECTURE.md",
+    "title": "Backend/ARCHITECTURE.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "375f0eb1fe5efa1fa82f5d49838867476951b64b1184635335363700799143d3",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Frontend/ARCHITECTURE.md",
+    "title": "Frontend/ARCHITECTURE.md",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "9e1dabef306a736db14cc174b1f15ed7ba13f04ce52b35dd7436335cccb8d7a0",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Frontend/package.json",
+    "title": "Frontend/package.json",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "492d2e85f143a2017a5a89d06da5ded4f11c9f5ab05cb26fbe030f05f90c434a",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/Infrastructure/DependencyInjection.cs",
+    "title": "Backend/Infrastructure/DependencyInjection.cs",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "a8b3e6f24b171d8586c7df32cebffcd1660e206cf245d7f060b1b4406d2b191a",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/Infrastructure/Modules/Payments/PaymentsModule.cs",
+    "title": "Backend/Infrastructure/Modules/Payments/PaymentsModule.cs",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "595d19a9e2deac1f60bea9ed368a1a6dfd20bedbe974663e312f73c0950fc743",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/Application/Features/Dispatch/OrderPaidDispatchHandler.cs",
+    "title": "Backend/Application/Features/Dispatch/OrderPaidDispatchHandler.cs",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "72978b75c260d09acd4568c643d9121ecd67da251464dd24138c7510c679260b",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://github.com/kiet-ta/ChoThueGiupViec/blob/1b45c1f4cce8a5b40bdae9d24ac262437b857b0d/Backend/Domain/StateMachines/JobOrderStateMachine.cs",
+    "title": "Backend/Domain/StateMachines/JobOrderStateMachine.cs",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/manifest.json",
+    "sha256": "de2bbf48345a878854ac783ec40ad6453703ea8d4394a1bf6a6889b41acab04c",
+    "commit": null,
+    "read_scope": "selected passages/code walkthrough, not full audit",
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/pulls/260",
+    "title": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/pulls/260",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:00:47.929665+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec/pulls/260",
+    "title": "BE-M2-07 Real IRefundService, refund columns (SC-10), AssignmentFailed refund (M2 - Viên) (#259)",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/TDVien05",
+    "title": 167501700,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec",
+    "title": 1402596374,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/kiet-ta",
+    "title": 90909909,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/kiet-ta",
+    "title": 90909909,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec",
+    "title": 1402596374,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/kiet-ta",
+    "title": 90909909,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/kiet-ta",
+    "title": 90909909,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/TDVien05",
+    "title": 167501700,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/pr260.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec",
+    "title": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/repo.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T09:00:46.726503+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/kiet-ta/ChoThueGiupViec",
+    "title": 1402596374,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/repo.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://api.github.com/users/kiet-ta",
+    "title": 90909909,
+    "manifest": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/repo.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://raw.githubusercontent.com/QwenLM/qwen-code/main/README.md",
+    "title": "qwen-readme",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "0370888b25018bef847a5edb740947bd02e06cf785e1923797a8f901b7c835f7",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:19.227663+00:00"
+  },
+  {
+    "url": "https://www.trae.ai/blog/new_solo_beta_0331",
+    "title": "trae-solo",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "01aec1b34e53d74465d7e004d4a30bface62bd551e8db63f80969fc4b8938b09",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:19.227663+00:00"
+  },
+  {
+    "url": "https://ant.design/docs/spec/values-cn/",
+    "title": "ant-values",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "ba8c30312104c797bebdd7a890d5194a6abc474681543639cbe9aa7508fb5fe5",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:19.227663+00:00"
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/building-effective-agents",
+    "title": "anthropic-agents",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "32eb3833cb6f3e35d5c7b2ce75b6fc4d2a0200ffc7ce5bde0102144e8025d4d5",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:19.227663+00:00"
+  },
+  {
+    "url": "https://code.claude.com/docs/en/best-practices",
+    "title": "claude-best-practices",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "0ea2218c9e2d1091e723bbdf62500f3937720356a4bd00c74da104845f0e78ca",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:19.703454+00:00"
+  },
+  {
+    "url": "https://dora.dev/research/2025/dora-report/",
+    "title": "dora-2025",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "6bb53c243fc615849727e65b6a9aa33dbd6b0d5c4e63af5ce68137db0924b4d9",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:19.873432+00:00"
+  },
+  {
+    "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+    "title": "metr-2025",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "63b5b1d1d37a0314f331b971f073402bceff97c03ae220887d90931411b31a5a",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:19.882225+00:00"
+  },
+  {
+    "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+    "title": "metr-2026",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "dc7166eccaed813e22d7206faea490040086be40e0b9d00463e0fc31e76c47f2",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:19.942387+00:00"
+  },
+  {
+    "url": "https://web.dev/case-studies/vodafone",
+    "title": "vodafone",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "84fc64a8c41a28c01ef18716244abbb1d1032d8943153eafc57d73366ab54889",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:20.223224+00:00"
+  },
+  {
+    "url": "https://baymard.com/research-articles/current-state-of-checkout-ux",
+    "title": "baymard-checkout",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "bc00c22c6a984c3071ece9d774dee3fd87d558c96c0cf5563dd68a0f54ea5673",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:20.895960+00:00"
+  },
+  {
+    "url": "https://basecamp.com/shapeup/1.5-chapter-06",
+    "title": "shapeup-pitch",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "e1f84f390bb01cf76c63e25f3e4a9e94bed35b48ffda03bf18d2b1ef5df6024b",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:20.921324+00:00"
+  },
+  {
+    "url": "https://martinfowler.com/bliki/ParallelChange.html",
+    "title": "parallel-change",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "4d958f564dc7e44e12b4233202d20cdadd1e0ba30a9ccfc0517d1a568f6d8bcc",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:20.977008+00:00"
+  },
+  {
+    "url": "https://martinfowler.com/articles/feature-toggles.html",
+    "title": "feature-flags",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "d4e1a56d2d8c96cdcb278ec7fa16caf9805397e6a91fb862bf8642292a270e8d",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:21.713528+00:00"
+  },
+  {
+    "url": "https://martinfowler.com/bliki/MonolithFirst.html",
+    "title": "monolith-first",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "722d8d78beddd9e0f6ff3e856eec94dfa2b9fa3bebcaaf4c9e80ccdd3c0e1446",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:21.952949+00:00"
+  },
+  {
+    "url": "https://sensible.com/dont-make-me-think/",
+    "title": "krug-book",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:22.530620+00:00"
+  },
+  {
+    "url": "https://www.momtestbook.com/teachers",
+    "title": "momtest-teachers",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "b5f3a98c6fef2c1524c5c86044f7b8fca32b4d460bc6b75719f05328db812975",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:22.931870+00:00"
+  },
+  {
+    "url": "https://web.stanford.edu/~ouster/cgi-bin/book.php",
+    "title": "ousterhout-book",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "0801b5ac7b278dc1660c99fb1ef3cb457fd70afe37d42e84cd53b351d68e2e19",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:22.933878+00:00"
+  },
+  {
+    "url": "https://web.dev/articles/vitals",
+    "title": "web-vitals",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+    "sha256": "c8520502084150c611316779a96d1f248d8b80a0a4f68c9be11725c9c44c7036",
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:23.390569+00:00"
+  },
+  {
+    "url": "https://sensible.com/dont-make-me-think/",
+    "title": "krug-book",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/verification.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-11T11:29:22.530620+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/README.md",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "cea32947e8fed80dcee5388ec59f6bd93f5783ebc6d2efba226b2824a1c5f62f",
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:40.446698+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/package.json",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "df827944f2858d3716027eabbd84368358d6e0be902d440835729a3beb532962",
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:40.846176+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/packages/medusa/package.json",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "c1d6ba5ccf97f79c4dc4ccefc91185a88b8d7246ba37ec7da3f8cb70f1f64527",
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:41.207295+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/packages/admin/dashboard/package.json",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "84d121646880e38cd5e65e1712f27be452370c203c724734655a0fdccaee2f48",
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:41.557291+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/LICENSE",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "cf67cc556c17e0b00dc0c74a3d71db8dec9aae98af747a2503803a640fba9bb5",
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:41.981733+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/saleor/saleor/782a751f622c4a047798ce7084b7c66c0877ec6f/README.md",
+    "title": "saleor/saleor",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "6b285440fe799c8620470efc081157777636d822be759aa8bd812a9855548944",
+    "commit": "782a751f622c4a047798ce7084b7c66c0877ec6f",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:42.425135+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/saleor/saleor/782a751f622c4a047798ce7084b7c66c0877ec6f/pyproject.toml",
+    "title": "saleor/saleor",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "6d458e1110ac304b008ab915d4ff589c9d57f746d8fea377bae9a161cf7c3912",
+    "commit": "782a751f622c4a047798ce7084b7c66c0877ec6f",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:42.863813+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/saleor/saleor/782a751f622c4a047798ce7084b7c66c0877ec6f/saleor/urls.py",
+    "title": "saleor/saleor",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "a970eeb992e2cdacf2c74a9a3cbefbce3862d14c1ac2ddc737fcd47924d6a9e7",
+    "commit": "782a751f622c4a047798ce7084b7c66c0877ec6f",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:43.316192+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/vercel/commerce/3761e52e60df9c6a316e067dbfd7032e494d3634/README.md",
+    "title": "vercel/commerce",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "b9d78355cc8509600c434766c72e2b5fd0c1d397f6ae491251590177e690d507",
+    "commit": "3761e52e60df9c6a316e067dbfd7032e494d3634",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:43.731300+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/vercel/commerce/3761e52e60df9c6a316e067dbfd7032e494d3634/package.json",
+    "title": "vercel/commerce",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "34560d50cec2e0ad3776ab41084423f80a13ca1b0274c4a359f6f24383e344b0",
+    "commit": "3761e52e60df9c6a316e067dbfd7032e494d3634",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:44.210061+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/vercel/commerce/3761e52e60df9c6a316e067dbfd7032e494d3634/lib/shopify/index.ts",
+    "title": "vercel/commerce",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "e339239e9f8280ac04b7755091230f6e1902455478ec6b5023761b436fc29ed5",
+    "commit": "3761e52e60df9c6a316e067dbfd7032e494d3634",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:44.705201+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/marmelab/react-admin/f1213e048d60d83df74900b2fc8415fd3287610c/README.md",
+    "title": "marmelab/react-admin",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "c5c8efbcd8c9b5588d7ee41ea289aa8faf8887d54c1b236ce52743105ed4eabf",
+    "commit": "f1213e048d60d83df74900b2fc8415fd3287610c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:45.177369+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/marmelab/react-admin/f1213e048d60d83df74900b2fc8415fd3287610c/packages/ra-core/package.json",
+    "title": "marmelab/react-admin",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "0b2fd50b74d0d29d561c7f9fc01cad779890138972849b6f1fc4c906f7889385",
+    "commit": "f1213e048d60d83df74900b2fc8415fd3287610c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:45.618625+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/marmelab/react-admin/f1213e048d60d83df74900b2fc8415fd3287610c/packages/ra-ui-materialui/package.json",
+    "title": "marmelab/react-admin",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "9e1461d40e7d4fcbfd41dedb23522521fa97cf70b46e52ec83a3859d02b22079",
+    "commit": "f1213e048d60d83df74900b2fc8415fd3287610c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:46.077854+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/marmelab/react-admin/f1213e048d60d83df74900b2fc8415fd3287610c/examples/demo/src/App.tsx",
+    "title": "marmelab/react-admin",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "51e69c6211dc3c475fa41d095385698859d737b95b6bb25d6deb0858928e57cb",
+    "commit": "f1213e048d60d83df74900b2fc8415fd3287610c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:46.490239+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/refinedev/refine/2352eb5b6539e2f39ad9aef652279ad1dcf2c467/README.md",
+    "title": "refinedev/refine",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "af0c08d6f291aa75c55d4ad3ec19fd4b728edcf43a39c80d566f661b3b311c44",
+    "commit": "2352eb5b6539e2f39ad9aef652279ad1dcf2c467",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:46.910527+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/refinedev/refine/2352eb5b6539e2f39ad9aef652279ad1dcf2c467/packages/core/package.json",
+    "title": "refinedev/refine",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "ff95adeda27a84b8912a03c5f29a7f25f39494d1d1bef10e34a1d13f7982fdd8",
+    "commit": "2352eb5b6539e2f39ad9aef652279ad1dcf2c467",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:47.361641+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/refinedev/refine/2352eb5b6539e2f39ad9aef652279ad1dcf2c467/examples/finefoods-antd/src/App.tsx",
+    "title": "refinedev/refine",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "791f87e2a276d277cabb8199d13af56772bb9665c1603f4dfe9cc8c299cff23f",
+    "commit": "2352eb5b6539e2f39ad9aef652279ad1dcf2c467",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:47.748537+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tabler/tabler/c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e/README.md",
+    "title": "tabler/tabler",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "7e478b65e290cf39ce9379adc82fc204cbe4e26e753d0bde3ddd1e913aaf99bb",
+    "commit": "c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:48.206531+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tabler/tabler/c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e/package.json",
+    "title": "tabler/tabler",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "b67b799b2f0d863905ade4bf6311b138135b66c065d449a68de2f1b367149bb6",
+    "commit": "c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:48.547526+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tabler/tabler/c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e/core/package.json",
+    "title": "tabler/tabler",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "165a175bdd1bfd5f610eddbc3a064825dc586ac6ce88a70a2110c32a2c460901",
+    "commit": "c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:49.042030+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tabler/tabler/c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e/preview/package.json",
+    "title": "tabler/tabler",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "a7a08f10fc58f5ad73abc91a2910071900481256c6277bd55b81ae95c6919f15",
+    "commit": "c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:49.514649+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/outline/outline/f00ff8e4a1aaf7193a4fb6cde68a41cea6e5a8d8/docs/ARCHITECTURE.md",
+    "title": "outline/outline",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "f365206cae6fa735d7c2a1887aeba093fff6576b4ad4cafc6a1c5fec4f1b7dd6",
+    "commit": "f00ff8e4a1aaf7193a4fb6cde68a41cea6e5a8d8",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:49.912407+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/outline/outline/f00ff8e4a1aaf7193a4fb6cde68a41cea6e5a8d8/package.json",
+    "title": "outline/outline",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "a8ae1e51d7b1ae49d16206129f0b6b62e0f01a81946f606285224742d441239e",
+    "commit": "f00ff8e4a1aaf7193a4fb6cde68a41cea6e5a8d8",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:50.389459+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/immich-app/immich/2685234ed390746413203a2cf0b18bc36dba53d1/docker/docker-compose.yml",
+    "title": "immich-app/immich",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "1455e3f474687cb96ecb2eab23a0a7268ac5515b094022c66f3902ceb7f0a564",
+    "commit": "2685234ed390746413203a2cf0b18bc36dba53d1",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:50.802497+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/immich-app/immich/2685234ed390746413203a2cf0b18bc36dba53d1/server/package.json",
+    "title": "immich-app/immich",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "5ae66b6f821c337d769ec77d164506a7b400cbf9a3acee90803022493c17c966",
+    "commit": "2685234ed390746413203a2cf0b18bc36dba53d1",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:44:51.171604+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/refinedev/refine/2352eb5b6539e2f39ad9aef652279ad1dcf2c467/packages/core/README.md",
+    "title": "refinedev/refine",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "84802ac05d70634bed60c8003a2a2b60cbdf8448bc3b74d3e1c94a732160078f",
+    "commit": "2352eb5b6539e2f39ad9aef652279ad1dcf2c467",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:45:59.689535+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/CONTRIBUTING.md",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "bd02d95ba813913c777afb57ee246ea9cf2a2b151ed60b5c7070f32fd4c51598",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:46:00.062918+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/medusajs/medusa/146c46b0ad1146b40595c8ef586c4d5890982603/CONTRIBUTING.md",
+    "title": "medusajs/medusa",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "8d6ec4d9e92a13c519d5ff6bc18a4217ca46a9b3b50c8832ecaa2f6d2a833858",
+    "commit": "146c46b0ad1146b40595c8ef586c4d5890982603",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:46:00.577686+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tabler/tabler/c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e/CONTRIBUTING.md",
+    "title": "tabler/tabler",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+    "sha256": "b6026c78555539cc8b33fd756715bc190bfeed9b371b8b88ed7b6d38ad32fd9a",
+    "commit": "c2a7cbf0262d201d97d7b5f9e7cc9ed5a346108e",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-10T03:46:00.972375+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/d86fccbd477786f94ca7eb891fbe0ec039d3cd3b/LICENSE",
+    "title": "DavidHDev/react-bits",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": null,
+    "commit": null,
+    "read_scope": null,
+    "retrieved_at_utc": null
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/frontend/package.json",
+    "title": "fastapi/full-stack-fastapi-template",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "f6ca10df45c26bab9bec167873aff9fb307b18f623e484fe330bef252d57915d",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:31.594785+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/backend/pyproject.toml",
+    "title": "fastapi/full-stack-fastapi-template",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "a12c0fdd65a800761b020e2b66fd2260b306bf3258d166c89dde4a0ec6734029",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:32.015985+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/backend/app/main.py",
+    "title": "fastapi/full-stack-fastapi-template",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "e8b28b639d86c76dcf60348185c91125a789951ff085a5289d9f5add0854dfda",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:32.487258+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/compose.yml",
+    "title": "fastapi/full-stack-fastapi-template",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "1fd1f559a68a462fa5f72295b7dec6982279bb121cb75514a7933b4534dfefd1",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:32.842676+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/fastapi/full-stack-fastapi-template/7257e606cb94eada1dca40173e2b7f99dd549bc6/development.md",
+    "title": "fastapi/full-stack-fastapi-template",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "0393492560c43bc3ef9e9fd884c173b711211865a2fd6b5a7881705f75ea5083",
+    "commit": "7257e606cb94eada1dca40173e2b7f99dd549bc6",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:33.293261+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/package.json",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "489360a75ae861401a110b8155cbae3d82b08980ccf0645024e92d87549ec35c",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:33.665721+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/turbo.json",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "88a9ac166f18b7cd34146f4ae3d675d6ab68c43d6c4fe2c6b0f9f16e538780de",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:34.143371+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/apps/web/package.json",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "90d376d560066fa620bd962d8c7ae9dca3239c09121785992456c1beba100894",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:34.542610+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/packages/prisma/package.json",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "f8be2cc52f9e3b3081523a3be51dd3f7b806a7e6c7b327d3425ddb00da551a4b",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:34.922229+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/calcom/cal.diy/54343aa685ae8f33159d2f485ec4a57bad5c574a/packages/trpc/package.json",
+    "title": "calcom/cal.diy",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "84e6ea834fca9b71ddbe95b7c25d7cf3549fca0983fe27c2f722eab9ad8165af",
+    "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:35.320235+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/immich-app/immich/b4f35cb43d74969af0cfa146676eb26df9fcfd8c/web/package.json",
+    "title": "immich-app/immich",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "5cab3ed55769ba8be14b211b3aebd018482281ff249776c614b33cf690f8acd0",
+    "commit": "b4f35cb43d74969af0cfa146676eb26df9fcfd8c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:35.747674+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/immich-app/immich/b4f35cb43d74969af0cfa146676eb26df9fcfd8c/server/package.json",
+    "title": "immich-app/immich",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "5ae66b6f821c337d769ec77d164506a7b400cbf9a3acee90803022493c17c966",
+    "commit": "b4f35cb43d74969af0cfa146676eb26df9fcfd8c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:36.190372+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/immich-app/immich/b4f35cb43d74969af0cfa146676eb26df9fcfd8c/machine-learning/pyproject.toml",
+    "title": "immich-app/immich",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "e49e441e0c8f0f33bf4deb8349c904fc75d25c671a9ad12f23d3ce8b3d633a75",
+    "commit": "b4f35cb43d74969af0cfa146676eb26df9fcfd8c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:36.567094+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/immich-app/immich/b4f35cb43d74969af0cfa146676eb26df9fcfd8c/docker/docker-compose.yml",
+    "title": "immich-app/immich",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "2bb7b672a510cb215888447c4ee149e08ed1286169c6407284dd32ebad7dc566",
+    "commit": "b4f35cb43d74969af0cfa146676eb26df9fcfd8c",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:36.949692+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/outline/outline/f6f27d51296978b3f5d7305c556c2bd4f81a666f/package.json",
+    "title": "outline/outline",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "a8ae1e51d7b1ae49d16206129f0b6b62e0f01a81946f606285224742d441239e",
+    "commit": "f6f27d51296978b3f5d7305c556c2bd4f81a666f",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:37.331627+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/outline/outline/f6f27d51296978b3f5d7305c556c2bd4f81a666f/docs/ARCHITECTURE.md",
+    "title": "outline/outline",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "f365206cae6fa735d7c2a1887aeba093fff6576b4ad4cafc6a1c5fec4f1b7dd6",
+    "commit": "f6f27d51296978b3f5d7305c556c2bd4f81a666f",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:37.810618+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/outline/outline/f6f27d51296978b3f5d7305c556c2bd4f81a666f/LICENSE",
+    "title": "outline/outline",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "d18e062d61d26c92e4e7f594a019074f5c585437199ab2b424a591a8ea953b01",
+    "commit": "f6f27d51296978b3f5d7305c556c2bd4f81a666f",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:42:38.220187+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/d86fccbd477786f94ca7eb891fbe0ec039d3cd3b/LICENSE.md",
+    "title": "DavidHDev/react-bits",
+    "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+    "sha256": "f4c33af6739191537738662d223b68d77bc226f4b57ea883e16481d8cc5c73c9",
+    "commit": "d86fccbd477786f94ca7eb891fbe0ec039d3cd3b",
+    "read_scope": null,
+    "retrieved_at_utc": "2026-10-09T16:43:56.667611+00:00"
+  },
+  {
+    "url": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs",
+    "title": "User needs",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "f831860c86a278ecad61a8f45c5dd1a2a0b9006d63a22306a1659675627b726b",
+    "commit": null,
+    "read_scope": "Main guidance: user needs, research evidence, needs vs user stories.",
+    "retrieved_at_utc": "2026-10-11T17:05:22.686242+00:00"
+  },
+  {
+    "url": "https://cucumber.io/docs/bdd/example-mapping/",
+    "title": "Example Mapping",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "d33a8f91c6c0b7cac27c0f3aca3ddd32e31fab5382ccebfad7e97e39bcf9bec8",
+    "commit": null,
+    "read_scope": "Short main page: story, rules, examples, questions and timebox.",
+    "retrieved_at_utc": "2026-10-11T17:05:22.688797+00:00"
+  },
+  {
+    "url": "https://arxiv.org/pdf/1803.09010",
+    "title": "Datasheets for Datasets",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "c7f595988ee2c109631d5173fdae37ff1774c68ec17add51bd012f2a6e8792d0",
+    "commit": null,
+    "read_scope": "Selected passages: 1.1, 3.1-3.2, beginning of 3.3, 3.4-3.5, 3.7; not full paper/appendices.",
+    "retrieved_at_utc": "2026-10-11T17:05:22.690371+00:00"
+  },
+  {
+    "url": "https://arxiv.org/pdf/1912.05511",
+    "title": "Measurement and Fairness",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "b3c5518c5744580e57b1c899aad62093f086baeb17f6c1105b790f4c39722b2c",
+    "commit": null,
+    "read_scope": "Introduction and selected 3.2 construct validity passages, especially content and consequential validity.",
+    "retrieved_at_utc": "2026-10-11T17:05:22.690371+00:00"
+  },
+  {
+    "url": "https://aclanthology.org/2020.acl-main.442.pdf",
+    "title": "CheckList",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "98d15d259acf15136feed5cd5d4921b60cf313704a629901d115fe910fdb00e1",
+    "commit": null,
+    "read_scope": "Method introduction, Figure 1 textual discussion and MFT/INV/DIR definitions; not full experiments.",
+    "retrieved_at_utc": "2026-10-11T17:05:24.098138+00:00"
+  },
+  {
+    "url": "https://aclanthology.org/P18-1128.pdf",
+    "title": "Statistical significance in NLP",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "e3b6e07cf7e404443e4b516db9b2a72c5d24a38285a9a6691ed2e3b01b02235b",
+    "commit": null,
+    "read_scope": "Section 2 metric discussion; section 3 McNemar, sampling/bootstrap/randomization and selection guidance.",
+    "retrieved_at_utc": "2026-10-11T17:05:24.298421+00:00"
+  },
+  {
+    "url": "https://aclanthology.org/2022.paclic-1.71.pdf",
+    "title": "SEND Vietnamese real estate",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "671129f9e49ee1fd70bead6140ed29ee8a047c0cc08d3050105ba4d99d1f430d",
+    "commit": null,
+    "read_scope": "Reread 2.1 noise, section 3 collection/annotation, 4.6 errors, 4.7 NER contribution and Table 4 context.",
+    "retrieved_at_utc": "2026-10-11T17:05:24.519462+00:00"
+  },
+  {
+    "url": "https://aclanthology.org/Q18-1041.pdf",
+    "title": "Data Statements for NLP",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "da123cf0cc7dfb32479066ce01e0d107c312cff0c2818f9abfccb101c6005ff2",
+    "commit": null,
+    "read_scope": "Privacy tradeoff before section 5; 5.1 curation, language variety, speaker/annotator and start of speech situation.",
+    "retrieved_at_utc": "2026-10-11T17:05:24.603152+00:00"
+  },
+  {
+    "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+    "title": "Idempotent APIs",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "3f462ab5b8b23fc0f36b4a46df75b33e7e1b02fc594acdca2afc2da12c5c60e5",
+    "commit": null,
+    "read_scope": "Atomic recording/request identity; late requests/identifier lifespan; same ID different intent.",
+    "retrieved_at_utc": "2026-10-11T17:05:27.167567+00:00"
+  },
+  {
+    "url": "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/",
+    "title": "Timeouts retries backoff jitter",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "8a6c0e9c62d0a8fb3a2f44083b6800ba97cdce9576bf33af6d11bed8626e82bb",
+    "commit": null,
+    "read_scope": "Timeouts, layered retries, backoff and jitter sections.",
+    "retrieved_at_utc": "2026-10-11T17:05:27.324695+00:00"
+  },
+  {
+    "url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "title": "PostgreSQL isolation",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "e5753b8bae282c289fb3541715a92d5451b5ec6a49329679082e58f95bdc0978",
+    "commit": null,
+    "read_scope": "Read Committed and Repeatable Read; selected Serializable and transaction retry paragraphs, version 18.",
+    "retrieved_at_utc": "2026-10-11T17:05:27.481479+00:00"
+  },
+  {
+    "url": "https://www.postgresql.org/docs/18/sql-select.html",
+    "title": "PostgreSQL SELECT locking",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "de759abd95c9f3f7217af2e821150a7b72024128d34401ef0dd2814ff06a35d9",
+    "commit": null,
+    "read_scope": "Locking clause SKIP LOCKED and LIMIT/ORDER BY, not full SELECT reference, version 18.",
+    "retrieved_at_utc": "2026-10-11T17:05:27.799207+00:00"
+  },
+  {
+    "url": "https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle",
+    "title": "Extension service worker lifecycle",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "55029286cd4ea0eecc39d987de37b2320fcd3ee6c0bb663d4ecf5a014af37cce",
+    "commit": null,
+    "read_scope": "Idle/shutdown, persisted state and browser-version lifetime notes.",
+    "retrieved_at_utc": "2026-10-11T17:05:27.977062+00:00"
+  },
+  {
+    "url": "https://developer.chrome.com/docs/extensions/develop/concepts/messaging",
+    "title": "Extension message passing",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "e29fe687cb673db0519515d898fd85106ad6b1b020039a99e913b640ab5d7e99",
+    "commit": null,
+    "read_scope": "Security considerations/safe handling; async responses compatibility passage.",
+    "retrieved_at_utc": "2026-10-11T17:05:28.539091+00:00"
+  },
+  {
+    "url": "https://developer.chrome.com/docs/extensions/reference/api/storage",
+    "title": "Extension storage",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "9f77070c0cb8e576deedb0e32a645b77151d548c032414f578ea0fbc3679a4a6",
+    "commit": null,
+    "read_scope": "Storage areas including session/local and access-level notes.",
+    "retrieved_at_utc": "2026-10-11T17:05:29.121451+00:00"
+  },
+  {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+    "title": "LLM prompt injection prevention",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "d98f86104c060cda10db3d21f66fd62b8340a9a4054852c7a229ef39b084a296",
+    "commit": null,
+    "read_scope": "Indirect injection, agent controls/least privilege, model guardrails, intended-outcome grading and reporting limits.",
+    "retrieved_at_utc": "2026-10-11T17:05:29.594726+00:00"
+  },
+  {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+    "title": "Authorization",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "ef90d31f45bc6018ed7d859d341c1339499f036128c85f0fd5eccd08850537b9",
+    "commit": null,
+    "read_scope": "Deny by default, every-request permission validation, framework configuration limitations.",
+    "retrieved_at_utc": "2026-10-11T17:05:29.595727+00:00"
+  },
+  {
+    "url": "https://sre.google/workbook/implementing-slos/",
+    "title": "Implementing SLOs",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "1b02c7f3f640d92ca4357ba3e088fdbd6766274118afac934bede95ea9ea23e9",
+    "commit": null,
+    "read_scope": "SLI specification vs implementation, indicator categories, critical user journeys; not whole workbook.",
+    "retrieved_at_utc": "2026-10-11T17:05:30.158861+00:00"
+  },
+  {
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+    "title": "WCAG status messages",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "d5a085f7be8814e4f01520db08d41d09b62491f40dc0fb6fb4941ec762cf3746",
+    "commit": null,
+    "read_scope": "SC 4.1.3, intent and status/search result examples.",
+    "retrieved_at_utc": "2026-10-11T17:05:30.171408+00:00"
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+    "title": "Evals for AI agents",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "2ee7241eebeb80b6496f7c4327e0894664ab54748d7c27ca42e1126a1f68c88d",
+    "commit": null,
+    "read_scope": "Eval definitions, grader types, capability/regression, pass@k/pass^k, roadmap 1-3 and 6-7, complementary evaluation methods.",
+    "retrieved_at_utc": "2026-10-11T17:05:30.370426+00:00"
+  },
+  {
+    "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+    "title": "Harness long-running apps",
+    "manifest": "notes/nghien-cuu-sau-2026-10-11/sources/manifest.json",
+    "sha256": "8f0d140fd3c1b856577520e5f65e53593a12c78dec66c78171b8a44415decee6",
+    "commit": null,
+    "read_scope": "Failure modes, frontend rubric, agent roles/sprint contract, model-dependent simplification, results limits and lessons; not full appendix.",
+    "retrieved_at_utc": "2026-10-11T17:05:30.383458+00:00"
+  }
+]

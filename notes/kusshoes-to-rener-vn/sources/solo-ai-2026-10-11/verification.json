@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-11",
+  "documents": [
+    {
+      "file": "BAO-CAO-TONG-HOP-CONG-VIEC.md",
+      "lines": 75,
+      "fences": 0,
+      "sha256": "6b9ab293b6fabc79ff3b1d4323166cfe168036773ef6709ac7e62cfc870315ec"
+    },
+    {
+      "file": "notes/INDEX.md",
+      "lines": 25,
+      "fences": 0,
+      "sha256": "ee00947036654763256d6ff5f3a594bf09bed6b21afceaf0c853bc86b6be8211"
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/PLAN.md",
+      "lines": 270,
+      "fences": 2,
+      "sha256": "2fc5ae7f0178070e47b9d9cbafba6cca2bf469ac2894595a26b16883d1ba6f34"
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+      "lines": 607,
+      "fences": 6,
+      "sha256": "46bac7e6889acef9a1dcf7b97d24f80c24f7319170ce7ce8aa5c75d4b44e63c1"
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/WORK_LOG.md",
+      "lines": 388,
+      "fences": 0,
+      "sha256": "e1c165e3963903b7da09fb524ba50aec822d580e3f23abe1bca394beaa85e597"
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+      "lines": 301,
+      "fences": 6,
+      "sha256": "9538db50c9d9c2fdb9a43232cddc533080b1ed4f90f0e97264025e46508a4172"
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md",
+      "lines": 271,
+      "fences": 20,
+      "sha256": "865baa665dd98446690f59d13152ef324a762fe88106e87512d242cc8e2b8748"
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "lines": 606,
+      "fences": 48,
+      "sha256": "1f156a9d4f79da7ec83a3923db397b12ba31546cda5a633b2710b2e934f13c31"
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md",
+      "lines": 42,
+      "fences": 0,
+      "sha256": "f83622db00e517b1472929a8ccf193d8fe1db32dc188c8d5476835189017b98f"
+    }
+  ],
+  "local_links_checked": 98,
+  "snapshots_checked": 17,
+  "download_attempts": 18,
+  "download_failures": [
+    {
+      "id": "krug-book",
+      "url": "https://sensible.com/dont-make-me-think/",
+      "retrieved_at_utc": "2026-10-11T11:29:22.530620+00:00",
+      "error": "HTTP Error 406: Not Acceptable"
+    }
+  ],
+  "design_sha256": "344551e3ae03790cd29ea80afea7a2e48d5ff1462aa22af570a4729fdd5b6d36",
+  "design_unchanged": true,
+  "errors": [],
+  "not_verified": [
+    "Mermaid rendering",
+    "all external URL availability",
+    "runtime correctness of proposed application flows",
+    "user usability tests",
+    "social video/reel playback"
+  ],
+  "final_log_included": true
+}

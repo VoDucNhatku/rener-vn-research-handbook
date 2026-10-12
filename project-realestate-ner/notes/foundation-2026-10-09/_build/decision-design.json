@@ -1,0 +1,7 @@
+{
+  "event_type": "DESIGN",
+  "decision": "Đề xuất grounded IE và tham khảo giá rao có phạm vi; tách trạng thái nguồn, quyết định extractor và vòng đóng góp khỏi gold/training.",
+  "why": "Giá rao không chứng minh giá sàn/giao dịch; reviewer chỉ ra source ambiguity, denominator và downstream survivor bias; nguồn platform cần gate riêng.",
+  "delta": "Giữ giá trị sản phẩm và paper nhưng thu hẹp claim; thêm canonical schema, metrics hai mẫu số, full-pipeline tests và release offline; chưa chứng minh hiệu quả thực nghiệm.",
+  "evidence": "notes/foundation-2026-10-09/KIEN-THUC-NEN-TANG-RENER-VN.md; notes/foundation-2026-10-09/04-adversarial-review.md"
+}

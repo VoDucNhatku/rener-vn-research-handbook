@@ -1,0 +1,867 @@
+{
+  "verified_at": "2026-10-11T12:15:53.195086+00:00",
+  "scope": "filesystem links excluding fenced examples, fence pairs, UTF8 replacement character, recorded hashes; no application tests or Mermaid render",
+  "docs": [
+    {
+      "file": "BAO-CAO-TONG-HOP-CONG-VIEC.md",
+      "sha256_after": "e9811c6977cb58e9b72014c9052edf5117f34825710ac64302c9ef6e020389c0",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "KusShoes/notes/kusshoes-local-review.md",
+      "sha256_after": "36ea7cb421bf9d6bb39baef37e8735168a65c4cbd44a8790a5c16209a0fa9c67",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/08-fine-tuning-mlm-summary.md",
+      "sha256_after": "9c146acf3223abc0d9943af323a261cfe66c2e3fddad8e71c4d97adeaa3fa319",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/design-rener-vn-waterfall.md",
+      "sha256_after": "a0d787a88675b1c170739d7b9a21cc4635bfac19d3bf84e2bd626080395f95fc",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/INDEX.md",
+      "sha256_after": "fca88b589e2256d0fdf3938c8dea1bef8e7c40565acc0763e4d57506b88a3286",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/GIA-CONG-WEB-VA-AI-WORKFLOW.md",
+      "sha256_after": "20b4e1a2f8bb3061ad95ea407a5ab8edb7100b6d743cf4a0d6ba6c47c0a5a8ac",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+      "sha256_after": "860c08138a1414b70ba54244fdb953fd2aca9a456e96451dbdff3a6604a8d1fa",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
+      "sha256_after": "2c2e8dfd18dc2ed215680702a77b39b3e18fc8fa7115fe6a03483fa89f700aab",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/PLAN.md",
+      "sha256_after": "d8275e4a4b619a9e8dda546b5081f6fab3f011bf8112a08ef5a6fea40932e94c",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md",
+      "sha256_after": "624aeb09bdeabd62bb7cffaa31c8fd7718f8a8b3d7d32ae3fea3f9d602b8305c",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+      "sha256_after": "bcba1497f92bb1da5a0a96e9f26b041ff9952e2f5561d54f5d48210d569cc8ae",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/WORK_LOG.md",
+      "sha256_after": "05c2c7eefab0cc36f8ed6fb9a80cda46cefe5fe288c036c97dfb15564879dcc1",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "sha256_after": "3d0df1b83a3b3f93d49346db7f8d1585572cfbae26345ce61c72553d6d7c1189",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/01-research-report.md",
+      "sha256_after": "3b23a12e479c151e7ee4e3206dc9053ffc7f17b88a0d630fd40b19daf4686934",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/02-proposal-v1.2-change-audit.md",
+      "sha256_after": "9190bb842306a286cb5db78350cc392c1ee898ee712ddec54887b2a928a41bdf",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/audit-log.md",
+      "sha256_after": "223e413380be5ca99f2c59dbeda5836b084596311d7a53da8919c4b45512585f",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/claims-ledger.md",
+      "sha256_after": "1e17f100f41f7e884f330c0721f267ce989990779ed668a388a7fa2dc812253e",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/01-local-source-review.md",
+      "sha256_after": "ff098a4a03325ad4b1104331edfebf9f42df5a1d524a9d1140ac4f4239e7ed4c",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/02-research-evidence.md",
+      "sha256_after": "4e9f939db6bd1a04b4756215d509c5667ddbc0177695cb75bab765a2d7458858",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/03-system-architecture.md",
+      "sha256_after": "f5be29c283c2bd814fc31dad233aef9222d1c6d3a5958313ff2af656c4b566e8",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/04-adversarial-review.md",
+      "sha256_after": "cd67ea103cd1dbdf52249c747b61568a7fa6417ac437ea231d557fed87489e7c",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/05-source-audit.md",
+      "sha256_after": "4bec5e1a5c716b3d5b0e137db0891f951d1e186d7f13171a9d05681f10bcf75e",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/BAO-CAO-HIEU-DE-TAI.md",
+      "sha256_after": "0708c0c0014eacda5aa7c71a84a7151d6452462330a62733d43431b6ecc55b10",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/KIEM-TRA-BAN-GIAO.md",
+      "sha256_after": "e31b0991991071d5089837b620b3469b68144c7ee372432d5a914fe5f5214f46",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/KIEN-THUC-NEN-TANG-RENER-VN.md",
+      "sha256_after": "dfbfb5a51daace5b3045711c3a55d5f8e236bedf1fc8565c771f51d9bd1e7ff0",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/PLAN.md",
+      "sha256_after": "20df8e868ef667b10b42571864c40fefd26b4c61a755e6edfc309e1305cc6212",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "project-realestate-ner/notes/INDEX.md",
+      "sha256_after": "72f49eef0c2a88b6ca629011c1791f92c93e106876320a3b2f5e42a9d000fc60",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "TMG301_TongHopKienThuc.md",
+      "sha256_after": "c14c0fb1a5281d52dac0fbc6b9f6fdcd96b79070c4cb3335b76f45c2cede1cc4",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/HIEN-TRANG-VA-QUYET-DINH.md",
+      "sha256_after": "2afe67996fd473ee55319c85f892b40559f82e81cda2e86df5a74d9e677ceb45",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md",
+      "sha256_after": "0fd71a8dda546cb401696d516fa7627f5bec09ae97359af3a103bde0da566a15",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/audit-2026-10-11/NGUON-DOI-CHIEU.md",
+      "sha256_after": "a376f0ec4a8bf07a1dc2647ad04e56e6e3ce59af32a7398885a23ac44e5557ed",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    },
+    {
+      "file": "notes/audit-2026-10-11/PHAM-VI-KIEM-TRA.md",
+      "sha256_after": "83ca1a4a5f5ee37d59e483a2cd97c0b11ad25e9bd0f8e01ac3bbf03ee231d1ed",
+      "fences_balanced": true,
+      "replacement_characters": 0
+    }
+  ],
+  "changed_existing_documents": [
+    "BAO-CAO-TONG-HOP-CONG-VIEC.md",
+    "notes/08-fine-tuning-mlm-summary.md",
+    "notes/design-rener-vn-waterfall.md",
+    "notes/INDEX.md",
+    "notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md",
+    "notes/kusshoes-to-rener-vn/PLAN.md",
+    "notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md",
+    "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+    "notes/kusshoes-to-rener-vn/WORK_LOG.md",
+    "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+    "project-realestate-ner/notes/01-research-report.md",
+    "project-realestate-ner/notes/claims-ledger.md",
+    "project-realestate-ner/notes/INDEX.md",
+    "TMG301_TongHopKienThuc.md"
+  ],
+  "local_links_checked": 182,
+  "broken_local_links": [],
+  "source_hash_checks": [
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "medusajs--medusa\\packages\\medusa\\src\\api\\admin\\products\\route.ts",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "saleor--saleor\\saleor\\graphql\\product\\mutations\\product\\product_create.py",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "vercel--commerce\\app\\search\\page.tsx",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "marmelab--react-admin\\examples\\demo\\src\\products\\ProductList.tsx",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "refinedev--refine\\examples\\finefoods-antd\\src\\pages\\products\\list.tsx",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "tabler--tabler\\core\\scss\\_variables.scss",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "fastapi--full-stack-fastapi-template\\backend\\app\\api\\routes\\items.py",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "outline--outline\\server\\policies\\document.ts",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "immich-app--immich\\server\\src\\controllers\\asset.controller.ts",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "calcom--cal.diy\\packages\\features\\bookings\\README.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "calcom--cal.diy\\packages\\features\\bookings\\services\\BookingAccessService.ts",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "calcom--cal.diy\\packages\\features\\bookings\\services\\BookingAccessService.test.ts",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "immich-app--immich\\server\\src\\services\\asset.service.ts",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "path": "medusajs--medusa\\packages\\core\\core-flows\\src\\product\\workflows\\create-products.ts",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "brock-figma.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "lukas-dashboard.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "flux-webflow.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "lenny-lazar.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "uk-msc-buyers-guide.pdf",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "lovable-figma.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "lovable-preview.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "lovable-21st.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "21st-terms.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "path": "webflow-license.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/code-manifest.json",
+      "path": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\GoogleChrome--chrome-extensions-samples\\functional-samples\\tutorial.focus-mode\\manifest.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/code-manifest.json",
+      "path": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\GoogleChrome--chrome-extensions-samples\\functional-samples\\tutorial.focus-mode\\background.js",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/code-manifest.json",
+      "path": "notes\\kusshoes-to-rener-vn\\sources\\related-repos-2026-10-10\\google--langextract\\langextract\\core\\data.py",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "qwen-readme.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "trae-solo.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "ant-values.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "anthropic-agents.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "claude-best-practices.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "dora-2025.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "metr-2025.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "metr-2026.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "vodafone.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "baymard-checkout.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "shapeup-pitch.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "parallel-change.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "feature-flags.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "monolith-first.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "momtest-teachers.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "ousterhout-book.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "path": "web-vitals.html",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "medusajs--medusa\\README.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "medusajs--medusa\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "medusajs--medusa\\packages\\medusa\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "medusajs--medusa\\packages\\admin\\dashboard\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "medusajs--medusa\\LICENSE",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "saleor--saleor\\README.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "saleor--saleor\\pyproject.toml",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "saleor--saleor\\saleor\\urls.py",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "vercel--commerce\\README.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "vercel--commerce\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "vercel--commerce\\lib\\shopify\\index.ts",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "marmelab--react-admin\\README.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "marmelab--react-admin\\packages\\ra-core\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "marmelab--react-admin\\packages\\ra-ui-materialui\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "marmelab--react-admin\\examples\\demo\\src\\App.tsx",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "refinedev--refine\\README.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "refinedev--refine\\packages\\core\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "refinedev--refine\\examples\\finefoods-antd\\src\\App.tsx",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "tabler--tabler\\README.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "tabler--tabler\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "tabler--tabler\\core\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "tabler--tabler\\preview\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "outline--outline\\docs\\ARCHITECTURE.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "outline--outline\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "immich-app--immich\\docker\\docker-compose.yml",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "immich-app--immich\\server\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "refinedev--refine\\packages\\core\\README.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "calcom--cal.diy\\CONTRIBUTING.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "medusajs--medusa\\CONTRIBUTING.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
+      "path": "tabler--tabler\\CONTRIBUTING.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "fastapi--full-stack-fastapi-template\\frontend\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "fastapi--full-stack-fastapi-template\\backend\\pyproject.toml",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "fastapi--full-stack-fastapi-template\\backend\\app\\main.py",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "fastapi--full-stack-fastapi-template\\compose.yml",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "fastapi--full-stack-fastapi-template\\development.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "calcom--cal.diy\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "calcom--cal.diy\\turbo.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "calcom--cal.diy\\apps\\web\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "calcom--cal.diy\\packages\\prisma\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "calcom--cal.diy\\packages\\trpc\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "immich-app--immich\\web\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "immich-app--immich\\server\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "immich-app--immich\\machine-learning\\pyproject.toml",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "immich-app--immich\\docker\\docker-compose.yml",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "outline--outline\\package.json",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "outline--outline\\docs\\ARCHITECTURE.md",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "outline--outline\\LICENSE",
+      "ok": true
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "path": "DavidHDev--react-bits\\LICENSE.md",
+      "ok": true
+    }
+  ],
+  "source_entries_skipped": [
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "index": 7,
+      "reason": "no SHA256 recorded"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
+      "index": 13,
+      "reason": "no SHA256 recorded"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/manifest.json",
+      "index": 0,
+      "reason": "no SHA256 recorded"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "index": 0,
+      "reason": "no local path"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "index": 1,
+      "reason": "no local path"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "index": 2,
+      "reason": "no local path"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "index": 3,
+      "reason": "no local path"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "index": 4,
+      "reason": "no local path"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "index": 5,
+      "reason": "no local path"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "index": 6,
+      "reason": "no local path"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/manifest.json",
+      "index": 7,
+      "reason": "no local path"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/manifest.json",
+      "index": 14,
+      "reason": "no SHA256 recorded"
+    },
+    {
+      "manifest": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
+      "index": 0,
+      "reason": "no SHA256 recorded"
+    }
+  ],
+  "originals": [
+    {
+      "file": "project-realestate-ner/proposal-realestate-ner-v1.1.xlsx",
+      "sha256": "116482b5fb6eeb31130181c652513b96d9a3ce31341a89a41a25c193a0cd840c",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-realestate-ner.xlsx",
+      "sha256": "22da59aea72487541fd1a67767dc3ede74ce67f938f2d2834f55c73d168a68f8",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN-v1.2.docx",
+      "sha256": "985b98a8961993cd50e351f3d2895a73389c5b84fca81621d8d2e410e961a17b",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN-v1.2.pdf",
+      "sha256": "858162939f199c8255f215ebd4b3e37eba4904ea545db9788e5472d03df00d60",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN-v1.3.docx",
+      "sha256": "d4e7a994c86b414fefd3b5448a95c919aedeadd4c287cf5b6e0ab29ad8bc1e7d",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN-v1.3.pdf",
+      "sha256": "39104a3310ba12766fa556c6b6c0d5c7b1190f8f476d15072a849234d46d8471",
+      "unchanged": true
+    },
+    {
+      "file": "project-realestate-ner/proposal-ReNER-VN.docx",
+      "sha256": "af1e8f642c291b4b5f6948992436ee6412a15af284a740e0169502a80b52e3c9",
+      "unchanged": true
+    }
+  ],
+  "additional_artifacts": [
+    {
+      "file": "project-realestate-ner/notes/foundation-2026-10-09/LO-TRINH-TRUC-QUAN.html",
+      "sha256": "552da470eaed4d0278f4ca7c32e76b099a2d351651bb84bc5d7d8f2b287e6952",
+      "review": "Rà các đoạn scope, 4/12 tuần, N, đề xuất và dữ liệu giả lập; chưa render lại/kiểm toàn bộ tương tác; giữ nguyên snapshot 09/10.",
+      "unchanged": true
+    }
+  ],
+  "targeted_rescan": [
+    {
+      "file": "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+      "removed_phrase": "Running --> NeedsReview",
+      "ok": true
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
+      "removed_phrase": "snapshot được phép công khai",
+      "ok": true
+    },
+    {
+      "file": "notes/kusshoes-to-rener-vn/SO-TAY-CHIA-VIEC-CHO-AI.md",
+      "removed_phrase": "S4 — đóng góp và duyệt để công khai",
+      "ok": true
+    },
+    {
+      "file": "notes/design-rener-vn-waterfall.md",
+      "removed_phrase": "DOMAIN --> DB",
+      "ok": true
+    },
+    {
+      "file": "notes/design-rener-vn-waterfall.md",
+      "removed_phrase": "NLP --> DB",
+      "ok": true
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "removed_phrase": "14 passed",
+      "ok": true
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "removed_phrase": "2 passed",
+      "ok": true
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "removed_phrase": "Verified: V1 ✅",
+      "ok": true
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "removed_phrase": "Max ~400 changed lines",
+      "ok": true
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "removed_phrase": "domain rules -> repository -> DB",
+      "ok": true
+    },
+    {
+      "file": "notes/quy-chuan-ai-dev/PROMPT-KIEN-TRUC-GIAO-VIEC-AI.md",
+      "removed_phrase": "không phụ thuộc vào độ dài prompt",
+      "ok": true
+    },
+    {
+      "file": "TMG301_TongHopKienThuc.md",
+      "removed_phrase": "không bị hạn chế bởi độ dài chuỗi dài",
+      "ok": true
+    },
+    {
+      "file": "TMG301_TongHopKienThuc.md",
+      "removed_phrase": "cây bao trùm nhỏ nhất (Minimum Spanning Tree)",
+      "ok": true
+    },
+    {
+      "file": "notes/08-fine-tuning-mlm-summary.md",
+      "removed_phrase": "token `[MASK]` **không bao giờ xuất hiện**",
+      "ok": true
+    },
+    {
+      "file": "notes/08-fine-tuning-mlm-summary.md",
+      "removed_phrase": "giữ nguyên kiến trúc và tham số gốc",
+      "ok": true
+    }
+  ]
+}

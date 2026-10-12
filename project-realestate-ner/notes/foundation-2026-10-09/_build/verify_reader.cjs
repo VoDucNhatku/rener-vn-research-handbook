@@ -1,0 +1,61 @@
+const {chromium} = require('C:/Users/Asus/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs = require('fs');
+const path = require('path');
+const {pathToFileURL} = require('url');
+const assert = require('assert');
+
+(async()=>{
+ const root = path.resolve(__dirname,'..');
+ const qa = path.join(__dirname,'qa'); fs.mkdirSync(qa,{recursive:true});
+ const browser = await chromium.launch({headless:true, executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+ const page = await browser.newPage({viewport:{width:1280,height:900},deviceScaleFactor:1});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(pathToFileURL(path.join(root,'LO-TRINH-TRUC-QUAN.html')).href);
+ assert.equal(await page.locator('.chapter').count(),32);
+ assert.equal(await page.locator('.step-button').count(),6);
+ await page.screenshot({path:path.join(qa,'desktop-top.png')});
+ await page.getByRole('button',{name:'Tuần 9–12 · G5 Bằng chứng và paper'}).click();
+ assert((await page.locator('#stage-panel').textContent()).includes('Claims dựa trên runs'));
+ assert.equal(await page.locator('.step-button[aria-pressed=true]').count(),1);
+ await page.locator('#roadmap').scrollIntoViewIfNeeded();
+ await page.screenshot({path:path.join(qa,'desktop-roadmap.png')});
+ await page.getByRole('button',{name:'Ẩn giá rõ ràng',exact:true}).click();
+ assert((await page.locator('#example-panel').textContent()).includes('hidden_explicit'));
+ await page.getByRole('button',{name:'Một bài, hai listing',exact:true}).click();
+ assert((await page.locator('#example-panel').textContent()).includes('2 listing / 1 post'));
+ await page.locator('#chapter-search').fill('idempotency');
+ const filtered=await page.locator('.chapter:not([hidden])').count();
+ assert(filtered>0 && filtered<32);
+ await page.locator('#chapter-search').fill('zzzz-no-chapter');
+ assert.equal(await page.locator('.chapter:not([hidden])').count(),0);
+ assert(await page.locator('#no-match').isVisible());
+ await page.locator('#chapter-search').fill('');
+ assert.equal(await page.locator('.chapter:not([hidden])').count(),32);
+ await page.locator('#chapter-11').scrollIntoViewIfNeeded();
+ await page.screenshot({path:path.join(qa,'desktop-knowledge.png')});
+ const broken = await page.locator('a[href^="#"]').evaluateAll(links=>links.filter(l=>!document.getElementById(l.getAttribute('href').slice(1))).map(l=>l.getAttribute('href')));
+ assert.deepEqual(broken,[]);
+ const overflow=[];
+ for(const width of [375,320]){
+  await page.setViewportSize({width,height:850});
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1));
+  await page.locator('#roadmap').scrollIntoViewIfNeeded();
+  await page.getByRole('button',{name:'Tuần 2–3 · G1 Gold và split'}).click();
+  assert((await page.locator('#stage-panel').textContent()).includes('Gold snapshot'));
+  await page.screenshot({path:path.join(qa,`mobile-${width}.png`)});
+  const bad = await page.locator('button, .flow-node, .result-grid b, h1, h2').evaluateAll(nodes=>nodes.filter(n=>n.getBoundingClientRect().right>innerWidth+1||n.getBoundingClientRect().left< -1).map(n=>n.textContent.trim().slice(0,80)));
+  assert.deepEqual(bad,[]);
+ }
+ await page.setViewportSize({width:1280,height:900});
+ await page.emulateMedia({media:'print'});
+ assert.equal(await page.locator('.chapter:visible').count(),32);
+ function lum(hex){const a=hex.match(/[0-9a-f]{2}/gi).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return .2126*a[0]+.7152*a[1]+.0722*a[2]}
+ const pairs=[['ink/paper','#142c39','#f5f2eb'],['muted/paper','#52636b','#f5f2eb'],['teal/white','#076e64','#ffffff'],['selected white/teal','#ffffff','#076e64']];
+ const contrasts=pairs.map(([name,a,b])=>({name,ratio:Number(((Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05)).toFixed(2))}));
+ assert(contrasts.every(x=>x.ratio>=4.5));
+ assert.deepEqual(errors,[]);
+ const report={date:'2026-10-09',chapters:32,stage_buttons:6,example_cases:3,checks:['buttons and selected state','hidden price / multi-listing expected examples','search filter/no-result/reset','internal anchors','desktop and 375/320px overflow','print shows full chapters','console errors','text contrast'],contrasts,errors,scope:'Verifies reader artifact; not NLP/model/product experiments.'};
+ fs.writeFileSync(path.join(qa,'verification.json'),JSON.stringify(report,null,2));
+ console.log(JSON.stringify(report));
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});
