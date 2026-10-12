@@ -16,3 +16,14 @@
 ## L3 — quy trình GitHub và kiểm bản xuất
 
 12/10/2026. Thêm issue/PR template, CODEOWNERS, task/decision/experiment template và hai script Python chuẩn tạo danh mục/kiểm tài liệu. Có workflow mẫu chưa kích hoạt vì token CLI hiện không có scope workflow. Chưa có branch protection hoặc CI run; không ghi badge xanh. Kiểm file/link/manifest, bảo toàn bảy proposal gốc, rà pattern credential và kiểm tình huống lỗi giả cho chính validator trước khi push. Bản before và snapshot verification lịch sử được giải thích tách khỏi kết quả kiểm bản xuất.
+
+
+## L4 — tạo remote và backlog
+
+12/10/2026. Đã tạo repo private VoDucNhatku/rener-vn-research-handbook, push main thành công với commit đầu a648c5a3b6a39250a3d05fb6f44b7428645df6c1. Bản đầu có 198 file tracked. Cấu hình mô tả, năm topic, Issues và tự xóa branch sau merge; tạo nhãn research/correction/decision và bốn issue mở về nghĩa giá, protocol đánh giá, quyền nguồn và walkthrough KusShoes. Không tạo fake lịch sử nghiên cứu, PR hoặc kết quả thực nghiệm.
+
+## L5 — kiểm bản clone và trạng thái GitHub
+
+12/10/2026. Clone thật từ remote private vào thư mục kiểm riêng và chạy validate_docs.py: 110 Markdown, 845 link local, 147 file nhập, bảy proposal gốc; không có error/warning. Rà 28 bản forensic theo chính sách riêng; không kiểm link của các bản before lịch sử. API GitHub xác nhận private, main, bốn issue mở, branch protection=false và chưa có Actions workflow hoạt động. Giới hạn này được ghi trong WORKFLOW; mẫu CI chưa phải CI run.
+
+Bổ sung thông tin bàn giao, chỉ mục và log vào commit tiếp theo; kiểm lại tài liệu rồi đồng bộ commit cuối. Kết quả kiểm Markdown/file không xác nhận app, NLP, nguồn thật, quyền pháp lý hoặc tải production.

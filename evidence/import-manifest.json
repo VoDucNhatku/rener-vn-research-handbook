@@ -28,10 +28,10 @@
     {
       "path": "notes/INDEX.md",
       "original_sha256": "03ba11bb015965aa8e613dc94aec176483ba7c31ed47932c086d47e61bc703f9",
-      "export_sha256": "03ba11bb015965aa8e613dc94aec176483ba7c31ed47932c086d47e61bc703f9",
-      "bytes": 3929,
-      "unchanged": true,
-      "export_lf_sha256": "96a88f52c125cfbaf5d96eb1e4f3f5378e8d551707c413e35deab95c4c409706"
+      "export_sha256": "0b8db1895ec72178fee5ac5fc8e4dd6aa5ac2265b11414183f5b559c69e402da",
+      "bytes": 4202,
+      "unchanged": false,
+      "export_lf_sha256": "2e65aa7ae2387579632d8aede6c2a8a1be35753699024da3345e090cc3b9fcd5"
     },
     {
       "path": "notes/08-assets/lab_output.txt",
@@ -164,10 +164,10 @@
     {
       "path": "notes/github-publication-2026-10-12/WORK_LOG.md",
       "original_sha256": "d6628cf23f40e3fb92d2daba6134e403a2986fd0a849c8fa8fed517155268bc5",
-      "export_sha256": "67f2ef9ace72ba929cbf8cce0d56b3f935cfbc443959202e485a36775939bae5",
-      "bytes": 2457,
+      "export_sha256": "c72abf72db389236420648262a9c234489fb607f9a5be0a4db40f4612c81a5b4",
+      "bytes": 3824,
       "unchanged": false,
-      "export_lf_sha256": "090c77ede20967484af8f2601b5b6d3c56ebddbc11cc03eca9824924439b41fd"
+      "export_lf_sha256": "bce562fc79165f85a9e5084d828636f9a8c98381d47c40cacfa5d6129c32ce31"
     },
     {
       "path": "notes/kusshoes-to-rener-vn/GIA-CONG-WEB-VA-AI-WORKFLOW.md",
@@ -268,10 +268,10 @@
     {
       "path": "notes/nghien-cuu-sau-2026-10-11/SO-NGUON-DA-DOC.md",
       "original_sha256": "06b81c60dc28c8cb4124aab47861026b6a3b1ed51219141bf640f4e236d3d83a",
-      "export_sha256": "06b81c60dc28c8cb4124aab47861026b6a3b1ed51219141bf640f4e236d3d83a",
-      "bytes": 9092,
-      "unchanged": true,
-      "export_lf_sha256": "06b81c60dc28c8cb4124aab47861026b6a3b1ed51219141bf640f4e236d3d83a"
+      "export_sha256": "89f9448f80ee6159f0d2fc66b29c1a1513ee23def40a2d00f11c145d48b9f063",
+      "bytes": 9415,
+      "unchanged": false,
+      "export_lf_sha256": "87bd6069ee3ecaa2d244013d12abff8387e9483b24b4d79f86ce1a3f6e90ce59"
     },
     {
       "path": "notes/nghien-cuu-sau-2026-10-11/source-list.json",
@@ -584,10 +584,10 @@
     {
       "path": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md",
       "original_sha256": "140ad9719bc355210433262547f1dee0bbf7edb41114cce5a019bcfd25a5c7d7",
-      "export_sha256": "140ad9719bc355210433262547f1dee0bbf7edb41114cce5a019bcfd25a5c7d7",
-      "bytes": 2206,
-      "unchanged": true,
-      "export_lf_sha256": "140ad9719bc355210433262547f1dee0bbf7edb41114cce5a019bcfd25a5c7d7"
+      "export_sha256": "1cc854a4f55af5f4015ca322eaac82ca3a69ca6876d7a5c0797fc2e288e733f2",
+      "bytes": 2504,
+      "unchanged": false,
+      "export_lf_sha256": "3dd7a46d6314f660e4bfdea7792b5c29cb20905a6ed05ab1d46de0f2fe6b7e92"
     },
     {
       "path": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/source-manifest.json",
@@ -608,10 +608,10 @@
     {
       "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
       "original_sha256": "c60d9ac83547070e60c2299dce6bd2fcac206905a542855c09eaa9c916feb4cd",
-      "export_sha256": "ba2cabde1ad1a4e9bb1cce3f57c1a20bf16fcb39d1a4e1ffc97271639b38a739",
-      "bytes": 3300,
+      "export_sha256": "933eda5bf6a33e84b55c4e05a154f7dce9c2013e84c0bb4c1065bf771805d898",
+      "bytes": 3585,
       "unchanged": false,
-      "export_lf_sha256": "0982b75ad8a4d5f9063849fde6572cca1c98d5cdd1075cc85cc2777daf6ebbda"
+      "export_lf_sha256": "c490790de22b0f08f54763efdcd632e55da00655d541a981f71e2cca83547f37"
     },
     {
       "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/verification.json",
@@ -640,10 +640,10 @@
     {
       "path": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md",
       "original_sha256": "cf24b825ed1d4b160952938729c619293f611afbe051036e02f07fb7531f1e53",
-      "export_sha256": "cf24b825ed1d4b160952938729c619293f611afbe051036e02f07fb7531f1e53",
-      "bytes": 1981,
-      "unchanged": true,
-      "export_lf_sha256": "0e990102319e018b3807e1bffd351512b5af68ed6559302f801f4766794ba8bd"
+      "export_sha256": "3044872cbc8b99a26d685de03acac843df88c1b6799ba4e24f1b35ccc30bc7cb",
+      "bytes": 2266,
+      "unchanged": false,
+      "export_lf_sha256": "9c843d447c7d96e5a17e3d84655931c927e86c9b9fc19a16004adeb613cec858"
     },
     {
       "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/check_runs.json",
@@ -680,10 +680,10 @@
     {
       "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md",
       "original_sha256": "5aada69edf7c0e86933f27ae235ddf45bce027924b61bb75707e26113d0745ab",
-      "export_sha256": "5aada69edf7c0e86933f27ae235ddf45bce027924b61bb75707e26113d0745ab",
-      "bytes": 4484,
-      "unchanged": true,
-      "export_lf_sha256": "b8f3e0efa952472fa78b4d3d8d73b61842dfeef570bc1341d29b30ebf63cf9c5"
+      "export_sha256": "1d45493d0ff883aed13defe273c2cfc40362eb60a243c7ed3983125e2df89a27",
+      "bytes": 4769,
+      "unchanged": false,
+      "export_lf_sha256": "23c10b2dee265b9ba17d8190b5303952026eba4d4c90fbf31c9bf8fbd26cdffb"
     },
     {
       "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/repo.json",
@@ -720,10 +720,10 @@
     {
       "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md",
       "original_sha256": "f83622db00e517b1472929a8ccf193d8fe1db32dc188c8d5476835189017b98f",
-      "export_sha256": "f83622db00e517b1472929a8ccf193d8fe1db32dc188c8d5476835189017b98f",
-      "bytes": 5972,
-      "unchanged": true,
-      "export_lf_sha256": "f83622db00e517b1472929a8ccf193d8fe1db32dc188c8d5476835189017b98f"
+      "export_sha256": "7df483d260041e47c00fa1b1328aef68da1f76feb56996d511d38b0073e0e084",
+      "bytes": 6299,
+      "unchanged": false,
+      "export_lf_sha256": "3cdc57cc3cf3ca5d7f51047a6156da09f75d902159eda4ed5235210539002339"
     },
     {
       "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/verification.json",
@@ -744,10 +744,10 @@
     {
       "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md",
       "original_sha256": "4c87d8dc34d5f62039e92cf204a60a1e97431ab5d19829c6d4793d9ff6a81ab0",
-      "export_sha256": "4c87d8dc34d5f62039e92cf204a60a1e97431ab5d19829c6d4793d9ff6a81ab0",
-      "bytes": 2556,
-      "unchanged": true,
-      "export_lf_sha256": "4c87d8dc34d5f62039e92cf204a60a1e97431ab5d19829c6d4793d9ff6a81ab0"
+      "export_sha256": "1464fb8a4747ae075a4f0852a6607248cb02221707059831a9eab698a3d1ff8d",
+      "bytes": 2863,
+      "unchanged": false,
+      "export_lf_sha256": "6bb4f084913d3afd2142d2be45e05479184d8b49ce724f4ade4ba0ab5c9b73c8"
     },
     {
       "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/source-manifest.json",
@@ -768,10 +768,10 @@
     {
       "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md",
       "original_sha256": "0326cdc53854988bd0273d2adafd7bf3ce59003cbc58bdcdfe743b6d98ef6e24",
-      "export_sha256": "0326cdc53854988bd0273d2adafd7bf3ce59003cbc58bdcdfe743b6d98ef6e24",
-      "bytes": 1758,
-      "unchanged": true,
-      "export_lf_sha256": "0326cdc53854988bd0273d2adafd7bf3ce59003cbc58bdcdfe743b6d98ef6e24"
+      "export_sha256": "3aa4f9df576a51831d4f6b49d6cfd4c1d62d5afab2b2cc08bf2e24b04f6788bc",
+      "bytes": 2061,
+      "unchanged": false,
+      "export_lf_sha256": "130e81823736150f154c077783e560d5e1ef21644bc38673ecb9fb2defe6f721"
     },
     {
       "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/source-manifest.json",
@@ -1082,10 +1082,10 @@
     {
       "path": "BAO-CAO-TONG-HOP-CONG-VIEC.md",
       "original_sha256": "d2056860d7de6aeb013015319378ed8c58333d7c94e8a88beae4e301202a944f",
-      "export_sha256": "d2056860d7de6aeb013015319378ed8c58333d7c94e8a88beae4e301202a944f",
-      "bytes": 12513,
-      "unchanged": true,
-      "export_lf_sha256": "c38464c529cd91be190f9aa23578d9d9ae2ec05e4125a5d7e32e2276dfd9d8e9"
+      "export_sha256": "e2b29b313289dd401a5134db1db24d46a7323ff7b2fa8c9da6d327d68d0c70bc",
+      "bytes": 13449,
+      "unchanged": false,
+      "export_lf_sha256": "020594949208d400de0fd62f6403cc6f3ed88f6d1661f25125f573a92dd82082"
     },
     {
       "path": "TMG301_TongHopKienThuc.md",

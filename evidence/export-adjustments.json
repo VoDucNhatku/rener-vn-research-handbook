@@ -232,5 +232,37 @@
   {
     "path": "notes/kusshoes-to-rener-vn/NGHIEN-CUU-HARNESS-SCALE-AI.md",
     "change": "Resolved historical code references to verified upstream commit URLs"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md",
+    "change": "Added GitHub export scope notice; historical raw snapshots remain local"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "change": "Added GitHub export scope notice; historical raw snapshots remain local"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md",
+    "change": "Added GitHub export scope notice; historical raw snapshots remain local"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md",
+    "change": "Added GitHub export scope notice; historical raw snapshots remain local"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md",
+    "change": "Added GitHub export scope notice; historical raw snapshots remain local"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md",
+    "change": "Added GitHub export scope notice; historical raw snapshots remain local"
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md",
+    "change": "Added GitHub export scope notice; historical raw snapshots remain local"
+  },
+  {
+    "path": "notes/nghien-cuu-sau-2026-10-11/SO-NGUON-DA-DOC.md",
+    "change": "Added GitHub export scope notice; historical raw snapshots remain local"
   }
 ]

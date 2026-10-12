@@ -89,3 +89,10 @@ Yêu cầu tiếp nối: làm tốt hơn, đọc thêm tài liệu và tiếp t�
 Đã tạo [báo cáo kiến thức bổ sung](notes/nghien-cuu-sau-2026-10-11/NGHIEN-CUU-SAU-VA-THAY-DOI-TU-DUY.md), [26 ca phản chứng](notes/nghien-cuu-sau-2026-10-11/BO-CA-PHAN-CHUNG-RENER.md) và [sổ nguồn](notes/nghien-cuu-sau-2026-10-11/SO-NGUON-DA-DOC.md). Nội dung mới: bài tập prompt ngắn → luật → việc nhỏ; bảy trục trạng thái; chấm đúng giá với đúng phòng; đối chứng RQ2; retry nhiều tầng/hạn khóa; vòng đời extension; quyền và kiểm kết quả thật của AI.
 
 Log K0–K5 ghi từng chặng. Có kiểm số học của ví dụ tổng hợp, liên kết và hash nguồn; **26 ca ứng dụng vẫn NOT RUN**. Gaps tiến bộ ở mức bản nháp, chưa đóng bằng thực nghiệm. Không code ReNER, đổi proposal, chốt schema/stack, triển khai hoặc tự nâng mục tiêu demo.
+
+
+## 10. Xuất bản GitHub — 12/10/2026
+
+Theo yêu cầu tạo repo mới và trình bày đầy đủ, đã xuất bản [rener-vn-research-handbook](https://github.com/VoDucNhatku/rener-vn-research-handbook) ở chế độ private. Có README, lộ trình đọc, bản đồ 12 mảng, danh mục 46 tài liệu nghiên cứu/điều hướng nguồn, sổ nguồn, status/roadmap, template issue/PR/task và bộ kiểm tài liệu. Có bốn issue cho các phần nghiên cứu còn mở.
+
+Giữ proposal/báo cáo/log/script phù hợp; full clone/raw source bên ngoài, dependency, runtime, env và dữ liệu chạy local không được đưa lên. Có manifest và ghi rõ điều chỉnh khi xuất. Đã kiểm bản clone từ GitHub; Actions còn là template chưa kích hoạt, branch protection chưa cấu hình. Chưa code/deploy ReNER. Chi tiết log L0–L5 trong notes/github-publication-2026-10-12.

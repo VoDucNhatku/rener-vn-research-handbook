@@ -15,3 +15,14 @@ Roadmap này giữ ưu tiên demo và học bài bản trên ReNER. Không đặ
 | Implement/demo ReNER | Chưa bắt đầu | Chỉ tiến hành theo yêu cầu triển khai và quyết định còn thiếu |
 
 Chi tiết gap: [audit mục 4](notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md) và [tiến bộ sau đọc sâu](notes/nghien-cuu-sau-2026-10-11/NGHIEN-CUU-SAU-VA-THAY-DOI-TU-DUY.md). Backlog GitHub phục vụ theo dõi, không phải kết quả đã làm hoặc quyền thu thập dữ liệu thật.
+
+## Backlog đã tạo trên GitHub
+
+| Issue | Đầu ra cần đạt |
+|---|---|
+| [#1 — Nghĩa giá và ví dụ nghiệm thu](https://github.com/VoDucNhatku/rener-vn-research-handbook/issues/1) | Làm rõ một hành trình và điều còn cần chủ dự án quyết định |
+| [#2 — Gold, scorer và RQ2](https://github.com/VoDucNhatku/rener-vn-research-handbook/issues/2) | Protocol có đối chứng và expected; giữ NOT RUN nếu chưa thực nghiệm |
+| [#3 — Quyền nguồn và dữ liệu extension](https://github.com/VoDucNhatku/rener-vn-research-handbook/issues/3) | Hợp đồng quyền/retention/retry và khoảng trống bằng chứng |
+| [#4 — Walkthrough KusShoes](https://github.com/VoDucNhatku/rener-vn-research-handbook/issues/4) | Truy một luồng UI → API → nghiệp vụ → DB cùng nhánh lỗi |
+
+Tất cả đang mở tại thời điểm bàn giao; không tự động chạy công việc hoặc cam kết deadline.

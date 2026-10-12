@@ -1,5 +1,8 @@
 # Sổ nguồn đọc sâu — 12/10/2026
 
+> **Bản xuất GitHub:** raw snapshot nói trong hồ sơ này thuộc workspace nghiên cứu gốc. Repo giữ metadata/URL/hash; xem [phạm vi đóng gói](../../docs/PACKAGING.md). Verification lịch sử không phải kết quả chạy trên bản clone handbook.
+
+
 Mục tiêu: truy từ một kết luận về lại nguồn và phạm vi đã đọc. **21 nguồn dưới đây đã đọc nội dung các phần ghi rõ**, không chỉ tiêu đề/mục lục; không nhận đã đọc trọn sáu paper hoặc cả sách SRE. SEND từng có trong hồ sơ cũ, được đọc lại; số 21 không phải số nguồn mới với toàn dự án.
 
 Nguồn sơ cấp về phương pháp gồm paper và tài liệu tác giả/đơn vị phát triển. Bài AWS/Anthropic là kinh nghiệm kỹ thuật do nhà cung cấp công bố; không dùng làm thống kê phổ quát về năng suất hoặc bằng chứng app ReNER đã đạt chất lượng. Tài liệu PostgreSQL được ghim phiên bản 18 để đọc; chưa quyết định phiên bản triển khai ReNER.

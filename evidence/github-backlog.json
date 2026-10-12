@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Chốt nghĩa giá và ví dụ nghiệm thu của hành trình tìm trọ",
+    "url": "https://github.com/VoDucNhatku/rener-vn-research-handbook/issues/1",
+    "state": "OPEN",
+    "label": "research"
+  },
+  {
+    "title": "Làm rõ protocol gold, scorer và đối chứng RQ2",
+    "url": "https://github.com/VoDucNhatku/rener-vn-research-handbook/issues/2",
+    "state": "OPEN",
+    "label": "research"
+  },
+  {
+    "title": "Xác định quyền nguồn và vòng đời dữ liệu extension",
+    "url": "https://github.com/VoDucNhatku/rener-vn-research-handbook/issues/3",
+    "state": "OPEN",
+    "label": "decision"
+  },
+  {
+    "title": "Tiếp tục walkthrough KusShoes theo một luồng end-to-end",
+    "url": "https://github.com/VoDucNhatku/rener-vn-research-handbook/issues/4",
+    "state": "OPEN",
+    "label": "research"
+  }
+]

@@ -1,5 +1,7 @@
 # Tài liệu trong TMG301
 
+**GitHub riêng tư:** [rener-vn-research-handbook](https://github.com/VoDucNhatku/rener-vn-research-handbook) — README, lộ trình đọc, bản đồ kiến thức, nguồn và quy trình issue/PR. Xem [log xuất bản](github-publication-2026-10-12/WORK_LOG.md).
+
 **Đọc sâu bổ sung 12/10/2026:** [Thay đổi tư duy sau 21 nguồn](nghien-cuu-sau-2026-10-11/NGHIEN-CUU-SAU-VA-THAY-DOI-TU-DUY.md), [26 ca phản chứng chưa chạy](nghien-cuu-sau-2026-10-11/BO-CA-PHAN-CHUNG-RENER.md), [sổ nguồn và mức đọc](nghien-cuu-sau-2026-10-11/SO-NGUON-DA-DOC.md). Làm rõ yêu cầu, nghĩa dữ liệu, đánh giá NLP, retry/extension và kiểm outcome của AI; giữ mục tiêu demo và trạng thái nghiên cứu.
 
 **Bắt đầu ở đây:** [Bối cảnh và quyết định hiện hành](HIEN-TRANG-VA-QUYET-DINH.md). [Phản biện toàn hồ sơ 11/10](audit-2026-10-11/BAO-CAO-PHAN-BIEN.md): 13 nhóm lỗi/lệch nghĩa đã hiệu chỉnh, 10 khoảng trống cần kiểm chứng; có bản trước sửa và phạm vi kiểm từng file.

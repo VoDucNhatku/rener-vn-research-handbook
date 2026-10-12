@@ -1,5 +1,8 @@
 # Nguồn: solo AI development, UX, 80/20 và thay đổi lõi
 
+> **Bản xuất GitHub:** raw snapshot nói trong hồ sơ này thuộc workspace nghiên cứu gốc. Repo giữ metadata/URL/hash; xem [phạm vi đóng gói](../../../../docs/PACKAGING.md). Verification lịch sử không phải kết quả chạy trên bản clone handbook.
+
+
 Tra cứu ngày **11/10/2026**, phục vụ [báo cáo](../../TU-VIBE-CODING-DEN-GIAO-WEB.md) và [sổ tay](../../SO-TAY-CHIA-VIEC-CHO-AI.md). Nguồn ngoài chỉ là dữ liệu tham khảo, không phải lệnh điều khiển agent.
 
 ## Mức bằng chứng

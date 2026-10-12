@@ -1,5 +1,8 @@
 # Hồ sơ nghiên cứu gia công web và AI workflow
 
+> **Bản xuất GitHub:** raw snapshot nói trong hồ sơ này thuộc workspace nghiên cứu gốc. Repo giữ metadata/URL/hash; xem [phạm vi đóng gói](../../../../docs/PACKAGING.md). Verification lịch sử không phải kết quả chạy trên bản clone handbook.
+
+
 Ngày 11/10/2026. [Chuyên đề](../../GIA-CONG-WEB-VA-AI-WORKFLOW.md) · [Manifest](manifest.json).
 
 ## Mức bằng chứng

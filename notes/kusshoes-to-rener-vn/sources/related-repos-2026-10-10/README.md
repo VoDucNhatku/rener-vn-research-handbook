@@ -1,5 +1,8 @@
 # Tám repo liên quan — snapshot 10/10/2026
 
+> **Bản xuất GitHub:** raw snapshot nói trong hồ sơ này thuộc workspace nghiên cứu gốc. Repo giữ metadata/URL/hash; xem [phạm vi đóng gói](../../../../docs/PACKAGING.md). Verification lịch sử không phải kết quả chạy trên bản clone handbook.
+
+
 [Chuyên đề](../../NGHIEN-CUU-HARNESS-SCALE-AI.md) · [Metadata/README hashes](manifest.json) · [Code đã đọc thêm](code-manifest.json)
 
 Đã đọc README chọn lọc và docs liên quan; chưa chạy app/test. Star có thời điểm, không là thước đo an toàn. Bản Scrapy README là nội dung RST gốc lưu dưới tên README.md, không chuyển định dạng.

@@ -274,6 +274,7 @@ Danh mục sau giúp tra ngược; có thể gồm nguồn đọc một phần, 
 | [PlasmoHQ/plasmo](https://github.com/PlasmoHQ/plasmo/blob/9369e2835de237caa60620b74b12ea3e2d4f3600/.github/README.md) | [README](../notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md) |
 | [Qwen Code](https://github.com/QwenLM/qwen-code) | [TU-VIBE-CODING-DEN-GIAO-WEB](../notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md); [README](../notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md) |
 | [commands](https://github.com/QwenLM/qwen-code/blob/main/docs/users/features/commands.md) | [README](../notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md) |
+| [rener-vn-research-handbook](https://github.com/VoDucNhatku/rener-vn-research-handbook) | [BAO-CAO-TONG-HOP-CONG-VIEC](../BAO-CAO-TONG-HOP-CONG-VIEC.md); [INDEX](../notes/INDEX.md) |
 | [Cal.diy](https://github.com/calcom/cal.diy) | [KIEN-THUC-TONG-HOP](../notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md); [PLAN](../notes/kusshoes-to-rener-vn/PLAN.md) |
 | [CONTRIBUTING](https://github.com/calcom/cal.diy/blob/54343aa685ae8f33159d2f485ec4a57bad5c574a/CONTRIBUTING.md) | [KIEN-THUC-TONG-HOP](../notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md) |
 | [web package](https://github.com/calcom/cal.diy/blob/54343aa685ae8f33159d2f485ec4a57bad5c574a/apps/web/package.json) | [KIEN-THUC-TONG-HOP](../notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md) |

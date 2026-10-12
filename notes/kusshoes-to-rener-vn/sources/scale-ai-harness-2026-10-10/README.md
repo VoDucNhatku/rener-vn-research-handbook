@@ -1,5 +1,8 @@
 # Hồ sơ nguồn ChoThueGiupViec và API GitHub
 
+> **Bản xuất GitHub:** raw snapshot nói trong hồ sơ này thuộc workspace nghiên cứu gốc. Repo giữ metadata/URL/hash; xem [phạm vi đóng gói](../../../../docs/PACKAGING.md). Verification lịch sử không phải kết quả chạy trên bản clone handbook.
+
+
 Ngày 10/10/2026. Commit: `1b45c1f4cce8a5b40bdae9d24ac262437b857b0d`. Clone chỉ để đọc; không chạy app/harness hoặc thực hiện GitHub mutation.
 
 [Chuyên đề](../../NGHIEN-CUU-HARNESS-SCALE-AI.md) · [manifest](manifest.json)

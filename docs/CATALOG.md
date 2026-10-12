@@ -21,6 +21,7 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 - 7. Solo AI và học cách chia việc — 11/10/2026
 - 8. Tự phản biện và sửa tài liệu — 11/10/2026
 - 9. Đọc sâu và chuyển kiến thức thành phản chứng — 12/10/2026
+- 10. Xuất bản GitHub — 12/10/2026
 
 </details>
 
@@ -151,6 +152,8 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 - L1 — kiểm kê và xác định phạm vi
 - L2 — tổ chức lớp đọc và giữ nội dung nghiên cứu
 - L3 — quy trình GitHub và kiểm bản xuất
+- L4 — tạo remote và backlog
+- L5 — kiểm bản clone và trạng thái GitHub
 
 </details>
 

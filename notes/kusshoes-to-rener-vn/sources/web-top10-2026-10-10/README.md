@@ -1,5 +1,8 @@
 # Nguồn cho 10 repo web — 10/10/2026
 
+> **Bản xuất GitHub:** raw snapshot nói trong hồ sơ này thuộc workspace nghiên cứu gốc. Repo giữ metadata/URL/hash; xem [phạm vi đóng gói](../../../../docs/PACKAGING.md). Verification lịch sử không phải kết quả chạy trên bản clone handbook.
+
+
 - `github-metadata.json`: 10 repo, star chính xác, commit, nhánh, license metadata và timestamp lấy bằng GitHub REST API; thời gian người dùng Asia/Saigon = UTC + 7.
 - `source-manifest.json`: 30 file nguồn chọn lọc, URL theo commit và SHA256; chỉ đọc/lưu nghiên cứu, không chạy code repo mẫu.
 - FastAPI template và Cal.diy giữ nguyên commit so với snapshot `../world-web-2026-10-09`; tái sử dụng file đã đọc. Cal.diy có thêm CONTRIBUTING ở snapshot mới.

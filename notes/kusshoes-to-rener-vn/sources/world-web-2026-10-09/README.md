@@ -1,5 +1,8 @@
 # Snapshot nguồn web quốc tế — 09/10/2026
 
+> **Bản xuất GitHub:** raw snapshot nói trong hồ sơ này thuộc workspace nghiên cứu gốc. Repo giữ metadata/URL/hash; xem [phạm vi đóng gói](../../../../docs/PACKAGING.md). Verification lịch sử không phải kết quả chạy trên bản clone handbook.
+
+
 Chỉ lưu nguồn đọc để nghiên cứu, không phải dự án đã cài dependency hoặc chạy local.
 
 - `github-metadata.json`: kết quả chọn lọc từ GitHub REST API, gồm tên thực tế, star/fork, nhánh, commit và thời điểm lấy.
