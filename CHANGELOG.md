@@ -1,5 +1,9 @@
 # Changelog
 
+## UI, motion và bộ skill — 22/10/2026
+
+Chặng mới `notes/ui-motion-2026-10-22/`: tri thức giao diện học từ KusShoes (design system, hero ghim theo cuộn, `.spec/`), 52 skill KusShoes cài kèm mức xác minh nguồn, 10 repo skill UI/UX và 10 repo 3D/scroll, thư viện giao diện thử ReNER dùng, ba vòng thiết kế landing, review extension `tro` (48/48 test) và cách đưa dữ liệu thật vào demo mà không commit. Ghi rõ ranh giới: repo `rener-vn` chỉ chứa sản phẩm, handbook chứa cách làm. Log U1–U7.
+
 ## Bản xuất GitHub đầu tiên — 12/10/2026
 
 Đóng gói tài liệu nghiên cứu, proposal, script và bằng chứng có chọn lọc từ TMG301. Thêm README, lộ trình đọc, bản đồ 12 mảng, danh mục theo file/mục, sổ nguồn, status, quy trình, template và kiểm tài liệu portable. Link nguồn bên ngoài được giữ; loại runtime/dependency/env và full snapshot bên ngoài. Chi tiết điều chỉnh ở evidence.

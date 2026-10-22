@@ -38,6 +38,7 @@ Waterfall được dùng để làm rõ đầu ra và điều kiện chuyển gi
 |---|---|---|
 | Sản phẩm và yêu cầu | Actor, giá trị, scope, MVP/P0–P2; từ prompt ngắn đến ví dụ nghiệm thu | [Sổ kiến thức, mục 2–4 và 22](notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md) |
 | UI, dashboard và motion | Sidebar KusShoes, design system, trạng thái UI, GSAP/Motion, template, khả năng tiếp cận | [Sổ kiến thức, mục 5–8 và 14](notes/kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md) |
+| Dựng giao diện thật (22/10) | Hero ghim theo cuộn của KusShoes, 52 skill họ cài, 10 repo skill UI/UX, 10 repo 3D/scroll, thư viện ReNER dùng, review extension, dữ liệu thật | [Chặng UI, motion và bộ skill](notes/ui-motion-2026-10-22/README.md) |
 | Kiến trúc web | 10 repo shop/admin/full-stack, ranh giới module, frontend state, DB/API/worker | [Bản thảo v0.2](notes/design-rener-vn-waterfall.md) |
 | NLP và dữ liệu thuê trọ | BIO/span, regex/LLM/Hybrid, chứng cứ, chuẩn hóa, trùng tin, leakage, đánh giá | [Nền tảng ReNER — 32 mục](project-realestate-ner/notes/foundation-2026-10-09/KIEN-THUC-NEN-TANG-RENER-VN.md) |
 | Extension và vận hành | Chọn từng tin, message trust, vòng đời worker, quyền nguồn, retry, idempotency, snapshot | [Đọc sâu bổ sung](notes/nghien-cuu-sau-2026-10-11/NGHIEN-CUU-SAU-VA-THAY-DOI-TU-DUY.md) |

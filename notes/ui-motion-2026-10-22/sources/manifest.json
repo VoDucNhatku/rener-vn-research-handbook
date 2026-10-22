@@ -1,0 +1,220 @@
+{
+  "read_on": "2026-10-22",
+  "method": "Shallow git clones of public repos, then reading the files named in the notes. Stars are not recorded here; see the notes for approximate counts and their caveat.",
+  "limits": [
+    "Raw clones are not redistributed.",
+    "Reading a file does not mean the whole repo was audited."
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/EXE-CAPSTONE-TEAM/KusShoes",
+      "commit": "89eac6ad538c61854beb223c2c40cf72641f9d1e",
+      "commit_date": "2026-10-15",
+      "purpose": "kusshoes-frontend-design-skills",
+      "read": [
+        "docs/DESIGN.md",
+        "FE/package.json",
+        "FE/src/components/ShoeHeroExperience/ShoeHeroExperience.tsx",
+        "FE/src/pages/Landing/motionFeatures.ts",
+        ".spec/*.md",
+        "AGENTS.md",
+        "skills-lock.json",
+        ".agents/skills/*/SKILL.md (frontmatter)"
+      ]
+    },
+    {
+      "url": "https://github.com/DavidHDev/react-bits",
+      "commit": "e12c22192ac7b4b452c5e2feb9b586d74765d696",
+      "commit_date": "2026-10-19",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "commit": "6010f91a9935f1c167dfc500fb1a475681892e6b",
+      "commit_date": "2026-10-20",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/Nutlope/hallmark",
+      "commit": "13ac0ec7e148655948100b6396439e481361d690",
+      "commit_date": "2026-08-06",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "commit": "3b605329240ce735b510037cca322f1831fdd7f8",
+      "commit_date": "2026-10-14",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "commit_date": "2026-10-09",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/emilkowalski/skill",
+      "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+      "commit_date": "2026-10-11",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "commit_date": "2026-04-21",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "623a9a9037d006ea727f8213f084d02a6b6f11b5",
+      "commit_date": "2026-10-22",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/pbakaus/impeccable",
+      "commit": "2fd24e3a9887e9fc009408ffbbb486e74998694e",
+      "commit_date": "2026-10-21",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/raphaelsalaja/userinterface-wiki",
+      "commit": "256a954080c8bcf1b1ceb1e2a4079d1f24cf593a",
+      "commit_date": "2026-03-17",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/vercel-labs/web-interface-guidelines",
+      "commit": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "commit_date": "2026-10-05",
+      "purpose": "ui-ux-skill-research"
+    },
+    {
+      "url": "https://github.com/codrops/3DGridContentPreview",
+      "commit": "f16ca5d074526037393065fb621edb0e93fff52b",
+      "commit_date": "2021-04-21",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/chokcoco/CSS-Inspiration",
+      "commit": "a4beb7adb92befc314c055d0b0dc934c86b0afae",
+      "commit_date": "2025-02-13",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/codrops/LayersAnimation",
+      "commit": "fec671735be6aa68949a5fabcda1967658afc717",
+      "commit_date": "2023-10-31",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/codrops/OnScrollLayoutFormations",
+      "commit": "68910ecf85275bdd7e4d0e47013ba4bf9ec94bde",
+      "commit_date": "2024-09-19",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/codrops/OnScrollTypographyAnimations",
+      "commit": "af28d61d1f8d3d117f5d1e9b09d5209e20a1a212",
+      "commit_date": "2024-01-18",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/codrops/ScrollBasedLayoutAnimations",
+      "commit": "ade47c56f8f2f756e7e6df8e578407690b2fb782",
+      "commit_date": "2023-07-20",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/codrops/StickySections",
+      "commit": "69c788898216d94a796a21c87adc475f3a3f73f5",
+      "commit_date": "2024-02-04",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/codrops/TiltHoverEffects",
+      "commit": "e232cd71190e0f43841a42a851e8049181f7a9b1",
+      "commit_date": "2017-03-15",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/nolimits4web/atropos",
+      "commit": "eb4b4c5682117a53f60fccd459f64d06a99e9445",
+      "commit_date": "2026-10-06",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/GoogleChromeLabs/io23-scroll-driven-animations-codelab",
+      "commit": "2dab7400e83553ba21ebf13e06b8d1b5538cd652",
+      "commit_date": "2023-04-14",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/pmndrs/drei",
+      "commit": "bf6f4addf47467d3885de272d94ca5127f6ef68f",
+      "commit_date": "2026-09-30",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/argyleink/gui-challenges",
+      "commit": "82317d0d04c4f38ddf781439e282aa67ecb5b7f6",
+      "commit_date": "2025-02-19",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/chokcoco/iCSS",
+      "commit": "e03eb3e59021dff1e51434cc81626e8a53c525cc",
+      "commit_date": "2026-03-13",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/darkroomengineering/lenis",
+      "commit": "e01eefb1f55cd08bc051521d74f5f8182b71ee9d",
+      "commit_date": "2026-10-15",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/pmndrs/react-three-fiber",
+      "commit": "d74622ea8ed717f7212d7e19d65ff3e325508389",
+      "commit_date": "2026-10-14",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/flackr/scroll-timeline",
+      "commit": "5da0828c45522d1847ad425624a11a99fd7f3f3e",
+      "commit_date": "2024-08-26",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/bramus/sda-utilities",
+      "commit": "c9fa2edfe687adc90701c81255de3d72f1a3a28d",
+      "commit_date": "2026-03-22",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/theatre-js/theatre",
+      "commit": "6ea82b938ea49609489f6377ded693ccc6ee8f5b",
+      "commit_date": "2024-04-11",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/micku7zu/vanilla-tilt.js",
+      "commit": "48f4ee931d4d91dcdd2f91803db67a9f3a16587e",
+      "commit_date": "2023-11-05",
+      "purpose": "3d-scroll-research"
+    },
+    {
+      "url": "https://github.com/nktsagd/tro",
+      "commit": null,
+      "commit_date": null,
+      "purpose": "extension-review",
+      "read": [
+        "README.md",
+        "AGENTS.md",
+        "blueprint.md",
+        "extension/*",
+        "tests/fixtures/README.md"
+      ],
+      "note": "Private repo, read from a zip the project owner uploaded on 2026-10-22; npm test 48/48 pass. Commit hash not available from the zip."
+    }
+  ]
+}
