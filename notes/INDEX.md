@@ -9,6 +9,7 @@
 | Chủ đề | Kế hoạch | Kiến thức tổng hợp | Log |
 |---|---|---|---|
 | Học KusShoes để xây ReNER-VN | [PLAN](kusshoes-to-rener-vn/PLAN.md) | [Sổ kiến thức](kusshoes-to-rener-vn/KIEN-THUC-TONG-HOP.md) | [WORK_LOG](kusshoes-to-rener-vn/WORK_LOG.md) |
+| UI, motion và bộ skill (22/10) | [README chặng](ui-motion-2026-10-22/README.md) | [KusShoes](ui-motion-2026-10-22/01-KUSSHOES-HOC-DUOC.md) · [skill](ui-motion-2026-10-22/02-BO-SKILL-KUSSHOES.md) · [repo UI/3D](ui-motion-2026-10-22/03-REPO-UI-UX-VA-3D.md) · [thư viện](ui-motion-2026-10-22/04-THU-VIEN-RENER-DA-DUNG.md) · [quyết định](ui-motion-2026-10-22/05-QUYET-DINH-VA-BAI-HOC.md) | [WORK_LOG](ui-motion-2026-10-22/WORK_LOG.md) |
 
 Nghiên cứu nền tảng ReNER-VN trước đó: [index riêng](../project-realestate-ner/notes/INDEX.md). Khảo sát/chạy KusShoes local: [báo cáo](../KusShoes/notes/kusshoes-local-review.md).
 

@@ -9,12 +9,14 @@ Cập nhật **12/10/2026**, sau lượt phản biện và đọc sâu bổ sung
 | Bài thực hành | Theo proposal ReNER-VN và website đang nghiên cứu, làm bài bản để chuyển tư duy sang dự án khác |
 | Người dùng ưu tiên | Người tìm trọ: tìm/lọc tin, hiểu và so sánh giá thuê |
 | Tiếp nhận dữ liệu | Extension để người dùng chọn và gửi từng tin; chưa xác nhận quyền thu thập trên nguồn thật |
-| Mục tiêu trước mắt | Demo môn học; hiện tại nghiên cứu, học và bản thảo, chưa yêu cầu code ReNER |
+| Mục tiêu trước mắt | Demo môn học. Đến 12/10: nghiên cứu, học và bản thảo, chưa code. Từ 22/10: người dùng yêu cầu dựng giao diện trước (dữ liệu demo, chưa có backend) |
 | Quy mô 5.000 người | Ví dụ để học về tải, không phải chỉ tiêu phải đáp ứng |
 | Cách học | Ưu tiên hiểu luồng giữa các phần, chuyển ý tưởng ngắn thành yêu cầu và việc nhỏ |
 | Quyền tự chủ AI | Tự xử lý chi tiết dễ đảo trong phạm vi; làm rõ quyết định nghiệp vụ/dữ liệu có ảnh hưởng, tránh hỏi vụn vặt |
 | Mục tiêu dài hạn | Có khả năng nhận dự án web cho khách; không biến mọi yêu cầu doanh nghiệp thành P0 của demo |
 | Cách ghi nhận | Chia việc tuần tự, có log sau từng phần, kiến thức nằm trong TMG301 |
+| Ranh giới repo (22/10) | `rener-vn` chỉ chứa sản phẩm (đặc tả, code, README chạy được); tư duy, nghiên cứu, so sánh nguồn và log nằm ở handbook này |
+| Giao diện (22/10) | Đã có giao diện thử trên nhánh `feat/web-ui-prototype`; phong cách riêng, chỉ mượn ý tưởng chuyển động của KusShoes; muốn có 3D và nhiều nhịp như hero KusShoes. Xem [chặng UI](ui-motion-2026-10-22/README.md) |
 
 ## 2. Ba phạm vi phải đọc riêng
 

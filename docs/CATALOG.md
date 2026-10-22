@@ -4,7 +4,7 @@
 
 Sinh từ các file do dự án viết, không tính full source bên ngoài hay bản forensic `before/` là kiến thức hiện hành. Bấm tên tài liệu để đọc; mở chi tiết để xem các mục đã có. Trạng thái hiện hành nằm ở [STATUS](STATUS.md).
 
-**46 tài liệu nghiên cứu/điều hướng nguồn** được liệt kê. Proposal, công cụ và bằng chứng có mục riêng phía dưới.
+**53 tài liệu nghiên cứu/điều hướng nguồn** được liệt kê. Proposal, công cụ và bằng chứng có mục riêng phía dưới.
 
 ## Báo cáo tổng hợp công việc — nghiên cứu web ReNER-VN
 
@@ -50,6 +50,27 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 
 </details>
 
+## Tổng Hợp Chi Tiết Kiến Thức Môn TMG301 (Xử Lý Ngôn Ngữ Tự Nhiên / Text Mining)
+
+[Mở tài liệu](../TMG301_TongHopKienThuc.md) · `TMG301_TongHopKienThuc.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- 1. Xử lý văn bản cơ bản & Khoảng cách Edit (Text Normalization & Edit Distance)
+- 2. Mô hình ngôn ngữ N-Gram (N-Gram Language Models)
+- 3. Phân loại Naive Bayes & Phân tích cảm xúc (Naive Bayes & Sentiment)
+- 4. Hồi quy Logistic (Logistic Regression)
+- 5. Ngữ nghĩa Vector và Word Embeddings
+- 6. Phân cụm văn bản (Clustering for Text Similarity)
+- 7 & 8. Transformer & Mô hình ngôn ngữ tiền huấn luyện (Pre-Trained LMs / Fine-tuning)
+- 9. Dịch máy (Machine Translation)
+- 10. Hệ thống Chatbot & Đối thoại (Dialogue Systems)
+- 11 & 12. Phân tích cú pháp (Constituency & Dependency Parsing)
+- 13, 14 & 15. Khai phá thông tin, Sự kiện & Thời gian (Information & Event Extraction)
+- 16 & 17. Ngữ nghĩa từ & Từ điển Cảm xúc (Word Senses & Lexicons)
+
+</details>
+
 ## TMG301 — Bài 08: Tinh chỉnh (Fine-Tuning) và Mô hình ngôn ngữ che từ (Masked Language Models)
 
 [Mở tài liệu](../notes/08-fine-tuning-mlm-summary.md) · `notes/08-fine-tuning-mlm-summary.md`
@@ -69,6 +90,30 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 - 10. Bẫy hay gặp
 - 11. Câu hỏi ôn thi / phỏng vấn
 - Thuật ngữ (Glossary)
+
+</details>
+
+## ReNER-VN — bối cảnh và quyết định hiện hành
+
+[Mở tài liệu](../notes/HIEN-TRANG-VA-QUYET-DINH.md) · `notes/HIEN-TRANG-VA-QUYET-DINH.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- 1. Điều người dùng đã xác nhận
+- 2. Ba phạm vi phải đọc riêng
+- 3. Đọc file nào cho câu hỏi nào?
+- 4. Năm nhãn dùng cho kết luận sau này
+- 5. Cách dùng với một yêu cầu ngắn
+
+</details>
+
+## Tài liệu trong TMG301
+
+[Mở tài liệu](../notes/INDEX.md) · `notes/INDEX.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Tài liệu ngắn; đọc trực tiếp.
 
 </details>
 
@@ -154,30 +199,6 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 - L3 — quy trình GitHub và kiểm bản xuất
 - L4 — tạo remote và backlog
 - L5 — kiểm bản clone và trạng thái GitHub
-
-</details>
-
-## ReNER-VN — bối cảnh và quyết định hiện hành
-
-[Mở tài liệu](../notes/HIEN-TRANG-VA-QUYET-DINH.md) · `notes/HIEN-TRANG-VA-QUYET-DINH.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- 1. Điều người dùng đã xác nhận
-- 2. Ba phạm vi phải đọc riêng
-- 3. Đọc file nào cho câu hỏi nào?
-- 4. Năm nhãn dùng cho kết luận sau này
-- 5. Cách dùng với một yêu cầu ngắn
-
-</details>
-
-## Tài liệu trong TMG301
-
-[Mở tài liệu](../notes/INDEX.md) · `notes/INDEX.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- Tài liệu ngắn; đọc trực tiếp.
 
 </details>
 
@@ -296,80 +317,6 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 
 </details>
 
-## Snapshot khảo sát kiến trúc 10 repo — 10/10/2026
-
-[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md) · `notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- Tài liệu ngắn; đọc trực tiếp.
-
-</details>
-
-## Hồ sơ nghiên cứu gia công web và AI workflow
-
-[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md) · `notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- Mức bằng chứng
-- Snapshot tải được
-
-</details>
-
-## Tám repo liên quan — snapshot 10/10/2026
-
-[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md) · `notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- Tài liệu ngắn; đọc trực tiếp.
-
-</details>
-
-## Hồ sơ nguồn ChoThueGiupViec và API GitHub
-
-[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md) · `notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- File nguồn được đối chiếu chọn lọc
-- Snapshot API
-
-</details>
-
-## Nguồn: solo AI development, UX, 80/20 và thay đổi lõi
-
-[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md) · `notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- Mức bằng chứng
-- Nguồn và cách sử dụng
-- Nguồn video/social có giới hạn
-
-</details>
-
-## Nguồn cho 10 repo web — 10/10/2026
-
-[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md) · `notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- Tài liệu ngắn; đọc trực tiếp.
-
-</details>
-
-## Snapshot nguồn web quốc tế — 09/10/2026
-
-[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md) · `notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- Tài liệu ngắn; đọc trực tiếp.
-
-</details>
-
 ## Từ vibe coding đến làm web có thể bàn giao
 
 [Mở tài liệu](../notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md) · `notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md`
@@ -442,6 +389,80 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 - K3 — đọc cơ chế vận hành, extension và đánh giá AI
 - K4 — tổng hợp delta và bộ phản chứng
 - K5 — kiểm chứng hồ sơ đọc sâu
+
+</details>
+
+## Snapshot khảo sát kiến trúc 10 repo — 10/10/2026
+
+[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md) · `notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Tài liệu ngắn; đọc trực tiếp.
+
+</details>
+
+## Hồ sơ nghiên cứu gia công web và AI workflow
+
+[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md) · `notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Mức bằng chứng
+- Snapshot tải được
+
+</details>
+
+## Tám repo liên quan — snapshot 10/10/2026
+
+[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md) · `notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Tài liệu ngắn; đọc trực tiếp.
+
+</details>
+
+## Hồ sơ nguồn ChoThueGiupViec và API GitHub
+
+[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md) · `notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- File nguồn được đối chiếu chọn lọc
+- Snapshot API
+
+</details>
+
+## Nguồn: solo AI development, UX, 80/20 và thay đổi lõi
+
+[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md) · `notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Mức bằng chứng
+- Nguồn và cách sử dụng
+- Nguồn video/social có giới hạn
+
+</details>
+
+## Nguồn cho 10 repo web — 10/10/2026
+
+[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md) · `notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Tài liệu ngắn; đọc trực tiếp.
+
+</details>
+
+## Snapshot nguồn web quốc tế — 09/10/2026
+
+[Mở tài liệu](../notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md) · `notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Tài liệu ngắn; đọc trực tiếp.
 
 </details>
 
@@ -523,6 +544,102 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 
 </details>
 
+## Học từ KusShoes — giao diện và chuyển động
+
+[Mở tài liệu](../notes/ui-motion-2026-10-22/01-KUSSHOES-HOC-DUOC.md) · `notes/ui-motion-2026-10-22/01-KUSSHOES-HOC-DUOC.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- 1. Stack frontend (Đã quan sát)
+- 2. Design system viết thành luật (Đã quan sát)
+- 3. Hero ghim theo cuộn — cách ShoeHeroExperience hoạt động (Đã quan sát)
+- 4. Cách tổ chức đặc tả cho AI agent (Đã quan sát)
+- 5. Những gì ReNER mượn và không mượn
+
+</details>
+
+## Bộ skill mà KusShoes cài cho AI agent
+
+[Mở tài liệu](../notes/ui-motion-2026-10-22/02-BO-SKILL-KUSSHOES.md) · `notes/ui-motion-2026-10-22/02-BO-SKILL-KUSSHOES.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- 1. Thống kê (Đã quan sát)
+- 2. Sáu nhóm
+- 3. Luồng làm việc mà bộ skill gợi ra (Đã quan sát qua mô tả skill)
+- 4. Bài học cho ReNER (Đề xuất)
+- 5. Chưa biết
+
+</details>
+
+## 10 repo UI/UX và 10 repo 3D/scroll — mỗi cái dạy gì
+
+[Mở tài liệu](../notes/ui-motion-2026-10-22/03-REPO-UI-UX-VA-3D.md) · `notes/ui-motion-2026-10-22/03-REPO-UI-UX-VA-3D.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- 1. Repo "skill thiết kế" cho AI agent
+- 2. Repo 3D, parallax và kể chuyện bằng cuộn
+- 3. Những lỗi 3D dễ mắc (Đã quan sát qua tài liệu, một phần đã thực nghiệm khi dựng)
+
+</details>
+
+## Thư viện ReNER đã dùng cho giao diện thử
+
+[Mở tài liệu](../notes/ui-motion-2026-10-22/04-THU-VIEN-RENER-DA-DUNG.md) · `notes/ui-motion-2026-10-22/04-THU-VIEN-RENER-DA-DUNG.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- 1. Thư viện chạy trong app
+- 2. Công cụ ngoài app
+- 3. Đã cân nhắc nhưng không dùng
+- 4. Hai cách làm chuyển động cùng một câu chuyện
+
+</details>
+
+## Quyết định thiết kế và bài học khi dựng giao diện ReNER
+
+[Mở tài liệu](../notes/ui-motion-2026-10-22/05-QUYET-DINH-VA-BAI-HOC.md) · `notes/ui-motion-2026-10-22/05-QUYET-DINH-VA-BAI-HOC.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- 1. Vòng 1 — "bút dạ quang trên giấy"
+- 2. Vòng 2 — sửa theo 10 repo skill
+- 3. Vòng 3 — câu chuyện ghim 6 nhịp
+- 4. Review extension `tro` của nhóm
+- 5. Đưa dữ liệu thật vào giao diện mà không vi phạm luật
+- 6. Bài học về cách làm việc
+
+</details>
+
+## UI, motion và bộ skill — học từ KusShoes và dựng giao diện ReNER (22/10/2026)
+
+[Mở tài liệu](../notes/ui-motion-2026-10-22/README.md) · `notes/ui-motion-2026-10-22/README.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Đọc theo thứ tự
+- Nhãn mức chắc chắn
+- Trạng thái
+
+</details>
+
+## Log chặng UI, motion và bộ skill — 22/10/2026
+
+[Mở tài liệu](../notes/ui-motion-2026-10-22/WORK_LOG.md) · `notes/ui-motion-2026-10-22/WORK_LOG.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- U1 — Đọc KusShoes và handbook
+- U2 — Dựng giao diện thử trong repo sản phẩm
+- U3 — Nghiên cứu 10 repo UI/UX và 10 repo 3D
+- U4 — Landing trên Claude Design, ba vòng
+- U5 — Review extension `tro`
+- U6 — Dữ liệu thật vào giao diện
+- U7 — Ghi tri thức vào handbook
+
+</details>
+
 ## Đề tài 8 — Trích xuất thông tin bất động sản từ bài đăng mạng xã hội (Real Estate NER)
 
 [Mở tài liệu](../project-realestate-ner/notes/01-research-report.md) · `project-realestate-ner/notes/01-research-report.md`
@@ -557,6 +674,16 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 - 4. Hình cần vẽ lại
 - 5. Quyết định nhóm cần chốt trước khi sửa
 - 6. Rủi ro tiến độ
+
+</details>
+
+## ReNER-VN artifact index
+
+[Mở tài liệu](../project-realestate-ner/notes/INDEX.md) · `project-realestate-ner/notes/INDEX.md`
+
+<details><summary>Các mục trong tài liệu</summary>
+
+- Tài liệu ngắn; đọc trực tiếp.
 
 </details>
 
@@ -747,37 +874,6 @@ Sinh từ các file do dự án viết, không tính full source bên ngoài hay
 <details><summary>Các mục trong tài liệu</summary>
 
 - Tài liệu ngắn; đọc trực tiếp.
-
-</details>
-
-## ReNER-VN artifact index
-
-[Mở tài liệu](../project-realestate-ner/notes/INDEX.md) · `project-realestate-ner/notes/INDEX.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- Tài liệu ngắn; đọc trực tiếp.
-
-</details>
-
-## Tổng Hợp Chi Tiết Kiến Thức Môn TMG301 (Xử Lý Ngôn Ngữ Tự Nhiên / Text Mining)
-
-[Mở tài liệu](../TMG301_TongHopKienThuc.md) · `TMG301_TongHopKienThuc.md`
-
-<details><summary>Các mục trong tài liệu</summary>
-
-- 1. Xử lý văn bản cơ bản & Khoảng cách Edit (Text Normalization & Edit Distance)
-- 2. Mô hình ngôn ngữ N-Gram (N-Gram Language Models)
-- 3. Phân loại Naive Bayes & Phân tích cảm xúc (Naive Bayes & Sentiment)
-- 4. Hồi quy Logistic (Logistic Regression)
-- 5. Ngữ nghĩa Vector và Word Embeddings
-- 6. Phân cụm văn bản (Clustering for Text Similarity)
-- 7 & 8. Transformer & Mô hình ngôn ngữ tiền huấn luyện (Pre-Trained LMs / Fine-tuning)
-- 9. Dịch máy (Machine Translation)
-- 10. Hệ thống Chatbot & Đối thoại (Dialogue Systems)
-- 11 & 12. Phân tích cú pháp (Constituency & Dependency Parsing)
-- 13, 14 & 15. Khai phá thông tin, Sự kiện & Thời gian (Information & Event Extraction)
-- 16 & 17. Ngữ nghĩa từ & Từ điển Cảm xúc (Word Senses & Lexicons)
 
 </details>
 

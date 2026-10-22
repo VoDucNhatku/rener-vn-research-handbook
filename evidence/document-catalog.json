@@ -33,6 +33,24 @@
     ]
   },
   {
+    "path": "TMG301_TongHopKienThuc.md",
+    "title": "Tổng Hợp Chi Tiết Kiến Thức Môn TMG301 (Xử Lý Ngôn Ngữ Tự Nhiên / Text Mining)",
+    "sections": [
+      "1. Xử lý văn bản cơ bản & Khoảng cách Edit (Text Normalization & Edit Distance)",
+      "2. Mô hình ngôn ngữ N-Gram (N-Gram Language Models)",
+      "3. Phân loại Naive Bayes & Phân tích cảm xúc (Naive Bayes & Sentiment)",
+      "4. Hồi quy Logistic (Logistic Regression)",
+      "5. Ngữ nghĩa Vector và Word Embeddings",
+      "6. Phân cụm văn bản (Clustering for Text Similarity)",
+      "7 & 8. Transformer & Mô hình ngôn ngữ tiền huấn luyện (Pre-Trained LMs / Fine-tuning)",
+      "9. Dịch máy (Machine Translation)",
+      "10. Hệ thống Chatbot & Đối thoại (Dialogue Systems)",
+      "11 & 12. Phân tích cú pháp (Constituency & Dependency Parsing)",
+      "13, 14 & 15. Khai phá thông tin, Sự kiện & Thời gian (Information & Event Extraction)",
+      "16 & 17. Ngữ nghĩa từ & Từ điển Cảm xúc (Word Senses & Lexicons)"
+    ]
+  },
+  {
     "path": "notes/08-fine-tuning-mlm-summary.md",
     "title": "TMG301 — Bài 08: Tinh chỉnh (Fine-Tuning) và Mô hình ngôn ngữ che từ (Masked Language Models)",
     "sections": [
@@ -50,6 +68,22 @@
       "11. Câu hỏi ôn thi / phỏng vấn",
       "Thuật ngữ (Glossary)"
     ]
+  },
+  {
+    "path": "notes/HIEN-TRANG-VA-QUYET-DINH.md",
+    "title": "ReNER-VN — bối cảnh và quyết định hiện hành",
+    "sections": [
+      "1. Điều người dùng đã xác nhận",
+      "2. Ba phạm vi phải đọc riêng",
+      "3. Đọc file nào cho câu hỏi nào?",
+      "4. Năm nhãn dùng cho kết luận sau này",
+      "5. Cách dùng với một yêu cầu ngắn"
+    ]
+  },
+  {
+    "path": "notes/INDEX.md",
+    "title": "Tài liệu trong TMG301",
+    "sections": []
   },
   {
     "path": "notes/audit-2026-10-11/BAO-CAO-PHAN-BIEN.md",
@@ -111,22 +145,6 @@
       "L4 — tạo remote và backlog",
       "L5 — kiểm bản clone và trạng thái GitHub"
     ]
-  },
-  {
-    "path": "notes/HIEN-TRANG-VA-QUYET-DINH.md",
-    "title": "ReNER-VN — bối cảnh và quyết định hiện hành",
-    "sections": [
-      "1. Điều người dùng đã xác nhận",
-      "2. Ba phạm vi phải đọc riêng",
-      "3. Đọc file nào cho câu hỏi nào?",
-      "4. Năm nhãn dùng cho kết luận sau này",
-      "5. Cách dùng với một yêu cầu ngắn"
-    ]
-  },
-  {
-    "path": "notes/INDEX.md",
-    "title": "Tài liệu trong TMG301",
-    "sections": []
   },
   {
     "path": "notes/kusshoes-to-rener-vn/GIA-CONG-WEB-VA-AI-WORKFLOW.md",
@@ -229,51 +247,6 @@
     ]
   },
   {
-    "path": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md",
-    "title": "Snapshot khảo sát kiến trúc 10 repo — 10/10/2026",
-    "sections": []
-  },
-  {
-    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
-    "title": "Hồ sơ nghiên cứu gia công web và AI workflow",
-    "sections": [
-      "Mức bằng chứng",
-      "Snapshot tải được"
-    ]
-  },
-  {
-    "path": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md",
-    "title": "Tám repo liên quan — snapshot 10/10/2026",
-    "sections": []
-  },
-  {
-    "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md",
-    "title": "Hồ sơ nguồn ChoThueGiupViec và API GitHub",
-    "sections": [
-      "File nguồn được đối chiếu chọn lọc",
-      "Snapshot API"
-    ]
-  },
-  {
-    "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md",
-    "title": "Nguồn: solo AI development, UX, 80/20 và thay đổi lõi",
-    "sections": [
-      "Mức bằng chứng",
-      "Nguồn và cách sử dụng",
-      "Nguồn video/social có giới hạn"
-    ]
-  },
-  {
-    "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md",
-    "title": "Nguồn cho 10 repo web — 10/10/2026",
-    "sections": []
-  },
-  {
-    "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md",
-    "title": "Snapshot nguồn web quốc tế — 09/10/2026",
-    "sections": []
-  },
-  {
     "path": "notes/kusshoes-to-rener-vn/TU-VIBE-CODING-DEN-GIAO-WEB.md",
     "title": "Từ vibe coding đến làm web có thể bàn giao",
     "sections": [
@@ -343,6 +316,51 @@
     ]
   },
   {
+    "path": "notes/kusshoes-to-rener-vn/sources/architecture-top10-2026-10-10/README.md",
+    "title": "Snapshot khảo sát kiến trúc 10 repo — 10/10/2026",
+    "sections": []
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/outsourcing-ai-2026-10-11/README.md",
+    "title": "Hồ sơ nghiên cứu gia công web và AI workflow",
+    "sections": [
+      "Mức bằng chứng",
+      "Snapshot tải được"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/related-repos-2026-10-10/README.md",
+    "title": "Tám repo liên quan — snapshot 10/10/2026",
+    "sections": []
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/scale-ai-harness-2026-10-10/README.md",
+    "title": "Hồ sơ nguồn ChoThueGiupViec và API GitHub",
+    "sections": [
+      "File nguồn được đối chiếu chọn lọc",
+      "Snapshot API"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/solo-ai-2026-10-11/README.md",
+    "title": "Nguồn: solo AI development, UX, 80/20 và thay đổi lõi",
+    "sections": [
+      "Mức bằng chứng",
+      "Nguồn và cách sử dụng",
+      "Nguồn video/social có giới hạn"
+    ]
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/web-top10-2026-10-10/README.md",
+    "title": "Nguồn cho 10 repo web — 10/10/2026",
+    "sections": []
+  },
+  {
+    "path": "notes/kusshoes-to-rener-vn/sources/world-web-2026-10-09/README.md",
+    "title": "Snapshot nguồn web quốc tế — 09/10/2026",
+    "sections": []
+  },
+  {
     "path": "notes/nghien-cuu-sau-2026-10-11/BO-CA-PHAN-CHUNG-RENER.md",
     "title": "26 ca phản chứng ReNER — bản nháp nghiệm thu",
     "sections": [
@@ -406,6 +424,81 @@
     ]
   },
   {
+    "path": "notes/ui-motion-2026-10-22/01-KUSSHOES-HOC-DUOC.md",
+    "title": "Học từ KusShoes — giao diện và chuyển động",
+    "sections": [
+      "1. Stack frontend (Đã quan sát)",
+      "2. Design system viết thành luật (Đã quan sát)",
+      "3. Hero ghim theo cuộn — cách ShoeHeroExperience hoạt động (Đã quan sát)",
+      "4. Cách tổ chức đặc tả cho AI agent (Đã quan sát)",
+      "5. Những gì ReNER mượn và không mượn"
+    ]
+  },
+  {
+    "path": "notes/ui-motion-2026-10-22/02-BO-SKILL-KUSSHOES.md",
+    "title": "Bộ skill mà KusShoes cài cho AI agent",
+    "sections": [
+      "1. Thống kê (Đã quan sát)",
+      "2. Sáu nhóm",
+      "3. Luồng làm việc mà bộ skill gợi ra (Đã quan sát qua mô tả skill)",
+      "4. Bài học cho ReNER (Đề xuất)",
+      "5. Chưa biết"
+    ]
+  },
+  {
+    "path": "notes/ui-motion-2026-10-22/03-REPO-UI-UX-VA-3D.md",
+    "title": "10 repo UI/UX và 10 repo 3D/scroll — mỗi cái dạy gì",
+    "sections": [
+      "1. Repo \"skill thiết kế\" cho AI agent",
+      "2. Repo 3D, parallax và kể chuyện bằng cuộn",
+      "3. Những lỗi 3D dễ mắc (Đã quan sát qua tài liệu, một phần đã thực nghiệm khi dựng)"
+    ]
+  },
+  {
+    "path": "notes/ui-motion-2026-10-22/04-THU-VIEN-RENER-DA-DUNG.md",
+    "title": "Thư viện ReNER đã dùng cho giao diện thử",
+    "sections": [
+      "1. Thư viện chạy trong app",
+      "2. Công cụ ngoài app",
+      "3. Đã cân nhắc nhưng không dùng",
+      "4. Hai cách làm chuyển động cùng một câu chuyện"
+    ]
+  },
+  {
+    "path": "notes/ui-motion-2026-10-22/05-QUYET-DINH-VA-BAI-HOC.md",
+    "title": "Quyết định thiết kế và bài học khi dựng giao diện ReNER",
+    "sections": [
+      "1. Vòng 1 — \"bút dạ quang trên giấy\"",
+      "2. Vòng 2 — sửa theo 10 repo skill",
+      "3. Vòng 3 — câu chuyện ghim 6 nhịp",
+      "4. Review extension `tro` của nhóm",
+      "5. Đưa dữ liệu thật vào giao diện mà không vi phạm luật",
+      "6. Bài học về cách làm việc"
+    ]
+  },
+  {
+    "path": "notes/ui-motion-2026-10-22/README.md",
+    "title": "UI, motion và bộ skill — học từ KusShoes và dựng giao diện ReNER (22/10/2026)",
+    "sections": [
+      "Đọc theo thứ tự",
+      "Nhãn mức chắc chắn",
+      "Trạng thái"
+    ]
+  },
+  {
+    "path": "notes/ui-motion-2026-10-22/WORK_LOG.md",
+    "title": "Log chặng UI, motion và bộ skill — 22/10/2026",
+    "sections": [
+      "U1 — Đọc KusShoes và handbook",
+      "U2 — Dựng giao diện thử trong repo sản phẩm",
+      "U3 — Nghiên cứu 10 repo UI/UX và 10 repo 3D",
+      "U4 — Landing trên Claude Design, ba vòng",
+      "U5 — Review extension `tro`",
+      "U6 — Dữ liệu thật vào giao diện",
+      "U7 — Ghi tri thức vào handbook"
+    ]
+  },
+  {
     "path": "project-realestate-ner/notes/01-research-report.md",
     "title": "Đề tài 8 — Trích xuất thông tin bất động sản từ bài đăng mạng xã hội (Real Estate NER)",
     "sections": [
@@ -435,6 +528,11 @@
       "5. Quyết định nhóm cần chốt trước khi sửa",
       "6. Rủi ro tiến độ"
     ]
+  },
+  {
+    "path": "project-realestate-ner/notes/INDEX.md",
+    "title": "ReNER-VN artifact index",
+    "sections": []
   },
   {
     "path": "project-realestate-ner/notes/audit-log.md",
@@ -586,28 +684,5 @@
     "path": "project-realestate-ner/notes/foundation-2026-10-09/PLAN.md",
     "title": "Kế hoạch nghiên cứu nền tảng — 2026-10-09",
     "sections": []
-  },
-  {
-    "path": "project-realestate-ner/notes/INDEX.md",
-    "title": "ReNER-VN artifact index",
-    "sections": []
-  },
-  {
-    "path": "TMG301_TongHopKienThuc.md",
-    "title": "Tổng Hợp Chi Tiết Kiến Thức Môn TMG301 (Xử Lý Ngôn Ngữ Tự Nhiên / Text Mining)",
-    "sections": [
-      "1. Xử lý văn bản cơ bản & Khoảng cách Edit (Text Normalization & Edit Distance)",
-      "2. Mô hình ngôn ngữ N-Gram (N-Gram Language Models)",
-      "3. Phân loại Naive Bayes & Phân tích cảm xúc (Naive Bayes & Sentiment)",
-      "4. Hồi quy Logistic (Logistic Regression)",
-      "5. Ngữ nghĩa Vector và Word Embeddings",
-      "6. Phân cụm văn bản (Clustering for Text Similarity)",
-      "7 & 8. Transformer & Mô hình ngôn ngữ tiền huấn luyện (Pre-Trained LMs / Fine-tuning)",
-      "9. Dịch máy (Machine Translation)",
-      "10. Hệ thống Chatbot & Đối thoại (Dialogue Systems)",
-      "11 & 12. Phân tích cú pháp (Constituency & Dependency Parsing)",
-      "13, 14 & 15. Khai phá thông tin, Sự kiện & Thời gian (Information & Event Extraction)",
-      "16 & 17. Ngữ nghĩa từ & Từ điển Cảm xúc (Word Senses & Lexicons)"
-    ]
   }
 ]
